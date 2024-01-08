@@ -1,0 +1,429 @@
+---
+title: "NOAA Report"
+author: "Ian Combs"
+date: "2023-10-24"
+output: html_document:
+    theme: flatly
+    code_folding: show
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_doctument:
+      toc: yes
+      toc_depth: 3
+---
+```{r, setup, include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, fig.align = 'left')
+knitr::opts_knit$set(root.dir = "../data")
+options(width = 88)
+library(magrittr)
+```
+
+
+
+
+
+### version: `r Sys.Date() %>% format(format="%B %d, %Y")`
+
+<!-- this is where the DOI would go  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3675991.svg)](https://doi.org/10.5281/zenodo.3675991)
+-->
+
+
+#### [GitHub repository](https://github.com/LilyGullett/recruitPilot){target="_blank"}
+###
+
+***
+This is the working analysis pipeline to analyze data generated from the recruit pilot study manual inventories and TagLab segmentation and assess differences in the inventory counts between trained and untrained eyes as well as between TagLab segmentation and manual inventory. 
+
+***
+
+### All analyses performed with R version `r getRversion()`
+
+
+# Basic setup of R environment
+***
+## Loading required packages
+For the following analyses we will require the use of a number of different R packages. Most of which can be sourced from CRAN, but some must be downloaded from GitHub. We can use the following code to load in the packages and install any packages not previously installed in the R console. 
+
+
+```{r,packages, include = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan")
+
+```
+
+
+# Importing Data
+***
+## We are downloading this dataset from our GoogleDrive folder. We will be using the package `googledrive`. Each GoogleDrive file has a unique ID that does not change throughout the lifespan of the document, even if the file name is changed. This ID is housed in the file's URL. 
+Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Below you will copy and paste that into the function `drive_download` within `as_id`. This will save the file locally in the specified path (in this case our data folder) and you will import the folder as you normally would. Downloading it this way decreases the potential human error when downloading, moving folders, renaming, saving etc and ensures that the most up to date file is being utilized. 
+
+# Here we are importing data for our plug counts from google drive
+
+```{r, plugLoadingData, include = TRUE}
+# drive_auth <- function(email = gargle::gargle_oauth_email(),
+#                        path = NULL,
+#                        scopes = "https://www.googleapis.com/auth/drive",
+#                        cache = gargle::gargle_oauth_cache(),
+#                        use_oob = gargle::gargle_oob_default(),
+#                        token = NULL) { ... }
+
+# 
+#  data <- drive_download(
+#  as_id("1b4IWK7tfSt3n8o8NlgJKSDoqj_QkHvKcaJBNz85RBv4"),
+#    path = "../data/outplantData.xlsx", 
+#    overwrite = TRUE)
+
+apalData <- read_excel("../data/outplantData.xlsx", sheet = "ex-situ Apal outplants")
+msvsDataNames <- read_excel("../data/outplantData.xlsx", sheet = "ex-situ Massive outplants", col_names = FALSE, range = "A1:CU1", col_types = 'text')
+msvsDataNames <- as.vector(msvsDataNames, mode = 'character')
+msvsData<- read_excel("../data/outplantData.xlsx", sheet = "ex-situ Massive outplants", col_names = msvsDataNames, skip = 30)
+
+
+
+
+```
+
+
+
+```{r}
+
+
+outplantAPAL <- apalData %>% 
+  select(Year, 
+         Date, 
+         `Site ID`, 
+         Deliverable, 
+         `# plugs`, 
+         `1-month Monitoring?`,
+         `1-month Survival`, 
+         `1-month % Dead`, 
+         `1-month % Missing`,
+         `1-month % Plot Survival`, 
+         `% of Plots with Partial Mortality`,
+         `Avg. % Partial Mortality within Affected Plots`,
+         `12-month Monitoring?`,                           
+         `12-month Survival`,                             
+         `12-month % Dead`,                               
+         `12-month % Missing`,                            
+         `12-month % Plot Survival`) %>% 
+  filter(Deliverable %in% c("NOAA Yr1", "NOAA Yr2", "NOAA Yr3", "NOAA Yr4")) %>% 
+  mutate_at(c("Year", 
+         "Site ID", 
+        "Deliverable"), as.factor) %>% 
+  droplevels() %>% 
+  # group_by(Deliverable) %>% 
+  mutate(cum_sum = cumsum(`# plugs`))
+outplantAPAL$Date <- as.Date(outplantAPAL$Date, "%Y%M%D")
+  
+  
+
+
+
+
+  
+```
+plot
+```{r}
+
+ outplantAPALplot1<- ggplot(outplantAPAL, aes(x = Deliverable, y = cum_sum, fill = Deliverable, color = I('black')))+
+  geom_bar(position = "dodge", stat = 'identity', width = 1)+
+  ggtitle("Cumulative total of Acropora palmata fragments outplanted")+
+  xlab("Year")+
+  ylab("Cumulative number of plugs outplanted")
+
+outplantAPALplot <- outplantAPALplot1 + theme(
+    axis.text.x = element_text(size = 20, colour = "black", vjust = 0.5, hjust = 0.5, face= "bold"), 
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = 20, face = "bold"), 
+    axis.text.y = element_text(colour = "black", size = 20, face = "bold"),
+    legend.title = element_text(size = 20, face = "bold"), 
+    legend.text = element_text(size = 20, face = "bold", colour = "black"), 
+    panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = '#D3D3D3'), 
+    plot.title = element_text(size = 20, face = "bold"), 
+    axis.line = element_line(colour = "black"), 
+    axis.ticks = element_line(color="black"), 
+    text = element_text(size=20, color="black"), 
+    legend.position = "right")
+
+
+
+
+ggsave("../figures/outplantAPALplot.png", plot =outplantAPALplot, width = 20, height = 15, units = 'in', dpi = 600)
+
+
+```
+
+massives
+
+```{r}
+
+
+outplantMsvs <- msvsData %>% 
+filter(Deliverable %in% c("NOAA Yr1", "NOAA Yr2", "NOAA Yr3", "NOAA Yr4")) %>% 
+  # pivot_longer(cols = c("Ofav", "Mcav", "Pcli", "Pstr", "Ssid", "Cnat", "Past", "Sbou", "Dlab"), names_to = "species", values_to = "frags") %>% 
+  select(Year, 
+         Date, 
+         `Site ID`, 
+         Deliverable, 
+         `# plugs`,
+         `1-month Monitoring?`,
+         `1-month Survival`, 
+         `1-month % Dead`, 
+         `1-month % Missing`,
+         `1-month % Plot Survival`, 
+         `12-month Monitoring?`,                           
+         `12-month Survival`,                             
+         `12-month % Dead`,                               
+         `12-month % Missing`,                            
+         `12-month % Plot Survival`) %>% 
+  mutate_at(c("Year", 
+         "Site ID", 
+        "Deliverable"), as.factor) %>% 
+  droplevels() %>% 
+  # group_by(Deliverable) %>% 
+  mutate(cum_sum = cumsum(`# plugs`))
+
+
+
+
+
+```
+
+```{r}
+outplantMsvsPlot1<- ggplot(outplantMsvs, aes(x = Deliverable, y = cum_sum, fill = Deliverable, color = I('black')))+
+  geom_bar(position = "dodge", stat = 'identity', width = 1)+
+  ggtitle("Cumulative total of Massive plugs outplanted")+
+  xlab("Year")+
+  ylab("Cumulative number of plugs outplanted")
+
+
+outplantMsvsPlot <- outplantMsvsPlot1 + theme(
+    axis.text.x = element_text(size = 20, colour = "black", vjust = 0.5, hjust = 0.5, face= "bold"), 
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = 20, face = "bold"), 
+    axis.text.y = element_text(colour = "black", size = 20, face = "bold"),
+    legend.title = element_text(size = 20, face = "bold"), 
+    legend.text = element_text(size = 20, face = "bold", colour = "black"), 
+    panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = '#D3D3D3'), 
+    plot.title = element_text(size = 20, face = "bold"), 
+    axis.line = element_line(colour = "black"), 
+    axis.ticks = element_line(color="black"), 
+    text = element_text(size=20, color="black"), 
+    legend.position = "right")
+
+
+
+
+
+
+ggsave("../figures/outplantMsvsPlot.png", plot =outplantMsvsPlot, width = 20, height = 15, units = 'in', dpi = 600)
+
+
+
+```
+
+apal 1 month Monitoring
+
+```{r}
+
+OneMoSurvivalAPAL2 <- outplantAPAL %>% 
+  mutate_at(c("1-month Survival", "1-month % Dead", "1-month % Missing", "12-month Survival", "12-month % Dead", "12-month % Missing"), as.double) %>% 
+  pivot_longer(cols = c("1-month Survival", "1-month % Dead", "1-month % Missing"), names_to = "1 month", values_to = "1 mo percentage") %>%
+  # pivot_longer(cols = c("12-month Survival", "12-month % Dead", "12-month % Missing"), names_to = "12 month", values_to = "12 mo percentage") %>% 
+  select(Year, Date, `Site ID`, Deliverable, `1 month`, `1 mo percentage`)
+
+apal1MoSurvivalPlot1<- ggplot(OneMoSurvivalAPAL2, aes(x = `Site ID`, y = `1 mo percentage`, fill = `1 month`, color = I('black')))+
+  geom_bar(position = "stack", stat = 'identity', width = 1)+
+  ggtitle("1 Month Surival of Acropora palmata plugs outplanted")+
+  xlab("Year")+
+  ylab("% Survival")
+
+
+apal1MoSurvivalPlot <- apal1MoSurvivalPlot1 + theme(
+    axis.text.x = element_text(size = 15, colour = "black", vjust = 0.5, hjust = 0.5, angle = 45), 
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = 20, face = "bold"), 
+    axis.text.y = element_text(colour = "black", size = 20, face = "bold"),
+    legend.title = element_text(size = 20, face = "bold"), 
+    legend.text = element_text(size = 20, face = "bold", colour = "black"), 
+    panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = '#D3D3D3'), 
+    plot.title = element_text(size = 20, face = "bold"), 
+    axis.line = element_line(colour = "black"), 
+    axis.ticks = element_line(color="black"), 
+    text = element_text(size=20, color="black"), 
+    legend.position = "right")
+
+
+```
+
+apal 12mo
+```{r}
+
+
+twelveMoSurvivalAPAL2 <- outplantAPAL %>% 
+  mutate_at(c("1-month Survival", "1-month % Dead", "1-month % Missing", "12-month Survival", "12-month % Dead", "12-month % Missing"), as.double) %>% 
+  # pivot_longer(cols = c("1-month Survival", "1-month % Dead", "1-month % Missing"), names_to = "1 month", values_to = "1 mo percentage") %>%
+  pivot_longer(cols = c("12-month Survival", "12-month % Dead", "12-month % Missing"), names_to = "12 month", values_to = "12 mo percentage") %>% 
+  select(Year, Date, `Site ID`, Deliverable, `12 month`, `12 mo percentage`) %>% 
+  na.omit()
+
+apal12MoSurvivalPlot1<- ggplot(twelveMoSurvivalAPAL2, aes(x = `Site ID`, y = `12 mo percentage`, fill = `12 month`, color = I('black')))+
+  geom_bar(position = "stack", stat = 'identity', width = 1)+
+  ggtitle("12 Month Surival of Acropora palmata plugs outplanted")+
+  xlab("Year")+
+  ylab("% Survival")
+
+
+apal12MoSurvivalPlot <- apal12MoSurvivalPlot1 + theme(
+    axis.text.x = element_text(size = 20, colour = "black", vjust = 0.5, hjust = 0.5, face= "bold", angle = 45), 
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = 20, face = "bold"), 
+    axis.text.y = element_text(colour = "black", size = 20, face = "bold"),
+    legend.title = element_text(size = 20, face = "bold"), 
+    legend.text = element_text(size = 20, face = "bold", colour = "black"), 
+    panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = '#D3D3D3'), 
+    plot.title = element_text(size = 20, face = "bold"), 
+    axis.line = element_line(colour = "black"), 
+    axis.ticks = element_line(color="black"), 
+    text = element_text(size=20, color="black"), 
+    legend.position = "right")
+
+
+
+
+ggsave("../figures/12MonthApalSurvivalPlot.png", plot =apal12MoSurvivalPlot, width = 20, height = 15, units = 'in', dpi = 600)
+
+
+
+```
+1 month massives monitoring 
+
+
+
+```{r}
+
+oneMoSurvivalMsvs2 <- outplantMsvs %>% 
+  mutate_at(c("1-month Survival", "1-month % Dead", "1-month % Missing", "12-month Survival", "12-month % Dead", "12-month % Missing"), as.double) %>% 
+  pivot_longer(cols = c("1-month Survival", "1-month % Dead", "1-month % Missing"), names_to = "1 month", values_to = "1 mo percentage") %>%
+  # pivot_longer(cols = c("12-month Survival", "12-month % Dead", "12-month % Missing"), names_to = "12 month", values_to = "12 mo percentage") %>% 
+  select(Year, Date, `Site ID`, Deliverable, `1 month`, `1 mo percentage`) %>% 
+  na.omit()
+
+msvs1MoSurvivalPlot1<- ggplot(oneMoSurvivalMsvs2, aes(x = `Site ID`, y = `1 mo percentage`, fill = `1 month`, color = I('black')))+
+  geom_bar(position = "stack", stat = 'identity', width = 1)+
+  ggtitle("1 Month Surival of massive plugs outplanted")+
+  xlab("Year")+
+  ylab("% Survival")
+
+
+msvs1MoSurvivalPlot <- msvs1MoSurvivalPlot1 + theme(
+    axis.text.x = element_text(size = 20, colour = "black", vjust = 0.5, hjust = 0.5, face= "bold", angle = 45), 
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = 20, face = "bold"), 
+    axis.text.y = element_text(colour = "black", size = 20, face = "bold"),
+    legend.title = element_text(size = 20, face = "bold"), 
+    legend.text = element_text(size = 20, face = "bold", colour = "black"), 
+    panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = '#D3D3D3'), 
+    plot.title = element_text(size = 20, face = "bold"), 
+    axis.line = element_line(colour = "black"), 
+    axis.ticks = element_line(color="black"), 
+    text = element_text(size=20, color="black"), 
+    legend.position = "right")
+
+ggsave("../figures/1MonthMsvsSurvivalPlot.png", plot =msvs1MoSurvivalPlot, width = 20, height = 15, units = 'in', dpi = 600)
+
+
+```
+12 month massives monitoring 
+
+```{r}
+twelveMoSurvivalMsvs2 <- outplantMsvs %>% 
+  mutate_at(c("1-month Survival", "1-month % Dead", "1-month % Missing", "12-month Survival", "12-month % Dead", "12-month % Missing"), as.double) %>% 
+  # pivot_longer(cols = c("1-month Survival", "1-month % Dead", "1-month % Missing"), names_to = "1 month", values_to = "1 mo percentage") %>%
+  pivot_longer(cols = c("12-month Survival", "12-month % Dead", "12-month % Missing"), names_to = "12 month", values_to = "12 mo percentage") %>%
+  select(Year, Date, `Site ID`, Deliverable, `12 month`, `12 mo percentage`) %>% 
+  na.omit()
+
+msvs12MoSurvivalPlot1<- ggplot(oneMoSurvivalMsvs2, aes(x = `Site ID`, y = `1 mo percentage`, fill = `1 month`, color = I('black')))+
+  geom_bar(position = "stack", stat = 'identity', width = 1)+
+  ggtitle("12 Month Surival of massive plugs outplanted")+
+  xlab("Year")+
+  ylab("% Survival")
+
+
+msvs12MoSurvivalPlot <- msvs12MoSurvivalPlot1 + theme(
+    axis.text.x = element_text(size = 20, colour = "black", vjust = 0.5, hjust = 0.5, face= "bold", angle = 45), 
+    axis.title.x = element_blank(),
+    axis.title.y = element_text(size = 20, face = "bold"), 
+    axis.text.y = element_text(colour = "black", size = 20, face = "bold"),
+    legend.title = element_text(size = 20, face = "bold"), 
+    legend.text = element_text(size = 20, face = "bold", colour = "black"), 
+    panel.grid.major = element_line(size = 0.5, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = '#D3D3D3'), 
+    plot.title = element_text(size = 20, face = "bold"), 
+    axis.line = element_line(colour = "black"), 
+    axis.ticks = element_line(color="black"), 
+    text = element_text(size=20, color="black"), 
+    legend.position = "right")
+
+
+ggsave("../figures/12MonthMsvsSurvivalPlot.png", plot =msvs12MoSurvivalPlot, width = 20, height = 15, units = 'in', dpi = 600)
+
+comboSurvivalPlot <- apal1MoSurvivalPlot+msvs1MoSurvivalPlot+apal12MoSurvivalPlot+apal12MoSurvivalPlot
+
+ggsave("../figures/comboSurvival.png", plot =comboSurvivalPlot, width = 20, height = 15, units = 'in', dpi = 600)
+
+
+```
+
+```{r}
+
+meanSurvivalAPAL1 <- OneMoSurvivalAPAL2 %>% 
+  filter(`1 month` %in% c("1-month Survival")) %>% 
+  mutate(meanSurvival = mean(`1 mo percentage`))
+
+meanSurvivalMSVS1 <- oneMoSurvivalMsvs2 %>% 
+  filter(`1 month` %in% c("1-month Survival")) %>% 
+  mutate(meanSurvival = mean(`1 mo percentage`))
+
+meanSurvivalAPAL12 <- twelveMoSurvivalAPAL2 %>% 
+  filter(`12 month` %in% c("12-month Survival")) %>% 
+  mutate(meanSurvival = mean(`12 mo percentage`))
+
+meanSurvivalMSVS12 <- twelveMoSurvivalMsvs2 %>% 
+  filter(`12 month` %in% c("12-month Survival")) %>% 
+  mutate(meanSurvival = mean(`12 mo percentage`))
+
+```
+```{r}
+ofav <- msvsData %>% 
+  select(`Site ID`, Deliverable, Ofav) %>% 
+filter(Deliverable %in% c("NOAA Yr1", "NOAA Yr2", "NOAA Yr3", "NOAA Yr4")) %>% 
+  droplevels()
+ofav$`Site ID`<- as.factor(ofav$`Site ID`)
+
+
+mcav <- msvsData %>% 
+  select(`Site ID`, Deliverable, Mcav) %>% 
+filter(Deliverable %in% c("NOAA Yr1", "NOAA Yr2", "NOAA Yr3", "NOAA Yr4"))%>% 
+  droplevels()
+mcav$`Site ID`<- as.factor(mcav$`Site ID`)
+
+
+pcli<- msvsData %>% 
+  select(`Site ID`, Deliverable, Pcli) %>% 
+filter(Deliverable %in% c("NOAA Yr1", "NOAA Yr2", "NOAA Yr3", "NOAA Yr4"))%>% 
+  droplevels()
+pcli$`Site ID`<- as.factor(pcli$`Site ID`)
+
+```
+
+
+
+

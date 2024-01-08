@@ -1,0 +1,487 @@
+---
+title: "Percent Cover Analysis"
+author: "Ian Combs -- icombs@mote.org"
+output:
+  html_document:
+    theme: flatly
+    code_folding: show
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_doctument:
+      toc: yes
+      toc_depth: 3
+---
+
+```{r, setup, include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, fig.align = 'left')
+library(magrittr)
+```
+
+### version: `r Sys.Date() %>% format(format="%B %d, %Y")`
+
+<!-- this is where the DOI would go  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3675991.svg)](https://doi.org/10.5281/zenodo.3675991)
+-->
+
+
+#### [GitHub repository](https://github.com/icombs2017/outplantMonitoring.git){target="_blank"}
+
+###
+***
+This is the analysis pipeline for data generated from TagLab annotations of *Acropora cervicornis* outplant events after three years.
+
+
+***
+### All analyses performe with R verion `r getRversion()`
+# Basic setup of R environment
+***
+## Loading required packages
+
+For the following analyses we will require the use of a number of different R packages. Most of which can be sourced from CRAN, but some must be downloaded from GitHub. We can use the following code to load in the packages and install any packages not previously installed in the R console. 
+
+```{r, load packages, include = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load("ggplot2","officer","ggpubr", "rcompanion", "RColorBrewer", "patchwork", "magrittr","reshape2", "stringr", "plyr", "dplyr", "flextable", "tidyr", "tibble", "vegan", "forcats", "readr", "metafolio", "FSA","viridis", "paletteer", "cowplot","ggrepel", "ggspatial", "lubridate", "rgdal", "rnaturalearth", "sf", "tidyverse", "ggforce")
+pacman::p_load_gh("pmartinezarbizu/pairwiseAdonis/pairwiseAdonis")
+```
+
+
+
+
+## Loading Data
+
+Loading data in from the TagLab annotations (.csv) using a function that downloads all .csv files from a specific folder, then adding the filename as a column so it can later by spliced and used as column for "Site".
+
+```{r, loadData, include = TRUE}
+
+#creating a function that will download all the .csv files in a single folder, and creating a column that is the filename
+
+read_plus <- function(flnm) {
+    read_csv(flnm) %>%
+        mutate(filename = flnm)
+}
+
+threeYearData1 <- list.files(path = "../data/threeYear", pattern = "*.csv", full.names = T) %>%
+    map_df(~read_plus(.), show_col_types = FALSE)
+
+#Then I need to take their filenames and create a site label by splitting the file name and only keeping the sites
+
+threeYearData <- threeYearData1 %>% 
+  tidyr::separate(filename, into = c("trash", "site"), sep = 29) %>% 
+  tidyr::separate(site, into = c("site", "throw"), sep = ".csv") %>% 
+  dplyr::select(-c(trash, throw)) %>% 
+  dplyr::rename("date" = "TagLab Date", "class" = "TagLab Class name", "area" = "TagLab Area", "perimeter" = "TagLab Perimeter", "centroid.x" = "TagLab Centroid x", "centroid.y" = "TagLab Centroid y") %>% 
+  dplyr::select(date, site, class, area, perimeter, centroid.x, centroid.y) 
+
+threeYearData$site <- as.factor(threeYearData$site)
+threeYearData$class <- as.factor(threeYearData$class)
+
+```
+```{r}
+totalAreaOutplanted <- threeYearData %>% 
+  filter(class != c("Area of Operation", "Dead ACER", "Empty")) %>% 
+  group_by(site) %>% 
+  summarise(totalAreaOutplanted = sum(area)/10000) %>% 
+  mutate(percentCover = (totalAreaOutplanted/200)*100)
+
+mean(totalAreaOutplanted$percentCover)
+
+
+
+```
+
+Going to make some plots of our outplant area and a .5m Buffer to see how/if our outplants have exceeded our proposed footprint. We are using 14cm as an average diameter of an outplanted colony. Mote Marine Laboratory Restoration Practitioners expect their footprint to grow by .5m in radius at 3 years. So, average radius of an initial outplant is ~7cm, plus 50cm = an average final outplant radius of 57cm. We are seeing if this is actually the case.  We are creating a column with fixed radii.  
+
+
+```{r, summaryStats, include = TRUE}
+
+# Since these perimeters and areas are not true circles, but smooth polygons we are approximating radii from two different measures, the perimeter and the area to later decide which is the more appropriate to use.
+threeYearData$radiiP <- (threeYearData$perimeter/(2*pi))
+threeYearData$radiiA <- sqrt((threeYearData$area)/(pi))
+
+# Establishing an expected buffer radii of 57cm
+# An outplant is approximately 14cm in diameter
+# and is expected to grow outwards 50cm after 3 years (grow by .5m in diameter)
+# So, we are creating a radius of 32cm to do some further calculations
+# to hopefully quantify an "expected area restored" from our initial outplants
+# We also outplant 100 clusters of 5 corals that are expected to achieve that 64cm diameter (14cm diameter growing by 50cm after 3years). So we will multiply that area by 100 to get our total expected outplant. 
+threeYearData$expectedAreaRadii <- 32
+
+threeYearData$actualAreaRestoredA <- pi*((threeYearData$radiiA)^2)
+threeYearData$actualAreaRestoredP <- pi*((threeYearData$radiiP)^2)
+
+threeYearData$expectedAreaRestored <- pi*((threeYearData$expectedAreaRadii)^2)
+
+
+# expected area math, dividing by 10,000 to get m^2
+
+expectedAreaOutplanted <- ((pi*((32)^2))*100)/10000
+
+
+threeYearMath <- threeYearData %>% 
+  filter(class == c("Live ACER Cluster", "Live ACER rubble"))
+#Dividing by 10,000 to get square meters
+# totalAreaTargeted <- sum(threeYearMath$expectedAreaOutplanted)/10000
+# totalAreaTargeted
+areaRestored <- sum(threeYearMath$area)/10000
+areaRestored
+
+areaRestored/expectedAreaOutplanted *100
+
+summary(threeYearData$class)
+
+```
+
+
+
+Plotting centroids for Site R8
+```{r, plottingCentroidsR8, include = TRUE}
+R8 <- threeYearData %>% 
+  filter(site == "R-8", class != c("Area of Operation", "Dead ACER", "Empty"))
+R8 <-  droplevels(R8)
+
+R8min.x <- min(R8$centroid.x)+20
+R8max.x <- max(R8$centroid.x)+20
+R8min.y <- min(R8$centroid.y)+20
+R8max.y <- max(R8$centroid.y)+20
+
+
+
+R8centPlotP <- ggplot()+
+  ggforce::geom_circle(data = R8, aes(x0 =centroid.x, y0 = centroid.y, r = expectedAreaRadii, fill = "grey"), alpha = 0.5)+
+  ggforce::geom_circle(data = R8, aes(x0 =centroid.x, y0 = centroid.y, r = radiiP, fill = class), alpha = 0.5)+
+  ggplot2::coord_fixed(xlim = c(R8min.x, R8max.x), ylim = c(R8min.y, R8max.y))+
+  scale_fill_manual(values = c( "#b1b3b3", "#f37163", "#00aae7"), labels = c("Proposed Restored Area","Live ACER Cluster", "Live ACER rubble"))
+
+
+ggsave("../figures/R8outplantPlot.png", plot = R8centPlotP, width = 30, height = 20, units = "in", dpi = 800)
+
+
+
+
+
+
+```
+
+
+
+Plotting centroids for Site B3
+```{r, plottingCentroidsB3, include = TRUE}
+B3 <- threeYearData %>% 
+  filter(site == "B-3", class != c("Area of Operation", "Dead ACER", "Empty")) 
+B3 <-  droplevels(B3)
+
+B3min.x <- min(B3$centroid.x)+20
+B3max.x <- max(B3$centroid.x)+20
+B3min.y <- min(B3$centroid.y)+20
+B3max.y <- max(B3$centroid.y)+20
+
+
+
+B3centPlotP <- ggplot()+
+  ggforce::geom_circle(data = B3, aes(x0 =centroid.x, y0 = centroid.y, r = expectedAreaRadii, fill = "grey"), alpha = 0.5)+
+  ggforce::geom_circle(data = B3, aes(x0 =centroid.x, y0 = centroid.y, r = radiiP, fill = class), alpha = 0.5)+
+  ggplot2::coord_fixed(xlim = c(B3min.x, B3max.x), ylim = c(B3min.y, B3max.y))+
+  scale_fill_manual(values = c( "#b1b3b3", "#f37163", "#00aae7"), labels = c("Proposed Restored Area","Live ACER Cluster", "Live ACER rubble"))
+
+
+ggsave("../figures/B3outplantPlot.png", plot = B3centPlotP, width = 30, height = 20, units = "in", dpi = 800)
+
+
+
+
+
+
+```
+
+
+
+Plotting centroids for Site Q9
+```{r, plottingCentroidsQ9, include = TRUE}
+Q9 <- threeYearData %>% 
+  filter(site == "Q-9", class != c("Area of Operation", "Dead ACER", "Empty")) 
+Q9 <- droplevels(Q9)
+
+Q9min.x <- min(Q9$centroid.x)+20
+Q9max.x <- max(Q9$centroid.x)+20
+Q9min.y <- min(Q9$centroid.y)+20
+Q9max.y <- max(Q9$centroid.y)+20
+
+
+Q9centPlotP <- ggplot()+
+  ggforce::geom_circle(data = Q9, aes(x0 =centroid.x, y0 = centroid.y, r = expectedAreaRadii, fill = "grey"), alpha = 0.5)+
+  ggforce::geom_circle(data = Q9, aes(x0 =centroid.x, y0 = centroid.y, r = radiiP, fill = class), alpha = 0.5)+
+  ggplot2::coord_fixed(xlim = c(Q9min.x, Q9max.x), ylim = c(Q9min.y, Q9max.y))+
+  scale_fill_manual(values = c( "#b1b3b3", "#f37163", "#00aae7"), labels = c("Proposed Restored Area","Live ACER Cluster", "Live ACER rubble"))
+
+
+ggsave("../figures/Q9outplantPlot.png", plot = Q9centPlotP, width = 30, height = 20, units = "in", dpi = 600)
+
+
+
+
+
+```
+
+
+
+Plotting centroids for Site S8
+```{r, plottingCentroidsS8, include = TRUE}
+S8 <- threeYearData %>% 
+  filter(site == "S-8", class != c("Area of Operation", "Dead ACER", "Empty")) 
+S8 <- droplevels(S8)
+
+S8min.x <- min(S8$centroid.x)+20
+S8max.x <- max(S8$centroid.x)+20
+S8min.y <- min(S8$centroid.y)+20
+S8max.y <- max(S8$centroid.y)+20
+
+
+S8centPlotP <- ggplot()+
+  ggforce::geom_circle(data = S8, aes(x0 =centroid.x, y0 = centroid.y, r = expectedAreaRadii, fill = "grey"), alpha = 0.5)+
+  ggforce::geom_circle(data = S8, aes(x0 =centroid.x, y0 = centroid.y, r = radiiP, fill = class), alpha = 0.5)+
+  ggplot2::coord_fixed(xlim = c(S8min.x, S8max.x), ylim = c(S8min.y, S8max.y))+
+  scale_fill_manual(values = c( "#b1b3b3", "#f37163", "#00aae7"), labels = c("Proposed Restored Area","Live ACER Cluster", "Live ACER rubble"))
+
+
+ggsave("../figures/S8outplantPlot.png", plot = S8centPlotP, width = 30, height = 20, units = "in", dpi = 600)
+
+
+
+
+
+```
+
+
+
+Plotting centroids for Site U7
+```{r, plottingCentroidsU7, include = TRUE}
+U7 <- threeYearData %>% 
+  dplyr::filter(site == "U-7", class == c("Live ACER Cluster", "Live ACER rubble")) 
+U7 <- droplevels(U7)
+
+U7min.x <- min(U7$centroid.x)+20
+U7max.x <- max(U7$centroid.x)+20
+U7min.y <- min(U7$centroid.y)+20
+U7max.y <- max(U7$centroid.y)+20
+
+
+U7centPlotP <- ggplot()+
+  ggforce::geom_circle(data = U7, aes(x0 =centroid.x, y0 = centroid.y, r = expectedAreaRadii, fill = "grey"), alpha = 0.5)+
+  ggforce::geom_circle(data = U7, aes(x0 =centroid.x, y0 = centroid.y, r = radiiP, fill = class), alpha = 0.5)+
+  ggplot2::coord_fixed(xlim = c(U7min.x, U7max.x), ylim = c(U7min.y, U7max.y))+
+  scale_fill_manual(values = c( "#b1b3b3", "#f37163", "#00aae7"), labels = c("Proposed Restored Area","Live ACER Cluster", "Live ACER rubble"))
+
+
+
+ggsave("../figures/U7outplantPlot.png", plot = U7centPlotP, width = 30, height = 20, units = "in", dpi = 600)
+
+
+
+
+```
+
+
+Plotting centroids for Site X1
+```{r, plottingCentroidsX1, include = TRUE}
+X1 <- threeYearData %>% 
+  dplyr::filter(site == "X-1", class == c("Live ACER Cluster", "Live ACER rubble")) 
+X1 <- droplevels(X1)
+
+X1min.x <- min(X1$centroid.x)+20
+X1max.x <- max(X1$centroid.x)+20
+X1min.y <- min(X1$centroid.y)+20
+X1max.y <- max(X1$centroid.y)+20
+
+
+X1centPlotP <- ggplot()+
+  ggforce::geom_circle(data = X1, aes(x0 =centroid.x, y0 = centroid.y, r = expectedAreaRadii, fill = "grey"), alpha = 0.5)+
+  ggforce::geom_circle(data = X1, aes(x0 =centroid.x, y0 = centroid.y, r = radiiP, fill = class), alpha = 0.5)+
+  ggplot2::coord_fixed(xlim = c(X1min.x, X1max.x), ylim = c(X1min.y, X1max.y))+
+  scale_fill_manual(values = c( "#b1b3b3", "#f37163", "#00aae7"), labels = c("Proposed Restored Area","Live ACER Cluster", "Live ACER rubble"))
+
+
+
+
+ggsave("../figures/X1outplantPlot.png", plot = X1centPlotP, width = 30, height = 20, units = "in", dpi = 600)
+
+
+```
+
+```{r, B3math, include = TRUE}
+
+B3OutplantedArea <- sum(B3$area)/10000
+  
+percentOutplantedB3 <- B3OutplantedArea/expectedAreaOutplanted*100  
+
+```
+
+
+
+```{r, Q9math, include = TRUE}
+
+Q9OutplantedArea <- sum(Q9$area)/10000
+  
+percentOutplantedQ9 <-Q9OutplantedArea/expectedAreaOutplanted*100  
+
+```
+
+
+```{r, R8math, include = TRUE}
+
+R8OutplantedArea <- sum(R8$area)/10000
+  
+percentOutplantedR8 <-R8OutplantedArea/expectedAreaOutplanted*100  
+
+```
+
+
+
+```{r, S8math, include = TRUE}
+
+S8OutplantedArea <- sum(S8$area)/10000
+  
+percentOutplantedS8 <-S8OutplantedArea/expectedAreaOutplanted*100  
+
+
+```
+
+
+```{r, U7math, include = TRUE}
+
+U7OutplantedArea <- sum(U7$area)/10000
+  
+percentOutplantedU7 <-U7OutplantedArea/expectedAreaOutplanted*100  
+
+
+```
+
+
+
+
+```{r, X1math, include = TRUE}
+
+X1OutplantedArea <- sum(X1$area)/10000
+  
+percentOutplantedX1 <-X1OutplantedArea/expectedAreaOutplanted*100  
+
+```
+
+
+```{r, percentOutplantedData, include = TRUE}
+
+
+percentOutplanted <- as_tibble(cbind(percentOutplantedB3,
+                    percentOutplantedQ9, percentOutplantedR8,
+                    percentOutplantedS8, percentOutplantedU7,
+                    percentOutplantedX1))
+percentOutplanted <- reshape2::melt(percentOutplanted, value.name = "percentOutplanted")
+   percentOutplanted <- percentOutplanted %>% 
+  tidyr::separate(variable, into = c("variable", "site"), sep = 17) %>% 
+  select(site, percentOutplanted)
+
+
+sites <- as.tibble(sites)
+sites <- as.tibble(levels(threeYearData$site)) %>% 
+  rename(site = value)
+
+sites$percentOutplanted <- c(percentOutplantedB3,
+percentOutplantedQ9,
+percentOutplantedR8,
+percentOutplantedS8,
+percentOutplantedU7,
+percentOutplantedX1)
+
+
+
+```
+```{r, percentOutplantedTable, include = TRUE}
+
+outplantTab <- percentOutplanted %>% 
+mutate_if(is.numeric, round, digits = 3) %>%     
+flextable() %>%
+set_header_labels(Data.set = "Data set") %>% 
+flextable::compose(part = "header", j = "site", value = as_paragraph("Site")) %>% 
+flextable::compose(part = "header", j = "percentOutplanted", value = as_paragraph("Percent Outplanted")) %>%
+autofit() %>%
+font(fontname = "Times New Roman", part = "all") %>%
+fontsize(size = 12, part = "all") %>%
+bold(part = "header") %>%
+colformat_num(j = 'percentOutplanted', digits = 3) %>% 
+align_nottext_col(align = "center", header = TRUE, footer = TRUE) %>% 
+align(align = "center", j = "percentOutplanted")
+
+outplantTable = read_docx()
+outplantTable = body_add_flextable(outplantTable, value = outplantTab)
+print(outplantTable, target = "../tables/outplantTable.docx")
+outplantTable
+
+
+
+
+
+
+
+```
+
+```{r, percentCoverTable, include = TRUE}
+
+areaOfOperation <- 200
+percentCover <- threeYearData %>% 
+  filter(class == c("Live ACER Cluster", "Live ACER rubble")) %>% 
+  group_by(site) %>% 
+  select(date, site, area) %>% 
+  summarise(totalArea = sum(area/10000),percentCover = ((totalArea/areaOfOperation)*100) ) 
+  
+
+
+
+coverTab <- percentCover %>% 
+mutate_if(is.numeric, round, digits = 3) %>%     
+flextable() %>%
+set_header_labels(Data.set = "Data set") %>% 
+flextable::compose(part = "header", j = "site", value = as_paragraph("Site")) %>% 
+flextable::compose(part = "header", j = "totalArea", value = as_paragraph("Total Area (m",as_sup("2"),")")) %>%
+flextable::compose(part = "header", j = "percentCover", value = as_paragraph("Percent Cover")) %>%
+autofit() %>%
+font(fontname = "Times New Roman", part = "all") %>%
+fontsize(size = 12, part = "all") %>%
+bold(part = "header") %>%
+colformat_num(j = 'totalArea', digits = 3) %>% 
+colformat_num(j = 'percentCover', digits = 3) %>% 
+align_nottext_col(align = "center", header = TRUE, footer = TRUE) %>% 
+align(align = "center", j = "totalArea") %>% 
+align(align = "center", j = "percentCover")
+
+
+coverTable = read_docx()
+coverTable = body_add_flextable(coverTable, value = coverTab)
+print(coverTable, target = "../tables/coverTable.docx")
+coverTable
+
+
+
+
+
+
+
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
