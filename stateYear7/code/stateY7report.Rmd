@@ -1,7 +1,7 @@
 ---
-title: "NFWF EDR Report"
+title: "State Year 7 Report"
 author: "Ian Combs"
-date: "2024-1-03"
+date: "2024-1-08"
 output: html_document:
     theme: flatly
     code_folding: show
@@ -33,7 +33,7 @@ library(magrittr)
 ###
 
 ***
-This is the working analysis pipeline to analyze data generated from outplant monitoring for the NFWF EDR grant
+This is the working analysis pipeline to analyze data generated from outplant monitoring for the State Year 7 grant.
 
 ***
 
@@ -60,12 +60,13 @@ Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Be
 
 # Here we are importing data for our plug counts from google drive
 
-```{r, plugLoadingData, include = TRUE}
+```{r, outplantLoadingData, include = TRUE}
 
  data <- drive_download(
  as_id("1b4IWK7tfSt3n8o8NlgJKSDoqj_QkHvKcaJBNz85RBv4"),
    path = "../data/outplantData.xlsx",
    overwrite = TRUE)
+
 
 # APAL Data
 apalData <- read_excel("../data/outplantData.xlsx", sheet = "ex-situ Apal outplants")
@@ -75,6 +76,74 @@ acerData <- read_excel("../data/outplantdata.xlsx", sheet = "in-situ Acer outpla
 
 
 ```
+
+```{r, fragLoadingData, include = TRUE}
+
+ data <- drive_download(
+ as_id("1u13FQRQ6u2vc4bRK6ZlrIGdhLjLvT_L2nAx7zcglWA0"),
+   path = "../data/fraggingData.xlsx",
+   overwrite = TRUE)
+
+
+# Frag Data 2023
+frag23 <- read_excel("../data/fraggingData.xlsx", sheet = "Fragging 2023", na = "")
+
+# Frag Data 2024
+frag24 <- read_excel("../data/fraggingData.xlsx", sheet = "Fragging 2024", na = "")
+
+```
+
+3
+# Fragging Summary
+### We are going to report on our fragging outputs during the reporting period, but first we need to do some data wrangling.
+
+```{r, fragDataWrangling, include = TRUE}
+stateFrag1 <- rbind(frag23, frag24)
+
+stateFrag1$`Reporting Period` <- ifelse(is.na(stateFrag1$`Reporting Period`), "To Be Assigned", stateFrag1$`Reporting Period`)
+
+
+stateFrag <- stateFrag1 %>% 
+  select(`Reporting Period`,
+         `Date Cut`, 
+         Species, 
+         `New Genotype`, 
+         `New Frag Count`) %>% 
+  filter(`Reporting Period` %in% c("State Yr7", "To Be Assigned")) %>% 
+  mutate_at(c("Reporting Period", 
+         "Date Cut", 
+          "Species",
+          "New Genotype"), as.factor) %>%
+  mutate_at(c("Date Cut"), as.Date) %>% 
+  na.omit() %>% 
+  mutate(MonthYear = format(`Date Cut`, "%b %Y")) %>% 
+  group_by(MonthYear) %>% 
+  mutate(MonthCount = sum(`New Frag Count`))
+
+
+```
+
+```{r, fraggingNumbersPlot, include = TRUE}
+
+
+
+fragOutputPlot<- ggplot(stateFrag, aes(x = `Date Cut`, y = `New Frag Count`))+
+  geom_bar(stat = 'identity')+
+    ggtitle("Fragments Produced")+
+  xlab("Date")+
+  ylab("Number of Fragments Produced")
+
+
+```
+
+
+
+
+
+
+
+
+
 
 # APAL Monitoring summary
 
