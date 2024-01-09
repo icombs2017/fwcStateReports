@@ -48,7 +48,7 @@ For the following analyses we will require the use of a number of different R pa
 
 ```{r,packages, include = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools")
+pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools", "lubridate", "data.table")
 
 ```
 
@@ -109,17 +109,25 @@ stateFrag <- stateFrag1 %>%
          Species, 
          `New Genotype`, 
          `New Frag Count`) %>% 
-  filter(`Reporting Period` %in% c("State Yr7", "To Be Assigned")) %>% 
+  filter(`Date Cut` >= "2023-07-01" & `Date Cut` <= "2024-06-30") %>%
+  filter(`Reporting Period` %in% c("State Yr7", "To Be Assigned")) %>%
   mutate_at(c("Reporting Period", 
          "Date Cut", 
           "Species",
           "New Genotype"), as.factor) %>%
   mutate_at(c("Date Cut"), as.Date) %>% 
-  na.omit() %>% 
-  mutate(MonthYear = format(`Date Cut`, "%b %Y")) %>% 
-  group_by(MonthYear) %>% 
-  mutate(MonthCount = sum(`New Frag Count`))
+  na.omit() 
+  # mutate(MonthYear = format(`Date Cut`, "%b %Y")) %>% 
+  # group_by(MonthYear) %>% 
+  # mutate(MonthCount = sum(`New Frag Count`))
 
+
+fragMonth <- stateFrag %>% 
+  mutate(Month = format(`Date Cut`, "%Y-%m")) %>% 
+  mutate(Month = as.factor(Month)) %>% 
+  group_by(Month, Species) %>% 
+  mutate(totalFrag = sum(`New Frag Count`))
+  
 
 ```
 
@@ -127,18 +135,55 @@ stateFrag <- stateFrag1 %>%
 
 
 
-fragOutputPlot<- ggplot(stateFrag, aes(x = `Date Cut`, y = `New Frag Count`))+
-  geom_bar(stat = 'identity')+
-    ggtitle("Fragments Produced")+
+fragOutputPlot<- ggplot(fragMonth, aes(x = Species, y = totalFrag, fill = Species, group = Month))+
+  geom_bar(position = "dodge", stat = 'identity', width = 1)+
+  ggtitle("Fragments Produced")+
   xlab("Date")+
-  ylab("Number of Fragments Produced")
-
+  ylab("Number of Fragments Produced")+
+  scale_y_continuous(limits = c(0, 3000), breaks = seq(0, 3000, by = 500))+
+  facet_wrap( ~ Month, scales = 'free_x')
+  
 
 ```
 
 
+#Fragging Table
+
+```{r, fraggingTable, include = TRUE}
+
+fragTab1 <- fragMonth %>%
+  select(Month, Species, `New Genotype`, totalFrag) %>% 
+  distinct() %>% 
+  group_by(Month, Species) %>%
+  mutate(Genos = n_distinct(`New Genotype`)) %>% 
+  ungroup() %>% 
+  select(Month, Species, totalFrag, Genos) %>% 
+  group_by(Month, Species) %>% 
+  distinct()
+
+fragTab <- fragTab1 %>% 
+  flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "totalFrag", value = as_paragraph("Number of Microfragments\nPropagated")) %>%
+  flextable::compose(part = "header", j = "Genos", value = as_paragraph("Number of Genotypes\nPropagated")) %>%
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") %>%
+  align(align = "center", j = "totalFrag") %>% 
+  align(align = 'center', j = "Genos") %>% 
+  set_table_properties(width = 0.8, align = "center", layout = "autofit") %>%  
+  add_footer_row(values = list(Month = "Totals:", "", totalFrag = sum(fragTab1$totalFrag), Genos = sum(fragTab1$Genos)), colwidths = c(1, 1, 1, 1))
+
+totals <- c("Totals:", "", sum(fragTab1$totalFrag), sum(fragTab1$Genos))
+
+fragDoc = read_docx()
+fragDoc = body_add_flextable(fragDoc, value = fragTab)
+print(fragDoc, target = "../tables/fragOutputTable.docx")
+fragTab
 
 
+```
 
 
 
