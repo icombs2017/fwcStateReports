@@ -48,7 +48,7 @@ For the following analyses we will require the use of a number of different R pa
 
 ```{r,packages, include = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools", "lubridate", "data.table")
+pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools", "lubridate", "data.table", "forcats")
 
 ```
 
@@ -67,13 +67,15 @@ Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Be
    path = "../data/outplantData.xlsx",
    overwrite = TRUE)
 
+# The start and end dates for this reporting period
+reportingStart <- as.Date("2023-07-01")
+reportingEnd <- as.Date("2023-12-31")
 
 # APAL Data
 apalData <- read_excel("../data/outplantData.xlsx", sheet = "ex-situ Apal outplants")
 
 # ACER Data
 acerData <- read_excel("../data/outplantdata.xlsx", sheet = "in-situ Acer outplants", na = c("", "N/A", "NA"))
-
 
 ```
 
@@ -88,12 +90,11 @@ acerData <- read_excel("../data/outplantdata.xlsx", sheet = "in-situ Acer outpla
 # Frag Data 2023
 frag23 <- read_excel("../data/fraggingData.xlsx", sheet = "Fragging 2023", na = "")
 
-# Frag Data 2024
-frag24 <- read_excel("../data/fraggingData.xlsx", sheet = "Fragging 2024", na = "")
+
 
 ```
 
-3
+
 # Fragging Summary
 ### We are going to report on our fragging outputs during the reporting period, but first we need to do some data wrangling.
 
@@ -109,7 +110,7 @@ stateFrag <- stateFrag1 %>%
          Species, 
          `New Genotype`, 
          `New Frag Count`) %>% 
-  filter(`Date Cut` >= "2023-07-01" & `Date Cut` <= "2024-06-30") %>%
+  filter(`Date Cut` >= "2023-07-01" & `Date Cut` <= "2023-12-31") %>%
   filter(`Reporting Period` %in% c("State Yr7", "To Be Assigned")) %>%
   mutate_at(c("Reporting Period", 
          "Date Cut", 
@@ -127,22 +128,53 @@ fragMonth <- stateFrag %>%
   mutate(Month = as.factor(Month)) %>% 
   group_by(Month, Species) %>% 
   mutate(totalFrag = sum(`New Frag Count`))
+
   
 
 ```
 
 ```{r, fraggingNumbersPlot, include = TRUE}
+reportingPeriod <- as.factor(c("2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12"))
 
+# Create a summary dataframe with all combinations of "Month" and "Species"
+3
 
-
-fragOutputPlot<- ggplot(fragMonth, aes(x = Species, y = totalFrag, fill = Species, group = Month))+
-  geom_bar(position = "dodge", stat = 'identity', width = 1)+
+fragOutputPlot1 <- ggplot(mergeFrag, aes(x = Month, y = totalFrag, fill = Species)) +
+  geom_bar(stat = "identity")+
   ggtitle("Fragments Produced")+
-  xlab("Date")+
+  xlab("")+
   ylab("Number of Fragments Produced")+
-  scale_y_continuous(limits = c(0, 3000), breaks = seq(0, 3000, by = 500))+
-  facet_wrap( ~ Month, scales = 'free_x')
+  scale_y_continuous(limits = c(0, 3000), breaks = seq(0, 3000, by = 500))
   
+
+fragOutputPlot <- fragOutputPlot1 + theme(
+    # Title
+    plot.title = element_text(size = 40, face = "bold"),
+    # X Axis
+    axis.text.x = element_text(size = 40, angle = 45, hjust = 1),  
+    axis.title.x = element_text(size = 20, face = "bold"),
+    # Y Axis
+    axis.title.y = element_text(size = 40, face = "bold"),
+    axis.text.y = element_text(colour = "black", size = 30, face = "bold"),
+    # Facets <- this will be removed if you don't have facets!
+    strip.text = element_text(size = 50, face = 'bold'),
+    strip.background = element_rect(fill = "#D1D0D0"),
+    # Legend
+    legend.title = element_text(size = 40, face = "bold"),
+    legend.text = element_text(size = 30, face = "bold", colour = "black"),
+    legend.position = "bottom",
+    # Grid and Background
+    panel.grid.major = element_line(size = 0.3, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = '#f3f3f3'),
+    # Axis Lines and Ticks
+    axis.line = element_line(colour = "black"),
+    axis.ticks = element_line(color="black"),
+    # Text
+    text = element_text(size=20, color="black"))
+
+
+ggsave("../figures/fragOutputPlot.png", plot = fragOutputPlot, width = 20, height = 15, units = 'in', dpi = 600)
+
 
 ```
 
@@ -150,7 +182,7 @@ fragOutputPlot<- ggplot(fragMonth, aes(x = Species, y = totalFrag, fill = Specie
 #Fragging Table
 
 ```{r, fraggingTable, include = TRUE}
-
+# Wrangling for the table
 fragTab1 <- fragMonth %>%
   select(Month, Species, `New Genotype`, totalFrag) %>% 
   distinct() %>% 
@@ -160,7 +192,7 @@ fragTab1 <- fragMonth %>%
   select(Month, Species, totalFrag, Genos) %>% 
   group_by(Month, Species) %>% 
   distinct()
-
+# Making the table
 fragTab <- fragTab1 %>% 
   flextable() %>%
   set_header_labels(Data.set = "Data set") %>% 
@@ -173,7 +205,8 @@ fragTab <- fragTab1 %>%
   align(align = "center", j = "totalFrag") %>% 
   align(align = 'center', j = "Genos") %>% 
   set_table_properties(width = 0.8, align = "center", layout = "autofit") %>%  
-  add_footer_row(values = list(Month = "Totals:", "", totalFrag = sum(fragTab1$totalFrag), Genos = sum(fragTab1$Genos)), colwidths = c(1, 1, 1, 1))
+  add_footer_row(values = list(Month = "Totals:", "", totalFrag = sum(fragTab1$totalFrag), Genos = sum(fragTab1$Genos)), colwidths = c(1, 1, 1, 1)) %>%
+  align(align = 'center', part = "footer")
 
 totals <- c("Totals:", "", sum(fragTab1$totalFrag), sum(fragTab1$Genos))
 
