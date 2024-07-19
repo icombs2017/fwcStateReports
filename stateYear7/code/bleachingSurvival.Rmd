@@ -62,10 +62,10 @@ Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Be
 
 ```{r, outplantLoadingData, include = TRUE}
 
-data <- drive_download(
- as_id("1jdOc145IpKYU2hctqFZfJNGsVMGUoj2P"),
-   path = "../data/bleachingData.xlsx",
-   overwrite = TRUE)
+# data <- drive_download(
+#  as_id("1jdOc145IpKYU2hctqFZfJNGsVMGUoj2P"),
+#    path = "../data/bleachingData.xlsx",
+#    overwrite = TRUE)
 
 bd <- read_excel("../data/bleachingData.xlsx", na = "N/A")
 
@@ -122,15 +122,19 @@ speciesBleachMsvs <- bd %>%
   droplevels() %>% 
   mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y"))
 
+speciesBleachMsvs
+
+
+
+
 ```
 
 
-# APAL Monitoring summary
-
-## Time to do some data wrangling for the APAL dataset. Since we only care about the NFWF Deliverables right now, we are going to filter the data set to just include those given to the grant *NFWF-EDR*. Also including a fixed string called apalDeliverables and apalCumulativeDeliverables that includes what each deliverable is each year and cumulatively by year.
+# Bleaching Monitoring summary
 
 
-```{r, apalDataWrangling, include = TRUE}
+
+```{r, bleachingDataWrangling, include = TRUE}
 
 
 bleach <- bd %>% 
@@ -151,9 +155,6 @@ bleach <- bd %>%
 
 
 
-
-
-
 ```
 
 # Plotting APAL Outplant Numbers
@@ -171,9 +172,9 @@ myColors <- c("red3", "yellow3", "green3")
 
 bleachSurvivalPlot1<- ggplot(bleach, aes(x = `Site ID`, y = `1 mo percentage`, fill = `1 month`, color = I('black')))+
   geom_bar(position = "stack", stat = 'identity', width = 1)+
-  ggtitle(expression("Post-Bleaching Event Percent Survival"))+
+  ggtitle(expression("Post-Bleaching Event Proportional Survival"))+
   xlab("Site")+
-  ylab("% Survival")+
+  ylab("Proportional Survival")+
   scale_fill_manual(values = myColors) + 
   facet_wrap(.~ Deliverable, scales = "free_x")
   
@@ -211,56 +212,7 @@ ggsave("../figures/postBleachingSurvival.png", plot =bleachSurvivalPlot, width =
 
 ```
 
-## APAL One Month Monitoring Table
-```{r, apalOneMonthTable, include = TRUE}
 
-# Wrangling for the table
-oneMonthAPALtab1 <- outplantAPAL %>%
-  select(`Site ID`, `1-month Monitoring?`, `# plugs`, `1-month Survival`, `1-month % Dead`, `1-month % Missing`, `1-month % Plot Survival`, Deliverable) %>%
-  mutate(`1-month Monitoring?` = as.Date(`1-month Monitoring?`, `1-month % Plot Survival` = as.numeric(`1-month % Plot Survival`))) %>% 
-  filter(Deliverable %in% c("NFWF-EDR Yr3", "NFWF-EDR", "NFWF-EDR Yr2")) %>% 
-  select(`Site ID`, `1-month Monitoring?`, `# plugs`, `1-month Survival`, `1-month % Dead`, `1-month % Missing`, `1-month % Plot Survival`) %>% 
-  mutate_at(vars(`1-month Survival`, `1-month % Dead`, `1-month % Missing`, `1-month % Plot Survival`), ~ round(. * 100, 2))
-
-
-
-
-# Making the table
-oneMonthAPALtab <- oneMonthAPALtab1 %>% 
-  flextable() %>%
-  set_header_labels(Data.set = "Data set") %>% 
-  flextable::compose(part = "header", j = "1-month Monitoring?", value = as_paragraph("1-Month Monitoring Date")) %>%
-  flextable::compose(part = "header", j = "# plugs", value = as_paragraph("Number of Corals Outplanted")) %>%
-  flextable::compose(part = "header", j = "1-month Survival", value = as_paragraph("1-month Survival")) %>% 
-  flextable::compose(part = "header", j = "1-month % Dead", value = as_paragraph("1-Month % Dead")) %>% 
-  flextable::compose(part = "header", j = "1-month % Missing", value = as_paragraph("1-Month % Missing ")) %>%
-  flextable::compose(part = "header", j = "1-month % Plot Survival", value = as_paragraph("1-Month % Cluster Survival ")) %>%
-  autofit() %>%
-  flextable::font(fontname = "Times New Roman", part = "all") %>%
-  fontsize(size = 12, part = "all") %>%
-  bold(part = "header") %>%
-  align(align = "center", j = "# plugs") %>% 
-  set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
-  add_footer_row(values = 
-    list(
-      `Site ID` = "Averages:",
-      "",
-      "",
-      `1-month Survival` = round(mean(oneMonthAPALtab1$`1-month Survival`), 2),
-      `1-month % Dead` = round(mean(oneMonthAPALtab1$`1-month % Dead`), 2),
-      `1-month % Missing` = round(mean(oneMonthAPALtab1$`1-month % Missing`), 2),
-      `1-month % Plot Survival` = round(mean(oneMonthAPALtab1$`1-month % Plot Survival`),2)),
-    colwidths = c(1, 1, 1, 1, 1, 1, 1))
-
- 
-averages <- c("Averages:", "", "", mean(oneMonthAPALtab1$`1-month Survival`), mean(oneMonthAPALtab1$`1-month % Dead`), mean(oneMonthAPALtab1$`1-month % Missing`), mean(oneMonthAPALtab1$`1-month % Plot Survival`))
-
-oneMonthAPALDoc = read_docx()
-oneMonthAPALDoc = body_add_flextable(oneMonthAPALDoc, value = oneMonthAPALtab)
-print(oneMonthAPALDoc, target = "../tables/oneMonthAPALtable.docx")
-oneMonthAPALtab
-
-```
 
 
 
@@ -383,6 +335,295 @@ bleachSurvivalDoc = read_docx()
 bleachSurvivalDoc = body_add_flextable(bleachSurvivalDoc, value = bleachSurvivalTab)
 print(bleachSurvivalDoc, target = "../tables/bleachSurvivalTABLE.docx")
 bleachSurvivalTab
+
+
+```
+
+survivalFromBleaching 
+
+loading data
+
+
+```{r, survivalFromBleaching, include = TRUE}
+
+dataACRO <- drive_download(
+ as_id("1fpsE_0655xguD48cGK6n1ZqSLnI-tw9aHzhbPM9kZ-k"),
+   path = "../data/bleachingDataACRO.xlsx",
+   overwrite = TRUE)
+
+bdACER <- read_excel("../data/bleachingDataACRO.xlsx", na = c("N/A", "no data"), sheet = "State Monitoring Summary ACER", n_max = 53)
+bdAPAL <- read_excel("../data/bleachingDataACRO.xlsx", na = c("N/A", "no data"), sheet = "State Monitoring Summary APAL")
+
+dataMSVS <- drive_download(
+ as_id("1Znbr4E6mkO9PFO8q1b9cbcIWseMc-Kw62JkxgDMQp5s"),
+   path = "../data/bleachingDataMSVS.xlsx",
+   overwrite = TRUE)
+
+bdMSVS <- read_excel("../data/bleachingDataMSVS.xlsx", na = c("N/A", "no data"), sheet = "massive monitoring summary")
+
+```
+wranglingData
+```{r}
+
+acerBL1mo <- bdACER %>% 
+  select(Deliverable,
+         Location,
+         `Site ID`,
+         `# frags`,
+         `1-month % Survival`,
+         `1-month % dead`,
+         `1-month % missing`, 
+         `12-month Monitoring Date`,
+         `12-month % Survival`,
+         `12-month % dead`, 
+         `12-month % missing`,               
+        `2024 post-bleaching % survival`,     
+        `2024 post-bleaching % dead`,
+        `2024 post-bleaching % missing`,    
+        `2024 post-bleaching # dead`,
+        `2024 post-bleaching # missing`) %>% 
+  mutate(`12-month % Survival` = as.numeric(`12-month % Survival`),
+        across(where(is.character), as.factor)) %>% 
+  filter(str_detect(Deliverable, "State")) %>% 
+  dplyr::filter(`12-month Monitoring Date` %in% NA)
+  
+
+apalBL <- bdAPAL %>%
+  select(Deliverable, 
+         Location, 
+         `Site ID`,
+         `# frags`,
+         `1-month Monitoring Date`,
+         `1-month % Survival`,
+         `1-month % dead`,
+         `1-month % missing`,
+         `12-month Monitoring Date`,
+         `12-month % Survival`,
+         `# dead...18`,
+         `# missing...19`,
+         `2024 post-bleaching % survival`,
+         `2024 post-bleaching % dead`,
+         `2024 post-bleaching % missing`,
+         `# dead...24`,
+         `# missing...25`) %>%
+    mutate(`12-month % Survival` = as.numeric(`12-month % Survival`),
+        across(where(is.character), as.factor)) %>% 
+  filter(str_detect(Deliverable, "State"))
+  
+
+msvsBL <- bdMSVS %>% 
+  select(Deliverable,
+  Location,                                    
+ `Site ID`,
+ `# plugs`,
+ `1-month % Survival`,
+ `12-month Monitoring Date`,
+ `12-month % Survival`,                          
+ `2023 post-bleaching monitoring date`,
+ `2023 rapid post-bleaching monitoring % survival`,
+ `Frags alive`) %>% 
+  mutate(`12-month % Survival` = as.numeric(`12-month % Survival`),
+        `2023 rapid post-bleaching monitoring % survival` = as.numeric(`2023 rapid post-bleaching monitoring % survival`),
+        across(where(is.character), as.factor)) %>% 
+  filter(str_detect(Deliverable, "State"))
+
+
+
+
+
+
+
+
+
+
+  
+```
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+bleachSurvival1mo <- bd %>% 
+  dplyr::filter(!`12-month Monitoring Date` %in% NA) %>% 
+  dplyr::mutate(aliveBeforeBleach = (`total # frags outplanted`* `1-month % Survival`),
+                deadAfterBleach = (`total # frags outplanted` * `2024 post-bleaching % dead`),
+                aliveAfterBleach = (`total # frags outplanted` * `2024 post-bleaching % survival`),
+                missingAfterBleach = (aliveBeforeBleach - deadAfterBleach+aliveAfterBleach),
+                bleachSurvival = (aliveAfterBleach/aliveBeforeBleach),
+                bleachDead = (deadAfterBleach/aliveBeforeBleach),
+                bleachMissing = (missingAfterBleach/aliveBeforeBleach),
+                other = (1-bleachSurvival)) %>% 
+  select(`Outplant Date`, 
+         `Site ID`, 
+         species,
+         Deliverable, 
+         bleachSurvival,
+         other) %>% 
+  mutate_at(c("Site ID", 
+        "Deliverable", "species"), as.factor) %>% 
+  droplevels() %>% 
+  mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y")) %>% 
+  pivot_longer(cols = c("bleachSurvival", "other"), names_to = "monitoringCategory", values_to = "proportion") %>%   
+  select(`Outplant Date`, `Site ID`,species, Deliverable, monitoringCategory, proportion) %>%
+  mutate_at(c("monitoringCategory"), as.factor) %>%
+  mutate(`Site ID` = factor(`Site ID`, levels = mixedsort(levels(`Site ID`))))
+
+
+
+
+
+bleachSurvival12mo <- bd %>% 
+  dplyr::filter(!`12-month Monitoring Date` %in% NA) %>% 
+  dplyr::mutate(aliveBeforeBleach = (`total # frags outplanted`* `12-month % Survival`),
+                deadAfterBleach = (`total # frags outplanted` * `2024 post-bleaching % dead`),
+                aliveAfterBleach = (`total # frags outplanted` * `2024 post-bleaching % survival`),
+                missingAfterBleach = (aliveBeforeBleach - deadAfterBleach+aliveAfterBleach),
+                bleachSurvival = (aliveAfterBleach/aliveBeforeBleach),
+                bleachDead = (deadAfterBleach/aliveBeforeBleach),
+                bleachMissing = (missingAfterBleach/aliveBeforeBleach),
+                other = (1-bleachSurvival)) %>% 
+  select(`Outplant Date`, 
+         `Site ID`, 
+         species,
+         Deliverable, 
+         bleachSurvival,
+         other) %>% 
+  mutate_at(c("Site ID", 
+        "Deliverable", "species"), as.factor) %>% 
+  droplevels() %>% 
+  mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y")) %>% 
+  pivot_longer(cols = c("bleachSurvival", "other"), names_to = "monitoringCategory", values_to = "proportion") %>% 
+  select(`Outplant Date`, `Site ID`,species, Deliverable, monitoringCategory, proportion) %>%
+  mutate_at(c("monitoringCategory"), as.factor) %>%
+  mutate(`Site ID` = factor(`Site ID`, levels = mixedsort(levels(`Site ID`))))
+
+totalSurvival <- rbind(bleachSurvival1mo, bleachSurvival12mo) 
+
+
+
+
+```
+```{r}
+myColors1 <- c("green3", "red3")
+
+
+
+bleachSurvivalPlot2<- ggplot(totalSurvival, aes(x = `Site ID`, y = proportion, fill = monitoringCategory, color = I('black')))+
+  geom_bar(position = "stack", stat = 'identity', width = 1)+
+  ggtitle(expression("Post-Bleaching Event Proportional Survival"))+
+  xlab("Site")+
+  ylab("Proportional Survival")+
+  scale_fill_manual(values = myColors1, labels = c("Alive", "Dead or Missing")) +
+  facet_wrap(species ~ Deliverable, scales = "free_x")
+  
+
+bleachSurvivalPlot3 <- bleachSurvivalPlot2 + theme(
+    # Title
+    plot.title = element_text(size = 40, face = "bold"),
+    # X Axis
+    axis.text.x = element_text(size = 20, angle = 45, hjust = 1),  
+    axis.title.x = element_text(size = 40, face = "bold"),
+    # Y Axis
+    axis.title.y = element_text(size = 40, face = "bold"),
+    axis.text.y = element_text(colour = "black", size = 30, face = "bold"),
+    # Axis Lines and Ticks
+    axis.line = element_line(colour = "black"),
+    axis.ticks = element_line(color="black"),
+    # Legend
+    legend.title = element_blank(),
+    legend.text = element_text(size = 30, face = "bold", colour = "black"),
+    legend.position = "bottom",
+    # Grid and Background
+    panel.grid.major = element_line(size = 0.3, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = 'white'),
+    # Text
+    text = element_text(size=20, color="black"),
+    # Text above facets
+    strip.text = element_text(size = 20))
+
+
+
+
+ggsave("../figures/postBleachingSurvivalNEW.png", plot =bleachSurvivalPlot3, width = 30, height = 30, units = 'in', dpi = 600)
+
+```
+
+```{r}
+bleachSurvival1moTab <- bd %>% 
+  dplyr::filter(!`12-month Monitoring Date` %in% NA) %>% 
+  dplyr::mutate(aliveBeforeBleach = (`total # frags outplanted`* `1-month % Survival`),
+                deadAfterBleach = (`total # frags outplanted` * `2024 post-bleaching % dead`),
+                aliveAfterBleach = (`total # frags outplanted` * `2024 post-bleaching % survival`),
+                # aliveBeforeBleach = as.integer(aliveBeforeBleach),
+                # aliveAfterBleach = as.integer(aliveAfterBleach),
+                missingAfterBleach = (aliveBeforeBleach - deadAfterBleach+aliveAfterBleach),
+                bleachSurvival = (aliveAfterBleach/aliveBeforeBleach),
+                bleachDead = (deadAfterBleach/aliveBeforeBleach),
+                bleachMissing = (missingAfterBleach/aliveBeforeBleach),
+                other = (1-bleachSurvival)) %>% 
+  select(`Outplant Date`, 
+         `Site ID`, 
+         species,
+         Deliverable, 
+         bleachSurvival,
+         other,
+         aliveBeforeBleach,
+         aliveAfterBleach) %>% 
+  mutate_at(c("Site ID", 
+        "Deliverable", "species"), as.factor) %>% 
+  droplevels() %>% 
+  mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y")) %>% 
+  mutate(`Site ID` = factor(`Site ID`, levels = mixedsort(levels(`Site ID`))))
+
+
+
+
+
+bleachSurvival12moTab <- bd %>% 
+  dplyr::filter(!`12-month Monitoring Date` %in% NA) %>% 
+  dplyr::mutate(aliveBeforeBleach = (`total # frags outplanted`* `12-month % Survival`),
+                deadAfterBleach = (`total # frags outplanted` * `2024 post-bleaching % dead`),
+                aliveAfterBleach = (`total # frags outplanted` * `2024 post-bleaching % survival`),
+                # aliveBeforeBleach = as.integer(aliveBeforeBleach),
+                # aliveAfterBleach = as.integer(aliveAfterBleach),
+                missingAfterBleach = (aliveBeforeBleach - deadAfterBleach+aliveAfterBleach),
+                bleachSurvival = (aliveAfterBleach/aliveBeforeBleach),
+                bleachDead = (deadAfterBleach/aliveBeforeBleach),
+                bleachMissing = (missingAfterBleach/aliveBeforeBleach),
+                other = (1-bleachSurvival)) %>% 
+  select(`Outplant Date`, 
+         `Site ID`, 
+         species,
+         Deliverable, 
+         bleachSurvival,
+         other,
+         aliveBeforeBleach,
+         aliveAfterBleach) %>% 
+  mutate_at(c("Site ID", 
+        "Deliverable", "species"), as.factor) %>% 
+  droplevels() %>% 
+  mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y")) %>% 
+  mutate(`Site ID` = factor(`Site ID`, levels = mixedsort(levels(`Site ID`))))
+
+totalSurvivalTab1 <- rbind(bleachSurvival1moTab, bleachSurvival12moTab) 
+
+totalSurvivalTab <- totalSurvivalTab1 %>% 
+  group_by(species) %>% 
+  summarize(totalPreBleach = sum(aliveBeforeBleach),
+                   totalRemaining = sum(aliveAfterBleach),
+                   totalDeadOrMissing = (1-totalRemaining),
+                   proportionSurived = (aliveAfterBleach/aliveBeforeBleach),
+                   proportionDeadOrmissing = (totalDeadOrMissing/aliveBeforeBleach))
+  
+
+
 
 
 ```
