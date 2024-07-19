@@ -1,6 +1,0 @@
-"0","meanSurvivalMSVS1 <- OneMoSurvivalMsvs2 %>% 
-  filter(`1 month` %in% c(""1-month Survival"")) %>% 
-  mutate(meanSurvival = mean(`1 mo percentage`))
-"
-"2","Error: object 'OneMoSurvivalMsvs2' not found
-"

@@ -1,0 +1,390 @@
+---
+title: "State Year 7 Bleach Monitoring"
+author: "Ian Combs"
+date: "2024-7-15"
+output: html_document:
+    theme: flatly
+    code_folding: show
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_doctument:
+      toc: yes
+      toc_depth: 3
+---
+```{r, setup, include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, fig.align = 'left')
+knitr::opts_knit$set(root.dir = "../data")
+options(width = 88)
+library(magrittr)
+```
+
+
+
+
+
+### version: `r Sys.Date() %>% format(format="%B %d, %Y")`
+
+<!-- this is where the DOI would go  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3675991.svg)](https://doi.org/10.5281/zenodo.3675991)
+-->
+
+
+#### [GitHub repository](https://github.com/icombs2017/nfwfEdrMonitoring){target="_blank"}
+###
+
+***
+This is the working analysis pipeline to analyze data generated from outplant monitoring for the State Year 7 grant.
+
+***
+
+### All analyses performed with R version `r getRversion()`
+
+
+# Basic setup of R environment
+***
+## Loading required packages
+For the following analyses we will require the use of a number of different R packages. Most of which can be sourced from CRAN, but some must be downloaded from GitHub. We can use the following code to load in the packages and install any packages not previously installed in the R console. 
+
+
+```{r,packages, include = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools", "lubridate", "data.table", "forcats")
+
+```
+
+
+# Importing Data
+***
+## We are downloading this dataset from our GoogleDrive folder. We will be using the package `googledrive`. Each GoogleDrive file has a unique ID that does not change throughout the lifespan of the document, even if the file name is changed. This ID is housed in the file's URL. 
+Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Below you will copy and paste that into the function `drive_download` within `as_id`. This will save the file locally in the specified path (in this case our data folder) and you will import the folder as you normally would. Downloading it this way decreases the potential human error when downloading, moving folders, renaming, saving etc and ensures that the most up to date file is being utilized. 
+
+# Here we are importing data for our plug counts from google drive
+
+```{r, outplantLoadingData, include = TRUE}
+
+data <- drive_download(
+ as_id("1jdOc145IpKYU2hctqFZfJNGsVMGUoj2P"),
+   path = "../data/bleachingData.xlsx",
+   overwrite = TRUE)
+
+bd <- read_excel("../data/bleachingData.xlsx", na = "N/A")
+
+
+speciesBleachACER <- bd %>%
+  mutate(across(c(Deliverable,Location,`Site ID`), as.factor)) %>% 
+  select(-c(Apal, Ofav,Pcli,Mcav)) %>% 
+  filter(!is.na(Acer)) %>% 
+  select(`Outplant Date`, 
+         `Site ID`, 
+         Deliverable,
+         `total # frags outplanted`,
+         `2024 post-bleaching monitoring date`,
+         `2024 post-bleaching % survival`, 
+         `2024 post-bleaching % dead`, 
+         `2024 post-bleaching % missing`) %>% 
+  mutate_at(c("Site ID", 
+        "Deliverable"), as.factor) %>% 
+  droplevels() %>% 
+  mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y"))
+  
+speciesBleachAPAL <- bd %>%
+  mutate(across(c(Deliverable,Location,`Site ID`), as.factor)) %>% 
+  select(-c(Acer, Ofav,Pcli,Mcav)) %>% 
+  filter(!is.na(Apal)) %>% 
+   select(`Outplant Date`, 
+         `Site ID`, 
+         Deliverable,
+        `total # frags outplanted`,
+         `2024 post-bleaching monitoring date`,
+         `2024 post-bleaching % survival`, 
+         `2024 post-bleaching % dead`, 
+         `2024 post-bleaching % missing`,) %>% 
+  mutate_at(c("Site ID", 
+        "Deliverable"), as.factor) %>% 
+  droplevels() %>% 
+  mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y")) 
+
+  
+speciesBleachMsvs <- bd %>%
+  mutate(across(c(Deliverable,Location,`Site ID`), as.factor)) %>% 
+  select(-c(Acer, Apal)) %>% 
+  slice_tail(n = 4) %>% 
+   select(`Outplant Date`, 
+         `Site ID`, 
+         Deliverable, 
+         `total # frags outplanted`,
+         `2024 post-bleaching monitoring date`,
+         `2024 post-bleaching % survival`, 
+         `2024 post-bleaching % dead`, 
+         `2024 post-bleaching % missing`,) %>% 
+  mutate_at(c("Site ID", 
+        "Deliverable"), as.factor) %>% 
+  droplevels() %>% 
+  mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y"))
+
+```
+
+
+# APAL Monitoring summary
+
+## Time to do some data wrangling for the APAL dataset. Since we only care about the NFWF Deliverables right now, we are going to filter the data set to just include those given to the grant *NFWF-EDR*. Also including a fixed string called apalDeliverables and apalCumulativeDeliverables that includes what each deliverable is each year and cumulatively by year.
+
+
+```{r, apalDataWrangling, include = TRUE}
+
+
+bleach <- bd %>% 
+  select(`Outplant Date`, 
+         `Site ID`, 
+         Deliverable, 
+         `2024 post-bleaching monitoring date`,
+         `2024 post-bleaching % survival`, 
+         `2024 post-bleaching % dead`, 
+         `2024 post-bleaching % missing`,) %>% 
+  mutate_at(c("Site ID", 
+        "Deliverable"), as.factor) %>% 
+  droplevels() %>% 
+  mutate(`Outplant Date` = as.Date(`Outplant Date`, "%m %d %Y")) %>% 
+  pivot_longer(cols = c("2024 post-bleaching % survival", "2024 post-bleaching % dead", "2024 post-bleaching % missing"), names_to = "1 month", values_to = "1 mo percentage") %>%   select(`Outplant Date`, `Site ID`, Deliverable, `1 month`, `1 mo percentage`) %>% 
+  mutate_at(c("1 month"), as.factor) %>% 
+  mutate(`Site ID` = factor(`Site ID`, levels = mixedsort(levels(`Site ID`))))
+
+
+
+
+
+
+```
+
+# Plotting APAL Outplant Numbers
+
+## Plotting outplant numbers for all sites during the bleaching event over the course of the course of the grant.
+
+
+
+## APAL One Month Survival Plot
+Plotting One Month Survival Using a stacked bar graph
+```{r, oneMonthSurvivalPlotAPAL, include = TRUE}
+myColors <- c("red3", "yellow3", "green3")
+
+
+
+bleachSurvivalPlot1<- ggplot(bleach, aes(x = `Site ID`, y = `1 mo percentage`, fill = `1 month`, color = I('black')))+
+  geom_bar(position = "stack", stat = 'identity', width = 1)+
+  ggtitle(expression("Post-Bleaching Event Percent Survival"))+
+  xlab("Site")+
+  ylab("% Survival")+
+  scale_fill_manual(values = myColors) + 
+  facet_wrap(.~ Deliverable, scales = "free_x")
+  
+
+bleachSurvivalPlot <- bleachSurvivalPlot1 + theme(
+    # Title
+    plot.title = element_text(size = 40, face = "bold"),
+    # X Axis
+    axis.text.x = element_text(size = 20, angle = 45, hjust = 1),  
+    axis.title.x = element_text(size = 40, face = "bold"),
+    # Y Axis
+    axis.title.y = element_text(size = 40, face = "bold"),
+    axis.text.y = element_text(colour = "black", size = 30, face = "bold"),
+    # Axis Lines and Ticks
+    axis.line = element_line(colour = "black"),
+    axis.ticks = element_line(color="black"),
+    # Legend
+    legend.title = element_blank(),
+    legend.text = element_text(size = 30, face = "bold", colour = "black"),
+    legend.position = "bottom",
+    # Grid and Background
+    panel.grid.major = element_line(size = 0.3, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = 'white'),
+    # Text
+    text = element_text(size=20, color="black"),
+    # Text above facets
+    strip.text = element_text(size = 20))
+
+
+
+
+ggsave("../figures/postBleachingSurvival.png", plot =bleachSurvivalPlot, width = 30, height = 30, units = 'in', dpi = 600)
+
+
+
+```
+
+## APAL One Month Monitoring Table
+```{r, apalOneMonthTable, include = TRUE}
+
+# Wrangling for the table
+oneMonthAPALtab1 <- outplantAPAL %>%
+  select(`Site ID`, `1-month Monitoring?`, `# plugs`, `1-month Survival`, `1-month % Dead`, `1-month % Missing`, `1-month % Plot Survival`, Deliverable) %>%
+  mutate(`1-month Monitoring?` = as.Date(`1-month Monitoring?`, `1-month % Plot Survival` = as.numeric(`1-month % Plot Survival`))) %>% 
+  filter(Deliverable %in% c("NFWF-EDR Yr3", "NFWF-EDR", "NFWF-EDR Yr2")) %>% 
+  select(`Site ID`, `1-month Monitoring?`, `# plugs`, `1-month Survival`, `1-month % Dead`, `1-month % Missing`, `1-month % Plot Survival`) %>% 
+  mutate_at(vars(`1-month Survival`, `1-month % Dead`, `1-month % Missing`, `1-month % Plot Survival`), ~ round(. * 100, 2))
+
+
+
+
+# Making the table
+oneMonthAPALtab <- oneMonthAPALtab1 %>% 
+  flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "1-month Monitoring?", value = as_paragraph("1-Month Monitoring Date")) %>%
+  flextable::compose(part = "header", j = "# plugs", value = as_paragraph("Number of Corals Outplanted")) %>%
+  flextable::compose(part = "header", j = "1-month Survival", value = as_paragraph("1-month Survival")) %>% 
+  flextable::compose(part = "header", j = "1-month % Dead", value = as_paragraph("1-Month % Dead")) %>% 
+  flextable::compose(part = "header", j = "1-month % Missing", value = as_paragraph("1-Month % Missing ")) %>%
+  flextable::compose(part = "header", j = "1-month % Plot Survival", value = as_paragraph("1-Month % Cluster Survival ")) %>%
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") %>%
+  align(align = "center", j = "# plugs") %>% 
+  set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
+  add_footer_row(values = 
+    list(
+      `Site ID` = "Averages:",
+      "",
+      "",
+      `1-month Survival` = round(mean(oneMonthAPALtab1$`1-month Survival`), 2),
+      `1-month % Dead` = round(mean(oneMonthAPALtab1$`1-month % Dead`), 2),
+      `1-month % Missing` = round(mean(oneMonthAPALtab1$`1-month % Missing`), 2),
+      `1-month % Plot Survival` = round(mean(oneMonthAPALtab1$`1-month % Plot Survival`),2)),
+    colwidths = c(1, 1, 1, 1, 1, 1, 1))
+
+ 
+averages <- c("Averages:", "", "", mean(oneMonthAPALtab1$`1-month Survival`), mean(oneMonthAPALtab1$`1-month % Dead`), mean(oneMonthAPALtab1$`1-month % Missing`), mean(oneMonthAPALtab1$`1-month % Plot Survival`))
+
+oneMonthAPALDoc = read_docx()
+oneMonthAPALDoc = body_add_flextable(oneMonthAPALDoc, value = oneMonthAPALtab)
+print(oneMonthAPALDoc, target = "../tables/oneMonthAPALtable.docx")
+oneMonthAPALtab
+
+```
+
+
+
+
+```{r, summaryStats, include = TRUE}
+# by State Year
+acerSummary <- speciesBleachACER %>% 
+  group_by(Deliverable) %>% 
+  dplyr::summarize(meanSurvival = mean((`2024 post-bleaching % survival`)*100),
+                   meanDead = mean((`2024 post-bleaching % dead`)*100),
+                   meanMissing = mean((`2024 post-bleaching % missing`)*100))
+
+apalSummary <- speciesBleachAPAL %>% 
+  group_by(Deliverable) %>% 
+  dplyr::summarize(meanSurvival = mean((`2024 post-bleaching % survival`)*100),
+                   meanDead = mean((`2024 post-bleaching % dead`)*100),
+                   meanMissing = mean((`2024 post-bleaching % missing`)*100))
+
+
+msvsSummary <- speciesBleachMsvs %>% 
+  group_by(Deliverable) %>% 
+  dplyr::summarize(meanSurvival = mean((`2024 post-bleaching % survival`)*100),
+                   meanDead = mean((`2024 post-bleaching % dead`)*100),
+                   meanMissing = mean((`2024 post-bleaching % missing`)*100))
+
+# Overall
+acerSummaryOverall <- speciesBleachACER %>% 
+  # group_by(Deliverable) %>% 
+  dplyr::summarize(meanSurvival = mean((`2024 post-bleaching % survival`)*100),
+                   meanDead = mean((`2024 post-bleaching % dead`)*100),
+                   meanMissing = mean((`2024 post-bleaching % missing`)*100))
+
+apalSummaryOverall <- speciesBleachAPAL %>% 
+  # group_by(Deliverable) %>% 
+  dplyr::summarize(meanSurvival = mean((`2024 post-bleaching % survival`)*100),
+                   meanDead = mean((`2024 post-bleaching % dead`)*100),
+                   meanMissing = mean((`2024 post-bleaching % missing`)*100))
+
+
+msvsSummaryOverall <- speciesBleachMsvs %>% 
+  # group_by(Deliverable) %>% 
+  na.omit() %>% 
+  dplyr::summarize(meanSurvival = mean((`2024 post-bleaching % survival`)*100),
+                   meanDead = mean((`2024 post-bleaching % dead`)*100),
+                   meanMissing = mean((`2024 post-bleaching % missing`)*100))
+
+```
+
+
+
+```{r}
+
+totalSurvival <- bd %>% 
+  ungroup() %>% 
+  dplyr::mutate(fragsAlive = `total # frags outplanted`*`2024 post-bleaching % survival`) %>% 
+  dplyr::summarize(totalAlive = sum(fragsAlive),
+                   totalOutplanted = sum(`total # frags outplanted`),
+                   totalSurvival = (totalAlive/(totalOutplanted)*100))
+  
+  
+acerSurvival <- speciesBleachACER %>% 
+  ungroup() %>% 
+  dplyr::mutate(fragsAlive = `total # frags outplanted`*`2024 post-bleaching % survival`) %>% 
+  dplyr::summarize(totalAlive = sum(fragsAlive),
+                   totalOutplanted = sum(`total # frags outplanted`),
+                   totalSurvival = (totalAlive/(totalOutplanted)*100),
+                   Species = "ACER")
+
+apalSurvival <- speciesBleachAPAL %>% 
+  ungroup() %>% 
+  dplyr::mutate(fragsAlive = `total # frags outplanted`*`2024 post-bleaching % survival`) %>% 
+  dplyr::summarize(totalAlive = sum(fragsAlive),
+                   totalOutplanted = sum(`total # frags outplanted`),
+                   totalSurvival = (totalAlive/(totalOutplanted)*100),
+                    Species = "APAL")
+
+
+
+  msvsSurvival <- speciesBleachMsvs %>% 
+  ungroup() %>% 
+  dplyr::mutate(fragsAlive = `total # frags outplanted`*`2024 post-bleaching % survival`) %>% 
+  dplyr::summarize(totalAlive = sum(fragsAlive),
+                   totalOutplanted = sum(`total # frags outplanted`),
+                   totalSurvival = (totalAlive/(totalOutplanted)*100),
+                   Species = "Massives")
+  
+totalSurvival <- rbind(acerSurvival, apalSurvival, msvsSurvival) %>% 
+  select(Species,totalAlive,totalOutplanted,totalSurvival)
+
+bleachSurvivalTab <- totalSurvival %>% 
+  flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "Species", value = as_paragraph("Outplanted Species")) %>%
+  flextable::compose(part = "header", j = "totalAlive", value = as_paragraph("Fragments Alive")) %>%
+  flextable::compose(part = "header", j = "totalOutplanted", value = as_paragraph("Corals Outplanted")) %>% 
+  flextable::compose(part = "header", j = "totalSurvival", value = as_paragraph("% Survival")) %>% 
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") %>% 
+  colformat_num(j = "totalAlive", digits = 0) %>%      
+  colformat_num(j = "totalSurvival", digits = 2)
+  # align(align = "center", j = "# plugs") %>% 
+  # set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
+  # add_footer_row(values = 
+  #   list(
+  #     `Site ID` = "Averages:",
+  #     "",
+  #     "",
+  #     `1-month Survival` = round(mean(oneMonthAPALtab1$`1-month Survival`), 2),
+  #     `1-month % Dead` = round(mean(oneMonthAPALtab1$`1-month % Dead`), 2),
+  #     `1-month % Missing` = round(mean(oneMonthAPALtab1$`1-month % Missing`), 2),
+  #     `1-month % Plot Survival` = round(mean(oneMonthAPALtab1$`1-month % Plot Survival`),2)),
+  #   colwidths = c(1, 1, 1, 1, 1, 1, 1))
+
+ 
+
+
+bleachSurvivalDoc = read_docx()
+bleachSurvivalDoc = body_add_flextable(bleachSurvivalDoc, value = bleachSurvivalTab)
+print(bleachSurvivalDoc, target = "../tables/bleachSurvivalTABLE.docx")
+bleachSurvivalTab
+
+
+```
+
+
