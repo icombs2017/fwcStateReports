@@ -1,0 +1,273 @@
+---
+title: "BleachingSurvival2"
+author: "Ian Combs"
+date: "2024-7-15"
+output: html_document:
+    theme: flatly
+    code_folding: show
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_doctument:
+      toc: yes
+      toc_depth: 3
+---
+```{r, setup, include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, fig.align = 'left')
+knitr::opts_knit$set(root.dir = "../data")
+options(width = 88)
+library(magrittr)
+```
+
+
+
+
+
+### version: `r Sys.Date() %>% format(format="%B %d, %Y")`
+
+<!-- this is where the DOI would go  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3675991.svg)](https://doi.org/10.5281/zenodo.3675991)
+-->
+
+
+#### [GitHub repository](https://github.com/icombs2017/nfwfEdrMonitoring){target="_blank"}
+###
+
+***
+This is the working analysis pipeline to analyze data generated from outplant monitoring for the State Year 7 grant.
+
+***
+
+### All analyses performed with R version `r getRversion()`
+
+
+# Basic setup of R environment
+***
+## Loading required packages
+For the following analyses we will require the use of a number of different R packages. Most of which can be sourced from CRAN, but some must be downloaded from GitHub. We can use the following code to load in the packages and install any packages not previously installed in the R console. 
+
+
+```{r,packages, include = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools", "lubridate", "data.table", "forcats")
+
+```
+
+
+# Importing Data
+***
+## We are downloading this dataset from our GoogleDrive folder. We will be using the package `googledrive`. Each GoogleDrive file has a unique ID that does not change throughout the lifespan of the document, even if the file name is changed. This ID is housed in the file's URL. 
+Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Below you will copy and paste that into the function `drive_download` within `as_id`. This will save the file locally in the specified path (in this case our data folder) and you will import the folder as you normally would. Downloading it this way decreases the potential human error when downloading, moving folders, renaming, saving etc and ensures that the most up to date file is being utilized. 
+
+# Here we are importing data for our plug counts from google drive
+
+```{r, outplantLoadingData, include = TRUE}
+
+msvsData <- drive_download(
+ as_id("1Znbr4E6mkO9PFO8q1b9cbcIWseMc-Kw62JkxgDMQp5s"),
+   path = "../data/2023 post bleaching massive monitoring data.xlsx",
+   overwrite = TRUE)
+acroData <- drive_download(
+ as_id("1fpsE_0655xguD48cGK6n1ZqSLnI-tw9aHzhbPM9kZ-k"),
+   path = "../data/2023 Post Bleaching Monitoring.xlsx",
+   overwrite = TRUE)
+
+
+msvsBleach1 <- read_excel("../data/2023 post bleaching massive monitoring data.xlsx", na = c("N/A", "have data"), sheet = "massive monitoring summary")
+
+acerBleach1 <- read_excel("../data/2023 Post Bleaching Monitoring.xlsx", na = "N/A", sheet = "State Monitoring Summary ACER")
+
+
+apalBleach1 <- read_excel("../data/2023 Post Bleaching Monitoring.xlsx", na = "N/A", sheet = "State Monitoring Summary APAL")
+
+
+```
+
+
+# Bleaching Monitoring summary
+
+
+
+```{r, bleachingDataWrangling, include = TRUE}
+
+msvsBleach <- msvsBleach1 %>% 
+  select(Deliverable,
+        Location,
+         `Site ID`,
+         `# plugs`,
+         `1-month % Survival`,
+         `12-month % Survival`,
+         `Frags dead`,
+         `Frags missing`,
+        `2023 rapid post-bleaching monitoring % survival`) %>% 
+  mutate(across(where(is.character), as.factor)) %>%
+  filter(str_detect(Deliverable, "State")) %>% 
+  dplyr::rename(`# frags` = `# plugs`,
+                `2024 post-bleaching % survival` = `2023 rapid post-bleaching monitoring % survival`) %>% 
+  mutate(species = "Massives")
+
+
+acerBleach <- acerBleach1 %>% 
+  select(Deliverable,
+        Location,
+         `Site ID`,
+         `# frags`,
+         `1-month % Survival`,
+         `12-month % Survival`,
+         `2024 post-bleaching # dead`,
+         `2024 post-bleaching # missing`,
+        `2024 post-bleaching % survival`) %>% 
+  mutate(across(where(is.character), as.factor)) %>%
+  filter(str_detect(Deliverable, "State")) %>% 
+  dplyr::rename(`Frags dead` = `2024 post-bleaching # dead`,
+                `Frags missing` = `2024 post-bleaching # missing`) %>% 
+  mutate(species = "ACER")
+
+
+
+apalBleach <- apalBleach1 %>% 
+  select(Deliverable,
+        Location,
+         `Site ID`,
+         `# frags`,
+         `1-month % Survival`,
+         `12-month % Survival`,
+         `# missing...25`,
+         `# dead...24`,
+        `2024 post-bleaching % survival`) %>% 
+  mutate(across(where(is.character), as.factor)) %>%
+  filter(str_detect(Deliverable, "State")) %>% 
+  dplyr::rename(`Frags dead` = `# missing...25`,
+                `Frags missing` = `# dead...24`) %>% 
+  mutate(species = 'APAL')
+
+
+bleachCombo1 <- rbind(msvsBleach, acerBleach,apalBleach)
+
+
+bleachCombo <- bleachCombo1 %>%
+  filter(!`Site ID` %in% c("ES_AP_1")) %>%
+  mutate(
+    `12-month % Survival` = as.numeric(`12-month % Survival`),
+    aliveBefore = if_else(is.na(`12-month % Survival`) | is.na(`# frags`), 0, `12-month % Survival` * `# frags`),
+    aliveNow = if_else(is.na(`2024 post-bleaching % survival`) | aliveBefore == 0, 0, `2024 post-bleaching % survival` * `# frags`),
+    propSurvival = replace_na(aliveNow / aliveBefore, 0),
+    propDeadAndMissing = 1 - propSurvival
+  ) %>% 
+  mutate(species = as.factor(species)) %>% 
+  droplevels()
+
+  
+  bleachPlot <- bleachCombo %>% 
+  pivot_longer(cols = c("propSurvival", "propDeadAndMissing"), names_to = "monitoringCategory", values_to = "proportion") %>% 
+    mutate_at(c("monitoringCategory"), as.factor) %>%
+    mutate(`Site ID` = factor(`Site ID`, levels = mixedsort(levels(`Site ID`)))) %>% 
+    select(Deliverable,
+           species,
+           Location,
+           `Site ID`,
+           monitoringCategory,
+           proportion)
+    
+  
+
+
+
+```
+
+
+```{r, bleachingPlot, include = TRUE}
+
+
+myColors1 <- c("red3", "green3")
+
+
+
+bleachSurvivalPlot2<- ggplot(bleachPlot, aes(x = `Site ID`, y = proportion, fill = monitoringCategory, color = I('black')))+
+  geom_bar(position = "stack", stat = 'identity', width = 1)+
+  ggtitle(expression("Post-Bleaching Event Proportional Survival"))+
+  xlab("Site")+
+  ylab("Proportional Survival")+
+  scale_fill_manual(values = myColors1, labels = c("Dead or Missing", "Alive")) +
+  facet_wrap(Deliverable ~ species, scales = "free_x")
+  
+
+bleachSurvivalPlot3 <- bleachSurvivalPlot2 + theme(
+    # Title
+    plot.title = element_text(size = 40, face = "bold"),
+    # X Axis
+    axis.text.x = element_text(size = 20, angle = 45, hjust = 1),  
+    axis.title.x = element_text(size = 40, face = "bold"),
+    # Y Axis
+    axis.title.y = element_text(size = 40, face = "bold"),
+    axis.text.y = element_text(colour = "black", size = 30, face = "bold"),
+    # Axis Lines and Ticks
+    axis.line = element_line(colour = "black"),
+    axis.ticks = element_line(color="black"),
+    # Legend
+    legend.title = element_blank(),
+    legend.text = element_text(size = 30, face = "bold", colour = "black"),
+    legend.position = "bottom",
+    # Grid and Background
+    panel.grid.major = element_line(size = 0.3, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = 'white'),
+    # Text
+    text = element_text(size=20, color="black"),
+    # Text above facets
+    strip.text = element_text(size = 20))
+
+
+
+
+ggsave("../figures/postBleachingSurvivalNEW.png", plot =bleachSurvivalPlot3, width = 30, height = 30, units = 'in', dpi = 600)
+
+```
+
+
+```{r, survivalTable, include = TRUE}
+
+
+
+bleachCombo <- bleachCombo1 %>%
+  mutate(
+    `12-month % Survival` = as.numeric(`12-month % Survival`),
+    aliveBefore = if_else(is.na(`12-month % Survival`) | is.na(`# frags`), 0, `12-month % Survival` * `# frags`),
+    aliveNow = if_else(is.na(`2024 post-bleaching % survival`) | aliveBefore == 0, 0, `2024 post-bleaching % survival` * `# frags`),
+    propSurvival = replace_na(aliveNow / aliveBefore, 0),
+    propDeadAndMissing = 1 - propSurvival
+  ) %>% 
+  mutate(species = as.factor(species)) %>% 
+  droplevels()
+
+
+bleachSurvivalTab <- bleachCombo %>% 
+  select(Location,`Site ID`, species, propSurvival, propDeadAndMissing, aliveBefore, aliveNow) %>% 
+  group_by(species) %>% 
+  dplyr::summarize(totalAliveBefore = sum(aliveBefore),
+                   totalAliveNow = sum(aliveNow),
+                   totalSurvival = (totalAliveNow/totalAliveBefore)*100) %>% 
+  flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "totalAliveBefore", value = as_paragraph("Fragments Alive before the Bleaching Event")) %>%
+  flextable::compose(part = "header", j = "totalAliveNow", value = as_paragraph("Fragments Alive after the Bleaching Event")) %>% 
+  flextable::compose(part = "header", j = "totalSurvival", value = as_paragraph("Percent Survived")) %>% 
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") 
+ 
+
+
+bleachSurvivalDoc = read_docx()
+bleachSurvivalDoc = body_add_flextable(bleachSurvivalDoc, value = bleachSurvivalTab)
+print(bleachSurvivalDoc, target = "../tables/bleachSurvivalTableNEW.docx")
+bleachSurvivalTab
+```
+
+
+
+
+
+
+
+
