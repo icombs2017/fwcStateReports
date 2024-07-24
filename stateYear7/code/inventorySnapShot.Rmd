@@ -79,12 +79,12 @@ inventoryTab <- snap %>%
                    Total = sum(Total),
                    quarter = sum(quarter),
                    half = sum(half),
-                   threeQuarter = sum(threeQuarter), 
+                   threeQuarter = sum(threeQuarter),
+                   full = sum(full),
                    Unknown = sum(Unknown))
 
-total = sum(Total))
 
-# write.csv(inventoryTab, "../data/inventorySnap.csv", row.names = FALSE)
+write.csv(inventoryTab, "../data/inventorySnap.csv", row.names = FALSE)
 
 
 ```
