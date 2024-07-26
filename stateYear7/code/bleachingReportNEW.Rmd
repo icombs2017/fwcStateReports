@@ -89,75 +89,90 @@ apalBleach1 <- read_excel("../data/2023 Post Bleaching Monitoring.xlsx", na = "N
 
 ```{r, bleachingDataWrangling, include = TRUE}
 
-msvsBleach <- msvsBleach1 %>% 
-  select(Deliverable,
-        Location,
-         `Site ID`,
-         `# plugs`,
-         `1-month % Survival`,
-         `12-month % Survival`,
-         `Frags dead`,
-         `Frags missing`,
-        `2023 rapid post-bleaching monitoring % survival`) %>% 
-  mutate(across(where(is.character), as.factor)) %>%
-  filter(str_detect(Deliverable, "State")) %>% 
-  dplyr::rename(`# frags` = `# plugs`,
-                `2024 post-bleaching % survival` = `2023 rapid post-bleaching monitoring % survival`) %>% 
-  mutate(species = "Massives")
+# msvsBleach <- msvsBleach1 %>% 
+#   select(Deliverable,
+#         Location,
+#          `Site ID`,
+#          `# plugs`,
+#          `1-month % Survival`,
+#          `12-month % Survival`,
+#          `Frags dead`,
+#          `Frags missing`,
+#         `2023 rapid post-bleaching monitoring % survival`) %>% 
+#   mutate(across(where(is.character), as.factor)) %>%
+#   filter(str_detect(Deliverable, "State")) %>% 
+#   dplyr::rename(`# frags` = `# plugs`,
+#                 `2024 post-bleaching % survival` = `2023 rapid post-bleaching monitoring % survival`) %>% 
+#   mutate(species = "Massives")
+# 
+# 
+# acerBleach <- acerBleach1 %>% 
+#   select(Deliverable,
+#         Location,
+#          `Site ID`,
+#          `# frags`,
+#          `1-month % Survival`,
+#          `12-month % Survival`,
+#          `2024 post-bleaching # dead`,
+#          `2024 post-bleaching # missing`,
+#         `2024 post-bleaching % survival`) %>% 
+#   mutate(across(where(is.character), as.factor)) %>%
+#   filter(str_detect(Deliverable, "State")) %>% 
+#   dplyr::rename(`Frags dead` = `2024 post-bleaching # dead`,
+#                 `Frags missing` = `2024 post-bleaching # missing`) %>% 
+#   mutate(species = "ACER")
+# 
+# 
+# 
+# apalBleach <- apalBleach1 %>% 
+#   select(Deliverable,
+#         Location,
+#          `Site ID`,
+#          `# frags`,
+#          `1-month % Survival`,
+#          `12-month % Survival`,
+#          `# missing...25`,
+#          `# dead...24`,
+#         `2024 post-bleaching % survival`) %>% 
+#   mutate(across(where(is.character), as.factor)) %>%
+#   filter(str_detect(Deliverable, "State")) %>% 
+#   dplyr::rename(`Frags dead` = `# missing...25`,
+#                 `Frags missing` = `# dead...24`) %>% 
+#   mutate(species = 'APAL')
+# 
+# 
+# bleachCombo1 <- rbind(msvsBleach, acerBleach,apalBleach)
+# 
+# # write.csv(bleachCombo1, file = "../data/postBleachMonitoringWRANGLED.csv")
+# 
+# bleachCombo <- bleachCombo1 %>%
+#   filter(!`Site ID` %in% c("ES_AP_1")) %>%
+#     filter(!is.na(`2024 post-bleaching % survival`)) %>% 
+#   mutate(
+#     `12-month % Survival` = as.numeric(`12-month % Survival`),
+#     aliveBefore = `12-month % Survival` * `# frags`,
+#     aliveNow = `2024 post-bleaching % survival` * `# frags`,
+#     propSurvival = aliveNow / aliveBefore,
+#     propDeadAndMissing = 1 - propSurvival
+#   ) %>% 
+#   # mutate(
+#   #   propSurvival = ifelse(is.nan(propSurvival), 0, propSurvival),
+#   #   propDeadAndMissing = ifelse(is.nan(propDeadAndMissing), 0, propDeadAndMissing)
+#   # ) %>% 
+#     mutate(species = as.factor(species)) %>% 
+#   droplevels()
 
+# write.csv(bleachCombo, file = "../data/postBleachMonitoringTEST.csv")
 
-acerBleach <- acerBleach1 %>% 
-  select(Deliverable,
-        Location,
-         `Site ID`,
-         `# frags`,
-         `1-month % Survival`,
-         `12-month % Survival`,
-         `2024 post-bleaching # dead`,
-         `2024 post-bleaching # missing`,
-        `2024 post-bleaching % survival`) %>% 
-  mutate(across(where(is.character), as.factor)) %>%
-  filter(str_detect(Deliverable, "State")) %>% 
-  dplyr::rename(`Frags dead` = `2024 post-bleaching # dead`,
-                `Frags missing` = `2024 post-bleaching # missing`) %>% 
-  mutate(species = "ACER")
-
-
-
-apalBleach <- apalBleach1 %>% 
-  select(Deliverable,
-        Location,
-         `Site ID`,
-         `# frags`,
-         `1-month % Survival`,
-         `12-month % Survival`,
-         `# missing...25`,
-         `# dead...24`,
-        `2024 post-bleaching % survival`) %>% 
-  mutate(across(where(is.character), as.factor)) %>%
-  filter(str_detect(Deliverable, "State")) %>% 
-  dplyr::rename(`Frags dead` = `# missing...25`,
-                `Frags missing` = `# dead...24`) %>% 
-  mutate(species = 'APAL')
-
-
-bleachCombo1 <- rbind(msvsBleach, acerBleach,apalBleach)
-
-
-bleachCombo <- bleachCombo1 %>%
-  filter(!`Site ID` %in% c("ES_AP_1")) %>%
-  mutate(
-    `12-month % Survival` = as.numeric(`12-month % Survival`),
-    aliveBefore = if_else(is.na(`12-month % Survival`) | is.na(`# frags`), 0, `12-month % Survival` * `# frags`),
-    aliveNow = if_else(is.na(`2024 post-bleaching % survival`) | aliveBefore == 0, 0, `2024 post-bleaching % survival` * `# frags`),
-    propSurvival = replace_na(aliveNow / aliveBefore, 0),
-    propDeadAndMissing = 1 - propSurvival
-  ) %>% 
-  mutate(species = as.factor(species)) %>% 
-  droplevels()
+bleachCombo <- read_excel("../data/postBleachMonitoringTEST.xlsx", na = "NA")
 
   
-  bleachPlot <- bleachCombo %>% 
+bleachPlot <- bleachCombo %>%
+    mutate(across(c(Deliverable, Location, `Site ID`, species), as.factor)) %>% 
+  mutate(across(c(propSurvival, propDeadAndMissing), as.numeric)) %>% 
+  mutate(
+  propSurvival = ifelse(is.nan(propSurvival), 0, propSurvival),
+  propDeadAndMissing = ifelse(is.nan(propDeadAndMissing), 0, propDeadAndMissing)) %>% 
   pivot_longer(cols = c("propSurvival", "propDeadAndMissing"), names_to = "monitoringCategory", values_to = "proportion") %>% 
     mutate_at(c("monitoringCategory"), as.factor) %>%
     mutate(`Site ID` = factor(`Site ID`, levels = mixedsort(levels(`Site ID`)))) %>% 
@@ -166,7 +181,8 @@ bleachCombo <- bleachCombo1 %>%
            Location,
            `Site ID`,
            monitoringCategory,
-           proportion)
+           proportion) %>% 
+  filter(!is.na(proportion))
     
   
 
