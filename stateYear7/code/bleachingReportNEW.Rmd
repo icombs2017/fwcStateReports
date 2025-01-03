@@ -164,7 +164,7 @@ apalBleach1 <- read_excel("../data/2023 Post Bleaching Monitoring.xlsx", na = "N
 
 # write.csv(bleachCombo, file = "../data/postBleachMonitoringTEST.csv")
 
-bleachCombo <- read_excel("../data/postBleachMonitoringTEST.xlsx", na = "NA")
+bleachCombo <- read_excel("../data/postBleachMonitoringTESTnew.xlsx", na = "NA")
 
   
 bleachPlot <- bleachCombo %>%
@@ -243,16 +243,16 @@ ggsave("../figures/postBleachingSurvivalNEW.png", plot =bleachSurvivalPlot3, wid
 
 
 
-bleachCombo <- bleachCombo1 %>%
-  mutate(
-    `12-month % Survival` = as.numeric(`12-month % Survival`),
-    aliveBefore = if_else(is.na(`12-month % Survival`) | is.na(`# frags`), 0, `12-month % Survival` * `# frags`),
-    aliveNow = if_else(is.na(`2024 post-bleaching % survival`) | aliveBefore == 0, 0, `2024 post-bleaching % survival` * `# frags`),
-    propSurvival = replace_na(aliveNow / aliveBefore, 0),
-    propDeadAndMissing = 1 - propSurvival
-  ) %>% 
-  mutate(species = as.factor(species)) %>% 
-  droplevels()
+# bleachCombo <- bleachCombo1 %>%
+#   mutate(
+#     `12-month % Survival` = as.numeric(`12-month % Survival`),
+#     aliveBefore = if_else(is.na(`12-month % Survival`) | is.na(`# frags`), 0, `12-month % Survival` * `# frags`),
+#     aliveNow = if_else(is.na(`2024 post-bleaching % survival`) | aliveBefore == 0, 0, `2024 post-bleaching % survival` * `# frags`),
+#     propSurvival = replace_na(aliveNow / aliveBefore, 0),
+#     propDeadAndMissing = 1 - propSurvival
+#   ) %>% 
+#   mutate(species = as.factor(species)) %>% 
+#   droplevels()
 
 
 bleachSurvivalTab <- bleachCombo %>% 
@@ -278,6 +278,32 @@ bleachSurvivalDoc = read_docx()
 bleachSurvivalDoc = body_add_flextable(bleachSurvivalDoc, value = bleachSurvivalTab)
 print(bleachSurvivalDoc, target = "../tables/bleachSurvivalTableNEW.docx")
 bleachSurvivalTab
+
+bleachComboTab <- bleachCombo %>% 
+  group_by(Deliverable, Location, `Site ID`) %>% 
+  dplyr::mutate(totalSurvival = (aliveNow/aliveBefore)*100) %>%
+  flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "Deliverable", value = as_paragraph("Year")) %>%
+  flextable::compose(part = "header", j = "Location", value = as_paragraph("Location")) %>%
+  flextable::compose(part = "header", j = "Site ID", value = as_paragraph("Site")) %>%
+  flextable::compose(part = "header", j = "species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "aliveBefore", value = as_paragraph("Fragments Alive before the Bleaching Event")) %>%
+  flextable::compose(part = "header", j = "aliveNow", value = as_paragraph("Fragments Alive after the Bleaching Event")) %>% 
+  flextable::compose(part = "header", j = "totalSurvival", value = as_paragraph("Percent Survived")) %>% 
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") 
+ 
+
+
+bleachComboDoc = read_docx()
+bleachComboDoc = body_add_flextable(bleachComboDoc, value = bleachComboTab)
+print(bleachComboDoc, target = "../tables/bleachSurvivalTableEXPANDED.docx")
+bleachComboTab
+
+
 ```
 
 

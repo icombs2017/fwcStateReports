@@ -543,7 +543,7 @@ pivot_longer(cols = c("1-month Survival", "1-month % Dead", "1-month % Missing")
 
 y241MoSurvivalPlot1<- ggplot(y24OutplantPlotData, aes(x = `Site ID`, y = `1 mo percentage`, fill = `1 month`, color = I('black')))+
   geom_bar(position = "stack", stat = 'identity', width = 1)+
-  ggtitle(expression("1 Month Proportional Surival of Coral Outplants"))+
+  ggtitle(expression("1 Month Proportional Survival of Coral Outplants"))+
   xlab("Site")+
   ylab("Proportional Survival")+
   scale_fill_manual(values = myColors, labels = c("Dead", "Missing", "Alive"))
