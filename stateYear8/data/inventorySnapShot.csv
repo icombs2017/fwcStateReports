@@ -1,0 +1,3195 @@
+id,species,genotype,site,subsystem,tank,rack,qty
+,PS,PS7,Mote Islamorada [In Situ],,,Red84,173
+,PC,PC38,Mote Looe Key [In Situ],,,PC-38,168
+,OA,OA9,Mote Looe Key [In Situ],,,OA-9,158
+,MC,MC95,Mote Looe Key [In Situ],,,MC-94,112
+,MC,MC95,Mote Looe Key [In Situ],,,MC-95,112
+,OF,OF934,Mote Islamorada [In Situ],,,Red94,110
+,OF,OF1008,Mote Islamorada [In Situ],,,Blue05,108
+,AC,AC2580,Mote Looe Key [In Situ],,,FM-18,100
+,AC,AC2603,Mote Looe Key [In Situ],,,NB-4,100
+,AC,AC2616,Mote Looe Key [In Situ],,,NB-5a,100
+,AC,AC2603,Mote Looe Key [In Situ],,,NB-4,100
+,AC,AC2627,Mote Looe Key [In Situ],,,RD-2,100
+,AC,AC2627,Mote Looe Key [In Situ],,,RD-2,100
+,AC,AC2638,Mote Looe Key [In Situ],,,RD-30,100
+,AC,AC2635,Mote Looe Key [In Situ],,,RD-16,100
+,AC,AC31,Mote Looe Key [In Situ],,,31,100
+,AC,AC10,Mote Looe Key [In Situ],,,X,100
+,AC,AC31,Mote Looe Key [In Situ],,,X,100
+,AC,AC10,Mote Looe Key [In Situ],,,10,100
+,AC,AC3,Mote Looe Key [In Situ],,,3,100
+,AC,AC51,Mote Looe Key [In Situ],,,51,100
+,AC,AC36,Mote Looe Key [In Situ],,,36,100
+,AC,AC34,Mote Looe Key [In Situ],,,34,100
+,AC,AC80,Mote Looe Key [In Situ],,,80,100
+,AC,AC84,Mote Looe Key [In Situ],,,84,100
+,AC,AC80,Mote Looe Key [In Situ],,,80,100
+,AC,AC75,Mote Looe Key [In Situ],,,75,100
+,AC,AC62,Mote Looe Key [In Situ],,,62,100
+,AC,AC58,Mote Looe Key [In Situ],,,58,100
+,AC,AC1962,Mote Looe Key [In Situ],,,1962,100
+,AC,AC1287,Mote Looe Key [In Situ],,,1287,100
+,AC,AC2627,Mote Sand Key [In Situ],,,RD-2,100
+,AC,AC31,Mote Sand Key [In Situ],,,31,100
+,AC,AC80,Mote Sand Key [In Situ],,,80,100
+,AC,AC10,Mote Sand Key [In Situ],,,10,100
+,AC,AC2603,Mote Sand Key [In Situ],,,NB-4,100
+,AC,AC51,Mote Sand Key [In Situ],,,51,100
+,AC,AC62,Mote Sand Key [In Situ],,,62,100
+,AC,AC5,Mote Islamorada [In Situ],,,Red24,100
+,AC,AC5,Mote Islamorada [In Situ],,,Red34,100
+,AC,AC20,Mote Key Largo [In Situ],,,Red03,100
+,AC,AC3,Mote Key Largo [In Situ],,,Red04,100
+,AC,AC76,Mote Key Largo [In Situ],,,Red05,100
+,AC,AC20,Mote Key Largo [In Situ],,,Blue13,100
+,AC,AC3,Mote Key Largo [In Situ],,,Blue14,100
+,AC,AC76,Mote Key Largo [In Situ],,,Blue05,100
+,AC,AC58,Mote Key Largo [In Situ],,,Blue17,100
+,AC,AC58,Mote Key Largo [In Situ],,,Blue20,100
+,AC,AC5,Mote Key Largo [In Situ],,,Blue10,100
+,AC,AC62,Mote Key Largo [In Situ],,,Blue02,100
+,AC,AC5,Mote Islamorada [In Situ],,,Red04,100
+,AC,AC7,Mote Islamorada [In Situ],,,Red05,100
+,AC,AC88,Mote Key Largo [In Situ],,,Blue23,100
+,PS,PS23,Mote Looe Key [In Situ],,,PS-23,96
+,AC,AC8,Mote Key Largo [In Situ],,,Red01,95
+,AC,AC75,Mote Key Largo [In Situ],,,Red02,95
+,AC,AC8,Mote Key Largo [In Situ],,,Blue11,95
+,AC,AC75,Mote Key Largo [In Situ],,,Blue22,95
+,PC,PC52,Mote Summerland,,Unassigned,R12,90
+,PC,PC26,Mote Key Largo [In Situ],,,Red01,90
+,AC,AC13,Mote Key Largo [In Situ],,,Red02,90
+,PC,PC26,Mote Key Largo [In Situ],,,Blue51,90
+,AC,AC62,Mote Key Largo [In Situ],,,Blue21,90
+,AC,AC13,Mote Key Largo [In Situ],,,Blue12,90
+,DL,DL20,Mote Looe Key [In Situ],,,DL-20,89
+,PC,PC39,Mote Looe Key [In Situ],,,PC-39,88
+,OF,OF775,Mote Summerland,All Summerland,E5,R1126,87
+,PC,PC12,Mote Looe Key [In Situ],,,PC-12,87
+,AC,AC4,Mote Key Largo [In Situ],,,Blue15,85
+,CN,CN7,Mote Looe Key [In Situ],,,CN-7,83
+,AC,AC2508,Mote Looe Key [In Situ],,,CU-020,80
+,AC,AC2501,Mote Looe Key [In Situ],,,CU-001,80
+,MC,MC75,Mote Looe Key [In Situ],,,MC-74,80
+,AC,AC2651,Mote Looe Key [In Situ],,,T-DT-1,80
+,MC,MC75,Mote Looe Key [In Situ],,,MC-75,80
+,AC,AC1,Mote Key Largo [In Situ],,,Red09,80
+,AC,AC1,Mote Key Largo [In Situ],,,Blue09,80
+,PC,PC16,Mote Summerland,All Summerland,D5,R1180,79
+,ASTREOIDES,PA93,Mote Summerland,All Summerland,C6,R1384,79
+,OF,OF775,Mote Summerland,All Summerland,E5,R686,79
+,OF,OF457,Mote Summerland,All Summerland,A5,R1645,79
+,OF,OF457,Mote Summerland,All Summerland,A5,R1645,79
+,OF,OF987,Mote Summerland,All Summerland,D5,R735,78
+,OF,OF985,Mote Summerland,All Summerland,B2,R1264,78
+,PS,PS8,Mote Summerland,All Summerland,D2,R1382,76
+,PC,PC46,Mote Key Largo [In Situ],,,Red03,76
+,PC,PC46,Mote Key Largo [In Situ],,,Blue93,76
+,AC,AC88,Mote Key Largo [In Situ],,,Red03,75
+,OF,OF1035,Mote Summerland,All Summerland,A6,R2000,74
+,PS,PS13,Mote Summerland,All Summerland,D5,R1494,73
+,OF,OF61,Mote Summerland,All Summerland,A5,R975,72
+,PS,PS45,Mote Key Largo [In Situ],,,Red04,72
+,PS,PS45,Mote Key Largo [In Situ],,,Red04,72
+,OF,OF999,Mote Summerland,All Summerland,E1,R942,71
+,MC,MC57,Mote Summerland,All Summerland,E1,R1033,71
+,PC,PC56,Mote Summerland,All Summerland,F7,R1856,71
+,OF,OF187,Mote Looe Key [In Situ],,,OF-187,71
+,PA,PA403,Mote Summerland,All Summerland,A1,R1639,71
+,OF,OF980,Mote Summerland,All Summerland,A2,R847,71
+,ASTREOIDES,PA26,Mote Summerland,All Summerland,C3,R1422,70
+,ASTREOIDES,PA50,Mote Summerland,All Summerland,C3,R1096,70
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C3,R1393,70
+,PC,PC19,Mote Summerland,All Summerland,E6,R1461,70
+,OF,OF773,Mote Summerland,All Summerland,E3,R1560,70
+,OF,OF3,Mote Summerland,All Summerland,A6,R1632,70
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C3,R1258,70
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C3,R1127,70
+,AC,AC2518,Mote Looe Key [In Situ],,,CU-041,70
+,AC,AC77,Mote Looe Key [In Situ],,,77,70
+,PC,PC35,Mote Looe Key [In Situ],,,PC-35,70
+,MC,MC204,Mote Summerland,All Summerland,A5,R1788,70
+,PC,PC41,Mote Summerland,All Summerland,A1,R1707,70
+,PS,PS43,Mote Summerland,All Summerland,A1,R1662,70
+,OF,OF988,Mote Summerland,All Summerland,A1,R2004,70
+,OF,OF993,Mote Summerland,All Summerland,A1,R1968,70
+,OF,OF800,Mote Summerland,All Summerland,B5,R1254,70
+,PC,PC19,Mote Summerland,All Summerland,B5,R1999,70
+,MC,MC106,Mote Summerland,All Summerland,A2,R45,70
+,MC,MC204,Mote Key Largo [In Situ],,,Red03,70
+,MC,MC204,Mote Key Largo [In Situ],,,Blue93,70
+,AC,AC8,Mote Islamorada [In Situ],,,Red06,70
+,OF,OF985,Mote Summerland,All Summerland,A4,R1178,70
+,AC,AC5,Mote Islamorada [In Situ],,,Red14,69
+,OF,OF980,Mote Summerland,All Summerland,H4,R804,69
+,OF,OF999,Mote Summerland,All Summerland,E1,R1067,69
+,OF,OF999,Mote Summerland,All Summerland,E1,R1117,69
+,MC,MC92,Mote Looe Key [In Situ],,,MC MIX3,69
+,PS,PS49,Mote Summerland,All Summerland,A1,R73,69
+,MC,MC127,Mote Summerland,All Summerland,A4,R1840,69
+,PC,PC19,Mote Summerland,All Summerland,B6,R974,69
+,PS,PS6,Mote Summerland,All Summerland,C6,R1656,69
+,OF,OF61,Mote Summerland,All Summerland,A4,R868,69
+,OF,OF976,Mote Summerland,All Summerland,D6,R139,68
+,OF,OF979,Mote Summerland,All Summerland,F1,R812,68
+,SIDEREA,SS83,Mote Summerland,,Unassigned,R133,68
+,MC,MC62,Mote Summerland,All Summerland,E3,R1538,68
+,OF,OF697,Mote Summerland,All Summerland,E5,R945,68
+,ASTREOIDES,PA86,Mote Summerland,All Summerland,D1,R1744,68
+,SIDEREA,SS83,Mote Summerland,All Summerland,C2,ISLA133,68
+,PC,PC30,Mote Looe Key [In Situ],,,PC-30,68
+,OF,OF995,Mote Summerland,All Summerland,F6,R1184,67
+,OF,OF1004,Mote Summerland,All Summerland,B3,R994,67
+,PS,PS17,Mote Summerland,All Summerland,D3,R1462,67
+,PS,PS6,Mote Summerland,All Summerland,E3,R855,67
+,PC,PC31,Mote Looe Key [In Situ],,,PC-31,67
+,OF,OF3,Mote Summerland,All Summerland,B5,R1583,67
+,PS,PS17,Mote Summerland,All Summerland,B6,R1539,67
+,MC,MC60,Mote Summerland,All Summerland,B1,R1949,67
+,OF,OF988,Mote Summerland,All Summerland,E4,R758,66
+,OF,OF980,Mote Summerland,All Summerland,F5,R854,66
+,MC,MC59,Mote Summerland,All Summerland,E3,R1456,66
+,OF,OF999,Mote Summerland,All Summerland,E1,R840,65
+,PC,PC19,Mote Summerland,All Summerland,E6,R596,65
+,ASTREOIDES,PA113,Mote Summerland,All Summerland,C3,R860,65
+,MC,MC107,Mote Summerland,All Summerland,F5,R1446,65
+,OF,OF328,Mote Summerland,All Summerland,D5,R1423,65
+,PC,PC13,Mote Looe Key [In Situ],,,PC-13,65
+,PC,PC28,Mote Looe Key [In Situ],,,PC-28,65
+,OF,OF61,Mote Summerland,All Summerland,B5,R1673,65
+,OF,OF980,Mote Summerland,All Summerland,F4,R1099,65
+,DL,DL285,Mote Summerland,All Summerland,B2,R1094,65
+,AC,AC58,Mote Key Largo [In Situ],,,Red07,65
+,AC,AC5,Mote Key Largo [In Situ],,,Red10,65
+,OF,OF977,Mote Summerland,All Summerland,D6,R1091,64
+,OF,OF999,Mote Summerland,All Summerland,D3,R1066,64
+,OF,OF977,Mote Summerland,All Summerland,C6,R750,64
+,PS,PS33,Mote Summerland,All Summerland,F6,R1088,64
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C3,R1389,64
+,PS,PS9,Mote Summerland,All Summerland,D3,R1527,64
+,PS,PS42,Mote Summerland,All Summerland,F6,R249,64
+,PS,PS49,Mote Summerland,All Summerland,F3,R1463,64
+,PC,PC19,Mote Looe Key [In Situ],,,PC-19,64
+,PC,PC19,Mote Looe Key [In Situ],,,PC-19,64
+,OF,OF801,Mote Summerland,All Summerland,A5,R1580,64
+,OF,OF999,Mote Summerland,All Summerland,A4,R1037,64
+,OF,OF976,Mote Summerland,All Summerland,B3,R238,63
+,PC,PC13,Mote Summerland,All Summerland,C3,R1299,63
+,PC,PC16,Mote Looe Key [In Situ],,,PC-16,63
+,PC,PC33,Mote Looe Key [In Situ],,,PC-33,63
+,CN,CN7,Mote Looe Key [In Situ],,,CN-7,63
+,DS,DS6,Mote Summerland,All Summerland,A1,R40,63
+,OF,OF980,Mote Summerland,All Summerland,H1,R874,62
+,OF,OF999,Mote Summerland,All Summerland,D3,R1278,62
+,OF,OF999,Mote Summerland,All Summerland,D3,R1071,62
+,OF,OF999,Mote Summerland,All Summerland,D3,R1303,62
+,OF,OF999,Mote Summerland,All Summerland,D3,R1148,62
+,ASTREOIDES,PA50,Mote Summerland,All Summerland,C3,R1003,62
+,SIDEREA,SS160,Mote Summerland,All Summerland,C2,R556,62
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C6,R1392,62
+,PS,PS49,Mote Summerland,All Summerland,B2,R2016,62
+,OF,OF985,Mote Summerland,All Summerland,B2,R814,62
+,OF,OF1005,Mote Summerland,All Summerland,A4,R811,62
+,OF,OF999,Mote Summerland,All Summerland,E1,R1140,61
+,OF,OF999,Mote Summerland,All Summerland,D3,R1000,61
+,OF,OF1005,Mote Summerland,All Summerland,B3,R1364,61
+,OF,OF1006,Mote Summerland,All Summerland,C2,R1188,61
+,MC,MC60,Mote Summerland,All Summerland,A1,R1398,61
+,OF,OF773,Mote Summerland,All Summerland,E3,R1548,61
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,C1,R4 ,61
+,PS,PS49,Mote Summerland,All Summerland,F3,R1114,61
+,PS,PS49,Mote Summerland,All Summerland,A6,R1589,61
+,PS,PS24,Mote Looe Key [In Situ],,,PS MIX2,61
+,PC,PC15,Mote Looe Key [In Situ],,,PC-15,61
+,PS,PS1,Mote Summerland,All Summerland,B2,R1204,61
+,DL,DL3,Mote Summerland,All Summerland,B2,R515,61
+,OF,OF993,Mote Summerland,All Summerland,F7,R1240,61
+,OF,OF671,Mote Summerland,All Summerland,B6,R1391,61
+,OF,OF994,Mote Summerland,All Summerland,B6,R303,61
+,OF,OF1002,Mote Summerland,All Summerland,B6,R668,61
+,OF,OF980,Mote Summerland,All Summerland,F1,R806,60
+,OF,OF977,Mote Summerland,All Summerland,D5,R693,60
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,C5,R827,60
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,C4,R599,60
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,C4,R801,60
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,C4,R1073,60
+,OF,OF1005,Mote Summerland,All Summerland,E4,R449,60
+,OF,OF1004,Mote Summerland,All Summerland,E4,R1432,60
+,PC,PC19,Mote Summerland,All Summerland,D3,R1558,60
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C1,R5,60
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C4,R8,60
+,PS,PS50,Mote Summerland,All Summerland,D1,R1027,60
+,OF,OF1035,Mote Summerland,All Summerland,D1,R1624,60
+,SIDEREA,SS40,Mote Summerland,,Unassigned,R108,60
+,OF,OF999,Mote Summerland,All Summerland,E1,R1142,60
+,AC,AC2528,Mote Looe Key [In Situ],,,CU-076,60
+,DL,DL17,Mote Looe Key [In Situ],,,DL MIX1,60
+,AC,AC94,Mote Looe Key [In Situ],,,94,60
+,PC,PC32,Mote Looe Key [In Situ],,,PC-32,60
+,AC,AC725,Mote Looe Key [In Situ],,,725,60
+,PC,PC19,Mote Summerland,All Summerland,B5,R1018,60
+,DL,DL3,Mote Summerland,All Summerland,B2,R1671,60
+,OF,OF993,Mote Summerland,All Summerland,B2,R1800,60
+,MC,MC59,Mote Summerland,All Summerland,B1,R1551,60
+,AC,AC51,Mote Key Largo [In Situ],,,Blue29,60
+,PA,PA406,Mote Summerland,All Summerland,A2,R1678,60
+,OF,OF999,Mote Summerland,All Summerland,D3,R856,60
+,OF,OF999,Mote Summerland,All Summerland,D3,R1168,60
+,AC,AC51,Mote Key Largo [In Situ],,,Red09,60
+,OF,OF977,Mote Summerland,All Summerland,D6,R864,59
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,G9,R1145,59
+,ASTREOIDES,PA107,Mote Summerland,All Summerland,G9,R215,59
+,OF,OF977,Mote Summerland,All Summerland,E4,R703,59
+,INTERSEPTA,SI12,Mote Summerland,All Summerland,C4,R1020,59
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,C5,R458,59
+,PS,PS9,Mote Summerland,All Summerland,E1,R1454,59
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C5,R17,59
+,DL,DL190,Mote Summerland,All Summerland,D1,R404,59
+,OF,OF1035,Mote Summerland,All Summerland,D2,R1658,59
+,CN,CN12,Mote Looe Key [In Situ],,,CN-12,59
+,OF,OF985,Mote Summerland,All Summerland,F5,R1313,59
+,MC,MC107,Mote Summerland,All Summerland,C1,R888,59
+,OF,OF701,Mote Summerland,All Summerland,A2,R1315,59
+,OF,OF1005,Mote Summerland,All Summerland,F3,R1070,58
+,OF,OF977,Mote Summerland,All Summerland,D5,R1083,58
+,MC,MC112,Mote Summerland,All Summerland,C6,R1373,58
+,OF,OF977,Mote Summerland,All Summerland,B3,R601,58
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,C5,R849,58
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,C4,R327,58
+,OF,OF987,Mote Summerland,All Summerland,F1,R908,58
+,MC,MC112,Mote Summerland,All Summerland,F5,R1388,58
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,E3,R621,58
+,OF,OF983,Mote Summerland,All Summerland,F5,R1947,58
+,PS,PS49,Mote Summerland,All Summerland,A6,R1603,58
+,AC,AC47,Mote Looe Key [In Situ],,,47,58
+,PC,PC55,Mote Summerland,All Summerland,F6,R1547,58
+,OF,OF980,Mote Summerland,All Summerland,F1,R107,57
+,OF,OF677,Mote Summerland,All Summerland,E5,R881,57
+,OF,OF61,Mote Summerland,All Summerland,A6,R1630,57
+,OF,OF924,Mote Looe Key [In Situ],,,OF-924,57
+,MC,MC111,Mote Summerland,All Summerland,F4,R1411,57
+,OF,OF947,Mote Islamorada [In Situ],,,Blue05,57
+,OF,OF1034,Mote Islamorada [In Situ],,,Red82,57
+,OF,OF982,Mote Summerland,All Summerland,C6,R1298,56
+,PC,PC19,Mote Summerland,All Summerland,F4,R1221,56
+,OF,OF995,Mote Summerland,All Summerland,Q10,R365,56
+,SIDEREA,SS160,Mote Summerland,All Summerland,C2,R870,56
+,INTERSEPTA,SI32,Mote Summerland,All Summerland,D1,R749,56
+,FRANKSI,OK1,Mote Summerland,All Summerland,A6,R1623,56
+,MC,MC206,Mote Summerland,All Summerland,B2,R1203,56
+,DL,DL183,Mote Summerland,All Summerland,B6,R1253,56
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,C5,R1139,56
+,OF,OF999,Mote Summerland,All Summerland,D3,R969,56
+,SB,SB13,Mote Summerland,All Summerland,A4,R6,56
+,OF,OF980,Mote Summerland,All Summerland,E6,R1026,55
+,OF,OF686,Mote Summerland,All Summerland,D5,R223,55
+,OF,OF999,Mote Summerland,All Summerland,C2,R1209,55
+,OF,OF1006,Mote Summerland,All Summerland,D2,R121,55
+,OF,OF985,Mote Summerland,All Summerland,D3,R420,55
+,OF,OF1004,Mote Summerland,All Summerland,C5,R402,55
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,C4,R1004,55
+,OF,OF995,Mote Summerland,All Summerland,E1,R1243,55
+,ASTREOIDES,PA64,Mote Summerland,All Summerland,C3,R1255,55
+,PC,PC50,Mote Key Largo [In Situ],,,Red03,55
+,PC,PC50,Mote Key Largo [In Situ],,,Red03,55
+,OF,OF982,Mote Summerland,All Summerland,C6,R1041,54
+,OF,OF1006,Mote Summerland,All Summerland,E6,R123,54
+,OF,OF976,Mote Summerland,All Summerland,F6,R1081,54
+,OF,OF1006,Mote Summerland,All Summerland,E6,R999,54
+,OF,OF977,Mote Summerland,All Summerland,F6,R320,54
+,ASTREOIDES,PA112,Mote Summerland,All Summerland,D4,R268,54
+,FRANKSI,OK1,Mote Summerland,All Summerland,A6,R1964,54
+,MC,MC205,Mote Summerland,All Summerland,E5,R923,54
+,PC,PC26,Mote Key Largo [In Situ],,,Red04,54
+,PC,PC26,Mote Key Largo [In Situ],,,Blue94,54
+,DL,DL7,Mote Summerland,All Summerland,F6,R1128,53
+,OF,OF983,Mote Summerland,All Summerland,F5,R180,53
+,INTERSEPTA,SI3,Mote Summerland,All Summerland,D2,R715,53
+,OF,OF775,Mote Summerland,All Summerland,E5,R252,53
+,DL,DL211,Mote Summerland,All Summerland,D2,R1581,53
+,AC,AC38,Mote Looe Key [In Situ],,,38,53
+,PS,PS35,Mote Summerland,All Summerland,A5,R1062,53
+,OF,OF1043,Mote Summerland,All Summerland,E5,R869,53
+,MC,MC205,Mote Summerland,All Summerland,E5,R473,53
+,OF,OF993,Mote Summerland,All Summerland,F7,R732,53
+,OF,OF990,Mote Summerland,All Summerland,F5,R163,52
+,OF,OF990,Mote Summerland,All Summerland,B3,R57,52
+,ASTREOIDES,PA129,Mote Summerland,All Summerland,C5,R792,52
+,INTERSEPTA,SI12,Mote Summerland,All Summerland,C5,R589,52
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,C2,R1610,52
+,PS,PS20,Mote Summerland,All Summerland,F1,R1710,52
+,DL,DL166,Mote Summerland,All Summerland,F1,R1942,52
+,OF,OF801,Mote Looe Key [In Situ],,,OF MIX4,52
+,OF,OF96,Mote Summerland,All Summerland,E3,R1480,52
+,PS,PS6,Mote Summerland,All Summerland,B6,R1403,52
+,AC,AC58,Mote Islamorada [In Situ],,,Red10,52
+,OF,OF100,Mote Summerland,All Summerland,D2,R1618,51
+,ASTREOIDES,PA47,Mote Summerland,All Summerland,G9,R1226,51
+,INTERSEPTA,SI12,Mote Summerland,All Summerland,C4,R612,51
+,ASTREOIDES,PA130,Mote Summerland,All Summerland,C4,R233,51
+,DL,DL3,Mote Summerland,All Summerland,C3,R694,51
+,OF,OF978,Mote Summerland,All Summerland,E4,R1436,51
+,OF,OF675,Mote Summerland,All Summerland,E5,R872,51
+,MC,MC94,Mote Looe Key [In Situ],,,MC-75,51
+,MC,MC94,Mote Looe Key [In Situ],,,MC-94,51
+,DL,DL3,Mote Summerland,All Summerland,B2,R1136,51
+,ASTREOIDES,PA86,Mote Summerland,All Summerland,A2,R438,51
+,OF,OF1002,Mote Summerland,All Summerland,F6,R668,50
+,CN,CN80,Mote Summerland,All Summerland,F1,R363,50
+,PD,PD?,Mote Summerland,All Summerland,E6,R90,50
+,ASTREOIDES,PA103,Mote Summerland,All Summerland,D4,R544,50
+,PS,PS50,Mote Summerland,All Summerland,D1,R1534,50
+,PS,PS37,Mote Summerland,All Summerland,E6,R87,50
+,AC,AC2502,Mote Looe Key [In Situ],,,CU-002,50
+,AC,AC2516,Mote Looe Key [In Situ],,,CU-038,50
+,AC,AC2515,Mote Looe Key [In Situ],,,CU-036,50
+,PS,PS17,Mote Looe Key [In Situ],,,PS MIX1,50
+,AC,AC1,Mote Looe Key [In Situ],,,1,50
+,AC,AC55,Mote Looe Key [In Situ],,,55,50
+,AC,AC84,Mote Looe Key [In Situ],,,84,50
+,AC,AC76,Mote Looe Key [In Situ],,,76,50
+,AC,AC95,Mote Looe Key [In Situ],,,95,50
+,PC,PC18,Mote Looe Key [In Situ],,,PC-18,50
+,AC,AC2516,Mote Sand Key [In Situ],,,CU-038,50
+,DL,DL201,Mote Summerland,All Summerland,F4,R714,50
+,OF,OF993,Mote Summerland,All Summerland,B5,R1637,50
+,OF,OF983,Mote Summerland,All Summerland,B1,R762,50
+,OF,OF983,Mote Summerland,All Summerland,B1,R845,50
+,OF,OF983,Mote Summerland,All Summerland,B1,R845,50
+,OF,OF1042,Mote Summerland,All Summerland,A4,R300,50
+,AC,AC62,Mote Key Largo [In Situ],,,Red05,50
+,AC,AC62,Mote Key Largo [In Situ],,,Blue25,50
+,OF,OF976,Mote Summerland,All Summerland,E6,R1015,49
+,OF,OF976,Mote Summerland,All Summerland,F7,R1357,49
+,OF,OF995,Mote Summerland,All Summerland,B3,R862,49
+,PS,PS33,Mote Summerland,All Summerland,F3,R1069,49
+,OF,OF75,Mote Summerland,All Summerland,D1,R519,49
+,FRANKSI,OK1,Mote Summerland,All Summerland,A6,R1625,49
+,OF,OF1005,Mote Summerland,All Summerland,F3,R961,49
+,OF,OF1002,Mote Summerland,All Summerland,B6,R1495,49
+,OF,OF999,Mote Summerland,All Summerland,D3,R1266,49
+,ASTREOIDES,PA104,Mote Summerland,All Summerland,C1,R993,48
+,PC,PC19,Mote Summerland,All Summerland,E4,R566,48
+,OF,OF1006,Mote Summerland,All Summerland,B3,R972,48
+,OF,OF977,Mote Summerland,All Summerland,C1,R1300,48
+,OF,OF977,Mote Summerland,All Summerland,E6,R1186,48
+,OF,OF1041,Mote Summerland,All Summerland,C2,ISLA120,48
+,PC,PC18,Mote Summerland,All Summerland,D3,R1455,48
+,OF,OF686,Mote Summerland,All Summerland,D5,R1192,48
+,PS,PS22,Mote Looe Key [In Situ],,,PS-22,48
+,AC,AC6,Mote Looe Key [In Situ],,,6,48
+,CN,CN8,Mote Looe Key [In Situ],,,CN MIX1,48
+,MC,MC72,Mote Looe Key [In Situ],,,MC-72,48
+,PS,PS36,Mote Summerland,All Summerland,D4,R829,48
+,PS,PS10,Mote Summerland,All Summerland,B5,R1657,48
+,ASTREOIDES,PA71,Mote Summerland,All Summerland,D1,R1728,48
+,OF,OF985,Mote Summerland,All Summerland,B2,R220,48
+,OF,OF991,Mote Summerland,All Summerland,C2,R902,47
+,OF,OF999,Mote Summerland,All Summerland,E3,R1380,47
+,MC,MC112,Mote Summerland,All Summerland,C6,R350,47
+,OF,OF995,Mote Summerland,All Summerland,B3,R353,47
+,OF,OF996,Mote Summerland,All Summerland,E4,R788,47
+,OF,OF993,Mote Summerland,All Summerland,F7,R1247,47
+,MC,MC111,Mote Summerland,All Summerland,F4,R1397,47
+,PS,PS6,Mote Summerland,All Summerland,E3,R755,47
+,MC,MC203,Mote Summerland,All Summerland,E5,R1064,47
+,PC,PC61,Mote Summerland,All Summerland,A6,R1900,47
+,MC,MC71,Mote Looe Key [In Situ],,,MC-71,47
+,PS,PS32,Mote Summerland,All Summerland,A1,R1491,47
+,PS,PS49,Mote Summerland,All Summerland,A1,R1967,47
+,DL,DL185,Mote Summerland,All Summerland,C1,R1919,46
+,DL,DL21,Mote Looe Key [In Situ],,,DL-21,46
+,DL,DL23,Mote Looe Key [In Situ],,,DL-23,46
+,DL,DL256,Mote Looe Key [In Situ],,,DL MIX2,46
+,PC,PC34,Mote Looe Key [In Situ],,,PC-34,46
+,AC,AC0,Mote Looe Key [In Situ],,,UNK,46
+,PC,PC18,Mote Summerland,All Summerland,E1,R1526,45
+,PS,PS17,Mote Summerland,All Summerland,E1,R1470,45
+,MC,MC203,Mote Summerland,All Summerland,E5,R1135,45
+,OF,OF774,Mote Summerland,All Summerland,A6,R1579,45
+,OF,OF773,Mote Summerland,All Summerland,A6,R1043,45
+,PS,PS1,Mote Looe Key [In Situ],,,PS-1,45
+,PS,PS4,Mote Looe Key [In Situ],,,PS-4,45
+,DL,DL3,Mote Looe Key [In Situ],,,DL-3,45
+,INTERSEPTA,SI12,Mote Summerland,All Summerland,C5,R48,45
+,OF,OF1002,Mote Summerland,All Summerland,A4,R1655,45
+,AC,AC58,Mote Key Largo [In Situ],,,Red01,45
+,AC,AC58,Mote Key Largo [In Situ],,,Blue01,45
+,OF,OF1004,Mote Summerland,All Summerland,E1,R819,44
+,INTERSEPTA,SI25,Mote Summerland,All Summerland,D4,R1234,44
+,RADIANS,SR259,Mote Summerland,All Summerland,D2,R1533,44
+,ASTREOIDES,PA70,Mote Summerland,All Summerland,H6,R285,44
+,,PA,Mote Summerland,All Summerland,G9,R1181,44
+,PS,PS29,Mote Looe Key [In Situ],,,PS MIX2,44
+,DL,DL199,Mote Summerland,All Summerland,B5,R1716,44
+,OF,OF976,Mote Summerland,All Summerland,E6,R481,43
+,OF,OF987,Mote Summerland,All Summerland,C2,R1331,43
+,INTERSEPTA,SI12,Mote Summerland,All Summerland,C5,R996,43
+,INTERSEPTA,SI12,Mote Summerland,All Summerland,C5,R662,43
+,OF,OF976,Mote Summerland,All Summerland,E1,R1172,43
+,OF,OF996,Mote Summerland,All Summerland,E6,R297,43
+,INTERSEPTA,SI72,Mote Summerland,All Summerland,D4,R956,43
+,MC,MC11,Mote Looe Key [In Situ],,,MC-11,43
+,OF,OF993,Mote Summerland,All Summerland,A1,R1807,43
+,OF,OF981,Mote Summerland,All Summerland,D4,R1235,43
+,AC,AC50,Mote Key Largo [In Situ],,,Blue03,43
+,INTERSEPTA,SI12,Mote Summerland,All Summerland,C5,R903,42
+,PS,PS6,Mote Summerland,All Summerland,D5,R125,42
+,OF,OF328,Mote Summerland,All Summerland,C4,R1169,42
+,MC,MC62,Mote Summerland,All Summerland,E3,R1566,42
+,OF,OF773,Mote Summerland,All Summerland,D1,R1660,42
+,SIDEREA,SS40,Mote Summerland,All Summerland,C2,ISLA108,42
+,PS,PS25,Mote Looe Key [In Situ],,,PS-25,42
+,PC,PC40,Mote Looe Key [In Situ],,,PC-40,42
+,OF,OF1,Mote Summerland,All Summerland,B5,R1134,42
+,OF,OF1,Mote Summerland,All Summerland,B5,R1288,42
+,OF,OF1005,Mote Summerland,All Summerland,A4,R1201,42
+,OF,OF999,Mote Summerland,All Summerland,A4,R1107,41
+,OF,OF977,Mote Summerland,All Summerland,E6,R397,41
+,INTERSEPTA,SI12,Mote Summerland,All Summerland,C4,R1348,41
+,MC,MC127,Mote Summerland,All Summerland,B1,R1615,41
+,DL,DL4,Mote Summerland,All Summerland,E4,R1576,41
+,PC,PC59,Mote Summerland,All Summerland,E3,R1866,41
+,OF,OF697,Mote Summerland,All Summerland,E5,R263,41
+,OF,OF668,Mote Summerland,All Summerland,D2,R1600,41
+,MC,MC74,Mote Looe Key [In Situ],,,MC-72,41
+,PC,PC23,Mote Looe Key [In Situ],,,PC-23,41
+,MC,MC74,Mote Looe Key [In Situ],,,MC-74,41
+,PS,PS32,Mote Summerland,All Summerland,A1,R1116,41
+,OF,OF989,Mote Summerland,All Summerland,Q2,R1275,40
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,C4,R987,40
+,OF,OF1004,Mote Summerland,All Summerland,E4,R205,40
+,PC,PC54,Mote Summerland,All Summerland,D5,R170,40
+,OF,OF995,Mote Summerland,All Summerland,F7,R651,40
+,AC,AC2503,Mote Looe Key [In Situ],,,CU-007,40
+,PS,PS14,Mote Looe Key [In Situ],,,PS-14,40
+,PS,PS21,Mote Looe Key [In Situ],,,PS-21,40
+,PS,PS37,Mote Looe Key [In Situ],,,PS MIX3,40
+,AC,AC2631,Mote Looe Key [In Situ],,,RD-6,40
+,AC,AC2634,Mote Looe Key [In Situ],,,RD-14,40
+,DL,DL15,Mote Looe Key [In Situ],,,DL MIX1,40
+,AC,AC57,Mote Looe Key [In Situ],,,,40
+,PC,PC36,Mote Looe Key [In Situ],,,PC-36,40
+,AC,AC51,Mote Key Largo [In Situ],,,Blue29,40
+,OF,OF1043,Mote Summerland,All Summerland,E5,R1482,40
+,PC,PC54,Mote Summerland,All Summerland,F4,R357,40
+,PA,PA413,Mote Summerland,All Summerland,A2,R1395,40
+,AC,AC62,Mote Key Largo [In Situ],,,Red01,40
+,AC,AC62,Mote Key Largo [In Situ],,,Red02,40
+,AC,AC75,Mote Key Largo [In Situ],,,Red04,40
+,MC,MC97,Mote Key Largo [In Situ],,,Red04,40
+,AC,AC5,Mote Key Largo [In Situ],,,Red07,40
+,AC,AC47,Mote Key Largo [In Situ],,,Red08,40
+,AC,AC51,Mote Key Largo [In Situ],,,Red09,40
+,AC,AC58,Mote Key Largo [In Situ],,,Red10,40
+,MC,MC97,Mote Key Largo [In Situ],,,Blue94,40
+,AC,AC75,Mote Key Largo [In Situ],,,Blue04,40
+,AC,AC5,Mote Key Largo [In Situ],,,Blue07,40
+,AC,AC47,Mote Key Largo [In Situ],,,Blue18,40
+,OF,OF1004,Mote Summerland,All Summerland,B3,R803,39
+,OF,OF979,Mote Summerland,All Summerland,C2,R1212,39
+,DL,DL3,Mote Summerland,All Summerland,B1,R1428,39
+,PS,PS6,Mote Summerland,All Summerland,A1,R727,39
+,DS,DS6,Mote Summerland,All Summerland,A1,R219,39
+,OF,OF457,Mote Summerland,All Summerland,A1,R1757,39
+,CN,CN12,Mote Looe Key [In Situ],,,CN-12,39
+,PD,PD?,Mote Summerland,All Summerland,C1,R483,39
+,OF,OF987,Mote Summerland,All Summerland,F1,R719,39
+,OF,OF995,Mote Summerland,All Summerland,Q2,R1810,39
+,PA,PA418,Mote Summerland,All Summerland,A2,R893,39
+,AC,AC2,Mote Key Largo [In Situ],,,Red04,39
+,AC,AC2,Mote Key Largo [In Situ],,,Blue34,39
+,OF,OF985,Mote Summerland,All Summerland,A4,R710,39
+,OF,OF100,Mote Summerland,All Summerland,F1,R619,38
+,OF,OF1004,Mote Summerland,All Summerland,D4,R1346,38
+,PC,PC13,Mote Summerland,All Summerland,C3,R298,38
+,OF,OF988,Mote Summerland,All Summerland,F9,R1407,38
+,OF,OF994,Mote Summerland,All Summerland,B6,R343,38
+,MC,MC127,Mote Summerland,All Summerland,B2,R940,38
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,C5,R18,38
+,AC,AC76,Mote Key Largo [In Situ],,,Red06,38
+,AC,AC76,Mote Key Largo [In Situ],,,Blue26,38
+,PS,PS31,Mote Summerland,All Summerland,B6,R1174,37
+,OF,OF97,Mote Summerland,All Summerland,E4,R1387,37
+,DS,DS13,Mote Summerland,All Summerland,D2,R1652,37
+,DL,DL181,Mote Summerland,All Summerland,D1,R926,37
+,MC,MC1,Mote Summerland,All Summerland,B5,R1040,37
+,PS,PS15,Mote Summerland,All Summerland,B2,R1219,37
+,DL,DL5,Mote Summerland,All Summerland,B1,R286,37
+,OF,OF1004,Mote Summerland,All Summerland,C2,R1274,36
+,PC,PC19,Mote Summerland,All Summerland,F7,R904,36
+,ASTREOIDES,PA130,Mote Summerland,All Summerland,C4,R748,36
+,PC,PC42,Mote Summerland,All Summerland,F3,R1271,36
+,PC,PC16,Mote Summerland,All Summerland,E3,R1402,36
+,DL,DL216,Mote Summerland,All Summerland,D1,R1597,36
+,PC,PC61,Mote Summerland,All Summerland,A6,R1607,36
+,SIDEREA,SS56,Mote Summerland,All Summerland,C2,ISLA270,36
+,PS,PS3,Mote Looe Key [In Situ],,,PS-3,36
+,DL,DL1,Mote Looe Key [In Situ],,,DL-1,36
+,AC,AC46,Mote Looe Key [In Situ],,,46,36
+,DL,DL191,Mote Summerland,All Summerland,A5,R1321,36
+,DL,DL3,Mote Summerland,All Summerland,B2,R1839,36
+,PS,PS20,Mote Summerland,All Summerland,B1,R1980,36
+,OF,OF979,Mote Summerland,All Summerland,F1,R1280,35
+,OF,OF980,Mote Summerland,All Summerland,E6,R1031,35
+,OF,OF1002,Mote Summerland,All Summerland,F3,R1052,35
+,OF,OF1035,Mote Looe Key [In Situ],,default,R1239,35
+,OF,OF980,Mote Summerland,All Summerland,D6,R2015,35
+,DL,DL188,Mote Summerland,All Summerland,F1,R1935,35
+,INTERSEPTA,SI76,Mote Summerland,All Summerland,C3,R1224,35
+,OF,OF1035,Mote Looe Key [In Situ],,default,R1729,35
+,DL,DL177,Mote Summerland,All Summerland,F1,R1829,35
+,DL,DL2,Mote Looe Key [In Situ],,,DL-2,35
+,CN,CN11,Mote Looe Key [In Situ],,,CN-11,35
+,MC,MC1,Mote Summerland,All Summerland,B2,R1611,35
+,SIDEREA,SS463,Mote Looe Key [In Situ],,default,R1616,35
+,AC,AC31,Mote Key Largo [In Situ],,,Red07,35
+,AC,AC31,Mote Key Largo [In Situ],,,Blue37,35
+,PS,PS7,Mote Islamorada [In Situ],,Unassigned,R263,35
+,OF,OF987,Mote Summerland,All Summerland,C4,R927,34
+,OF,OF976,Mote Looe Key [In Situ],,default,R738,34
+,OF,OF96,Mote Summerland,All Summerland,E1,R1550,34
+,OF,OF1040,Mote Islamorada [In Situ],,Unassigned,R109,34
+,INTERSEPTA,SI58,Mote Summerland,All Summerland,D1,R885,34
+,PS,PS15,Mote Islamorada [In Situ],,Unassigned,R221,34
+,DL,DL175,Mote Summerland,All Summerland,F6,R603,34
+,FRANKSI,OK1,Mote Summerland,All Summerland,A6,R1596,34
+,DL,DL180,Mote Summerland,All Summerland,C2,R1156,34
+,DL,DL257,Mote Looe Key [In Situ],,,DL MIX2,34
+,OF,OF987,Mote Summerland,All Summerland,C1,R879,34
+,OF,OF1022,Mote Islamorada [In Situ],,Unassigned,R1,34
+,PS,PS7,Mote Islamorada [In Situ],,Unassigned,R47,34
+,RADIANS,SR188,Mote Looe Key [In Situ],,default,R1725,34
+,SIDEREA,SS85,Mote Looe Key [In Situ],,default,ISLA119,34
+,OF,OF1022,Mote Islamorada [In Situ],,,Red81,34
+,OF,OF928,Mote Islamorada [In Situ],,Unassigned,R72,34
+,PA,PA404,Mote Summerland,All Summerland,A2,R74,34
+,PA,PA415,Mote Summerland,All Summerland,A2,R946,34
+,PS,PS7,Mote Islamorada [In Situ],,Unassigned,R2,34
+,OF,OF934,Mote Islamorada [In Situ],,Unassigned,R2,34
+,PS,PS7,Mote Islamorada [In Situ],,Unassigned,R264,34
+,OF,OF1008,Mote Islamorada [In Situ],,Unassigned,R292,34
+,OF,OF934,Mote Islamorada [In Situ],,Unassigned,R3,34
+,AC,AC56,Mote Islamorada [In Situ],,,Red09,34
+,PS,PS15,Mote Islamorada [In Situ],,,Red81,34
+,OF,OF930,Mote Islamorada [In Situ],,Unassigned,R18,34
+,OF,OF1015-B,Mote Islamorada [In Situ],,Unassigned,R74,34
+,OF,OF953,Mote Islamorada [In Situ],,Unassigned,R203,34
+,OF,OF3,Mote Summerland,,Unassigned,R708,33
+,INTERSEPTA,SI80,Mote Summerland,All Summerland,C1,R443,33
+,RADIANS,SR188,Mote Looe Key [In Situ],,default,R850,33
+,INTERSEPTA,SI76,Mote Looe Key [In Situ],,default,R275,33
+,INTERSEPTA,SI76,Mote Looe Key [In Situ],,default,R888,33
+,INTERSEPTA,SI76,Mote Looe Key [In Situ],,default,R1315,33
+,MC,MC202,Mote Islamorada [In Situ],,Unassigned,R184,33
+,INTERSEPTA,SI76,Mote Looe Key [In Situ],,default,R988,33
+,OF,OF988,Mote Summerland,All Summerland,A1,R1832,33
+,MC,MC72,Mote Summerland,All Summerland,B5,R272,33
+,OF,OF3,Mote Summerland,All Summerland,B5,R1638,33
+,OF,OF694,Mote Summerland,All Summerland,B2,R1078,33
+,DL,DL2,Mote Summerland,All Summerland,B6,R1522,33
+,SIDEREA,SS463,Mote Looe Key [In Situ],,default,R1852,33
+,SIDEREA,SS463,Mote Looe Key [In Situ],,default,R2009,33
+,SIDEREA,SS86,Mote Looe Key [In Situ],,default,ISLA5,33
+,PS,PS7,Mote Islamorada [In Situ],,Unassigned,R185,33
+,AC,AC6,Mote Key Largo [In Situ],,,Red04,33
+,PS,PS14,Mote Key Largo [In Situ],,,Red04,33
+,AC,AC6,Mote Key Largo [In Situ],,,Blue24,33
+,MC,MC202,Mote Islamorada [In Situ],,,Red82,33
+,OF,OF928,Mote Islamorada [In Situ],,,Red94,33
+,OF,OF956,Mote Islamorada [In Situ],,Unassigned,R292,33
+,OF,OF956,Mote Islamorada [In Situ],,Unassigned,R306,33
+,OF,OF930,Mote Islamorada [In Situ],,Unassigned,R52,33
+,OF,OF982,Mote Summerland,All Summerland,B3,R1024,32
+,OF,OF1004,Mote Summerland,All Summerland,C2,R560,32
+,OF,OF697,Mote Summerland,All Summerland,E5,R823,32
+,DL,DL173,Mote Summerland,All Summerland,E6,R1124,32
+,OF,OF1004,Mote Summerland,All Summerland,D4,R992,32
+,PS,PS5,Mote Looe Key [In Situ],,,PS MIX1,32
+,PS,PS3,Mote Summerland,All Summerland,A5,R1771,32
+,OF,OF994,Mote Summerland,All Summerland,F5,R1437,32
+,DL,DL9,Mote Summerland,All Summerland,C1,R2020,32
+,OF,OF950,Mote Islamorada [In Situ],,Unassigned,R1,32
+,SIDEREA,SS463,Mote Looe Key [In Situ],,default,R1650,32
+,OF,OF950,Mote Islamorada [In Situ],,,Red83,32
+,PA,PA407,Mote Summerland,All Summerland,A2,R2009,32
+,PC,PC24,Mote Key Largo [In Situ],,,Red02,32
+,PC,PC24,Mote Key Largo [In Situ],,,Blue92,32
+,AC,AC50,Mote Islamorada [In Situ],,,Red08,32
+,OF,OF1040,Mote Islamorada [In Situ],,,Red82,32
+,OF,OF956,Mote Islamorada [In Situ],,Unassigned,R164,32
+,OF,OF671,Mote Summerland,All Summerland,D5,R487,31
+,DL,DL207,Mote Summerland,All Summerland,D2,R122,31
+,OF,OF941,Mote Islamorada [In Situ],,Unassigned,R318,31
+,ASTREOIDES,PA26,Mote Summerland,All Summerland,C3,R1421,31
+,DL,DL182,Mote Summerland,All Summerland,F1,R2022,31
+,MC,MC63,Mote Summerland,All Summerland,F1,R179,31
+,DL,DL206,Mote Summerland,All Summerland,Q9,R1112,31
+,MC,MC93,Mote Looe Key [In Situ],,,MC MIX3,31
+,DL,DL22,Mote Looe Key [In Situ],,,DL-22,31
+,PS,PS3,Mote Summerland,All Summerland,B5,R1585,31
+,RADIANS,SR188,Mote Looe Key [In Situ],,default,R1249,31
+,PS,PS6,Mote Summerland,All Summerland,B1,R1307,31
+,OF,OF976,Mote Looe Key [In Situ],,default,R796,31
+,MC,MC60,Mote Summerland,All Summerland,F3,R468,30
+,INTERSEPTA,SI7,Mote Summerland,All Summerland,F4,R340,30
+,OF,OF1004,Mote Summerland,All Summerland,E1,R1198,30
+,PC,PC16,Mote Summerland,All Summerland,C3,R437,30
+,CN,CN21,Mote Summerland,All Summerland,F7,R1435,30
+,OF,OF990,Mote Summerland,All Summerland,F7,R1438,30
+,OF,OF671,Mote Summerland,All Summerland,F7,R1391,30
+,MC,MC106,Mote Summerland,All Summerland,A2,R1433,30
+,OF,OF979,Mote Summerland,All Summerland,E4,R1176,30
+,DL,DL203,Mote Summerland,All Summerland,C4,R25,30
+,PD,PD?,Mote Summerland,All Summerland,G9,R1012,30
+,OF,OF3,Mote Summerland,All Summerland,D1,R949,30
+,MC,MC211,Mote Summerland,All Summerland,D5,R1344,30
+,DL,DL208,Mote Summerland,All Summerland,A6,R1598,30
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C3,R1002,30
+,AC,AC2522,Mote Looe Key [In Situ],,,CU-053,30
+,AC,AC2539,Mote Looe Key [In Situ],,,CL-123,30
+,AC,AC2534,Mote Looe Key [In Situ],,,CU-103,30
+,AC,AC2533,Mote Looe Key [In Situ],,,CU-100,30
+,AC,AC2618,Mote Looe Key [In Situ],,,NB-8a,30
+,AC,AC2612,Mote Looe Key [In Situ],,,NB-20,30
+,DL,DL11,Mote Summerland,All Summerland,A5,R491,30
+,MC,MC205,Mote Islamorada [In Situ],,Unassigned,R198,30
+,OF,OF1031,Mote Islamorada [In Situ],,Unassigned,R148,30
+,DL,DL215,Mote Summerland,All Summerland,F4,R386,30
+,DL,DL269,Mote Islamorada [In Situ],,Unassigned,R269,30
+,MC,MC205,Mote Islamorada [In Situ],,,Red83,30
+,MC,MC125,Mote Key Largo [In Situ],,,Red03,30
+,MC,MC125,Mote Key Largo [In Situ],,,Red03,30
+,OF,OF947,Mote Islamorada [In Situ],,Unassigned,R203,30
+,OF,OF934,Mote Islamorada [In Situ],,Unassigned,R221,30
+,OF,OF934,Mote Islamorada [In Situ],,Unassigned,R303,30
+,OF,OF954,Mote Islamorada [In Situ],,Unassigned,R2,30
+,AC,AC7,Mote Islamorada [In Situ],,,Red15,30
+,DL,DL269,Mote Islamorada [In Situ],,,Red81,30
+,OF,OF954,Mote Islamorada [In Situ],,,Red84,30
+,OF,OF1009,Mote Islamorada [In Situ],,Unassigned,R239,30
+,OF,OF988,Mote Summerland,All Summerland,F5,R989,29
+,MC,MC108,Mote Looe Key [In Situ],,default,R175,29
+,PD,PD?,Mote Summerland,All Summerland,G9,R1342,29
+,MC,MC62,Mote Summerland,All Summerland,D2,R1704,29
+,MC,MC203,Mote Looe Key [In Situ],,default,R74,29
+,OF,OF183,Mote Looe Key [In Situ],,,OF-183,29
+,PC,PC57,Mote Summerland,All Summerland,B5,R966,29
+,RADIANS,SR189,Mote Looe Key [In Situ],,default,R1614,29
+,INTERSEPTA,SI79,Mote Looe Key [In Situ],,default,R1615,29
+,RADIANS,SR190,Mote Looe Key [In Situ],,default,R1756,29
+,MC,MC108,Mote Looe Key [In Situ],,default,R1238,29
+,OF,OF1008,Mote Islamorada [In Situ],,Unassigned,R18,29
+,OF,OF934,Mote Islamorada [In Situ],,Unassigned,R211,29
+,OF,OF947,Mote Islamorada [In Situ],,Unassigned,R306,29
+,OF,OF1008,Mote Islamorada [In Situ],,Unassigned,R309,29
+,OF,OF927,Mote Islamorada [In Situ],,Unassigned,R125,29
+,OF,OF1016,Mote Islamorada [In Situ],,Unassigned,R148,29
+,OF,OF1015,Mote Islamorada [In Situ],,Unassigned,R180,29
+,OF,OF1016,Mote Islamorada [In Situ],,Unassigned,R253,29
+,OF,OF1009,Mote Islamorada [In Situ],,Unassigned,R268,29
+,OF,OF1016,Mote Islamorada [In Situ],,Unassigned,R295,29
+,OF,OF990,Mote Summerland,All Summerland,C6,R934,28
+,OF,OF1004,Mote Looe Key [In Situ],,default,R387,28
+,MC,MC108,Mote Looe Key [In Situ],,default,R573,28
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,C1,R2,28
+,PC,PC15,Mote Summerland,All Summerland,E5,R889,28
+,PS,PS44,Mote Summerland,All Summerland,F4,R1669,28
+,DL,DL196,Mote Summerland,All Summerland,D2,R1641,28
+,RADIANS,SR258,Mote Summerland,All Summerland,D2,R1620,28
+,OF,OF773,Mote Summerland,All Summerland,A6,R1646,28
+,SIDEREA,SS463,Mote Looe Key [In Situ],,default,R845,28
+,SIDEREA,SS23,Mote Summerland,All Summerland,D5,R1445,28
+,AC,AC89,Mote Looe Key [In Situ],,,89,28
+,AC,AC90,Mote Looe Key [In Situ],,,90,28
+,PS,PS6,Mote Summerland,All Summerland,A5,R922,28
+,PS,PS12,Mote Summerland,All Summerland,A5,R1120,28
+,CN,CN8,Mote Looe Key [In Situ],,,CN MIX1,28
+,OF,OF990,Mote Summerland,All Summerland,C6,R1333,28
+,SIDEREA,SS463,Mote Summerland,All Summerland,D4,R1661,28
+,DL,DL178,Mote Summerland,All Summerland,B6,R1586,28
+,MC,MC107,Mote Summerland,All Summerland,F3,R1021,28
+,DL,DL257,Mote Summerland,All Summerland,F6,R117,28
+,MC,MC203,Mote Looe Key [In Situ],,default,R1949,28
+,MC,MC203,Mote Looe Key [In Situ],,default,R1979,28
+,MC,MC108,Mote Looe Key [In Situ],,default,R1262,28
+,MC,MC108,Mote Looe Key [In Situ],,default,R1377,28
+,DL,DL1,Mote Summerland,All Summerland,A2,R1144,28
+,PA,PA405,Mote Summerland,All Summerland,A2,R74,28
+,OF,OF1042,Mote Summerland,All Summerland,A4,R1670,28
+,AC,AC62,Mote Key Largo [In Situ],,,Red01,28
+,AC,AC62,Mote Key Largo [In Situ],,,Red02,28
+,OF,OF1031,Mote Islamorada [In Situ],,,Red81,28
+,OF,OF1015,Mote Islamorada [In Situ],,Unassigned,R129,28
+,OF,OF1016,Mote Islamorada [In Situ],,Unassigned,R270,28
+,OF,OF980,Mote Summerland,All Summerland,Q2,R120,27
+,DL,DL8,Mote Summerland,All Summerland,E4,R1345,27
+,OF,OF981,Mote Summerland,All Summerland,D4,R1164,27
+,MC,MC108,Mote Looe Key [In Situ],,default,R575,27
+,PS,PS2,Mote Summerland,All Summerland,D4,R1138,27
+,OF,OF978,Mote Summerland,All Summerland,F1,R853,27
+,MC,MC3,Mote Looe Key [In Situ],,,MC-3,27
+,OF,OF186,Mote Looe Key [In Situ],,,OF-186,27
+,OA,OA10,Mote Looe Key [In Situ],,,OA MIX1,27
+,SIDEREA,SS463,Mote Looe Key [In Situ],,default,R1520,27
+,OF,OF1027,Mote Islamorada [In Situ],,Unassigned,R64,27
+,OF,OF697,Mote Summerland,All Summerland,B2,R1078,27
+,INTERSEPTA,SI79,Mote Looe Key [In Situ],,default,R1981,27
+,OF,OF976,Mote Looe Key [In Situ],,default,R1023,27
+,OF,OF977,Mote Summerland,All Summerland,D6,R1104,26
+,MC,MC107,Mote Summerland,All Summerland,B1,R1846,26
+,PC,PC44,Mote Summerland,All Summerland,F1,R853,26
+,OF,OF977,Mote Looe Key [In Situ],,default,R131,26
+,OF,OF940,Mote Islamorada [In Situ],,Unassigned,R321,26
+,SIDEREA,SS160,Mote Looe Key [In Situ],,default,R1485,26
+,PC,PC19,Mote Summerland,All Summerland,F4,R340,26
+,AC,AC2639,Mote Looe Key [In Situ],,,RD-33,26
+,DL,DL16,Mote Looe Key [In Situ],,,DL MIX1,26
+,OF,OF993,Mote Summerland,All Summerland,F5,R1125,26
+,PS,PS32,Mote Summerland,All Summerland,B1,R1022,26
+,DL,DL154,Mote Summerland,All Summerland,B1,R152,26
+,PC,PC27,Mote Key Largo [In Situ],,,Red03,26
+,PC,PC27,Mote Key Largo [In Situ],,,Red03,26
+,PS,PS17,Mote Summerland,All Summerland,A4,R948,26
+,CN,CN18,Mote Summerland,All Summerland,F7,R1920,25
+,OF,OF980,Mote Summerland,All Summerland,B3,R1601,25
+,ASTREOIDES,PA56,Mote Summerland,All Summerland,G4,R1268,25
+,MC,MC115,Mote Islamorada [In Situ],,Unassigned,R442,25
+,OF,OF934,Mote Islamorada [In Situ],,Unassigned,R313,25
+,PS,PS42,Mote Summerland,All Summerland,C1,R955,25
+,MC,MC205,Mote Summerland,All Summerland,F1,R1685,25
+,MC,MC63,Mote Looe Key [In Situ],,,MC MIX3,25
+,PS,PS8,Mote Looe Key [In Situ],,,PS-8,25
+,AC,AC13,Mote Looe Key [In Situ],,,13,25
+,AC,AC7,Mote Looe Key [In Situ],,,7,25
+,DL,DL18,Mote Looe Key [In Situ],,,DL MIX1,25
+,OF,OF1034,Mote Islamorada [In Situ],,Unassigned,R56,25
+,PS,PS10,Mote Summerland,All Summerland,A4,R948,25
+,AC,AC70,Mote Key Largo [In Situ],,,Red06,25
+,AC,AC70,Mote Key Largo [In Situ],,,Blue16,25
+,OF,OF951,Mote Islamorada [In Situ],,Unassigned,R284,24
+,OF,OF951,Mote Islamorada [In Situ],,Unassigned,R465,24
+,OF,OF1009,Mote Islamorada [In Situ],,Unassigned,R287,24
+,OF,OF1013,Mote Islamorada [In Situ],,Unassigned,R281,24
+,OF,OF957,Mote Islamorada [In Situ],,Unassigned,R433,24
+,OF,OF954,Mote Islamorada [In Situ],,Unassigned,R439,24
+,MC,MC120,Mote Islamorada [In Situ],,Unassigned,R441,24
+,OF,OF957,Mote Islamorada [In Situ],,Unassigned,R443,24
+,PS,PS7,Mote Islamorada [In Situ],,Unassigned,R445,24
+,PS,PS1,Mote Summerland,All Summerland,B2,R369,24
+,OF,OF942,Mote Islamorada [In Situ],,Unassigned,R315,24
+,OF,OF957,Mote Islamorada [In Situ],,Unassigned,R509,24
+,OF,OF951,Mote Islamorada [In Situ],,Unassigned,R510,24
+,OF,OF940,Mote Islamorada [In Situ],,Unassigned,R512,24
+,SIDEREA,SS160,Mote Looe Key [In Situ],,default,R894,24
+,DL,DL165,Mote Summerland,All Summerland,F4,R1531,24
+,CN,CN19,Mote Summerland,All Summerland,F3,R1371,24
+,PS,PS20,Mote Summerland,All Summerland,B5,R1585,24
+,DL,DL270,Mote Summerland,All Summerland,F8,R1606,24
+,PC,PC61,Mote Summerland,All Summerland,F8,R1640,24
+,SIDEREA,SS87,Mote Summerland,All Summerland,F8,R1801,24
+,SIDEREA,SS87,Mote Summerland,All Summerland,F8,R1803,24
+,SIDEREA,SS87,Mote Summerland,All Summerland,F8,R1778,24
+,SIDEREA,SS87,Mote Summerland,All Summerland,F8,R1977,24
+,MC,MC203,Mote Summerland,All Summerland,F8,R2031,24
+,MC,MC203,Mote Summerland,All Summerland,F8,R1868,24
+,MC,MC203,Mote Summerland,All Summerland,F8,R1577,24
+,MC,MC203,Mote Summerland,All Summerland,F8,R1594,24
+,DL,DL223,Mote Summerland,All Summerland,B6,R941,24
+,CN,CN29,Mote Summerland,All Summerland,F10,R1213,24
+,CN,CN75,Mote Summerland,All Summerland,F10,R1360,24
+,CN,CN75,Mote Summerland,All Summerland,F10,R1659,24
+,CN,CN75,Mote Summerland,All Summerland,F10,R1667,24
+,CN,CN49,Mote Summerland,All Summerland,F10,R958,24
+,CN,CN49,Mote Summerland,All Summerland,F10,R1651,24
+,CN,CN49,Mote Summerland,All Summerland,F10,R1595,24
+,CN,CN30,Mote Summerland,All Summerland,F10,R1833,24
+,CN,CN30,Mote Summerland,All Summerland,F10,R1985,24
+,CN,CN30,Mote Summerland,All Summerland,F10,R1605,24
+,PC,PC25,Mote Islamorada [In Situ],,Unassigned,R300,24
+,MC,MC203,Mote Looe Key [In Situ],,default,R1945,24
+,OF,OF977,Mote Looe Key [In Situ],,default,R158,24
+,PC,PC25,Mote Islamorada [In Situ],,,Red83,24
+,OF,OF1009,Mote Islamorada [In Situ],,Unassigned,R283,23
+,OF,OF1004,Mote Summerland,All Summerland,F1,R1290,23
+,OF,OF981,Mote Summerland,All Summerland,E3,R938,23
+,OF,OF995,Mote Looe Key [In Situ],,default,R384,23
+,OF,OF957,Mote Islamorada [In Situ],,Unassigned,R316,23
+,OF,OF15,Mote Summerland,All Summerland,E3,R1806,23
+,PC,PC60,Mote Summerland,All Summerland,F4,R1669,23
+,PS,PS5,Mote Summerland,All Summerland,F4,R386,23
+,OF,OF1,Mote Looe Key [In Situ],,,OF-1,23
+,INTERSEPTA,SI8,Mote Summerland,All Summerland,F4,R1448,23
+,PC,PC61,Mote Summerland,All Summerland,F8,R1452,23
+,PS,PS15,Mote Summerland,All Summerland,B5,R1638,23
+,PS,PS3,Mote Summerland,All Summerland,B1,R1614,23
+,OF,OF976,Mote Looe Key [In Situ],,default,R1123,23
+,SIDEREA,SS160,Mote Looe Key [In Situ],,default,R1,23
+,MC,MC1,Mote Summerland,All Summerland,A4,R1670,23
+,AC,AC50,Mote Key Largo [In Situ],,,Red03,23
+,AC,AC75,Mote Key Largo [In Situ],,,Red04,23
+,AC,AC75,Mote Key Largo [In Situ],,,Blue04,23
+,OF,OF953,Mote Islamorada [In Situ],,Unassigned,R285,22
+,OF,OF991,Mote Summerland,All Summerland,C2,R1293,22
+,OF,OF1012,Mote Islamorada [In Situ],,Unassigned,R470,22
+,OF,OF956,Mote Islamorada [In Situ],,Unassigned,R438,22
+,MC,MC90,Mote Islamorada [In Situ],,Unassigned,R440,22
+,OF,OF976,Mote Looe Key [In Situ],,default,R785,22
+,OF,OF956,Mote Islamorada [In Situ],,Unassigned,R319,22
+,OF,OF328,Mote Summerland,All Summerland,F7,R739,22
+,DL,DL12,Mote Summerland,All Summerland,C1,R2027,22
+,SIDEREA,SS95,Mote Summerland,All Summerland,C1,R1439,22
+,DL,DL174,Mote Summerland,All Summerland,D1,R142,22
+,FRANKSI,OK2,Mote Summerland,All Summerland,D1,R251,22
+,OF,OF688,Mote Summerland,All Summerland,F5,R1390,22
+,AC,AC79,Mote Looe Key [In Situ],,,79,22
+,CN,CN14,Mote Summerland,All Summerland,F7,R1177,22
+,INTERSEPTA,SI9,Mote Summerland,All Summerland,F4,R1515,22
+,MC,MC127,Mote Looe Key [In Situ],,default,R1220,22
+,PS,PS15,Mote Summerland,All Summerland,A2,R1981,22
+,PA,PA412,Mote Summerland,All Summerland,A2,R1395,22
+,SB,SB13,Mote Summerland,All Summerland,A4,R1107,22
+,PC,PC22,Mote Islamorada [In Situ],,Unassigned,R468,21
+,CN,CN21,Mote Summerland,All Summerland,F5,R1202,21
+,ASTREOIDES,PA47,Mote Summerland,All Summerland,H6,R356,21
+,OF,OF984,Mote Summerland,All Summerland,Q7,R813,21
+,OF,OF1009,Mote Islamorada [In Situ],,Unassigned,R469,21
+,OF,OF1008,Mote Islamorada [In Situ],,Unassigned,R471,21
+,OF,OF61,Mote Summerland,All Summerland,D2,R1604,21
+,PC,PC55,Mote Summerland,All Summerland,D3,R1490,21
+,,OF,Mote Summerland,All Summerland,F7,R28,21
+,SIDEREA,SS90,Mote Summerland,All Summerland,C1,R891,21
+,OF,OF99,Mote Summerland,All Summerland,C6,R877,21
+,DL,DL168,Mote Summerland,All Summerland,F1,R1928,21
+,AC,AC2513,Mote Looe Key [In Situ],,,CU-034,21
+,MC,MC53,Mote Looe Key [In Situ],,,MC MIX2,21
+,DL,DL169,Mote Summerland,All Summerland,F1,R1829,21
+,AC,AC5,Mote Islamorada [In Situ],,,Red14,21
+,OF,OF987,Mote Looe Key [In Situ],,default,R1053,21
+,PA,PA417,Mote Summerland,All Summerland,A2,R197,21
+,DL,DL12,Mote Summerland,All Summerland,A4,R931,21
+,AC,AC47,Mote Key Largo [In Situ],,,Red08,21
+,AC,AC47,Mote Key Largo [In Situ],,,Blue18,21
+,OF,OF1027,Mote Islamorada [In Situ],,,Red83,21
+,SIDEREA,SS30,Mote Summerland,All Summerland,F3,R318,20
+,ASTREOIDES,PA86,Mote Summerland,All Summerland,C4,R343,20
+,MC,MC91,Mote Islamorada [In Situ],,Unassigned,R446,20
+,PS,PS7,Mote Islamorada [In Situ],,Unassigned,R448,20
+,OF,OF98,Mote Summerland,All Summerland,D5,R701,20
+,CN,CN67,Mote Summerland,All Summerland,H3,ISLA276,20
+,PS,PS42,Mote Summerland,All Summerland,H4,R249,20
+,OF,OF996,Mote Summerland,All Summerland,F7,R651,20
+,PC,PC27,Mote Key Largo [In Situ],,Unassigned,R164,20
+,PC,PC26,Mote Key Largo [In Situ],,Unassigned,R167,20
+,PC,PC50,Mote Key Largo [In Situ],,Unassigned,R44,20
+,PC,PC26,Mote Key Largo [In Situ],,Unassigned,R36,20
+,MC,MC204,Mote Key Largo [In Situ],,Unassigned,R137,20
+,MC,MC97,Mote Key Largo [In Situ],,Unassigned,R210,20
+,MC,MC204,Mote Key Largo [In Situ],,Unassigned,R147,20
+,PC,PC21,Mote Key Largo [In Situ],,Unassigned,R18,20
+,PC,PC45,Mote Key Largo [In Situ],,Unassigned,R162,20
+,PC,PC45,Mote Key Largo [In Situ],,Unassigned,R187,20
+,MC,MC125,Mote Key Largo [In Situ],,Unassigned,R268,20
+,PS,PS14,Mote Key Largo [In Situ],,Unassigned,R81,20
+,MC,MC204,Mote Key Largo [In Situ],,Unassigned,R31,20
+,CN,CN73,Mote Summerland,All Summerland,H3,ISLA294,20
+,CN,CN83,Mote Summerland,All Summerland,H3,ISLA265,20
+,CN,CN54,Mote Summerland,All Summerland,H3,ISLA184,20
+,CN,CN18,Mote Summerland,All Summerland,H3,R1988,20
+,CN,CN14,Mote Summerland,All Summerland,H3,R1539,20
+,CN,CN21,Mote Summerland,All Summerland,H3,R1645,20
+,CN,CN19,Mote Summerland,All Summerland,H3,R1949,20
+,INTERSEPTA,SI13,Mote Summerland,All Summerland,C1,R1179,20
+,MC,MC202,Mote Summerland,All Summerland,D4,R262,20
+,PS,PS36,Mote Looe Key [In Situ],,,PS MIX3,20
+,AC,AC2615,Mote Looe Key [In Situ],,,NB-4a,20
+,AC,AC2601,Mote Looe Key [In Situ],,,NB-1,20
+,OF,OF180,Mote Looe Key [In Situ],,,OF-180,20
+,OF,OF185,Mote Looe Key [In Situ],,,OF-185,20
+,AC,AC2628,Mote Looe Key [In Situ],,,RD-3,20
+,AC,AC2637,Mote Looe Key [In Situ],,,RD-21,20
+,AC,AC5,Mote Looe Key [In Situ],,,5,20
+,AC,AC70,Mote Sand Key [In Situ],,,70,20
+,RADIANS,SR257,Mote Summerland,All Summerland,D2,R1582,20
+,OF,OF940,Mote Islamorada [In Situ],,,Blue07,20
+,CN,CN7,Mote Summerland,All Summerland,H3,R3,20
+,CN,CN11,Mote Summerland,All Summerland,H3,R3,20
+,CN,CN12,Mote Summerland,All Summerland,H3,R3,20
+,CN,CN8,Mote Summerland,All Summerland,H3,R3,20
+,MC,MC112,Mote Summerland,All Summerland,B5,R1736,20
+,INTERSEPTA,SI6,Mote Summerland,All Summerland,F4,R1531,20
+,DL,DL172,Mote Summerland,All Summerland,B6,R148,20
+,CN,CN75,Mote Summerland,All Summerland,F10,R1379,20
+,OF,OF984,Mote Summerland,All Summerland,B3,R1319,20
+,PC,PC46,Mote Key Largo [In Situ],,Unassigned,R150,20
+,PC,PC46,Mote Key Largo [In Situ],,Unassigned,R161,20
+,MC,MC204,Mote Key Largo [In Situ],,Unassigned,R213,20
+,MC,MC204,Mote Key Largo [In Situ],,Unassigned,R249,20
+,MC,MC97,Mote Key Largo [In Situ],,Unassigned,R291,20
+,PC,PC46,Mote Key Largo [In Situ],,Unassigned,R309,20
+,PC,PC50,Mote Key Largo [In Situ],,Unassigned,R87,20
+,PC,PC20,Mote Key Largo [In Situ],,Unassigned,R144,20
+,PC,PC45,Mote Key Largo [In Situ],,Unassigned,R256,20
+,SB,SB13,Mote Summerland,All Summerland,A4,R1249,20
+,SB,SB13,Mote Summerland,All Summerland,A4,R1285,20
+,AC,AC58,Mote Key Largo [In Situ],,,Red01,20
+,AC,AC4,Mote Key Largo [In Situ],,,Red05,20
+,AC,AC58,Mote Key Largo [In Situ],,,Blue01,20
+,PC,PC20,Mote Key Largo [In Situ],,,Blue61,20
+,OF,OF1015,Mote Islamorada [In Situ],,Unassigned,R100,20
+,CN,CN14,Mote Summerland,All Summerland,F7,R1042,19
+,MC,MC127,Mote Summerland,All Summerland,C5,R24,19
+,SIDEREA,SS1,Mote Summerland,All Summerland,E4,R324,19
+,OF,OF1015,Mote Islamorada [In Situ],,Unassigned,R45,19
+,MC,MC102,Mote Summerland,All Summerland,F4,R357,19
+,PS,PS7,Mote Islamorada [In Situ],,Unassigned,R322,19
+,DL,DL275,Mote Summerland,All Summerland,D5,R440,19
+,DL,DL185,Mote Summerland,All Summerland,E6,R1708,19
+,PS,PS20,Mote Summerland,All Summerland,E4,R1683,19
+,ASTREOIDES,PA74,Mote Summerland,All Summerland,G4,R900,19
+,PS,PS14,Mote Summerland,All Summerland,B1,R1614,19
+,ASTREOIDES,PA84,Mote Summerland,All Summerland,G9,R1324,19
+,DL,DL210,Mote Summerland,All Summerland,D5,R1648,19
+,DL,DL218,Mote Summerland,All Summerland,D4,R844,19
+,PS,PS7,Mote Summerland,All Summerland,B2,R1219,19
+,PS,PS35,Mote Looe Key [In Situ],,,PS MIX3,19
+,AC,AC2611,Mote Looe Key [In Situ],,,NB-15,19
+,CN,CN10,Mote Looe Key [In Situ],,,CN MIX1,19
+,OF,OF675,Mote Looe Key [In Situ],,,OF MIX2,19
+,PS,PS9,Mote Summerland,All Summerland,A5,R1076,19
+,I2,I2A,Mote Summerland,All Summerland,H6,R1281,18
+,PC,PC19,Mote Summerland,All Summerland,F5,R1017,18
+,OF,OF976,Mote Summerland,All Summerland,F4,R1317,18
+,OF,OF1004,Mote Looe Key [In Situ],,default,R41,18
+,ASTREOIDES,PA29,Mote Summerland,All Summerland,C3,R839,18
+,OF,OF688,Mote Summerland,All Summerland,F7,R1479,18
+,PS,PS8,Mote Summerland,All Summerland,E4,R1498,18
+,ASTREOIDES,PA54,Mote Summerland,All Summerland,D4,R1353,18
+,DL,DL204,Mote Summerland,All Summerland,Q9,R981,18
+,DL,DL176,Mote Summerland,All Summerland,F1,R1829,18
+,PS,PS2,Mote Looe Key [In Situ],,,PS-2,18
+,OF,OF184,Mote Looe Key [In Situ],,,OF MIX4,18
+,OF,OF1018,Mote Looe Key [In Situ],,,OF MIX5,18
+,DL,DL151,Mote Summerland,All Summerland,A5,R1165,18
+,AP,AP24,Mote Looe Key [In Situ],,,AP24,18
+,PS,PS45,Mote Summerland,All Summerland,A5,R1244,18
+,DL,DL231,Mote Summerland,All Summerland,A1,R1150,18
+,OF,OF679,Mote Summerland,All Summerland,F4,R1448,18
+,CN,CN18,Mote Summerland,All Summerland,F7,R1675,18
+,MC,MC64,Mote Summerland,All Summerland,A5,R491,18
+,ASTREOIDES,PA22,Mote Summerland,All Summerland,D4,R1211,18
+,CN,CN49,Mote Summerland,All Summerland,F10,R1588,18
+,MC,MC107,Mote Summerland,All Summerland,F6,R939,18
+,OF,OF987,Mote Looe Key [In Situ],,default,R948,18
+,PA,PA416,Mote Summerland,All Summerland,A2,R946,18
+,PA,PA409,Mote Summerland,All Summerland,A2,R197,18
+,PC,PC31,Mote Key Largo [In Situ],,,Red01,18
+,PC,PC31,Mote Key Largo [In Situ],,,Blue31,18
+,ASTREOIDES,PA71,Mote Summerland,All Summerland,C4,R347,17
+,ASTREOIDES,PA112,Mote Summerland,All Summerland,C4,R1264,17
+,OF,OF987,Mote Summerland,All Summerland,C1,R111,17
+,MC,MC115,Mote Islamorada [In Situ],,Unassigned,R437,17
+,PS,PS4,Mote Summerland,All Summerland,D4,R705,17
+,OF,OF955,Mote Islamorada [In Situ],,Unassigned,R511,17
+,ASTREOIDES,PA345,Mote Summerland,All Summerland,Q7,R1608,17
+,PD,PD?,Mote Summerland,All Summerland,Q4,R1092,17
+,SIDEREA,SS165,Mote Summerland,All Summerland,C1,R1439,17
+,MC,MC209,Mote Summerland,All Summerland,D5,R1344,17
+,DL,DL222,Mote Summerland,All Summerland,D1,R251,17
+,OF,OF98,Mote Summerland,All Summerland,B3,R967,17
+,ASTREOIDES,PA104,Mote Summerland,All Summerland,H6,R1349,17
+,ASTREOIDES,PA99,Mote Summerland,All Summerland,G9,R1287,17
+,SIDEREA,SS9,Mote Summerland,All Summerland,D5,R701,17
+,MC,MC127,Mote Looe Key [In Situ],,,MC MIX4,17
+,AC,AC4,Mote Looe Key [In Situ],,,4,17
+,AC,AC48,Mote Looe Key [In Situ],,,48,17
+,OA,OA12,Mote Looe Key [In Situ],,,OA MIX1,17
+,AC,AC88,Mote Looe Key [In Situ],,,88,17
+,PC,PC37,Mote Looe Key [In Situ],,,PC-37,17
+,AC,AC92,Mote Sand Key [In Situ],,,92,17
+,OF,OF689,Mote Summerland,All Summerland,A5,R1217,17
+,AC,AC88,Mote Islamorada [In Situ],,,Red11,17
+,RADIANS,SR256,Mote Summerland,All Summerland,D2,R1604,17
+,OF,OF957,Mote Islamorada [In Situ],,,Blue07,17
+,MC,MC57,Mote Summerland,All Summerland,B2,R369,17
+,DS,DS9,Mote Summerland,All Summerland,A1,R1150,17
+,MC,MC72,Mote Summerland,All Summerland,E6,R607,17
+,OF,OF1015-B,Mote Islamorada [In Situ],,Unassigned,R184,17
+,CN,CN14,Mote Summerland,All Summerland,H2,R1146,16
+,CN,CN14,Mote Summerland,All Summerland,G9,R1121,16
+,INTERSEPTA,SI8,Mote Summerland,All Summerland,F3,R133,16
+,INTERSEPTA,SI1,Mote Summerland,All Summerland,F3,R133,16
+,ASTREOIDES,PA54,Mote Summerland,All Summerland,C4,R1353,16
+,MC,MC57,Mote Summerland,All Summerland,D4,R5,16
+,OF,OF951,Mote Islamorada [In Situ],,Unassigned,R507,16
+,OF,OF685,Mote Summerland,All Summerland,Q10,R2012,16
+,PC,PC48,Mote Key Largo [In Situ],,Unassigned,R42,16
+,CN,CN51,Mote Summerland,All Summerland,D1,R413,16
+,PC,PC46,Mote Key Largo [In Situ],,Unassigned,R239,16
+,ASTREOIDES,PA93,Mote Summerland,All Summerland,G9,R1001,16
+,MC,MC205,Mote Looe Key [In Situ],,default,ILSA45,16
+,AC,AC2514,Mote Looe Key [In Situ],,,CU-035,16
+,OF,OF668,Mote Looe Key [In Situ],,,OF MIX2,16
+,OF,OF1017,Mote Looe Key [In Situ],,,OF MIX5,16
+,AC,AC29,Mote Looe Key [In Situ],,,29,16
+,AC,AC56,Mote Looe Key [In Situ],,,56,16
+,CN,CN9,Mote Looe Key [In Situ],,,CN MIX1,16
+,DS,DS4,Mote Looe Key [In Situ],,,DS MIX1,16
+,DL,DL146,Mote Summerland,All Summerland,A5,R108,16
+,OF,OF457,Mote Summerland,All Summerland,A5,R1242,16
+,DL,DL189,Mote Summerland,All Summerland,B5,R1720,16
+,PC,PC16,Mote Summerland,All Summerland,F5,R1017,16
+,SIDEREA,SS26,Mote Summerland,All Summerland,F4,R1416,16
+,OF,OF1003,Mote Summerland,All Summerland,F4,R1515,16
+,ASTREOIDES,PA90,Mote Summerland,All Summerland,G9,R1336,16
+,RADIANS,SR189,Mote Looe Key [In Situ],,default,R1631,16
+,DL,DL257,Mote Looe Key [In Situ],,default,R1,16
+,DL,DL153,Mote Summerland,All Summerland,B1,R152,16
+,PS,PS48,Mote Key Largo [In Situ],,,Red04,16
+,PS,PS48,Mote Key Largo [In Situ],,,Red04,16
+,OF,OF947,Mote Islamorada [In Situ],,Unassigned,R314,15
+,MC,MC117,Mote Islamorada [In Situ],,Unassigned,R320,15
+,OF,OF693,Mote Summerland,All Summerland,Q10,R2012,15
+,ASTREOIDES,PA103,Mote Summerland,All Summerland,C4,R945,15
+,MC,MC109,Mote Summerland,All Summerland,C4,R1183,15
+,OF,OF995,Mote Looe Key [In Situ],,default,R878,15
+,MC,MC106,Mote Summerland,All Summerland,B1,R1862,15
+,PS,PS49,Mote Summerland,All Summerland,F9,R1463,15
+,DL,DL203,Mote Summerland,All Summerland,F4,R1077,15
+,DL,DL165,Mote Summerland,All Summerland,C4,R19,15
+,DL,DL201,Mote Summerland,All Summerland,C4,R20,15
+,PC,PC26,Mote Key Largo [In Situ],,Unassigned,R316,15
+,MC,MC71,Mote Summerland,All Summerland,E6,R607,15
+,AC,AC2511,Mote Looe Key [In Situ],,,CM-031,15
+,PS,PS27,Mote Looe Key [In Situ],,,PS MIX2,15
+,AC,AC2607,Mote Looe Key [In Situ],,,NB-8,15
+,PC,PC17,Mote Looe Key [In Situ],,,PC-17,15
+,PC,PC44,Mote Summerland,All Summerland,A5,R922,15
+,DL,DL238,Mote Summerland,All Summerland,D2,R1604,15
+,CN,CN11,Mote Looe Key [In Situ],,,CN-11,15
+,DL,DL270,Mote Summerland,All Summerland,F8,R2001,15
+,DL,DL166,Mote Summerland,All Summerland,B6,R421,15
+,DL,DL186,Mote Summerland,All Summerland,B6,R148,15
+,CN,CN29,Mote Summerland,All Summerland,F10,R1766,15
+,MC,MC52,Mote Summerland,All Summerland,B6,R204,15
+,DL,DL256,Mote Summerland,All Summerland,D4,R1211,15
+,DL,DL179,Mote Summerland,All Summerland,F6,R165,15
+,OF,OF1008,Mote Islamorada [In Situ],,Unassigned,R52,15
+,DL,DL157,Mote Summerland,All Summerland,B1,R152,15
+,PC,PC50,Mote Key Largo [In Situ],,Unassigned,R79,15
+,PC,PC21,Mote Key Largo [In Situ],,,Red04,15
+,AC,AC3,Mote Key Largo [In Situ],,,Red05,15
+,PC,PC21,Mote Key Largo [In Situ],,,Blue94,15
+,AC,AC3,Mote Key Largo [In Situ],,,Blue35,15
+,OF,OF1008,Mote Islamorada [In Situ],,Unassigned,R253,15
+,OF,OF1008,Mote Islamorada [In Situ],,Unassigned,R267,15
+,ASTREOIDES,PA70,Mote Summerland,All Summerland,G4,R321,14
+,OF,OF774,Mote Summerland,All Summerland,F6,R665,14
+,MC,MC116,Mote Islamorada [In Situ],,Unassigned,R508,14
+,PC,PC19,Mote Summerland,All Summerland,D3,R1516,14
+,INTERSEPTA,SI11,Mote Summerland,All Summerland,C5,R9,14
+,PD,PD?,Mote Summerland,All Summerland,Q4,R880,14
+,MC,MC78,Mote Key Largo [In Situ],,Unassigned,R135,14
+,MC,MC212,Mote Summerland,All Summerland,D1,R142,14
+,PS,PS14,Mote Key Largo [In Situ],,Unassigned,R11,14
+,ASTREOIDES,PA42,Mote Summerland,All Summerland,H6,R356,14
+,ASTREOIDES,PA96,Mote Summerland,All Summerland,G9,R1287,14
+,SIDEREA,SS3,Mote Summerland,All Summerland,D5,R978,14
+,PC,PC19,Mote Summerland,All Summerland,B6,R204,14
+,MC,MC73,Mote Looe Key [In Situ],,,MC MIX3,14
+,MC,MC126,Mote Looe Key [In Situ],,,MC MIX4,14
+,AC,AC50,Mote Looe Key [In Situ],,,50,14
+,DL,DL201,Mote Summerland,All Summerland,D1,R413,14
+,OF,OF800,Mote Summerland,All Summerland,B5,R1040,14
+,OF,OF696,Mote Summerland,All Summerland,F4,R1055,14
+,MC,MC59,Mote Summerland,All Summerland,B1,R4,14
+,MC,MC59,Mote Summerland,All Summerland,B1,R4,14
+,PA,PA419,Mote Summerland,All Summerland,A2,R893,14
+,MC,MC78,Mote Key Largo [In Situ],,,Red03,14
+,MC,MC78,Mote Key Largo [In Situ],,,Red03,14
+,MC,MC116,Mote Islamorada [In Situ],,,Blue10,14
+,OF,OF956,Mote Islamorada [In Situ],,Unassigned,R264,14
+,OF,OF441,Mote Summerland,,Unassigned,R708,13
+,SIDEREA,SS11,Mote Summerland,All Summerland,F3,R318,13
+,ASTREOIDES,PA306,Mote Summerland,All Summerland,F1,R459,13
+,SIDEREA,SS24,Mote Summerland,All Summerland,E4,R324,13
+,OF,OF61,Mote Summerland,All Summerland,F7,R1006,13
+,ASTREOIDES,PA320,Mote Summerland,All Summerland,H2,R1599,13
+,AC,AC2540,Mote Looe Key [In Situ],,,CU-126,13
+,MC,MC61,Mote Looe Key [In Situ],,,MC MIX2,13
+,AC,AC2575,Mote Looe Key [In Situ],,,FM-8,13
+,OF,OF700,Mote Looe Key [In Situ],,,OF MIX3,13
+,OF,OF920,Mote Looe Key [In Situ],,,OF MIX3,13
+,OA,OA13,Mote Looe Key [In Situ],,,OA MIX1,13
+,DL,DL152,Mote Summerland,All Summerland,A5,R1165,13
+,OF,OF97,Mote Summerland,All Summerland,A5,R1217,13
+,ASTREOIDES,PA45,Mote Summerland,All Summerland,G4,R321,13
+,OF,OF988,Mote Summerland,All Summerland,F5,R909,13
+,,OF,Mote Summerland,All Summerland,F5,R1362,13
+,CN,CN30,Mote Summerland,All Summerland,F10,R1057,13
+,OF,OF982,Mote Summerland,All Summerland,Q7,R916,13
+,DL,DL158,Mote Summerland,All Summerland,B1,R1725,13
+,AC,AC13,Mote Key Largo [In Situ],,,Red04,13
+,AC,AC56,Mote Key Largo [In Situ],,,Red05,13
+,AC,AC13,Mote Key Largo [In Situ],,,Blue24,13
+,AC,AC56,Mote Key Largo [In Situ],,,Blue25,13
+,CN,CN21,Mote Summerland,All Summerland,F4,R1317,13
+,OF,OF955,Mote Islamorada [In Situ],,,Blue09,13
+,OF,OF951,Mote Islamorada [In Situ],,Unassigned,R463,12
+,DL,DL233,Mote Summerland,All Summerland,F5,R154,12
+,ASTREOIDES,PA114,Mote Summerland,All Summerland,G4,R284,12
+,ASTREOIDES,PA73,Mote Summerland,All Summerland,G4,R321,12
+,MC,MC103,Mote Summerland,All Summerland,F3,R495,12
+,ASTREOIDES,PA115,Mote Summerland,All Summerland,G4,R712,12
+,PS,PS49,Mote Summerland,All Summerland,F9,R1539,12
+,MC,MC126,Mote Summerland,All Summerland,F5,R1362,12
+,PC,PC57,Mote Summerland,All Summerland,E3,R1695,12
+,ASTREOIDES,PA353,Mote Summerland,All Summerland,G10,R1845,12
+,ASTREOIDES,PA106,Mote Summerland,All Summerland,G4,R1268,12
+,ASTREOIDES,PA110,Mote Summerland,All Summerland,G3,R1048,12
+,ASTREOIDES,PA35,Mote Summerland,All Summerland,G3,R659,12
+,PS,PS11,Mote Looe Key [In Situ],,,PS MIX1,12
+,OF,OF96,Mote Looe Key [In Situ],,,OF MIX1,12
+,AC,AC0,Mote Sand Key [In Situ],,,UNK-2,12
+,DL,DL147,Mote Summerland,All Summerland,A5,R108,12
+,OF,OF989,Mote Summerland,All Summerland,E4,R1498,12
+,OF,OF96,Mote Summerland,All Summerland,C6,R877,12
+,PC,PC57,Mote Summerland,All Summerland,F4,R1055,12
+,DL,DL200,Mote Summerland,All Summerland,B6,R1434,12
+,DL,DL156,Mote Summerland,All Summerland,B1,R1725,12
+,PC,PC45,Mote Key Largo [In Situ],,Unassigned,R2,12
+,PC,PC58,Mote Summerland,All Summerland,F4,R1077,12
+,MC,MC106,Mote Summerland,All Summerland,F6,R1035,11
+,OF,OF930,Mote Islamorada [In Situ],,Unassigned,R434,11
+,OF,OF949,Mote Islamorada [In Situ],,Unassigned,R436,11
+,MC,MC119,Mote Islamorada [In Situ],,Unassigned,R444,11
+,MC,MC84,Mote Islamorada [In Situ],,Unassigned,R317,11
+,ASTREOIDES,PA93,Mote Summerland,All Summerland,C3,R1430,11
+,ASTREOIDES,PA50,Mote Summerland,All Summerland,C3,R118,11
+,DL,DL290,Mote Summerland,All Summerland,G7,R1524,11
+,INTERSEPTA,SI85,Mote Summerland,All Summerland,D4,R1327,11
+,ASTREOIDES,PA311,Mote Summerland,All Summerland,F1,R459,11
+,RADIANS,SR255,Mote Summerland,All Summerland,D2,R1582,11
+,ASTREOIDES,PA47,Mote Summerland,All Summerland,G4,R843,11
+,ASTREOIDES,PA89,Mote Summerland,All Summerland,G3,R659,11
+,OF,OF996,Mote Summerland,All Summerland,C1,R111,11
+,ASTREOIDES,PA55,Mote Summerland,All Summerland,G9,R1492,11
+,SIDEREA,SS25,Mote Summerland,All Summerland,D5,R978,11
+,SIDEREA,SS8,Mote Summerland,All Summerland,D5,R978,11
+,OF,OF992,Mote Summerland,All Summerland,F5,R1437,11
+,PS,PS28,Mote Looe Key [In Situ],,,PS MIX2,11
+,CN,CN3,Mote Looe Key [In Situ],,,CN MIX1,11
+,CN,CN4,Mote Looe Key [In Situ],,,CN MIX1,11
+,OF,OF995,Mote Summerland,All Summerland,B3,R1414,11
+,CN,CN21,Mote Summerland,All Summerland,B3,R292,11
+,AP,AP22,Mote Looe Key [In Situ],,,AP24,11
+,OF,OF1002,Mote Summerland,All Summerland,C6,R934,11
+,DL,DL10,Mote Summerland,All Summerland,B2,R1839,11
+,DL,DL285,Mote Summerland,All Summerland,B2,R1095,11
+,RADIANS,SR190,Mote Looe Key [In Situ],,default,R1980,11
+,MC,MC108,Mote Looe Key [In Situ],,default,R1,11
+,MC,MC117,Mote Islamorada [In Situ],,,Blue07,11
+,MC,MC84,Mote Islamorada [In Situ],,,Blue09,11
+,DL,DL159,Mote Summerland,All Summerland,B1,R1725,11
+,DL,DL9,Mote Summerland,All Summerland,A2,R1895,11
+,PA,PA411,Mote Summerland,All Summerland,A2,R197,11
+,OF,OF931,Mote Islamorada [In Situ],,Unassigned,R233,11
+,AC,AC5,Mote Islamorada [In Situ],,,Red14,10
+,OF,OF773,Mote Summerland,All Summerland,F1,R1043,10
+,PS,PS13,Mote Summerland,All Summerland,E6,R1252,10
+,ASTREOIDES,PA100,Mote Summerland,All Summerland,G4,R712,10
+,OF,OF1005,Mote Summerland,All Summerland,C6,R963,10
+,DL,DL257,Mote Summerland,All Summerland,F7,R1426,10
+,ASTREOIDES,PA24,Mote Summerland,All Summerland,G9,R1001,10
+,SIDEREA,SS506,Mote Summerland,All Summerland,G7,R1511,10
+,MC,MC125,Mote Key Largo [In Situ],,Unassigned,R160,10
+,SIDEREA,SS88,Mote Summerland,All Summerland,C1,R1131,10
+,ASTREOIDES,PA60,Mote Summerland,All Summerland,G4,R284,10
+,DL,DL234,Mote Summerland,All Summerland,F6,R1665,10
+,OF,OF1003,Mote Summerland,All Summerland,Q2,R1810,10
+,PS,PS10,Mote Summerland,All Summerland,D5,R701,10
+,OF,OF987,Mote Summerland,All Summerland,D5,R487,10
+,MC,MC60,Mote Looe Key [In Situ],,,MC MIX2,10
+,OF,OF800,Mote Looe Key [In Situ],,,OF MIX3,10
+,OF,OF1019,Mote Looe Key [In Situ],,,OF MIX5,10
+,AC,AC925,Mote Looe Key [In Situ],,,925,10
+,AC,AC2505,Mote Sand Key [In Situ],,,FM-20,10
+,PS,PS16,Mote Summerland,All Summerland,A5,R1076,10
+,OF,OF1,Mote Summerland,All Summerland,A5,R1217,10
+,PS,PS47,Mote Summerland,All Summerland,A5,R1447,10
+,OF,OF1000,Mote Summerland,All Summerland,F4,R1077,10
+,DL,DL218,Mote Summerland,All Summerland,D1,R949,10
+,SIDEREA,SS20,Mote Summerland,All Summerland,F4,R1531,10
+,AP,AP16,Mote Summerland,All Summerland,A5,R1771,10
+,DL,DL80,Mote Summerland,All Summerland,B6,R1586,10
+,CN,CN33,Mote Summerland,All Summerland,C1,R1179,10
+,DL,DL7,Mote Summerland,All Summerland,Q7,R1489,10
+,PA,PA408,Mote Summerland,All Summerland,A2,R2009,10
+,AC,AC41,Mote Key Largo [In Situ],,,Red04,10
+,AC,AC7,Mote Key Largo [In Situ],,,Red08,10
+,AC,AC41,Mote Key Largo [In Situ],,,Blue24,10
+,OF,OF942,Mote Islamorada [In Situ],,,Blue10,10
+,AC,AC7,Mote Key Largo [In Situ],,,Blue38,10
+,CN,CN15,Mote Summerland,All Summerland,B3,R859,9
+,INTERSEPTA,SI6,Mote Summerland,All Summerland,F3,R133,9
+,OF,OF931,Mote Islamorada [In Situ],,Unassigned,R432,9
+,DL,DL209,Mote Summerland,All Summerland,F3,R134,9
+,DL,DL212,Mote Summerland,All Summerland,F3,R134,9
+,OF,OF96,Mote Summerland,All Summerland,Q10,R2012,9
+,OF,OF954,Mote Islamorada [In Situ],,Unassigned,R317,9
+,FRANKSI,OK1,Mote Summerland,All Summerland,H2,R1260,9
+,FRANKSI,OK1,Mote Summerland,All Summerland,H2,R492,9
+,MC,MC102,Mote Summerland,All Summerland,B3,R1449,9
+,PS,PS4,Mote Summerland,All Summerland,F4,R1416,9
+,PS,PS6,Mote Summerland,All Summerland,B6,R204,9
+,SIDEREA,SS6,Mote Summerland,All Summerland,F4,R1515,9
+,ASTREOIDES,PA338,Mote Summerland,All Summerland,Q7,R1979,9
+,SIDEREA,SS90,Mote Summerland,,R15,R1191,9
+,ASTREOIDES,PA92,Mote Summerland,All Summerland,G3,R659,9
+,ASTREOIDES,PA62,Mote Summerland,All Summerland,G9,R1001,9
+,ASTREOIDES,PA319,Mote Summerland,All Summerland,H2,R1898,9
+,AC,AC2506,Mote Looe Key [In Situ],,,CU-014,9
+,AC,AC2505,Mote Looe Key [In Situ],,,CU-009,9
+,PS,PS13,Mote Looe Key [In Situ],,,PS MIX1,9
+,OF,OF7,Mote Looe Key [In Situ],,,OF-7,9
+,OF,OF97,Mote Looe Key [In Situ],,,OF MIX1,9
+,OF,OF695,Mote Looe Key [In Situ],,,OF MIX3,9
+,OA,OA11,Mote Looe Key [In Situ],,,OA MIX1,9
+,AC,AC2571,Mote Sand Key [In Situ],,,FM-20,9
+,OF,OF996,Mote Summerland,All Summerland,B3,R859,9
+,OF,OF982,Mote Summerland,All Summerland,Q7,R1297,9
+,PC,PC52,Mote Looe Key [In Situ],,default,ILSA45,9
+,MC,MC59,Mote Summerland,All Summerland,C6,R877,9
+,SIDEREA,SS14,Mote Summerland,All Summerland,F4,R1515,9
+,SIDEREA,SS497,Mote Summerland,All Summerland,D4,R289,9
+,PS,PS17,Mote Summerland,All Summerland,B6,R204,9
+,OF,OF986,Mote Summerland,All Summerland,Q7,R1297,9
+,DL,DL234,Mote Summerland,All Summerland,Q7,R1779,9
+,DL,DL256,Mote Summerland,All Summerland,F6,R1339,9
+,AC,AC1,Mote Islamorada [In Situ],,,Red01,9
+,OF,OF954,Mote Islamorada [In Situ],,,Blue09,9
+,AC,AC4,Mote Key Largo [In Situ],,,Red06,9
+,AC,AC4,Mote Key Largo [In Situ],,,Blue36,9
+,DL,DL195,Mote Summerland,All Summerland,F6,R1948,8
+,DL,DL197,Mote Summerland,All Summerland,F6,R1948,8
+,ASTREOIDES,PA111,Mote Summerland,All Summerland,G4,R900,8
+,MC,MC118,Mote Islamorada [In Situ],,Unassigned,R436,8
+,OF,OF954,Mote Islamorada [In Situ],,Unassigned,R437,8
+,MC,MC120,Mote Islamorada [In Situ],,Unassigned,R507,8
+,FRANKSI,OK1,Mote Summerland,All Summerland,H2,R1151,8
+,INTERSEPTA,SI246,Mote Summerland,All Summerland,G7,R1830,8
+,SIDEREA,SS462,Mote Summerland,,R15,R973,8
+,INTERSEPTA,SI43,Mote Summerland,All Summerland,G9,R887,8
+,MC,MC210,Mote Summerland,All Summerland,E5,R1159,8
+,ASTREOIDES,PA101,Mote Summerland,All Summerland,G4,R284,8
+,ASTREOIDES,PA52,Mote Summerland,All Summerland,G4,R843,8
+,DL,DL176,Mote Summerland,All Summerland,A6,R1622,8
+,ASTREOIDES,PA63,Mote Summerland,All Summerland,H6,R1349,8
+,ASTREOIDES,PA25,Mote Summerland,All Summerland,H6,R1349,8
+,,PA,Mote Summerland,All Summerland,H6,R1349,8
+,OF,OF1,Mote Summerland,All Summerland,E3,R938,8
+,DL,DL145,Mote Summerland,All Summerland,E3,R1034,8
+,DL,DL140,Mote Summerland,All Summerland,E3,R1034,8
+,MC,MC4,Mote Looe Key [In Situ],,,MC MIX1,8
+,MC,MC57,Mote Looe Key [In Situ],,,MC MIX2,8
+,AC,AC2578,Mote Looe Key [In Situ],,,FM-13,8
+,AC,AC2626,Mote Looe Key [In Situ],,,RD-1,8
+,AC,AC54,Mote Looe Key [In Situ],,,54,8
+,AC,AC70,Mote Looe Key [In Situ],,,70,8
+,PC,PC41,Mote Summerland,All Summerland,E4,R1498,8
+,OF,OF125,Mote Summerland,All Summerland,A5,R1217,8
+,MC,MC61,Mote Summerland,All Summerland,F4,R1448,8
+,SIDEREA,SS87,Mote Summerland,All Summerland,F8,R1664,8
+,DL,DL3,Mote Summerland,All Summerland,F4,R1416,8
+,DL,DL266,Mote Summerland,All Summerland,B6,R421,8
+,DL,DL197,Mote Summerland,All Summerland,B6,R421,8
+,SIDEREA,SS91,Mote Summerland,All Summerland,C1,R1131,8
+,OF,OF671,Mote Summerland,All Summerland,B6,R941,8
+,OF,OF1019,Mote Summerland,All Summerland,B3,R1414,8
+,PA,PA421,Mote Summerland,All Summerland,A2,R1279,8
+,OF,OF1018,Mote Summerland,All Summerland,B3,R1414,8
+,DL,DL13,Mote Key Largo [In Situ],,,Red05,8
+,DL,DL13,Mote Key Largo [In Situ],,,Blue65,8
+,INTERSEPTA,SI7,Mote Summerland,All Summerland,F3,R133,7
+,OF,OF1015,Mote Islamorada [In Situ],,Unassigned,R466,7
+,DL,DL192,Mote Summerland,All Summerland,F6,R1948,7
+,OF,OF932,Mote Islamorada [In Situ],,Unassigned,R435,7
+,INTERSEPTA,SI4,Mote Summerland,All Summerland,F4,R714,7
+,OF,OF670,Mote Summerland,All Summerland,Q10,R2012,7
+,SIDEREA,SS90,Mote Summerland,,R15,R1684,7
+,INTERSEPTA,SI58,Mote Summerland,All Summerland,Q3,R1051,7
+,MC,MC208,Mote Summerland,All Summerland,E5,R1159,7
+,OF,OF1076,Mote Summerland,All Summerland,A6,R1635,7
+,OF,OF1066,Mote Summerland,All Summerland,A6,R1635,7
+,OF,OF1067,Mote Summerland,All Summerland,A6,R1635,7
+,OF,OF1079,Mote Summerland,All Summerland,A6,R1635,7
+,OF,OF1069,Mote Summerland,All Summerland,A6,R1587,7
+,OF,OF1072,Mote Summerland,All Summerland,A6,R1587,7
+,DL,DL141,Mote Summerland,All Summerland,E3,R1034,7
+,DL,DL142,Mote Summerland,All Summerland,E3,R1034,7
+,MC,MC33,Mote Looe Key [In Situ],,,MC MIX1,7
+,MC,MC59,Mote Looe Key [In Situ],,,MC MIX2,7
+,AC,AC2582,Mote Looe Key [In Situ],,,FM-20,7
+,AC,AC20,Mote Looe Key [In Situ],,,,7
+,PC,PC20,Mote Looe Key [In Situ],,,PC-20,7
+,AC,AC2542,Mote Sand Key [In Situ],,,CU-128,7
+,AC,AC25,Mote Sand Key [In Situ],,,FM-20,7
+,AC,AC47,Mote Islamorada [In Situ],,,Red07,7
+,INTERSEPTA,SI42,Mote Looe Key [In Situ],,default,R1885,7
+,DL,DL191,Mote Summerland,All Summerland,D1,R885,7
+,SR,SR706,Mote Summerland,All Summerland,A2,R1279,7
+,OF,OF950,Mote Key Largo [In Situ],,,Red04,7
+,AC,AC51,Mote Key Largo [In Situ],,,Red05,7
+,AC,AC51,Mote Key Largo [In Situ],,,Blue25,7
+,OF,OF1004,Mote Summerland,All Summerland,C6,R681,7
+,OF,OF927,Mote Islamorada [In Situ],,Unassigned,R269,7
+,OF,OF941,Mote Islamorada [In Situ],,Unassigned,R444,6
+,MC,MC87,Mote Islamorada [In Situ],,Unassigned,R314,6
+,DL,DL193,Mote Summerland,All Summerland,F6,R1948,6
+,DL,DL249,Mote Summerland,All Summerland,F3,R65,6
+,ASTREOIDES,PA69,Mote Summerland,All Summerland,G3,R1048,6
+,DL,DL271,Mote Summerland,All Summerland,F9,R390,6
+,MC,MC205,Mote Summerland,All Summerland,H7,R473,6
+,OF,OF951,Mote Islamorada [In Situ],,,Blue01,6
+,MC,MC114,Mote Islamorada [In Situ],,,Red91,6
+,OF,OF986,Mote Summerland,All Summerland,D5,R1694,6
+,SIDEREA,SS84,Mote Summerland,,R15,R882,6
+,SIDEREA,SS462,Mote Summerland,,R15,R836,6
+,SIDEREA,SS165,Mote Summerland,,R15,R915,6
+,INTERSEPTA,SI44,Mote Summerland,All Summerland,G9,R798,6
+,INTERSEPTA,SI80,Mote Summerland,All Summerland,G9,R1768,6
+,SIDEREA,SS121,Mote Summerland,All Summerland,G10,R724,6
+,SIDEREA,SS462,Mote Summerland,All Summerland,C1,R891,6
+,INTERSEPTA,SI43,Mote Looe Key [In Situ],,default,R1885,6
+,PC,PC27,Mote Key Largo [In Situ],,Unassigned,R42,6
+,ASTREOIDES,PA72,Mote Summerland,All Summerland,G4,R900,6
+,ASTREOIDES,PA51,Mote Summerland,All Summerland,G3,R1048,6
+,OF,OF1075,Mote Summerland,All Summerland,A6,R1635,6
+,OF,OF1078,Mote Summerland,All Summerland,A6,R1635,6
+,OF,OF1077,Mote Summerland,All Summerland,A6,R1635,6
+,OF,OF1074,Mote Summerland,All Summerland,A6,R1635,6
+,OF,OF1080,Mote Summerland,All Summerland,A6,R1587,6
+,OF,OF1068,Mote Summerland,All Summerland,A6,R1587,6
+,OF,OF1070,Mote Summerland,All Summerland,A6,R1587,6
+,OF,OF1071,Mote Summerland,All Summerland,A6,R1587,6
+,OF,OF1073,Mote Summerland,All Summerland,A6,R1587,6
+,SIDEREA,SS95,Mote Summerland,All Summerland,G9,R1988,6
+,SIDEREA,SS497,Mote Summerland,All Summerland,G9,R1988,6
+,SIDEREA,SS91,Mote Summerland,All Summerland,G9,R1988,6
+,SIDEREA,SS462,Mote Summerland,All Summerland,G9,R1988,6
+,DL,DL143,Mote Summerland,All Summerland,E3,R1034,6
+,MC,MC64,Mote Looe Key [In Situ],,,MC MIX3,6
+,MC,MC76,Mote Looe Key [In Situ],,,MC MIX3,6
+,AC,AC2633,Mote Looe Key [In Situ],,,RD-13,6
+,AC,AC8,Mote Looe Key [In Situ],,,8,6
+,AC,AC91,Mote Looe Key [In Situ],,,91,6
+,DL,DL150,Mote Summerland,All Summerland,A5,R108,6
+,DL,DL148,Mote Summerland,All Summerland,A5,R108,6
+,CN,CN16,Mote Summerland,All Summerland,B3,R859,6
+,DL,DL1,Mote Summerland,All Summerland,B3,R292,6
+,AP,AP38,Mote Looe Key [In Situ],,,CU-TR5,6
+,AP,AP20,Mote Looe Key [In Situ],,,AP24,6
+,AP,AP1,Mote Looe Key [In Situ],,,LK-5,6
+,PS,PS48,Mote Summerland,All Summerland,A5,R1267,6
+,OF,OF132,Mote Summerland,All Summerland,E5,R1159,6
+,DL,DL231,Mote Summerland,,Unassigned,R1807,6
+,OF,OF979,Mote Summerland,All Summerland,C6,R934,6
+,PS,PS8,Mote Summerland,All Summerland,B1,R1614,6
+,OF,OF941,Mote Islamorada [In Situ],,,Red91,6
+,AC,AC4,Mote Islamorada [In Situ],,,Red03,6
+,PA,PA410,Mote Summerland,All Summerland,A2,R197,6
+,PA,PA420,Mote Summerland,All Summerland,A2,R1279,6
+,MC,MC85,Mote Key Largo [In Situ],,,Red02,6
+,AC,AC90,Mote Key Largo [In Situ],,,Blue28,6
+,MC,MC85,Mote Key Largo [In Situ],,,Blue82,6
+,OF,OF932,Mote Islamorada [In Situ],,,Red91,6
+,DL,DL248,Mote Summerland,All Summerland,F3,R65,5
+,DL,DL237,Mote Summerland,All Summerland,F7,R777,5
+,DL,DL240,Mote Summerland,All Summerland,F7,R777,5
+,OF,OF984,Mote Summerland,All Summerland,C6,R1333,5
+,OF,OF1016,Mote Islamorada [In Situ],,Unassigned,R466,5
+,DL,DL202,Mote Summerland,All Summerland,F3,R134,5
+,DL,DL225,Mote Summerland,All Summerland,F6,R1948,5
+,DL,DL184,Mote Summerland,All Summerland,F6,R1948,5
+,MC,MC114,Mote Islamorada [In Situ],,Unassigned,R435,5
+,OF,OF946,Mote Islamorada [In Situ],,Unassigned,R320,5
+,OF,OF979,Mote Summerland,All Summerland,D5,R1445,5
+,OF,OF902,Mote Summerland,All Summerland,C6,R1634,5
+,MC,MC203,Mote Summerland,All Summerland,H7,R1509,5
+,SIDEREA,SS466,Mote Summerland,All Summerland,G7,R1469,5
+,OF,OF1015,Mote Islamorada [In Situ],,,Blue01,5
+,OF,OF96,Mote Summerland,All Summerland,B3,R1921,5
+,PD,PD?,Mote Summerland,All Summerland,Q4,R687,5
+,AC,AC77,Mote Key Largo [In Situ],,Unassigned,R277,5
+,AC,AC73,Mote Key Largo [In Situ],,Unassigned,R277,5
+,AC,AC72,Mote Key Largo [In Situ],,Unassigned,R277,5
+,AC,AC71,Mote Key Largo [In Situ],,Unassigned,R277,5
+,AC,AC29,Mote Key Largo [In Situ],,Unassigned,R277,5
+,AC,AC22,Mote Key Largo [In Situ],,Unassigned,R094,5
+,AC,AC23,Mote Key Largo [In Situ],,Unassigned,R094,5
+,AC,AC27,Mote Key Largo [In Situ],,Unassigned,R094,5
+,AC,AC42,Mote Key Largo [In Situ],,Unassigned,R094,5
+,AC,AC46,Mote Key Largo [In Situ],,Unassigned,R094,5
+,AC,AC47,Mote Key Largo [In Situ],,Unassigned,R094,5
+,AC,AC48,Mote Key Largo [In Situ],,Unassigned,R094,5
+,AC,AC143,Mote Key Largo [In Situ],,Unassigned,R20,5
+,AC,AC145,Mote Key Largo [In Situ],,Unassigned,R20,5
+,AC,AC146,Mote Key Largo [In Situ],,Unassigned,R20,5
+,AC,AC147,Mote Key Largo [In Situ],,Unassigned,R20,5
+,INTERSEPTA,SI43,Mote Summerland,,R15,R816,5
+,INTERSEPTA,SI78,Mote Summerland,,R15,R815,5
+,SIDEREA,SS164,Mote Summerland,All Summerland,F9,R1717,5
+,INTERSEPTA,SI72,Mote Summerland,All Summerland,G9,R1812,5
+,OF,OF775,Mote Summerland,All Summerland,F5,R1328,5
+,OF,OF1017,Mote Summerland,All Summerland,F5,R1328,5
+,OF,OF97,Mote Summerland,All Summerland,C6,R629,5
+,CN,CN,Mote Summerland,All Summerland,G3,R1593,5
+,CN,CN,Mote Summerland,All Summerland,G3,R1682,5
+,OF,OF695,Mote Summerland,All Summerland,F7,R1006,5
+,CN,CN,Mote Summerland,All Summerland,G9,R1636,5
+,MC,MC59,Mote Summerland,All Summerland,F5,R1859,5
+,I1,I1A,Mote Summerland,All Summerland,H6,R356,5
+,ASTREOIDES,PA316,Mote Summerland,All Summerland,H2,R790,5
+,DL,DL149,Mote Summerland,All Summerland,E3,R1034,5
+,AC,AC2512,Mote Looe Key [In Situ],,,CM-032,5
+,PS,PS10,Mote Looe Key [In Situ],,,PS MIX1,5
+,AC,AC2632,Mote Looe Key [In Situ],,,RD-7,5
+,OF,OF925,Mote Looe Key [In Situ],,,OF MIX3,5
+,AC,AC78,Mote Looe Key [In Situ],,,78,5
+,AC,AC51,Mote Sand Key [In Situ],,,54,5
+,AC,AC1287,Mote Sand Key [In Situ],,,1962,5
+,OF,OF995,Mote Summerland,All Summerland,B3,R1449,5
+,AP,AP48,Mote Looe Key [In Situ],,,LK-5,5
+,AC,AC22,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC23,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC27,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC29,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC42,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC46,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC47,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC48,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC71,Mote Key Largo [In Situ],,,Blue97,5
+,OF,OF998,Mote Summerland,All Summerland,B3,R967,5
+,OF,OF?,Mote Summerland,All Summerland,Display,R1905,5
+,PC,PC55,Mote Summerland,All Summerland,Q7,R875,5
+,CN,CN-display,Mote Summerland,All Summerland,Q8,R208,5
+,OF,OF695,Mote Summerland,All Summerland,B3,R1921,5
+,OF,OF996,Mote Summerland,All Summerland,B3,R1449,5
+,MC,MC79,Mote Key Largo [In Situ],,,Red03,5
+,OF,OF943,Mote Key Largo [In Situ],,,Red06,5
+,AC,AC22,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC23,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC27,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC29,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC42,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC46,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC47,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC48,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC71,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC143,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC145,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC146,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC147,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC73,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC77,Mote Key Largo [In Situ],,,Red07,5
+,AC,AC84,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC89,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC94,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC55,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC57,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC70,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC76,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC31,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC34,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC6,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC8,Mote Key Largo [In Situ],,,Red08,5
+,AC,AC58,Mote Key Largo [In Situ],,,Red09,5
+,AC,AC47,Mote Key Largo [In Situ],,,Red09,5
+,AC,AC62,Mote Key Largo [In Situ],,,Red09,5
+,AC,AC13,Mote Key Largo [In Situ],,,Red10,5
+,AC,AC1,Mote Key Largo [In Situ],,,Red10,5
+,AC,AC31,Mote Key Largo [In Situ],,,Red10,5
+,MC,MC79,Mote Key Largo [In Situ],,,Blue63,5
+,AC,AC143,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC145,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC146,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC147,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC73,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC77,Mote Key Largo [In Situ],,,Blue97,5
+,AC,AC22,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC23,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC27,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC29,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC42,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC46,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC47,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC48,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC71,Mote Key Largo [In Situ],,,Blue87,5
+,AC,AC31,Mote Key Largo [In Situ],,,Blue98,5
+,AC,AC34,Mote Key Largo [In Situ],,,Blue98,5
+,AC,AC6,Mote Key Largo [In Situ],,,Blue98,5
+,AC,AC8,Mote Key Largo [In Situ],,,Blue98,5
+,AC,AC55,Mote Key Largo [In Situ],,,Blue88,5
+,AC,AC57,Mote Key Largo [In Situ],,,Blue88,5
+,AC,AC70,Mote Key Largo [In Situ],,,Blue88,5
+,AC,AC76,Mote Key Largo [In Situ],,,Blue88,5
+,AC,AC84,Mote Key Largo [In Situ],,,Blue78,5
+,AC,AC89,Mote Key Largo [In Situ],,,Blue78,5
+,AC,AC94,Mote Key Largo [In Situ],,,Blue78,5
+,AC,AC62,Mote Key Largo [In Situ],,,Blue99,5
+,AC,AC47,Mote Key Largo [In Situ],,,Blue79,5
+,AC,AC58,Mote Key Largo [In Situ],,,Blue69,5
+,AC,AC31,Mote Key Largo [In Situ],,,Blue100,5
+,AC,AC1,Mote Key Largo [In Situ],,,Blue70,5
+,AC,AC13,Mote Key Largo [In Situ],,,Blue60,5
+,OF,OF943,Mote Key Largo [In Situ],,,Blue96,5
+,CN,CN19,Mote Summerland,All Summerland,F7,R851,4
+,DL,DL239,Mote Summerland,All Summerland,F7,R777,4
+,DL,DL228,Mote Summerland,All Summerland,F5,R154,4
+,DL,DL246,Mote Summerland,All Summerland,F3,R65,4
+,DL,DL247,Mote Summerland,All Summerland,F3,R65,4
+,DL,DL263,Mote Summerland,All Summerland,F5,R63,4
+,DL,DL264,Mote Summerland,All Summerland,F5,R63,4
+,DL,DL265,Mote Summerland,All Summerland,F5,R63,4
+,OF,OF75,Mote Summerland,All Summerland,F7,R1143,4
+,OR,OR,Mote Summerland,All Summerland,Display,R236,4
+,OR,OR,Mote Summerland,All Summerland,Display,R114,4
+,OF,OF441,Mote Summerland,All Summerland,F5,R1390,4
+,OF,OF865,Mote Summerland,All Summerland,C6,R1672,4
+,OF,OF867,Mote Summerland,All Summerland,C6,R1672,4
+,OF,OF904,Mote Summerland,All Summerland,C6,R1634,4
+,CN,CN-display,Mote Summerland,All Summerland,D6,R1791,4
+,SIDEREA,SS163,Mote Summerland,,R15,R1743,4
+,DL,DL236,Mote Summerland,All Summerland,F7,R777,4
+,DL,DL188,Mote Summerland,All Summerland,D4,R1674,4
+,SIDEREA,SS84,Mote Summerland,,R15,R1197,4
+,SIDEREA,SS95,Mote Summerland,,R15,R950,4
+,SIDEREA,SS462,Mote Summerland,,R15,R1217,4
+,INTERSEPTA,SI44,Mote Summerland,,R15,R998,4
+,INTERSEPTA,SI43,Mote Summerland,,R15,R1842,4
+,INTERSEPTA,SI80,Mote Summerland,,R15,R1863,4
+,INTERSEPTA,SI80,Mote Summerland,,R15,R1157,4
+,SIDEREA,SS88,Mote Summerland,,R15,R1269,4
+,SIDEREA,SS91,Mote Summerland,,R15,R2035,4
+,SIDEREA,SS121,Mote Summerland,,R15,R1772,4
+,SIDEREA,SS126,Mote Summerland,All Summerland,G8,R1263,4
+,SIDEREA,SS463,Mote Summerland,All Summerland,G10,R1858,4
+,MC,MC207,Mote Summerland,All Summerland,E5,R1159,4
+,MC,MC58,Mote Summerland,All Summerland,D4,R5,4
+,DS,DS10,Mote Summerland,All Summerland,Q3,R1609,4
+,CN,CN,Mote Summerland,All Summerland,D6,R1811,4
+,Co,Corallivore,Mote Summerland,All Summerland,Display,R1633,4
+,ASTREOIDES,PA91,Mote Summerland,All Summerland,G4,R843,4
+,OF,OF1065,Mote Summerland,All Summerland,A6,R1587,4
+,DL,DL204,Mote Summerland,All Summerland,A6,R1799,4
+,ASTREOIDES,PA91,Mote Summerland,All Summerland,G9,R1336,4
+,ASTREOIDES,PA29,Mote Summerland,All Summerland,G9,R1324,4
+,ASTREOIDES,PA326,Mote Summerland,All Summerland,H2,R790,4
+,DL,DL144,Mote Summerland,All Summerland,E3,R1034,4
+,OF,OF984,Mote Summerland,All Summerland,F7,R851,4
+,MC,MC13,Mote Looe Key [In Situ],,,MC MIX1,4
+,MC,MC19,Mote Looe Key [In Situ],,,MC MIX1,4
+,AC,AC2617,Mote Looe Key [In Situ],,,NB-6a,4
+,OF,OF0,Mote Looe Key [In Situ],,,OF-?,4
+,OF,OF5,Mote Looe Key [In Situ],,,OF MIX1,4
+,OF,OF98,Mote Looe Key [In Situ],,,OF MIX1,4
+,OF,OF182,Mote Looe Key [In Situ],,,OF MIX4,4
+,AC,AC96,Mote Looe Key [In Situ],,,96,4
+,AC,AC20,Mote Sand Key [In Situ],,,54,4
+,AC,AC5,Mote Sand Key [In Situ],,,54,4
+,DL,DL161,Mote Summerland,All Summerland,A5,R108,4
+,AP,AP145,Mote Looe Key [In Situ],,,CU-TR5,4
+,AP,AP147,Mote Looe Key [In Situ],,,CU-TR5,4
+,AP,AP46,Mote Looe Key [In Situ],,,LK-5,4
+,AC,AC72,Mote Key Largo [In Situ],,,Blue97,4
+,DL,DL252,Mote Summerland,All Summerland,F7,R777,4
+,DL,DL253,Mote Summerland,All Summerland,F7,R777,4
+,MC,MC203,Mote Summerland,All Summerland,F8,R1994,4
+,INTERSEPTA,SI77,Mote Summerland,All Summerland,C1,R1131,4
+,PS,PS31,Mote Summerland,All Summerland,B6,R148,4
+,MC,MC107,Mote Summerland,All Summerland,Q7,R1427,4
+,DL,DL155,Mote Summerland,All Summerland,B1,R1725,4
+,PA,PA414,Mote Summerland,All Summerland,A2,R946,4
+,AC,AC1,Mote Key Largo [In Situ],,,Red03,4
+,AC,AC2,Mote Key Largo [In Situ],,,Red04,4
+,OF,OF948,Mote Key Largo [In Situ],,,Red04,4
+,AC,AC72,Mote Key Largo [In Situ],,,Red07,4
+,AC,AC56,Mote Key Largo [In Situ],,,Red08,4
+,AC,AC7,Mote Key Largo [In Situ],,,Red10,4
+,AC,AC1,Mote Key Largo [In Situ],,,Blue33,4
+,AC,AC2,Mote Key Largo [In Situ],,,Blue34,4
+,AC,AC72,Mote Key Largo [In Situ],,,Blue87,4
+,AC,AC56,Mote Key Largo [In Situ],,,Blue88,4
+,AC,AC7,Mote Key Largo [In Situ],,,Blue90,4
+,OF,OF948,Mote Key Largo [In Situ],,,Blue54,4
+,OF,OF946,Mote Islamorada [In Situ],,,Blue10,4
+,DL,DL244,Mote Summerland,All Summerland,F3,R65,3
+,DL,DL230,Mote Summerland,All Summerland,F5,R154,3
+,DL,DL260,Mote Summerland,All Summerland,F5,R63,3
+,DL,DL261,Mote Summerland,All Summerland,F5,R63,3
+,ASTREOIDES,PA86,Mote Summerland,All Summerland,G4,R284,3
+,DL,DL187,Mote Summerland,All Summerland,F4,R716,3
+,DL,DL198,Mote Summerland,All Summerland,F4,R716,3
+,DL,DL217,Mote Summerland,All Summerland,F4,R716,3
+,DL,DL219,Mote Summerland,All Summerland,F4,R716,3
+,DL,DL258,Mote Summerland,All Summerland,F5,R63,3
+,DL,DL259,Mote Summerland,All Summerland,F5,R63,3
+,DL,DL262,Mote Summerland,All Summerland,F5,R63,3
+,OF,OF992,Mote Summerland,All Summerland,C6,R963,3
+,MC,MC103,Mote Summerland,All Summerland,B3,R292,3
+,DL,DL287,Mote Summerland,All Summerland,H1,R257,3
+,FRAGUM,FF1,Mote Summerland,All Summerland,H4,R526,3
+,OF,OF3,Mote Summerland,All Summerland,F5,R1390,3
+,PC,PC41,Mote Summerland,All Summerland,F4,R1448,3
+,OF,OF866,Mote Summerland,All Summerland,C6,R1672,3
+,OF,OF868,Mote Summerland,All Summerland,C6,R1672,3
+,OF,OF903,Mote Summerland,All Summerland,C6,R1634,3
+,OF,OF905,Mote Summerland,All Summerland,C6,R1634,3
+,OF,OF906,Mote Summerland,All Summerland,C6,R1634,3
+,OF,OF907,Mote Summerland,All Summerland,C6,R1634,3
+,OF,OF909,Mote Summerland,All Summerland,C6,R1634,3
+,OF,OF862,Mote Summerland,All Summerland,C6,R1672,3
+,OF,OF908,Mote Summerland,All Summerland,C6,R1634,3
+,MC,MC203,Mote Summerland,All Summerland,H7,R1249,3
+,SIDEREA,SS95,Mote Summerland,,R15,R1110,3
+,SIDEREA,SS95,Mote Summerland,,R15,R895,3
+,SIDEREA,SS165,Mote Summerland,,R15,R845,3
+,INTERSEPTA,SI80,Mote Summerland,,R15,R937,3
+,SIDEREA,SS88,Mote Summerland,,R15,R1770,3
+,SIDEREA,SS91,Mote Summerland,,R15,R1722,3
+,SIDEREA,SS121,Mote Summerland,All Summerland,G10,R281,3
+,SIDEREA,SS463,Mote Summerland,All Summerland,G10,R2028,3
+,OF,OF1018,Mote Summerland,All Summerland,F5,R1328,3
+,PS,PS14,Mote Summerland,All Summerland,F5,R1328,3
+,OF,OF1019,Mote Summerland,All Summerland,F5,R1328,3
+,MC,MC62?,Mote Summerland,All Summerland,D2,R1704,3
+,ASTREOIDES,PA42,Mote Summerland,All Summerland,G4,R843,3
+,,PA,Mote Summerland,All Summerland,G3,R867,3
+,DL,DL20,Mote Summerland,All Summerland,F3,R134,3
+,DL,DL20,Mote Summerland,All Summerland,F3,R134,3
+,PS,PS2,Mote Summerland,All Summerland,D4,R1138,3
+,PS,PS2,Mote Summerland,All Summerland,D4,R1138,3
+,PS,PS2,Mote Summerland,All Summerland,D4,R1138,3
+,PS,PS2,Mote Summerland,All Summerland,D4,R1138,3
+,PS,PS2,Mote Summerland,All Summerland,D4,R1138,3
+,AC,AC2529,Mote Looe Key [In Situ],,,CU-089,3
+,MC,MC29,Mote Looe Key [In Situ],,,MC MIX1,3
+,AC,AC2572,Mote Looe Key [In Situ],,,FM-5,3
+,OF,OF125,Mote Looe Key [In Situ],,,OF MIX2,3
+,OF,OF181,Mote Looe Key [In Situ],,,OF MIX2,3
+,OF,OF701,Mote Looe Key [In Situ],,,OF MIX3,3
+,AC,AC2640,Mote Looe Key [In Situ],,,RD-37,3
+,DS,DS1,Mote Looe Key [In Situ],,,DS MIX1,3
+,AC,AC54,Mote Sand Key [In Situ],,,54,3
+,AC,AC2582,Mote Sand Key [In Situ],,,FM-20,3
+,AP,AP0,Mote Looe Key [In Situ],,,Unk-2,3
+,DL,DL251,Mote Summerland,All Summerland,F7,R777,3
+,DL,DL182,Mote Summerland,All Summerland,F4,R1317,3
+,DL,DL166,Mote Summerland,All Summerland,F4,R716,3
+,DL,DL232,Mote Summerland,All Summerland,F5,R154,3
+,CN,CN-display,Mote Summerland,All Summerland,H6,R1029,3
+,MC,MC77,Mote Key Largo [In Situ],,,Red03,3
+,AP,AP126,Mote Key Largo [In Situ],,,Red04,3
+,OF,OF945,Mote Key Largo [In Situ],,,Red04,3
+,AC,AC2601,Mote Key Largo [In Situ],,,Red05,3
+,AC,AC2612,Mote Key Largo [In Situ],,,Red05,3
+,AC,AC2616,Mote Key Largo [In Situ],,,Red05,3
+,AC,AC50,Mote Key Largo [In Situ],,,Red05,3
+,AC,AC2651,Mote Key Largo [In Situ],,,Red06,3
+,AC,AC50,Mote Key Largo [In Situ],,,Red09,3
+,MC,MC77,Mote Key Largo [In Situ],,,Blue53,3
+,OF,OF945,Mote Key Largo [In Situ],,,Blue74,3
+,AP,AP126,Mote Key Largo [In Situ],,,Blue44,3
+,AC,AC2601,Mote Key Largo [In Situ],,,Blue45,3
+,AC,AC2612,Mote Key Largo [In Situ],,,Blue45,3
+,AC,AC2616,Mote Key Largo [In Situ],,,Blue45,3
+,AC,AC2651,Mote Key Largo [In Situ],,,Blue46,3
+,AC,AC50,Mote Key Largo [In Situ],,,Blue89,3
+,OF,OF981,Mote Summerland,All Summerland,C2,R699,3
+,OF,OF953,Mote Islamorada [In Situ],,Unassigned,R269,3
+,OF,OF1011,Mote Islamorada [In Situ],,Unassigned,R466,2
+,OR,OR?,Mote Summerland,All Summerland,Display,R1633,2
+,DL,DL245,Mote Summerland,All Summerland,F3,R65,2
+,DL,DL241,Mote Summerland,All Summerland,F7,R777,2
+,DL,DL229,Mote Summerland,All Summerland,F5,R154,2
+,MC,MC90,Mote Islamorada [In Situ],,Unassigned,R314,2
+,DL,DL171,Mote Summerland,All Summerland,F4,R716,2
+,DL,DL194,Mote Summerland,All Summerland,F4,R716,2
+,SIDEREA,SS22,Mote Summerland,All Summerland,F3,R318,2
+,UK,UK,Mote Summerland,All Summerland,F7,R1143,2
+,DL,DL205,Mote Summerland,All Summerland,F4,R716,2
+,INTERSEPTA,SI16,Mote Summerland,All Summerland,H4,R526,2
+,PS,PS44,Mote Summerland,All Summerland,H4,R275,2
+,CN,CN87,Mote Summerland,All Summerland,Q3,R351,2
+,CN,CN85,Mote Summerland,All Summerland,Q3,R901,2
+,MC,MC202,Mote Summerland,All Summerland,H7,R1410,2
+,PORITES,PP16,Mote Summerland,All Summerland,G9,R1552,2
+,PP,PP17,Mote Summerland,All Summerland,G9,R1552,2
+,PP,PP21,Mote Summerland,All Summerland,G9,R1552,2
+,PP,PP22,Mote Summerland,All Summerland,G9,R1552,2
+,PP,PP23,Mote Summerland,All Summerland,G9,R1552,2
+,PS,PS30,Mote Summerland,All Summerland,E3,R388,2
+,SIDEREA,SS124,Mote Summerland,,R15,R1884,2
+,SIDEREA,SS125,Mote Summerland,,R15,R1884,2
+,SIDEREA,SS463,Mote Summerland,,R15,R1815,2
+,SIDEREA,SS463,Mote Summerland,,R15,R1950,2
+,SIDEREA,SS163,Mote Summerland,,R15,R1731,2
+,DL,DL192,Mote Summerland,All Summerland,F4,R716,2
+,SIDEREA,SS121,Mote Summerland,,R15,R1913,2
+,SIDEREA,SS463,Mote Summerland,All Summerland,F9,R1859,2
+,INTERSEPTA,SI72,Mote Summerland,All Summerland,G8,R1909,2
+,OF,OF683,Mote Summerland,All Summerland,F5,R451,2
+,OF,OF677,Mote Summerland,All Summerland,F7,R1006,2
+,OF,OF696,Mote Summerland,All Summerland,E5,R263,2
+,PS,PS30,Mote Summerland,All Summerland,F3,R468,2
+,OF,OF675,Mote Summerland,All Summerland,F7,R1006,2
+,OF,OF328,Mote Summerland,All Summerland,F7,R1006,2
+,ASTREOIDES,PA33,Mote Summerland,All Summerland,G9,R1324,2
+,I3,I3A,Mote Summerland,All Summerland,G9,R1226,2
+,OF,OF994,Mote Summerland,All Summerland,D5,R1445,2
+,OF,OF678,Mote Summerland,All Summerland,F5,R909,2
+,DL,DL185,Mote Summerland,All Summerland,F6,R1948,2
+,DL,DL165,Mote Summerland,All Summerland,F3,R65,2
+,AC,AC2544,Mote Looe Key [In Situ],,,CU-130,2
+,MC,MC32,Mote Looe Key [In Situ],,,MC MIX1,2
+,MC,MC36,Mote Looe Key [In Situ],,,MC MIX1,2
+,MC,MC40,Mote Looe Key [In Situ],,,MC MIX1,2
+,MC,MC41,Mote Looe Key [In Situ],,,MC MIX2,2
+,MC,MC58,Mote Looe Key [In Situ],,,MC MIX2,2
+,OF,OF672,Mote Looe Key [In Situ],,,OF MIX2,2
+,OF,OF698,Mote Looe Key [In Situ],,,OF MIX3,2
+,DS,DS2,Mote Looe Key [In Situ],,,DS MIX1,2
+,OF,OF100,Mote Looe Key [In Situ],,,OF MIX1,2
+,PS,PS30,Mote Summerland,All Summerland,C2,R560,2
+,AC,AC2578,Mote Sand Key [In Situ],,,FM-20,2
+,AP,AP146,Mote Looe Key [In Situ],,,CU-TR5,2
+,AP,AP364,Mote Looe Key [In Situ],,,LK-5,2
+,ASTREOIDES,PA313,Mote Summerland,All Summerland,F9,R2023,2
+,OF,OF977,Mote Summerland,All Summerland,Q7,R1374,2
+,INTERSEPTA,SI14,Mote Summerland,All Summerland,H4,R80,2
+,DL,DL250,Mote Summerland,All Summerland,F7,R777,2
+,OF,OF864,Mote Summerland,All Summerland,C6,R1672,2
+,PS,PS7,Mote Summerland,All Summerland,F7,R851,2
+,PC,PC16,Mote Summerland,All Summerland,F4,R386,2
+,PC,PC15,Mote Summerland,All Summerland,F4,R1055,2
+,DL,DL167,Mote Summerland,All Summerland,F4,R716,2
+,OF,OF985,Mote Summerland,All Summerland,Q7,R1297,2
+,DL,DL192,Mote Summerland,All Summerland,Q7,R1529,2
+,PS,PS20,Mote Summerland,All Summerland,B1,R1614,2
+,ASTREOIDES,PA346,Mote Summerland,All Summerland,G9,R1492,2
+,AP,AP126,Mote Key Largo [In Situ],,Unassigned,R1,2
+,OF,OF96,Mote Summerland,All Summerland,D5,R1854,2
+,OF,OF670,Mote Summerland,All Summerland,D5,R1854,2
+,MC,MC83,Mote Key Largo [In Situ],,,Red02,2
+,PC,PC25,Mote Key Largo [In Situ],,,Red04,2
+,AC,AC2607,Mote Key Largo [In Situ],,,Red05,2
+,AC,AC2627,Mote Key Largo [In Situ],,,Red05,2
+,AC,AC2631,Mote Key Largo [In Situ],,,Red05,2
+,AC,AC2927,Mote Key Largo [In Situ],,,Red05,2
+,AC,AC2929,Mote Key Largo [In Situ],,,Red05,2
+,AC,AC2933,Mote Key Largo [In Situ],,,Red05,2
+,AC,AC2937,Mote Key Largo [In Situ],,,Red05,2
+,AC,AC2634,Mote Key Largo [In Situ],,,Red06,2
+,AC,AC2938,Mote Key Largo [In Situ],,,Red06,2
+,AC,AC2939,Mote Key Largo [In Situ],,,Red06,2
+,AC,AC2940,Mote Key Largo [In Situ],,,Red06,2
+,AC,AC4,Mote Key Largo [In Situ],,,Red08,2
+,AC,AC3,Mote Key Largo [In Situ],,,Red10,2
+,AC,AC90,Mote Key Largo [In Situ],,,Red08,2
+,AC,AC2927,Mote Key Largo [In Situ],,,Blue55,2
+,AC,AC2929,Mote Key Largo [In Situ],,,Blue55,2
+,PC,PC25,Mote Key Largo [In Situ],,,Blue64,2
+,AC,AC2607,Mote Key Largo [In Situ],,,Blue45,2
+,AC,AC2634,Mote Key Largo [In Situ],,,Blue46,2
+,AC,AC2938,Mote Key Largo [In Situ],,,Blue46,2
+,AC,AC2939,Mote Key Largo [In Situ],,,Blue46,2
+,AC,AC2940,Mote Key Largo [In Situ],,,Blue46,2
+,AC,AC4,Mote Key Largo [In Situ],,,Blue98,2
+,AC,AC90,Mote Key Largo [In Situ],,,Blue78,2
+,AC,AC3,Mote Key Largo [In Situ],,,Blue80,2
+,MC,MC83,Mote Key Largo [In Situ],,,Blue62,2
+,AP,AP24,Mote Key Largo [In Situ],,Unassigned,R3,2
+,AP,AP24,Mote Key Largo [In Situ],,Unassigned,R4,2
+,AC,AC2933,Mote Key Largo [In Situ],,,Blue55,2
+,AC,AC2937,Mote Key Largo [In Situ],,,Blue55,2
+,AP,AP124,Mote Key Largo [In Situ],,,Blue44,2
+,DS,DS6,Mote Summerland,All Summerland,G9,R1072,1
+,DS,DS8,Mote Summerland,All Summerland,G9,R1044,1
+,DL,DL255,Mote Summerland,All Summerland,G9,R563,1
+,DS,DS9,Mote Summerland,All Summerland,G9,R231,1
+,SIDEREA,SS19,Mote Summerland,All Summerland,F3,R318,1
+,SIDEREA,SS18,Mote Summerland,All Summerland,F3,R318,1
+,OF,OF320,Mote Summerland,All Summerland,F7,R1143,1
+,OF,OF338,Mote Summerland,All Summerland,F7,R1143,1
+,OF,OF388,Mote Summerland,All Summerland,F7,R1143,1
+,OF,OF389,Mote Summerland,All Summerland,F7,R1143,1
+,ASTREOIDES,PA71,Mote Summerland,All Summerland,H6,R285,1
+,ASTREOIDES,PA72,Mote Summerland,All Summerland,H6,R285,1
+,ASTREOIDES,PA60,Mote Summerland,All Summerland,H6,R285,1
+,ASTREOIDES,PA89,Mote Summerland,All Summerland,H6,R285,1
+,ASTREOIDES,PA28,Mote Summerland,All Summerland,H6,R285,1
+,DL,DL272,Mote Summerland,All Summerland,Spawn,R1358,1
+,DL,DL273,Mote Summerland,All Summerland,F9,R884,1
+,DL,DL274,Mote Summerland,All Summerland,F9,R884,1
+,DL,DL282,Mote Summerland,All Summerland,Spawn,R1378,1
+,DL,DL284,Mote Summerland,All Summerland,F9,R822,1
+,CN,CN28,Mote Summerland,All Summerland,H7,R1369,1
+,CN,CN31,Mote Summerland,All Summerland,G7,R1049,1
+,CN,CN35,Mote Summerland,All Summerland,H7,R1296,1
+,CN,CN37,Mote Summerland,All Summerland,H2,R1036,1
+,CN,CN39,Mote Summerland,All Summerland,G4,R1152,1
+,CN,CN46,Mote Summerland,All Summerland,E4,R986,1
+,CN,CN34,Mote Summerland,All Summerland,F9,R1030,1
+,CN,CN53,Mote Summerland,All Summerland,H1,R478,1
+,CN,CN62,Mote Summerland,,Unassigned,R990,1
+,CN,CN64,Mote Summerland,All Summerland,H4,R505,1
+,CN,CN65,Mote Summerland,All Summerland,H4,R505,1
+,CN,CN66,Mote Summerland,All Summerland,H4,R505,1
+,CN,CN63,Mote Summerland,,Unassigned,R176,1
+,CN,CN70,Mote Summerland,All Summerland,G8,R1228,1
+,CN,CN71,Mote Summerland,All Summerland,G8,R1228,1
+,CN,CN72,Mote Summerland,All Summerland,G8,R1228,1
+,CN,CN77,Mote Summerland,All Summerland,G7,R1953,1
+,MC,MC125,Mote Islamorada [In Situ],,Unassigned,R45,1
+,MC,MC120,Mote Islamorada [In Situ],,Unassigned,R45,1
+,MC,MC85,Mote Islamorada [In Situ],,Unassigned,R448,1
+,DL,DL286,Mote Summerland,All Summerland,H1,R561,1
+,FRANKSI,OK2,Mote Summerland,All Summerland,H4,R977,1
+,DL,DL288,Mote Summerland,All Summerland,H4,R55,1
+,DL,DL289,Mote Summerland,All Summerland,H4,R55,1
+,INTERSEPTA,SI15,Mote Summerland,All Summerland,H4,R729,1
+,PS,PS46,Mote Summerland,All Summerland,H4,R526,1
+,CN,CN88,Mote Summerland,All Summerland,Q3,R656,1
+,CN,CN86,Mote Summerland,All Summerland,H2,R964,1
+,PORITES,PP8,Mote Summerland,All Summerland,F9,R1248,1
+,PORITES,PP9,Mote Summerland,All Summerland,F9,R1248,1
+,PORITES,PP10,Mote Summerland,All Summerland,F9,R1248,1
+,PORITES,PP11,Mote Summerland,All Summerland,F9,R1248,1
+,PORITES,PP12,Mote Summerland,All Summerland,F9,R1248,1
+,PORITES,PP13,Mote Summerland,All Summerland,F9,R1248,1
+,PORITES,PP14,Mote Summerland,All Summerland,F9,R1248,1
+,PORITES,PP15,Mote Summerland,All Summerland,F9,R1248,1
+,ASTREOIDES,PA303,Mote Summerland,All Summerland,F9,R1383,1
+,ASTREOIDES,PA304,Mote Summerland,All Summerland,F9,R1383,1
+,ASTREOIDES,PA310,Mote Summerland,All Summerland,F9,R1676,1
+,ASTREOIDES,PA302,Mote Summerland,All Summerland,F9,R1100,1
+,RADIANS,SR110,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR111,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR112,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR113,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR114,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR115,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR116,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR117,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR118,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR119,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR120,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR121,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR122,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR123,Mote Summerland,All Summerland,F9,R1079,1
+,RADIANS,SR124,Mote Summerland,All Summerland,F9,R1079,1
+,ASTREOIDES,PA308,Mote Summerland,All Summerland,F9,R1787,1
+,ASTREOIDES,PA317,Mote Summerland,All Summerland,F9,R1590,1
+,RADIANS,SR125,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR126,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR127,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR128,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR129,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR130,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR131,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR132,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR133,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR134,Mote Summerland,All Summerland,F9,R147,1
+,RADIANS,SR135,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR136,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR137,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR138,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR139,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR140,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR141,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR142,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR143,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR144,Mote Summerland,All Summerland,F9,R704,1
+,RADIANS,SR145,Mote Summerland,All Summerland,F9,R1441,1
+,RADIANS,SR146,Mote Summerland,All Summerland,F9,R1441,1
+,RADIANS,SR147,Mote Summerland,All Summerland,F9,R1441,1
+,RADIANS,SR148,Mote Summerland,All Summerland,F9,R1441,1
+,RADIANS,SR149,Mote Summerland,All Summerland,F9,R1441,1
+,RADIANS,SR150,Mote Summerland,All Summerland,F9,R1441,1
+,RADIANS,SR151,Mote Summerland,All Summerland,F9,R1441,1
+,RADIANS,SR152,Mote Summerland,All Summerland,F9,R1441,1
+,RADIANS,SR153,Mote Summerland,All Summerland,F9,R416,1
+,RADIANS,SR154,Mote Summerland,All Summerland,F9,R416,1
+,RADIANS,SR155,Mote Summerland,All Summerland,F9,R416,1
+,RADIANS,SR156,Mote Summerland,All Summerland,F9,R416,1
+,RADIANS,SR157,Mote Summerland,All Summerland,F9,R416,1
+,RADIANS,SR158,Mote Summerland,All Summerland,F9,R416,1
+,RADIANS,SR159,Mote Summerland,All Summerland,F9,R416,1
+,RADIANS,SR160,Mote Summerland,All Summerland,F9,R416,1
+,RADIANS,SR161,Mote Summerland,All Summerland,F9,R1440,1
+,RADIANS,SR162,Mote Summerland,All Summerland,F9,R1440,1
+,RADIANS,SR163,Mote Summerland,All Summerland,F9,R1440,1
+,RADIANS,SR164,Mote Summerland,All Summerland,F9,R1440,1
+,RADIANS,SR165,Mote Summerland,All Summerland,F9,R1440,1
+,RADIANS,SR166,Mote Summerland,All Summerland,F9,R1440,1
+,RADIANS,SR167,Mote Summerland,All Summerland,F9,R1440,1
+,RADIANS,SR168,Mote Summerland,All Summerland,F9,R1440,1
+,RADIANS,SR169,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR170,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR171,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR172,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR173,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR174,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR175,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR176,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR177,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR178,Mote Summerland,All Summerland,F9,R626,1
+,RADIANS,SR179,Mote Summerland,All Summerland,F9,R1158,1
+,RADIANS,SR180,Mote Summerland,All Summerland,F9,R1158,1
+,RADIANS,SR182,Mote Summerland,All Summerland,F9,R1158,1
+,RADIANS,SR183,Mote Summerland,All Summerland,F9,R1158,1
+,RADIANS,SR184,Mote Summerland,All Summerland,F9,R1158,1
+,RADIANS,SR185,Mote Summerland,All Summerland,F9,R1158,1
+,RADIANS,SR186,Mote Summerland,All Summerland,F9,R1158,1
+,RADIANS,SR188,Mote Summerland,All Summerland,H2,R850,1
+,RADIANS,SR189,Mote Summerland,All Summerland,H2,R850,1
+,RADIANS,SR190,Mote Summerland,All Summerland,H2,R850,1
+,RADIANS,SR191,Mote Summerland,All Summerland,H2,R1350,1
+,RADIANS,SR192,Mote Summerland,All Summerland,H2,R1350,1
+,RADIANS,SR193,Mote Summerland,All Summerland,H2,R1350,1
+,RADIANS,SR194,Mote Summerland,All Summerland,H2,R1350,1
+,RADIANS,SR195,Mote Summerland,All Summerland,H2,R1350,1
+,RADIANS,SR196,Mote Summerland,All Summerland,H2,R1350,1
+,RADIANS,SR197,Mote Summerland,All Summerland,H2,R146,1
+,RADIANS,SR198,Mote Summerland,All Summerland,H2,R146,1
+,RADIANS,SR199,Mote Summerland,All Summerland,H2,R146,1
+,RADIANS,SR200,Mote Summerland,All Summerland,H2,R146,1
+,RADIANS,SR201,Mote Summerland,All Summerland,H2,R146,1
+,RADIANS,SR202,Mote Summerland,All Summerland,H2,R146,1
+,RADIANS,SR203,Mote Summerland,All Summerland,H2,R39,1
+,SIDEREA,SS311,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS312,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS313,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS314,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS315,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS316,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS317,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS318,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS319,Mote Summerland,All Summerland,G3,R532,1
+,SIDEREA,SS320,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS321,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS322,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS323,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS324,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS325,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS326,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS327,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS328,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS329,Mote Summerland,All Summerland,G3,R1408,1
+,SIDEREA,SS330,Mote Summerland,All Summerland,G3,R1400,1
+,SIDEREA,SS331,Mote Summerland,All Summerland,G3,R1400,1
+,SIDEREA,SS332,Mote Summerland,All Summerland,G3,R1400,1
+,SIDEREA,SS333,Mote Summerland,All Summerland,G3,R1400,1
+,SIDEREA,SS334,Mote Summerland,All Summerland,G3,R1400,1
+,SIDEREA,SS335,Mote Summerland,All Summerland,G3,R1400,1
+,INTERSEPTA,SI179,Mote Summerland,All Summerland,G3,R834,1
+,INTERSEPTA,SI180,Mote Summerland,All Summerland,G3,R834,1
+,INTERSEPTA,SI181,Mote Summerland,All Summerland,G3,R834,1
+,INTERSEPTA,SI182,Mote Summerland,All Summerland,G3,R834,1
+,INTERSEPTA,SI183,Mote Summerland,All Summerland,G3,R834,1
+,INTERSEPTA,SI184,Mote Summerland,All Summerland,G3,R834,1
+,INTERSEPTA,SI185,Mote Summerland,All Summerland,G3,R295,1
+,INTERSEPTA,SI186,Mote Summerland,All Summerland,G3,R295,1
+,INTERSEPTA,SI187,Mote Summerland,All Summerland,G3,R295,1
+,INTERSEPTA,SI188,Mote Summerland,All Summerland,G3,R295,1
+,INTERSEPTA,SI189,Mote Summerland,All Summerland,G3,R295,1
+,INTERSEPTA,SI190,Mote Summerland,All Summerland,G3,R295,1
+,INTERSEPTA,SI191,Mote Summerland,All Summerland,G3,R502,1
+,INTERSEPTA,SI192,Mote Summerland,All Summerland,G3,R502,1
+,INTERSEPTA,SI193,Mote Summerland,All Summerland,G3,R502,1
+,INTERSEPTA,SI194,Mote Summerland,All Summerland,G3,R502,1
+,INTERSEPTA,SI195,Mote Summerland,All Summerland,G3,R502,1
+,RADIANS,SR204,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR205,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR206,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR207,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR208,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR209,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR210,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR211,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR212,Mote Summerland,All Summerland,G3,R82,1
+,RADIANS,SR213,Mote Summerland,All Summerland,G3,R196,1
+,RADIANS,SR214,Mote Summerland,All Summerland,G3,R196,1
+,RADIANS,SR215,Mote Summerland,All Summerland,G3,R196,1
+,RADIANS,SR216,Mote Summerland,All Summerland,G3,R196,1
+,RADIANS,SR217,Mote Summerland,All Summerland,G3,R196,1
+,RADIANS,SR218,Mote Summerland,All Summerland,G3,R196,1
+,RADIANS,SR219,Mote Summerland,All Summerland,G3,R196,1
+,RADIANS,SR220,Mote Summerland,All Summerland,G3,R437,1
+,RADIANS,SR226,Mote Summerland,All Summerland,G3,R868,1
+,RADIANS,SR227,Mote Summerland,All Summerland,G3,R868,1
+,RADIANS,SR228,Mote Summerland,All Summerland,G3,R868,1
+,SIDEREA,SS336,Mote Summerland,All Summerland,G8,R1484,1
+,SIDEREA,SS337,Mote Summerland,All Summerland,G8,R1484,1
+,SIDEREA,SS338,Mote Summerland,All Summerland,G8,R1484,1
+,SIDEREA,SS339,Mote Summerland,All Summerland,G8,R1484,1
+,SIDEREA,SS340,Mote Summerland,All Summerland,G8,R1484,1
+,SIDEREA,SS341,Mote Summerland,All Summerland,G8,R1484,1
+,SIDEREA,SS342,Mote Summerland,All Summerland,G8,R1484,1
+,SIDEREA,SS343,Mote Summerland,All Summerland,G8,R1513,1
+,SIDEREA,SS344,Mote Summerland,All Summerland,G8,R1513,1
+,SIDEREA,SS345,Mote Summerland,All Summerland,G8,R1513,1
+,SIDEREA,SS346,Mote Summerland,All Summerland,G8,R1513,1
+,SIDEREA,SS347,Mote Summerland,All Summerland,G8,R1513,1
+,SIDEREA,SS348,Mote Summerland,All Summerland,G8,R1559,1
+,SIDEREA,SS349,Mote Summerland,All Summerland,G8,R1559,1
+,SIDEREA,SS350,Mote Summerland,All Summerland,G8,R1559,1
+,SIDEREA,SS351,Mote Summerland,All Summerland,G8,R1559,1
+,SIDEREA,SS352,Mote Summerland,All Summerland,G8,R1570,1
+,SIDEREA,SS353,Mote Summerland,All Summerland,G8,R1570,1
+,SIDEREA,SS354,Mote Summerland,All Summerland,G8,R1570,1
+,SIDEREA,SS355,Mote Summerland,All Summerland,G8,R1570,1
+,SIDEREA,SS356,Mote Summerland,All Summerland,G8,R1488,1
+,SIDEREA,SS357,Mote Summerland,All Summerland,G8,R1488,1
+,SIDEREA,SS358,Mote Summerland,All Summerland,G8,R1496,1
+,SIDEREA,SS359,Mote Summerland,All Summerland,G8,R1460,1
+,SIDEREA,SS360,Mote Summerland,All Summerland,G8,R1565,1
+,SIDEREA,SS361,Mote Summerland,All Summerland,G8,R1565,1
+,SIDEREA,SS362,Mote Summerland,All Summerland,G8,R1565,1
+,SIDEREA,SS363,Mote Summerland,,R15,R1532,1
+,SIDEREA,SS364,Mote Summerland,,R15,R1532,1
+,SIDEREA,SS365,Mote Summerland,,R15,R1532,1
+,SIDEREA,SS366,Mote Summerland,,R15,R1475,1
+,SIDEREA,SS367,Mote Summerland,,R15,R1475,1
+,SIDEREA,SS368,Mote Summerland,,R15,R1475,1
+,SIDEREA,SS369,Mote Summerland,,R15,R1475,1
+,SIDEREA,SS370,Mote Summerland,,R15,R1475,1
+,SIDEREA,SS371,Mote Summerland,,R15,R1562,1
+,SIDEREA,SS372,Mote Summerland,,R15,R1562,1
+,SIDEREA,SS373,Mote Summerland,,R15,R1562,1
+,SIDEREA,SS374,Mote Summerland,,R15,R1562,1
+,SIDEREA,SS375,Mote Summerland,,R15,R1518,1
+,SIDEREA,SS376,Mote Summerland,,R15,R1518,1
+,SIDEREA,SS377,Mote Summerland,,R15,R1518,1
+,SIDEREA,SS378,Mote Summerland,,R15,R1518,1
+,SIDEREA,SS379,Mote Summerland,,R15,R1518,1
+,SIDEREA,SS380,Mote Summerland,,R15,R1518,1
+,SIDEREA,SS381,Mote Summerland,,R15,R1518,1
+,SIDEREA,SS382,Mote Summerland,,R15,R1472,1
+,SIDEREA,SS383,Mote Summerland,,R15,R1472,1
+,SIDEREA,SS384,Mote Summerland,,R15,R1472,1
+,SIDEREA,SS385,Mote Summerland,,R15,R1472,1
+,SIDEREA,SS386,Mote Summerland,,R15,R1472,1
+,SIDEREA,SS387,Mote Summerland,,R15,R1472,1
+,SIDEREA,SS388,Mote Summerland,,R15,R1457,1
+,SIDEREA,SS389,Mote Summerland,,R15,R1457,1
+,SIDEREA,SS390,Mote Summerland,,R15,R1457,1
+,SIDEREA,SS391,Mote Summerland,,R15,R1457,1
+,SIDEREA,SS392,Mote Summerland,,R15,R1457,1
+,INTERSEPTA,SI196,Mote Summerland,All Summerland,G10,R1525,1
+,INTERSEPTA,SI197,Mote Summerland,All Summerland,G10,R1525,1
+,INTERSEPTA,SI198,Mote Summerland,All Summerland,G10,R1525,1
+,INTERSEPTA,SI199,Mote Summerland,,R15,R1502,1
+,INTERSEPTA,SI200,Mote Summerland,,R15,R1502,1
+,INTERSEPTA,SI201,Mote Summerland,All Summerland,G10,R1514,1
+,INTERSEPTA,SI202,Mote Summerland,All Summerland,G10,R1514,1
+,INTERSEPTA,SI203,Mote Summerland,All Summerland,G10,R1514,1
+,INTERSEPTA,SI204,Mote Summerland,All Summerland,G10,R1514,1
+,RADIANS,SR229,Mote Summerland,All Summerland,G8,R1541,1
+,RADIANS,SR230,Mote Summerland,All Summerland,G8,R1541,1
+,RADIANS,SR231,Mote Summerland,All Summerland,G8,R1541,1
+,RADIANS,SR232,Mote Summerland,All Summerland,G8,R1541,1
+,RADIANS,SR233,Mote Summerland,All Summerland,G8,R1541,1
+,RADIANS,SR234,Mote Summerland,All Summerland,G8,R1541,1
+,RADIANS,SR235,Mote Summerland,All Summerland,G8,R1468,1
+,RADIANS,SR236,Mote Summerland,All Summerland,G8,R1468,1
+,RADIANS,SR237,Mote Summerland,All Summerland,G8,R1468,1
+,RADIANS,SR238,Mote Summerland,All Summerland,G8,R1468,1
+,RADIANS,SR239,Mote Summerland,All Summerland,G8,R1468,1
+,RADIANS,SR240,Mote Summerland,All Summerland,G8,R1468,1
+,RADIANS,SR242,Mote Summerland,All Summerland,G8,R1468,1
+,RADIANS,SR243,Mote Summerland,All Summerland,G8,R1519,1
+,RADIANS,SR244,Mote Summerland,All Summerland,G8,R1519,1
+,RADIANS,SR245,Mote Summerland,All Summerland,G8,R1519,1
+,RADIANS,SR246,Mote Summerland,All Summerland,G8,R1519,1
+,RADIANS,SR247,Mote Summerland,All Summerland,G8,R1519,1
+,RADIANS,SR248,Mote Summerland,All Summerland,G8,R1519,1
+,RADIANS,SR249,Mote Summerland,All Summerland,G10,R1567,1
+,RADIANS,SR250,Mote Summerland,All Summerland,G10,R1567,1
+,RADIANS,SR251,Mote Summerland,All Summerland,G10,R1567,1
+,RADIANS,SR252,Mote Summerland,All Summerland,G10,R1567,1
+,RADIANS,SR253,Mote Summerland,All Summerland,G10,R1567,1
+,RADIANS,SR254,Mote Summerland,All Summerland,G10,R1567,1
+,RADIANS,SR260,Mote Summerland,All Summerland,G8,R1554,1
+,RADIANS,SR261,Mote Summerland,All Summerland,G8,R1554,1
+,RADIANS,SR262,Mote Summerland,All Summerland,G8,R1554,1
+,RADIANS,SR263,Mote Summerland,,R15,R1483,1
+,RADIANS,SR264,Mote Summerland,,R15,R1483,1
+,RADIANS,SR265,Mote Summerland,,R15,R1483,1
+,RADIANS,SR266,Mote Summerland,,R15,R1483,1
+,RADIANS,SR269,Mote Summerland,,R15,R1483,1
+,RADIANS,SR270,Mote Summerland,,R15,R1483,1
+,RADIANS,SR271,Mote Summerland,,R15,R1483,1
+,RADIANS,SR272,Mote Summerland,All Summerland,G10,R1561,1
+,RADIANS,SR273,Mote Summerland,All Summerland,G10,R1561,1
+,RADIANS,SR274,Mote Summerland,All Summerland,G10,R1561,1
+,RADIANS,SR275,Mote Summerland,All Summerland,G10,R1561,1
+,RADIANS,SR277,Mote Summerland,All Summerland,G10,R1561,1
+,RADIANS,SR278,Mote Summerland,All Summerland,G10,R1561,1
+,RADIANS,SR281,Mote Summerland,,R15,R1486,1
+,RADIANS,SR282,Mote Summerland,,R15,R1486,1
+,RADIANS,SR283,Mote Summerland,,R15,R1486,1
+,RADIANS,SR284,Mote Summerland,,R15,R1486,1
+,RADIANS,SR285,Mote Summerland,,R15,R1486,1
+,RADIANS,SR286,Mote Summerland,,R15,R1486,1
+,RADIANS,SR288,Mote Summerland,,R15,R1486,1
+,RADIANS,SR289,Mote Summerland,,R15,R1486,1
+,RADIANS,SR290,Mote Summerland,,R15,R1535,1
+,RADIANS,SR291,Mote Summerland,,R15,R1535,1
+,RADIANS,SR292,Mote Summerland,,R15,R1535,1
+,RADIANS,SR293,Mote Summerland,,R15,R1535,1
+,RADIANS,SR294,Mote Summerland,,R15,R1535,1
+,RADIANS,SR295,Mote Summerland,,R15,R1535,1
+,RADIANS,SR296,Mote Summerland,,R15,R1535,1
+,RADIANS,SR297,Mote Summerland,All Summerland,G10,R1525,1
+,INTERSEPTA,SI219,Mote Summerland,All Summerland,G10,R1525,1
+,INTERSEPTA,SI220,Mote Summerland,All Summerland,G10,R1525,1
+,INTERSEPTA,SI221,Mote Summerland,All Summerland,G10,R1525,1
+,SIDEREA,SS416,Mote Summerland,All Summerland,G10,R1525,1
+,SIDEREA,SS396,Mote Summerland,,R15,R1510,1
+,SIDEREA,SS397,Mote Summerland,,R15,R1510,1
+,SIDEREA,SS398,Mote Summerland,,R15,R1510,1
+,SIDEREA,SS399,Mote Summerland,,R15,R1510,1
+,SIDEREA,SS400,Mote Summerland,,R15,R1510,1
+,SIDEREA,SS393,Mote Summerland,,R15,R1467,1
+,SIDEREA,SS394,Mote Summerland,,R15,R1467,1
+,SIDEREA,SS395,Mote Summerland,,R15,R1467,1
+,SIDEREA,SS406,Mote Summerland,,R15,R1528,1
+,SIDEREA,SS407,Mote Summerland,,R15,R1528,1
+,SIDEREA,SS408,Mote Summerland,,R15,R1528,1
+,SIDEREA,SS409,Mote Summerland,,R15,R1528,1
+,SIDEREA,SS401,Mote Summerland,,R15,R1571,1
+,SIDEREA,SS402,Mote Summerland,,R15,R1571,1
+,SIDEREA,SS403,Mote Summerland,,R15,R1571,1
+,SIDEREA,SS404,Mote Summerland,,R15,R1571,1
+,SIDEREA,SS405,Mote Summerland,,R15,R1571,1
+,SIDEREA,SS410,Mote Summerland,,R15,R1458,1
+,SIDEREA,SS411,Mote Summerland,,R15,R1458,1
+,SIDEREA,SS412,Mote Summerland,,R15,R1458,1
+,SIDEREA,SS413,Mote Summerland,,R15,R1458,1
+,SIDEREA,SS414,Mote Summerland,,R15,R1458,1
+,SIDEREA,SS415,Mote Summerland,,R15,R1458,1
+,INTERSEPTA,SI205,Mote Summerland,All Summerland,G10,R1500,1
+,INTERSEPTA,SI206,Mote Summerland,All Summerland,G10,R1500,1
+,INTERSEPTA,SI207,Mote Summerland,All Summerland,G10,R1500,1
+,INTERSEPTA,SI208,Mote Summerland,All Summerland,G10,R1500,1
+,INTERSEPTA,SI209,Mote Summerland,All Summerland,G10,R1500,1
+,INTERSEPTA,SI210,Mote Summerland,All Summerland,G10,R1500,1
+,INTERSEPTA,SI211,Mote Summerland,All Summerland,G8,R1537,1
+,INTERSEPTA,SI212,Mote Summerland,All Summerland,G8,R1537,1
+,INTERSEPTA,SI213,Mote Summerland,All Summerland,G8,R1537,1
+,INTERSEPTA,SI214,Mote Summerland,All Summerland,G8,R1537,1
+,INTERSEPTA,SI215,Mote Summerland,All Summerland,G8,R1537,1
+,INTERSEPTA,SI216,Mote Summerland,All Summerland,G8,R1537,1
+,INTERSEPTA,SI217,Mote Summerland,All Summerland,G8,R1544,1
+,INTERSEPTA,SI218,Mote Summerland,All Summerland,G8,R1544,1
+,SIDEREA,SS467,Mote Summerland,All Summerland,G3,R1310,1
+,SIDEREA,SS470,Mote Summerland,All Summerland,G3,R1310,1
+,SIDEREA,SS471,Mote Summerland,All Summerland,G3,R1310,1
+,SIDEREA,SS472,Mote Summerland,All Summerland,G3,R1310,1
+,SIDEREA,SS417,Mote Summerland,All Summerland,G4,R1530,1
+,SIDEREA,SS418,Mote Summerland,All Summerland,G4,R1530,1
+,SIDEREA,SS419,Mote Summerland,All Summerland,G4,R1530,1
+,SIDEREA,SS476,Mote Summerland,All Summerland,G3,R1442,1
+,SIDEREA,SS477,Mote Summerland,All Summerland,G3,R1442,1
+,SIDEREA,SS478,Mote Summerland,All Summerland,G3,R1442,1
+,SIDEREA,SS479,Mote Summerland,All Summerland,G3,R1442,1
+,SIDEREA,SS480,Mote Summerland,All Summerland,G3,R1442,1
+,SIDEREA,SS481,Mote Summerland,All Summerland,G3,R536,1
+,SIDEREA,SS482,Mote Summerland,All Summerland,G3,R536,1
+,SIDEREA,SS483,Mote Summerland,All Summerland,G3,R536,1
+,SIDEREA,SS486,Mote Summerland,All Summerland,G3,R1414,1
+,SIDEREA,SS488,Mote Summerland,All Summerland,G3,R1414,1
+,SIDEREA,SS497,Mote Summerland,,R15,R1005,1
+,SIDEREA,SS498,Mote Summerland,,R15,R1005,1
+,SIDEREA,SS421,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS420,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS424,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS422,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS423,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS425,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS426,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS427,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS428,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS429,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS430,Mote Summerland,All Summerland,G4,R1557,1
+,SIDEREA,SS431,Mote Summerland,All Summerland,G4,R1555,1
+,SIDEREA,SS432,Mote Summerland,All Summerland,G4,R1555,1
+,SIDEREA,SS433,Mote Summerland,All Summerland,G4,R1555,1
+,SIDEREA,SS435,Mote Summerland,All Summerland,G4,R1555,1
+,SIDEREA,SS436,Mote Summerland,All Summerland,G4,R1555,1
+,SIDEREA,SS439,Mote Summerland,All Summerland,G4,R1555,1
+,SIDEREA,SS473,Mote Summerland,All Summerland,G3,R632,1
+,SIDEREA,SS474,Mote Summerland,All Summerland,G3,R632,1
+,SIDEREA,SS475,Mote Summerland,All Summerland,G3,R632,1
+,SIDEREA,SS437,Mote Summerland,All Summerland,G4,R1545,1
+,SIDEREA,SS438,Mote Summerland,All Summerland,G4,R1545,1
+,SIDEREA,SS441,Mote Summerland,All Summerland,G4,R1545,1
+,SIDEREA,SS442,Mote Summerland,All Summerland,G4,R1545,1
+,SIDEREA,SS443,Mote Summerland,All Summerland,G4,R1545,1
+,SIDEREA,SS452,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS454,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS440,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS450,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS451,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS453,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS448,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS449,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS455,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS444,Mote Summerland,All Summerland,G4,R1497,1
+,SIDEREA,SS446,Mote Summerland,All Summerland,G4,R1553,1
+,SIDEREA,SS447,Mote Summerland,All Summerland,G4,R1553,1
+,SIDEREA,SS445,Mote Summerland,All Summerland,G4,R1553,1
+,SIDEREA,SS456,Mote Summerland,All Summerland,G4,R1553,1
+,SIDEREA,SS457,Mote Summerland,All Summerland,G4,R1553,1
+,SIDEREA,SS458,Mote Summerland,All Summerland,G4,R1553,1
+,RADIANS,SR298,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR299,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR300,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR301,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR302,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR303,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR304,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR305,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR306,Mote Summerland,All Summerland,G10,R1505,1
+,RADIANS,SR307,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR308,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR309,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR310,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR311,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR312,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR313,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR315,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR316,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR317,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR318,Mote Summerland,All Summerland,G10,R1499,1
+,RADIANS,SR319,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR320,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR321,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR322,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR323,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR324,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR325,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR326,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR327,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR328,Mote Summerland,All Summerland,G4,R1473,1
+,RADIANS,SR329,Mote Summerland,All Summerland,G4,R1564,1
+,RADIANS,SR330,Mote Summerland,All Summerland,G4,R1564,1
+,RADIANS,SR331,Mote Summerland,All Summerland,G4,R1564,1
+,RADIANS,SR332,Mote Summerland,All Summerland,G4,R1564,1
+,RADIANS,SR333,Mote Summerland,All Summerland,G4,R1564,1
+,RADIANS,SR334,Mote Summerland,All Summerland,G4,R1564,1
+,RADIANS,SR335,Mote Summerland,All Summerland,G4,R1564,1
+,RADIANS,SR336,Mote Summerland,All Summerland,G4,R1564,1
+,RADIANS,SR337,Mote Summerland,All Summerland,G4,R1564,1
+,MC,MC212,Mote Summerland,All Summerland,G4,R1466,1
+,RADIANS,SR338,Mote Summerland,All Summerland,G4,R1466,1
+,RADIANS,SR339,Mote Summerland,All Summerland,G4,R1466,1
+,INTERSEPTA,SI222,Mote Summerland,All Summerland,G4,R1466,1
+,INTERSEPTA,SI223,Mote Summerland,All Summerland,G4,R1466,1
+,INTERSEPTA,SI224,Mote Summerland,All Summerland,G4,R1481,1
+,INTERSEPTA,SI225,Mote Summerland,All Summerland,G4,R1481,1
+,INTERSEPTA,SI226,Mote Summerland,All Summerland,G4,R1481,1
+,INTERSEPTA,SI227,Mote Summerland,All Summerland,G4,R1481,1
+,INTERSEPTA,SI228,Mote Summerland,All Summerland,G4,R1481,1
+,INTERSEPTA,SI229,Mote Summerland,All Summerland,G4,R1481,1
+,INTERSEPTA,SI230,Mote Summerland,All Summerland,G4,R1481,1
+,INTERSEPTA,SI231,Mote Summerland,All Summerland,G4,R1481,1
+,INTERSEPTA,SI237,Mote Summerland,All Summerland,G4,R1487,1
+,INTERSEPTA,SI238,Mote Summerland,All Summerland,G4,R1487,1
+,SIDEREA,SS459,Mote Summerland,All Summerland,G4,R1487,1
+,SIDEREA,SS460,Mote Summerland,All Summerland,G4,R1487,1
+,SIDEREA,SS461,Mote Summerland,All Summerland,G4,R1487,1
+,INTERSEPTA,SI239,Mote Summerland,All Summerland,G4,R1575,1
+,INTERSEPTA,SI240,Mote Summerland,All Summerland,G4,R1575,1
+,INTERSEPTA,SI241,Mote Summerland,All Summerland,G4,R1575,1
+,INTERSEPTA,SI242,Mote Summerland,All Summerland,G4,R1575,1
+,INTERSEPTA,SI243,Mote Summerland,All Summerland,G4,R1575,1
+,INTERSEPTA,SI244,Mote Summerland,All Summerland,G4,R1575,1
+,INTERSEPTA,SI39,Mote Summerland,All Summerland,H7,R848,1
+,INTERSEPTA,SI40,Mote Summerland,All Summerland,H7,R1316,1
+,SIDEREA,SS115,Mote Summerland,All Summerland,H7,R1316,1
+,SIDEREA,SS119,Mote Summerland,All Summerland,H7,R1316,1
+,SIDEREA,SS118,Mote Summerland,All Summerland,H7,R1316,1
+,SIDEREA,SS113,Mote Summerland,All Summerland,H7,R1316,1
+,RADIANS,SR10,Mote Summerland,All Summerland,H7,R1316,1
+,SIDEREA,SS116,Mote Summerland,All Summerland,H7,R1316,1
+,INTERSEPTA,SI42,Mote Summerland,All Summerland,H7,R1316,1
+,SIDEREA,SS110,Mote Summerland,All Summerland,H7,R1316,1
+,SIDEREA,SS114,Mote Summerland,All Summerland,H7,R1385,1
+,SIDEREA,SS117,Mote Summerland,All Summerland,H7,R1385,1
+,INTERSEPTA,SI41,Mote Summerland,All Summerland,H7,R1385,1
+,SIDEREA,SS120,Mote Summerland,All Summerland,H7,R1385,1
+,RADIANS,SR12,Mote Summerland,All Summerland,H7,R1385,1
+,SIDEREA,SS111,Mote Summerland,All Summerland,H7,R1385,1
+,SIDEREA,SS109,Mote Summerland,All Summerland,H7,R1385,1
+,SIDEREA,SS98,Mote Summerland,All Summerland,H7,R1410,1
+,SIDEREA,SS94,Mote Summerland,All Summerland,H7,R1410,1
+,INTERSEPTA,SI32,Mote Summerland,,R15,R465,1
+,INTERSEPTA,SI35,Mote Summerland,All Summerland,H7,R1501,1
+,INTERSEPTA,SI31,Mote Summerland,All Summerland,H7,R1501,1
+,INTERSEPTA,SI30,Mote Summerland,All Summerland,H7,R1501,1
+,SIDEREA,SS103,Mote Summerland,All Summerland,H7,R1501,1
+,SIDEREA,SS102,Mote Summerland,All Summerland,H7,R1501,1
+,SIDEREA,SS100,Mote Summerland,All Summerland,H7,R586,1
+,SIDEREA,SS95,Mote Summerland,All Summerland,H7,R586,1
+,INTERSEPTA,SI38,Mote Summerland,All Summerland,H7,R586,1
+,SIDEREA,SS105,Mote Summerland,All Summerland,H7,R608,1
+,INTERSEPTA,SI28,Mote Summerland,All Summerland,H7,R608,1
+,SIDEREA,SS104,Mote Summerland,All Summerland,H7,R608,1
+,INTERSEPTA,SI33,Mote Summerland,All Summerland,H7,R608,1
+,RADIANS,SR8,Mote Summerland,All Summerland,H7,R608,1
+,INTERSEPTA,SI34,Mote Summerland,All Summerland,H7,R608,1
+,SS,SS,Mote Summerland,All Summerland,H7,R608,1
+,SIDEREA,SS112,Mote Summerland,All Summerland,H7,R1477,1
+,SIDEREA,SS101,Mote Summerland,All Summerland,H7,R1477,1
+,RADIANS,SR7,Mote Summerland,All Summerland,H7,R1477,1
+,MC,MC203,Mote Summerland,All Summerland,H7,R1135,1
+,SIDEREA,SS108,Mote Summerland,All Summerland,H7,R1509,1
+,SIDEREA,SS97,Mote Summerland,All Summerland,H6,R1506,1
+,SS,SS,Mote Summerland,All Summerland,H6,R1506,1
+,INTERSEPTA,SI24,Mote Summerland,All Summerland,H6,R1543,1
+,INTERSEPTA,SI22,Mote Summerland,All Summerland,H6,R1543,1
+,SIDEREA,SS91,Mote Summerland,All Summerland,H6,R1543,1
+,RADIANS,SR6,Mote Summerland,All Summerland,H6,R1543,1
+,RADIANS,SR9,Mote Summerland,All Summerland,H6,R1195,1
+,SIDEREA,SS93,Mote Summerland,All Summerland,H6,R1195,1
+,INTERSEPTA,SI25,Mote Summerland,All Summerland,G9,R1272,1
+,SIDEREA,SS91,Mote Summerland,All Summerland,H6,R1465,1
+,SR,SR,Mote Summerland,All Summerland,H6,R1465,1
+,INTERSEPTA,SI26,Mote Summerland,All Summerland,H6,R1465,1
+,SIDEREA,SS92,Mote Summerland,All Summerland,H6,R1556,1
+,SIDEREA,SS95,Mote Summerland,All Summerland,H6,R1556,1
+,SIDEREA,SS89,Mote Summerland,All Summerland,H6,R1474,1
+,OR,OR,Mote Summerland,All Summerland,H6,R1568,1
+,SIDEREA,SS91,Mote Summerland,All Summerland,H6,R1474,1
+,RADIANS,SR1,Mote Summerland,All Summerland,H6,R1523,1
+,RADIANS,SR3,Mote Summerland,All Summerland,H6,R1523,1
+,RADIANS,SR2,Mote Summerland,All Summerland,H6,R1523,1
+,INTERSEPTA,SI21,Mote Summerland,All Summerland,H6,R1523,1
+,INTERSEPTA,SI20,Mote Summerland,All Summerland,H6,R1471,1
+,RADIANS,SR5,Mote Summerland,All Summerland,H6,R1573,1
+,INTERSEPTA,SI23,Mote Summerland,All Summerland,H6,R1573,1
+,RADIANS,SR4,Mote Summerland,All Summerland,H6,R1573,1
+,INTERSEPTA,SI29,Mote Summerland,All Summerland,G7,R1047,1
+,SIDEREA,SS107,Mote Summerland,All Summerland,G7,R1047,1
+,SIDEREA,SS99,Mote Summerland,All Summerland,G7,R1372,1
+,INTERSEPTA,SI18,Mote Summerland,All Summerland,G7,R1372,1
+,SIDEREA,SS106,Mote Summerland,All Summerland,G7,R1647,1
+,SIDEREA,SS96,Mote Summerland,All Summerland,G7,R1130,1
+,INTERSEPTA,SI27,Mote Summerland,All Summerland,G7,R1130,1
+,INTERSEPTA,SI19,Mote Summerland,All Summerland,G7,R1654,1
+,INTERSEPTA,SI37,Mote Summerland,All Summerland,G7,R2029,1
+,INTERSEPTA,SI36,Mote Summerland,All Summerland,G7,R2029,1
+,SIDEREA,SS464,Mote Summerland,All Summerland,E4,R1318,1
+,SIDEREA,SS465,Mote Summerland,All Summerland,E4,R1318,1
+,INTERSEPTA,SI245,Mote Summerland,All Summerland,E4,R1318,1
+,PP,PP18,Mote Summerland,All Summerland,G9,R1552,1
+,PP,PP19,Mote Summerland,All Summerland,G9,R1552,1
+,PP,PP20,Mote Summerland,All Summerland,G9,R1552,1
+,PP,PP24,Mote Summerland,All Summerland,G9,R1552,1
+,SIDEREA,SS468,Mote Summerland,All Summerland,G7,R910,1
+,SIDEREA,SS469,Mote Summerland,All Summerland,G7,R466,1
+,RADIANS,SR75,Mote Summerland,All Summerland,H2,R1394,1
+,RADIANS,SR74,Mote Summerland,All Summerland,H2,R1394,1
+,RADIANS,SR73,Mote Summerland,All Summerland,H2,R1394,1
+,RADIANS,SR76,Mote Summerland,All Summerland,H2,R1394,1
+,RADIANS,SR68,Mote Summerland,All Summerland,G10,R1415,1
+,RADIANS,SR70,Mote Summerland,All Summerland,G10,R1415,1
+,RADIANS,SR71,Mote Summerland,All Summerland,G10,R1415,1
+,RADIANS,SR69,Mote Summerland,All Summerland,G10,R1415,1
+,RADIANS,SR72,Mote Summerland,All Summerland,G10,R1415,1
+,SIDEREA,SS291,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS290,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS298,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS293,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS294,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS292,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS296,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS289,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS297,Mote Summerland,All Summerland,H2,R1418,1
+,SIDEREA,SS295,Mote Summerland,All Summerland,H2,R1418,1
+,RADIANS,SR56,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR57,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR58,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR55,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR52,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR53,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR54,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR50,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR51,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR49,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR48,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR47,Mote Summerland,All Summerland,H2,R7,1
+,RADIANS,SR108,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR97,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR103,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR101,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR102,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR107,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR104,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR99,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR105,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR106,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR100,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR98,Mote Summerland,All Summerland,H2,R1412,1
+,RADIANS,SR96,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR88,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR95,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR94,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR91,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR93,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR86,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR89,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR87,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR92,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR90,Mote Summerland,All Summerland,G10,R1444,1
+,RADIANS,SR30,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR31,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR32,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR29,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR28,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR27,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR26,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR25,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR24,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR23,Mote Summerland,All Summerland,H2,R706,1
+,RADIANS,SR79,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR81,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR85,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR78,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR82,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR80,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR84,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR83,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR77,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR109,Mote Summerland,All Summerland,H2,R1409,1
+,RADIANS,SR33,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR34,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR35,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR37,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR41,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR36,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR39,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR40,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR38,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR45,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR46,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR43,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR42,Mote Summerland,All Summerland,G10,R76,1
+,RADIANS,SR44,Mote Summerland,All Summerland,G10,R76,1
+,SIDEREA,SS499,Mote Summerland,All Summerland,G3,R1019,1
+,RADIANS,SR11,Mote Summerland,All Summerland,H7,R1385,1
+,RADIANS,SR338,Mote Summerland,All Summerland,H7,R1385,1
+,SIDEREA,SS500,Mote Summerland,All Summerland,G3,R1019,1
+,SIDEREA,SS501,Mote Summerland,All Summerland,G3,R1019,1
+,SIDEREA,SS502,Mote Summerland,All Summerland,G3,R1019,1
+,SIDEREA,SS505,Mote Summerland,All Summerland,G3,R1310,1
+,SIDEREA,SS503,Mote Summerland,All Summerland,G3,R1310,1
+,SIDEREA,SS504,Mote Summerland,All Summerland,G3,R1310,1
+,SIDEREA,SS300,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS301,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS302,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS303,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS304,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS305,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS306,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS307,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS308,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS309,Mote Summerland,,R15,R1246,1
+,SIDEREA,SS168,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS169,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS170,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS171,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS172,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS175,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS174,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS176,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS177,Mote Summerland,,R15,R1450,1
+,SIDEREA,SS173,Mote Summerland,,R15,R653,1
+,SIDEREA,SS178,Mote Summerland,,R15,R653,1
+,SIDEREA,SS179,Mote Summerland,,R15,R653,1
+,SIDEREA,SS180,Mote Summerland,,R15,R653,1
+,SIDEREA,SS181,Mote Summerland,,R15,R653,1
+,SIDEREA,SS182,Mote Summerland,,R15,R653,1
+,SIDEREA,SS183,Mote Summerland,,R15,R653,1
+,SIDEREA,SS184,Mote Summerland,,R15,R653,1
+,SIDEREA,SS185,Mote Summerland,,R15,R653,1
+,SIDEREA,SS186,Mote Summerland,,R15,R653,1
+,SIDEREA,SS187,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS188,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS189,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS190,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS191,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS192,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS193,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS194,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS195,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS197,Mote Summerland,,R15,R1386,1
+,SIDEREA,SS198,Mote Summerland,,R15,R137,1
+,SIDEREA,SS199,Mote Summerland,,R15,R137,1
+,SIDEREA,SS200,Mote Summerland,,R15,R137,1
+,SIDEREA,SS201,Mote Summerland,,R15,R137,1
+,SIDEREA,SS202,Mote Summerland,,R15,R137,1
+,SIDEREA,SS203,Mote Summerland,,R15,R137,1
+,SIDEREA,SS204,Mote Summerland,,R15,R137,1
+,SIDEREA,SS205,Mote Summerland,,R15,R137,1
+,SIDEREA,SS206,Mote Summerland,,R15,R137,1
+,SIDEREA,SS207,Mote Summerland,,R15,R137,1
+,SIDEREA,SS208,Mote Summerland,,R15,R137,1
+,SIDEREA,SS209,Mote Summerland,,R15,R137,1
+,SIDEREA,SS210,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS211,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS212,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS213,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS214,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS215,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS216,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS217,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS218,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS219,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS220,Mote Summerland,,R15,R1007,1
+,SIDEREA,SS221,Mote Summerland,,R15,R857,1
+,SIDEREA,SS222,Mote Summerland,,R15,R857,1
+,SIDEREA,SS223,Mote Summerland,,R15,R857,1
+,SIDEREA,SS224,Mote Summerland,,R15,R857,1
+,SIDEREA,SS225,Mote Summerland,,R15,R857,1
+,SIDEREA,SS226,Mote Summerland,,R15,R857,1
+,SIDEREA,SS227,Mote Summerland,,R15,R857,1
+,SIDEREA,SS228,Mote Summerland,,R15,R857,1
+,SIDEREA,SS229,Mote Summerland,,R15,R857,1
+,SIDEREA,SS230,Mote Summerland,,R15,R857,1
+,SIDEREA,SS231,Mote Summerland,,R15,R857,1
+,CN,CN36,Mote Summerland,All Summerland,C3,R95,1
+,CN,CN76,Mote Summerland,All Summerland,C3,R95,1
+,CN,CN52,Mote Summerland,All Summerland,H1,R478,1
+,CN,CN78,Mote Summerland,All Summerland,G7,R2007,1
+,CN,CN61,Mote Summerland,All Summerland,H1,R863,1
+,CN,CN62,Mote Summerland,All Summerland,H1,R863,1
+,CN,CN41,Mote Summerland,All Summerland,H1,R863,1
+,RADIANS,SR63,Mote Summerland,All Summerland,H2,R1602,1
+,RADIANS,SR60,Mote Summerland,All Summerland,H2,R1602,1
+,INTERSEPTA,SI69,Mote Summerland,All Summerland,H2,R1602,1
+,RADIANS,SR14,Mote Summerland,All Summerland,H2,R1955,1
+,RADIANS,SR15,Mote Summerland,All Summerland,H2,R1955,1
+,INTERSEPTA,SI75,Mote Summerland,All Summerland,G10,R1758,1
+,RADIANS,SR59,Mote Summerland,All Summerland,G10,R1758,1
+,RADIANS,SR13,Mote Summerland,All Summerland,G10,R1758,1
+,RADIANS,SR18,Mote Summerland,All Summerland,G10,R1758,1
+,RADIANS,SR62,Mote Summerland,All Summerland,G10,R1758,1
+,RADIANS,SR66,Mote Summerland,All Summerland,G10,R1758,1
+,INTERSEPTA,SI53,Mote Summerland,All Summerland,H2,R2018,1
+,RADIANS,SR67,Mote Summerland,All Summerland,H2,R2018,1
+,RADIANS,SR61,Mote Summerland,All Summerland,H2,R2018,1
+,ASTREOIDES,PA321,Mote Summerland,All Summerland,F9,R1241,1
+,ASTREOIDES,PA318,Mote Summerland,All Summerland,F9,R1761,1
+,CN,CN64,Mote Summerland,All Summerland,B3,R760,1
+,INTERSEPTA,SI108,Mote Summerland,All Summerland,H1,R578,1
+,INTERSEPTA,SI109,Mote Summerland,All Summerland,H1,R578,1
+,INTERSEPTA,SI110,Mote Summerland,All Summerland,H1,R578,1
+,INTERSEPTA,SI111,Mote Summerland,All Summerland,H1,R578,1
+,INTERSEPTA,SI112,Mote Summerland,All Summerland,H1,R578,1
+,INTERSEPTA,SI114,Mote Summerland,All Summerland,H1,R578,1
+,INTERSEPTA,SI73,Mote Summerland,All Summerland,H1,R1681,1
+,INTERSEPTA,SI83,Mote Summerland,All Summerland,H1,R1681,1
+,ROBUSTA,OR11,Mote Summerland,All Summerland,H1,R1396,1
+,FRAGUM,FF2,Mote Summerland,All Summerland,H1,R1396,1
+,FRAGUM,FF3,Mote Summerland,All Summerland,H1,R1396,1
+,INTERSEPTA,SI79,Mote Summerland,All Summerland,H1,R1693,1
+,INTERSEPTA,SI166,Mote Summerland,All Summerland,H1,R1693,1
+,INTERSEPTA,SI171,Mote Summerland,All Summerland,H1,R1693,1
+,INTERSEPTA,SI82,Mote Summerland,All Summerland,H1,R1693,1
+,INTERSEPTA,SI87,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI91,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI89,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI97,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI92,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI96,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI94,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI93,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI95,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI90,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI88,Mote Summerland,All Summerland,H1,R1451,1
+,INTERSEPTA,SI59,Mote Summerland,All Summerland,H1,R1724,1
+,INTERSEPTA,SI65,Mote Summerland,All Summerland,H1,R1724,1
+,INTERSEPTA,SI67,Mote Summerland,All Summerland,H1,R1724,1
+,INTERSEPTA,SI84,Mote Summerland,All Summerland,H1,R1724,1
+,INTERSEPTA,SI98,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI99,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI100,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI101,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI102,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI103,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI104,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI105,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI106,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI107,Mote Summerland,All Summerland,H1,R1399,1
+,INTERSEPTA,SI123,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI124,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI125,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI126,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI127,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI128,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI129,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI130,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI131,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI132,Mote Summerland,All Summerland,H1,R1419,1
+,INTERSEPTA,SI134,Mote Summerland,All Summerland,H1,R1934,1
+,INTERSEPTA,SI135,Mote Summerland,All Summerland,H1,R1934,1
+,INTERSEPTA,SI136,Mote Summerland,All Summerland,H1,R1934,1
+,INTERSEPTA,SI142,Mote Summerland,All Summerland,H1,R1934,1
+,INTERSEPTA,SI145,Mote Summerland,All Summerland,H1,R1934,1
+,INTERSEPTA,SI115,Mote Summerland,All Summerland,H1,R503,1
+,INTERSEPTA,SI116,Mote Summerland,All Summerland,H1,R503,1
+,INTERSEPTA,SI117,Mote Summerland,All Summerland,H1,R503,1
+,INTERSEPTA,SI118,Mote Summerland,All Summerland,H1,R503,1
+,INTERSEPTA,SI119,Mote Summerland,All Summerland,H1,R503,1
+,INTERSEPTA,SI120,Mote Summerland,All Summerland,H1,R503,1
+,INTERSEPTA,SI121,Mote Summerland,All Summerland,H1,R503,1
+,INTERSEPTA,SI122,Mote Summerland,All Summerland,H1,R503,1
+,INTERSEPTA,SI170,Mote Summerland,All Summerland,H1,R508,1
+,INTERSEPTA,SI172,Mote Summerland,All Summerland,H1,R508,1
+,INTERSEPTA,SI173,Mote Summerland,All Summerland,H1,R508,1
+,INTERSEPTA,SI174,Mote Summerland,All Summerland,H1,R508,1
+,INTERSEPTA,SI175,Mote Summerland,All Summerland,H1,R508,1
+,INTERSEPTA,SI176,Mote Summerland,All Summerland,H1,R508,1
+,INTERSEPTA,SI177,Mote Summerland,All Summerland,H1,R508,1
+,INTERSEPTA,SI178,Mote Summerland,All Summerland,H1,R508,1
+,INTERSEPTA,SI165,Mote Summerland,All Summerland,H1,R1404,1
+,INTERSEPTA,SI164,Mote Summerland,All Summerland,H1,R1404,1
+,INTERSEPTA,SI163,Mote Summerland,All Summerland,H1,R1404,1
+,INTERSEPTA,SI169,Mote Summerland,All Summerland,H1,R1404,1
+,INTERSEPTA,SI86,Mote Summerland,All Summerland,H1,R1404,1
+,INTERSEPTA,SI70,Mote Summerland,All Summerland,H1,R1404,1
+,INTERSEPTA,SI168,Mote Summerland,All Summerland,H1,R1404,1
+,INTERSEPTA,SI52,Mote Summerland,All Summerland,H1,R1726,1
+,INTERSEPTA,SI139,Mote Summerland,All Summerland,H1,R1726,1
+,INTERSEPTA,SI141,Mote Summerland,All Summerland,H1,R1726,1
+,INTERSEPTA,SI143,Mote Summerland,All Summerland,H1,R1726,1
+,INTERSEPTA,SI61,Mote Summerland,All Summerland,H1,R1591,1
+,INTERSEPTA,SI66,Mote Summerland,All Summerland,H1,R1591,1
+,SIDEREA,SS141,Mote Summerland,,R15,R1884,1
+,SIDEREA,SS144,Mote Summerland,,R15,R1884,1
+,SIDEREA,SS154,Mote Summerland,,R15,R1884,1
+,SIDEREA,SS139,Mote Summerland,,R15,R1746,1
+,SIDEREA,SS140,Mote Summerland,,R15,R1746,1
+,SIDEREA,SS142,Mote Summerland,,R15,R1746,1
+,SIDEREA,SS143,Mote Summerland,,R15,R1746,1
+,SIDEREA,SS149,Mote Summerland,,R15,R1746,1
+,SIDEREA,SS135,Mote Summerland,,R15,R1592,1
+,SIDEREA,SS145,Mote Summerland,,R15,R1592,1
+,SIDEREA,SS148,Mote Summerland,,R15,R1592,1
+,SIDEREA,SS151,Mote Summerland,,R15,R1592,1
+,SIDEREA,SS153,Mote Summerland,,R15,R1592,1
+,SIDEREA,SS156,Mote Summerland,,R15,R1592,1
+,SIDEREA,SS136,Mote Summerland,,R15,R1841,1
+,SIDEREA,SS146,Mote Summerland,,R15,R1841,1
+,SIDEREA,SS150,Mote Summerland,,R15,R1841,1
+,SIDEREA,SS152,Mote Summerland,,R15,R1841,1
+,SIDEREA,SS157,Mote Summerland,,R15,R1841,1
+,SIDEREA,SS134,Mote Summerland,,R15,R1742,1
+,SIDEREA,SS147,Mote Summerland,,R15,R1742,1
+,SIDEREA,SS123,Mote Summerland,,R15,R1677,1
+,SIDEREA,SS155,Mote Summerland,,R15,R1677,1
+,SIDEREA,SS238,Mote Summerland,,R15,R1677,1
+,SIDEREA,SS247,Mote Summerland,,R15,R1677,1
+,SIDEREA,SS252,Mote Summerland,,R15,R1677,1
+,SIDEREA,SS139,Mote Summerland,,R15,R1734,1
+,SIDEREA,SS239,Mote Summerland,,R15,R1734,1
+,SIDEREA,SS242,Mote Summerland,,R15,R1734,1
+,SIDEREA,SS248,Mote Summerland,,R15,R1734,1
+,SIDEREA,SS250,Mote Summerland,,R15,R1734,1
+,SIDEREA,SS232,Mote Summerland,,R15,R1864,1
+,SIDEREA,SS243,Mote Summerland,,R15,R1864,1
+,SIDEREA,SS246,Mote Summerland,,R15,R1864,1
+,SIDEREA,SS249,Mote Summerland,,R15,R1864,1
+,SIDEREA,SS251,Mote Summerland,,R15,R1864,1
+,SIDEREA,SS253,Mote Summerland,,R15,R1864,1
+,SIDEREA,SS256,Mote Summerland,,R15,R1864,1
+,SIDEREA,SS235,Mote Summerland,,R15,R1769,1
+,SIDEREA,SS236,Mote Summerland,,R15,R1769,1
+,SIDEREA,SS255,Mote Summerland,,R15,R1769,1
+,SIDEREA,SS257,Mote Summerland,,R15,R1769,1
+,SIDEREA,SS233,Mote Summerland,,R15,R1844,1
+,SIDEREA,SS234,Mote Summerland,,R15,R1844,1
+,SIDEREA,SS237,Mote Summerland,,R15,R1844,1
+,SIDEREA,SS254,Mote Summerland,,R15,R1844,1
+,SIDEREA,SS241,Mote Summerland,,R15,R1844,1
+,SIDEREA,SS162,Mote Summerland,,R15,R1815,1
+,SIDEREA,SS244,Mote Summerland,,R15,R1815,1
+,SIDEREA,SS245,Mote Summerland,,R15,R1815,1
+,SIDEREA,SS132,Mote Summerland,,R15,R1950,1
+,SIDEREA,SS196,Mote Summerland,,R15,R1950,1
+,SIDEREA,SS161,Mote Summerland,,R15,R1792,1
+,SIDEREA,SS166,Mote Summerland,,R15,R1792,1
+,SIDEREA,SS167,Mote Summerland,,R15,R1792,1
+,INTERSEPTA,SI62,Mote Summerland,,,R1767,1
+,INTERSEPTA,SI63,Mote Summerland,,,R1767,1
+,INTERSEPTA,SI64,Mote Summerland,,,R1767,1
+,INTERSEPTA,SI68,Mote Summerland,,,R1767,1
+,INTERSEPTA,SI71,Mote Summerland,,,R1767,1
+,INTERSEPTA,SI60,Mote Summerland,,,R1795,1
+,RADIANS,SR65,Mote Summerland,,,R1795,1
+,INTERSEPTA,SI48,Mote Summerland,All Summerland,G10,R1804,1
+,INTERSEPTA,SI133,Mote Summerland,,,R1795,1
+,INTERSEPTA,SI138,Mote Summerland,,,R1795,1
+,INTERSEPTA,SI147,Mote Summerland,,,R1795,1
+,INTERSEPTA,SI49,Mote Summerland,,,R1902,1
+,INTERSEPTA,SI137,Mote Summerland,,,R1902,1
+,INTERSEPTA,SI140,Mote Summerland,,,R1902,1
+,INTERSEPTA,SI144,Mote Summerland,,,R1902,1
+,INTERSEPTA,SI146,Mote Summerland,,,R1902,1
+,INTERSEPTA,SI55,Mote Summerland,,,R1777,1
+,INTERSEPTA,SI56,Mote Summerland,,,R1777,1
+,SIDEREA,SS129,Mote Summerland,,,R1777,1
+,RADIANS,SR19,Mote Summerland,,,R1777,1
+,SIDEREA,SS130,Mote Summerland,,,R1777,1
+,INTERSEPTA,SI51,Mote Summerland,,,R1796,1
+,INTERSEPTA,SI57,Mote Summerland,,,R1796,1
+,RADIANS,SR16,Mote Summerland,,,R1796,1
+,SIDEREA,SS158,Mote Summerland,,,R1796,1
+,SIDEREA,SS259,Mote Summerland,,,R1719,1
+,SIDEREA,SS266,Mote Summerland,,,R1719,1
+,SIDEREA,SS267,Mote Summerland,,,R1719,1
+,SIDEREA,SS274,Mote Summerland,,,R1719,1
+,SIDEREA,SS287,Mote Summerland,,,R1719,1
+,SIDEREA,SS163,Mote Summerland,,R15,R1908,1
+,SIDEREA,SS288,Mote Summerland,,R15,R1908,1
+,SIDEREA,SS269,Mote Summerland,,R15,R1908,1
+,SIDEREA,SS271,Mote Summerland,,R15,R1908,1
+,SIDEREA,SS282,Mote Summerland,,R15,R1908,1
+,INTERSEPTA,SI152,Mote Summerland,,R15,R1908,1
+,SIDEREA,SS260,Mote Summerland,,,R1775,1
+,SIDEREA,SS262,Mote Summerland,,,R1775,1
+,SIDEREA,SS264,Mote Summerland,,,R1775,1
+,SIDEREA,SS273,Mote Summerland,,,R1775,1
+,SIDEREA,SS277,Mote Summerland,,,R1775,1
+,INTERSEPTA,SI45,Mote Summerland,,R15,R1733,1
+,SIDEREA,SS263,Mote Summerland,,R15,R1733,1
+,INTERSEPTA,SI158,Mote Summerland,,R15,R1733,1
+,INTERSEPTA,SI167,Mote Summerland,,R15,R1733,1
+,SIDEREA,SS127,Mote Summerland,All Summerland,G10,R1804,1
+,SIDEREA,SS133,Mote Summerland,All Summerland,G10,R1804,1
+,RADIANS,SR17,Mote Summerland,All Summerland,G10,R1804,1
+,RADIANS,SR20,Mote Summerland,All Summerland,G10,R1804,1
+,SIDEREA,SS261,Mote Summerland,,,R1813,1
+,SIDEREA,SS268,Mote Summerland,,,R1813,1
+,SIDEREA,SS272,Mote Summerland,,,R1813,1
+,SIDEREA,SS276,Mote Summerland,,,R1813,1
+,SIDEREA,SS280,Mote Summerland,,,R1813,1
+,SIDEREA,SS283,Mote Summerland,,,R1813,1
+,SIDEREA,SS286,Mote Summerland,,,R1813,1
+,INTERSEPTA,SI149,Mote Summerland,All Summerland,G10,R2021,1
+,INTERSEPTA,SI151,Mote Summerland,All Summerland,G10,R2021,1
+,INTERSEPTA,SI156,Mote Summerland,All Summerland,G10,R2021,1
+,INTERSEPTA,SI157,Mote Summerland,All Summerland,G10,R2021,1
+,INTERSEPTA,SI159,Mote Summerland,All Summerland,G10,R2021,1
+,INTERSEPTA,SI162,Mote Summerland,All Summerland,G10,R2021,1
+,SIDEREA,SS270,Mote Summerland,,,R1776,1
+,SIDEREA,SS281,Mote Summerland,,,R1776,1
+,SIDEREA,SS284,Mote Summerland,,,R1776,1
+,SIDEREA,SS285,Mote Summerland,,,R1776,1
+,INTERSEPTA,SI150,Mote Summerland,,,R1776,1
+,SIDEREA,SS258,Mote Summerland,,,R1789,1
+,SIDEREA,SS265,Mote Summerland,,,R1789,1
+,SIDEREA,SS278,Mote Summerland,,,R1789,1
+,INTERSEPTA,SI148,Mote Summerland,,,R1789,1
+,INTERSEPTA,SI153,Mote Summerland,,,R1789,1
+,RADIANS,SR64,Mote Summerland,,,R1902,1
+,SIDEREA,SS310,Mote Summerland,,,R1813,1
+,ASTREOIDES,PA334,Mote Summerland,All Summerland,G10,R1508,1
+,ASTREOIDES,PA335,Mote Summerland,All Summerland,G10,R1508,1
+,ASTREOIDES,PA336,Mote Summerland,All Summerland,G10,R1508,1
+,INTERSEPTA,SI85,Mote Summerland,All Summerland,G9,R1910,1
+,SIDEREA,SS122,Mote Summerland,,R15,R1843,1
+,SIDEREA,SS131,Mote Summerland,,R15,R1843,1
+,INTERSEPTA,SI54,Mote Summerland,,R15,R1740,1
+,INTERSEPTA,SI74,Mote Summerland,,R15,R1740,1
+,INTERSEPTA,SI47,Mote Summerland,,R15,R1887,1
+,INTERSEPTA,SI50,Mote Summerland,,R15,R1794,1
+,SIDEREA,SS128,Mote Summerland,,R15,R1794,1
+,INTERSEPTA,SI154,Mote Summerland,,R15,R1721,1
+,INTERSEPTA,SI155,Mote Summerland,,R15,R1721,1
+,INTERSEPTA,SI160,Mote Summerland,,R15,R1721,1
+,DL,DL268,Mote Summerland,All Summerland,F5,R63,1
+,SIDEREA,SS165,Mote Summerland,,R15,R763,1
+,INTERSEPTA,SI46,Mote Summerland,,R15,R866,1
+,INTERSEPTA,SI81,Mote Summerland,,R15,R1741,1
+,RADIANS,SR22,Mote Summerland,All Summerland,G10,R1133,1
+,INTERSEPTA,SI77,Mote Summerland,,R15,R1718,1
+,RADIANS,SR21,Mote Summerland,,R15,R1314,1
+,SIDEREA,SS463,Mote Summerland,All Summerland,F9,R1725,1
+,SIDEREA,SS463,Mote Summerland,,R15,R1861,1
+,SIDEREA,SS137,Mote Summerland,All Summerland,G10,R809,1
+,INTERSEPTA,SI17,Mote Summerland,All Summerland,H4,R729,1
+,MC,MC212,Mote Summerland,All Summerland,H4,R275,1
+,PC,PC60,Mote Summerland,All Summerland,H4,R275,1
+,PS,PS12,Mote Summerland,All Summerland,C1,R2027,1
+,AC,AC?,Mote Summerland,All Summerland,Display,R1633,1
+,ASTREOIDES,PA329,Mote Summerland,All Summerland,G10,R1508,1
+,ASTREOIDES,PA32,Mote Summerland,All Summerland,G3,R871,1
+,OF,OF976,Mote Summerland,All Summerland,G3,R867,1
+,PA,PA5?,Mote Summerland,All Summerland,G3,R871,1
+,ASTREOIDES,PA24,Mote Summerland,All Summerland,G3,R871,1
+,ASTREOIDES,PA96,Mote Summerland,All Summerland,G3,R871,1
+,ASTREOIDES,PA54,Mote Summerland,All Summerland,G3,R871,1
+,ASTREOIDES,PA71,Mote Summerland,All Summerland,G3,R871,1
+,ASTREOIDES,PA90,Mote Summerland,All Summerland,G3,R871,1
+,ASTREOIDES,PA63,Mote Summerland,All Summerland,G3,R871,1
+,ASTREOIDES,PA29,Mote Summerland,All Summerland,G3,R871,1
+,SIDEREA,SS3,Mote Summerland,All Summerland,E4,R324,1
+,OF,OF697,Mote Summerland,All Summerland,F7,R1006,1
+,OF,OF3,Mote Summerland,All Summerland,F7,R1143,1
+,ASTREOIDES,PA73,Mote Summerland,All Summerland,G9,R1324,1
+,ASTREOIDES,PA22,Mote Summerland,All Summerland,G9,R1324,1
+,ASTREOIDES,PA22,Mote Summerland,All Summerland,G9,R1324,1
+,OF,OF700,Mote Summerland,All Summerland,E3,R938,1
+,ASTREOIDES,PA98,Mote Summerland,All Summerland,G9,R1324,1
+,OF,OF990,Mote Summerland,All Summerland,D5,R1445,1
+,SIDEREA,SS434,Mote Summerland,,Unassigned,R22,1
+,DL,DL179,Mote Summerland,All Summerland,D4,R289,1
+,DL,DL84,Mote Summerland,All Summerland,F7,R1479,1
+,LS,DLS7,Mote Summerland,All Summerland,F3,R65,1
+,AC,AC2523,Mote Looe Key [In Situ],,,CU-060,1
+,AC,AC2519,Mote Looe Key [In Situ],,,CU-044,1
+,MC,MC35,Mote Looe Key [In Situ],,,MC MIX1,1
+,MC,MC44,Mote Looe Key [In Situ],,,MC MIX2,1
+,PS,PS18,Mote Looe Key [In Situ],,,PS MIX1,1
+,OF,OF11,Mote Looe Key [In Situ],,,OF MIX1,1
+,OF,OF23,Mote Looe Key [In Situ],,,OF MIX1,1
+,OF,OF32,Mote Looe Key [In Situ],,,OF MIX1,1
+,OF,OF65,Mote Looe Key [In Situ],,,OF MIX1,1
+,OF,OF423,Mote Looe Key [In Situ],,,OF MIX2,1
+,OF,OF441,Mote Looe Key [In Situ],,,OF MIX2,1
+,OF,OF622,Mote Looe Key [In Situ],,,OF MIX2,1
+,OF,OF626,Mote Looe Key [In Situ],,,OF MIX2,1
+,OF,OF678,Mote Looe Key [In Situ],,,OF MIX3,1
+,OF,OF680,Mote Looe Key [In Situ],,,OF MIX3,1
+,DS,DS3,Mote Looe Key [In Situ],,,DS MIX1,1
+,AC,AC13,Mote Sand Key [In Situ],,,54,1
+,AC,AC1962,Mote Sand Key [In Situ],,,1962,1
+,AC,AC2533,Mote Sand Key [In Situ],,,FM-20,1
+,AC,AC2572,Mote Sand Key [In Situ],,,FM-20,1
+,AC,AC55,Mote Sand Key [In Situ],,,55,1
+,SIDEREA,SS228,Mote Summerland,All Summerland,E4,R1318,1
+,AP,AP35,Mote Looe Key [In Situ],,,CU-TR5,1
+,AC,AC57,Mote Islamorada [In Situ],,,Red46,1
+,PS,PS51,Mote Summerland,All Summerland,G8,R1453,1
+,INTERSEPTA,SI43,Mote Summerland,All Summerland,F1,R719,1
+,PS,PS12,Mote Summerland,All Summerland,B5,R1638,1
+,OF,OF869,Mote Summerland,All Summerland,C6,R1672,1
+,OF,OF863,Mote Summerland,All Summerland,C6,R1672,1
+,DL,DL266,Mote Summerland,All Summerland,F5,R63,1
+,,PC,Mote Summerland,All Summerland,E1,R1526,1
+,MC,MC57,Mote Summerland,All Summerland,F3,R495,1
+,MC,MC60,Mote Summerland,All Summerland,F3,R495,1
+,MC,MC103,Mote Summerland,All Summerland,B1,R1862,1
+,DL,DL250,Mote Summerland,All Summerland,Q7,R1836,1
+,MC,MC90,Mote Islamorada [In Situ],,,Red91,1
+,OF,OF685,Mote Summerland,All Summerland,D5,R1854,1
+,OF,OF693,Mote Summerland,All Summerland,D5,R1854,1
+,OF,OF700,Mote Summerland,All Summerland,B3,R1921,1
+,PC,PC20,Mote Key Largo [In Situ],,,Red01,1
+,OF,OF932,Mote Key Largo [In Situ],,,Red01,1
+,MC,MC124,Mote Key Largo [In Situ],,,Red02,1
+,AC,AC2603,Mote Key Largo [In Situ],,,Red05,1
+,AC,AC2618,Mote Key Largo [In Situ],,,Red05,1
+,AC,AC36,Mote Key Largo [In Situ],,,Red05,1
+,AC,AC2931,Mote Key Largo [In Situ],,,Red05,1
+,AC,AC2935,Mote Key Largo [In Situ],,,Red05,1
+,AC,AC2936,Mote Key Largo [In Situ],,,Red05,1
+,AC,AC2635,Mote Key Largo [In Situ],,,Red06,1
+,AC,AC2638,Mote Key Largo [In Situ],,,Red06,1
+,AC,AC2639,Mote Key Largo [In Situ],,,Red06,1
+,AC,AC34,Mote Key Largo [In Situ],,,Red07,1
+,AC,AC3,Mote Key Largo [In Situ],,,Red08,1
+,AC,AC2931,Mote Key Largo [In Situ],,,Blue55,1
+,OF,OF932,Mote Key Largo [In Situ],,,Blue91,1
+,PC,PC20,Mote Key Largo [In Situ],,,Blue61,1
+,AC,AC2603,Mote Key Largo [In Situ],,,Blue45,1
+,AC,AC2618,Mote Key Largo [In Situ],,,Blue45,1
+,AC,AC2635,Mote Key Largo [In Situ],,,Blue46,1
+,AC,AC2638,Mote Key Largo [In Situ],,,Blue46,1
+,AC,AC2639,Mote Key Largo [In Situ],,,Blue46,1
+,AC,AC34,Mote Key Largo [In Situ],,,Blue27,1
+,AC,AC3,Mote Key Largo [In Situ],,,Blue98,1
+,AP,AP19-B,Mote Key Largo [In Situ],,Unassigned,R3,1
+,AP,AP19-B,Mote Key Largo [In Situ],,Unassigned,R4,1
+,DL,DL226,Mote Summerland,All Summerland,F4,R1317,1
+,PA,PA422,Mote Summerland,All Summerland,G5,R971,1
+,PA,PA423,Mote Summerland,All Summerland,G5,R971,1
+,PA,PA424,Mote Summerland,All Summerland,G5,R971,1
+,PA,PA425,Mote Summerland,All Summerland,G5,R971,1
+,PA,PA426,Mote Summerland,All Summerland,G5,R971,1
+,PA,PA427,Mote Summerland,All Summerland,G5,R971,1
+,PA,PA428,Mote Summerland,All Summerland,G5,R971,1
+,PA,PA429,Mote Summerland,All Summerland,G5,R971,1
+,PA,PA430,Mote Summerland,All Summerland,G5,R971,1
+,OD,OD14,Mote Summerland,All Summerland,G5,R1918,1
+,SB,SB1,Mote Summerland,All Summerland,G5,R1918,1
+,SR,SR707,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR708,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR709,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR710,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR711,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR712,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR713,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR714,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR715,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR716,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR717,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR718,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR719,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR720,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR721,Mote Summerland,All Summerland,G5,R209,1
+,SH,SH34,Mote Summerland,All Summerland,G5,R275,1
+,SH,SH35,Mote Summerland,All Summerland,G5,R275,1
+,SH,SH36,Mote Summerland,All Summerland,G5,R275,1
+,SH,SH37,Mote Summerland,All Summerland,G5,R275,1
+,SB,SB2,Mote Summerland,All Summerland,G5,R1574,1
+,SH,SH38,Mote Summerland,All Summerland,G5,R1574,1
+,SH,SH39,Mote Summerland,All Summerland,G5,R1574,1
+,SH,SH40,Mote Summerland,All Summerland,G5,R1574,1
+,SB,SB3,Mote Summerland,All Summerland,G6,R654,1
+,SH,SH41,Mote Summerland,All Summerland,G6,R654,1
+,SH,SH42,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH43,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH44,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH45,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH46,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH47,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH48,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH49,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH50,Mote Summerland,All Summerland,G6,R1123,1
+,SH,SH69,Mote Summerland,All Summerland,G5,R1918,1
+,SH,SH51,Mote Summerland,All Summerland,G6,R1503,1
+,SH,SH52,Mote Summerland,All Summerland,G6,R1503,1
+,SH,SH53,Mote Summerland,All Summerland,G6,R1503,1
+,SH,SH54,Mote Summerland,All Summerland,G6,R1503,1
+,SH,SH55,Mote Summerland,All Summerland,G6,R1503,1
+,SH,SH56,Mote Summerland,All Summerland,G6,R1503,1
+,SH,SH57,Mote Summerland,All Summerland,G6,R1503,1
+,SH,SH58,Mote Summerland,All Summerland,G6,R1503,1
+,SH,SH60,Mote Summerland,All Summerland,G6,R384,1
+,SH,SH61,Mote Summerland,All Summerland,G6,R384,1
+,SH,SH62,Mote Summerland,All Summerland,G6,R384,1
+,SH,SH63,Mote Summerland,All Summerland,G6,R384,1
+,SH,SH64,Mote Summerland,All Summerland,G6,R384,1
+,SH,SH65,Mote Summerland,All Summerland,G6,R384,1
+,SH,SH66,Mote Summerland,All Summerland,G6,R384,1
+,SH,SH67,Mote Summerland,All Summerland,G6,R384,1
+,SH,SH68,Mote Summerland,All Summerland,G6,R384,1
+,SS,SS529,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS530,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS531,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS532,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS533,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS534,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS535,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS536,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS537,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS538,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS539,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS540,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS541,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS542,Mote Summerland,All Summerland,G5,R810,1
+,SS,SS543,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS544,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS545,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS546,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS547,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS548,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS549,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS550,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS551,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS552,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS553,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS554,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS555,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS556,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS557,Mote Summerland,All Summerland,G5,R623,1
+,SS,SS558,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS559,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS560,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS561,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS562,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS563,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS564,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS565,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS566,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS567,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS568,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS569,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS570,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS571,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS572,Mote Summerland,All Summerland,G5,R1692,1
+,SS,SS573,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS574,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS575,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS576,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS577,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS578,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS579,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS580,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS581,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS582,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS583,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS584,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS585,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS586,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS587,Mote Summerland,All Summerland,G5,R833,1
+,SS,SS588,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS589,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS590,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS591,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS592,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS593,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS594,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS595,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS596,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS597,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS598,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS599,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS600,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS601,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS602,Mote Summerland,All Summerland,G6,R584,1
+,SS,SS603,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS604,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS605,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS606,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS607,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS608,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS609,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS610,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS611,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS612,Mote Summerland,All Summerland,G6,R598,1
+,SS,SS613,Mote Summerland,All Summerland,G6,R698,1
+,SS,SS614,Mote Summerland,All Summerland,G6,R698,1
+,SS,SS615,Mote Summerland,All Summerland,G6,R698,1
+,SS,SS616,Mote Summerland,All Summerland,G6,R698,1
+,SS,SS617,Mote Summerland,All Summerland,G6,R698,1
+,SS,SS618,Mote Summerland,All Summerland,G6,R698,1
+,SS,SS619,Mote Summerland,All Summerland,G6,R698,1
+,SS,SS620,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS621,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS622,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS623,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS624,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS625,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS626,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS627,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS628,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS629,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS630,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS631,Mote Summerland,All Summerland,G6,R894,1
+,SS,SS632,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS633,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS634,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS635,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS636,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS637,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS638,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS639,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS640,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS641,Mote Summerland,All Summerland,G6,R620,1
+,SS,SS642,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS643,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS644,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS645,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS646,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS647,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS648,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS649,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS650,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS651,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS652,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS653,Mote Summerland,All Summerland,G6,R323,1
+,SS,SS654,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS655,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS656,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS657,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS658,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS659,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS660,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS661,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS662,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS663,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS664,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS665,Mote Summerland,All Summerland,G6,R1129,1
+,SS,SS666,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS667,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS668,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS669,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS670,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS671,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS672,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS673,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS674,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS675,Mote Summerland,All Summerland,G6,R1885,1
+,SS,SS676,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS677,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS678,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS679,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS680,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS681,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS682,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS683,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS684,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS685,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS686,Mote Summerland,All Summerland,G6,R1193,1
+,SS,SS687,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS688,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS689,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS690,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS691,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS692,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS693,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS694,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS695,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS696,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS697,Mote Summerland,All Summerland,G6,R1011,1
+,SS,SS698,Mote Summerland,All Summerland,G6,R1431,1
+,SS,SS699,Mote Summerland,All Summerland,G6,R1431,1
+,SS,SS700,Mote Summerland,All Summerland,G6,R1431,1
+,SS,SS701,Mote Summerland,All Summerland,G6,R1431,1
+,SS,SS702,Mote Summerland,All Summerland,G6,R1431,1
+,SS,SS703,Mote Summerland,All Summerland,G6,R1431,1
+,SS,SS704,Mote Summerland,All Summerland,G6,R1431,1
+,SS,SS705,Mote Summerland,All Summerland,G6,R359,1
+,SS,SS706,Mote Summerland,All Summerland,G6,R359,1
+,SS,SS707,Mote Summerland,All Summerland,G6,R359,1
+,SS,SS708,Mote Summerland,All Summerland,G6,R359,1
+,SS,SS709,Mote Summerland,All Summerland,G6,R359,1
+,SS,SS710,Mote Summerland,All Summerland,G6,R359,1
+,SS,SS711,Mote Summerland,All Summerland,G6,R359,1
+,SS,SS712,Mote Summerland,All Summerland,G6,R359,1
+,SS,SS713,Mote Summerland,All Summerland,G6,R1941,1
+,SS,SS714,Mote Summerland,All Summerland,G6,R1941,1
+,SS,SS715,Mote Summerland,All Summerland,G6,R1941,1
+,SS,SS716,Mote Summerland,All Summerland,G6,R1941,1
+,SS,SS717,Mote Summerland,All Summerland,G6,R1941,1
+,SS,SS718,Mote Summerland,All Summerland,G6,R1941,1
+,SS,SS719,Mote Summerland,All Summerland,G6,R1941,1
+,SS,SS720,Mote Summerland,All Summerland,G6,R1941,1
+,SR,SR722,Mote Summerland,All Summerland,G5,R209,1
+,SR,SR723,Mote Summerland,All Summerland,G5,R275,1
+,SH,SH59,Mote Summerland,All Summerland,G6,R654,1
+,OF,OF976,Mote Summerland,All Summerland,B3,R1921,1
+,AC,AC2935,Mote Key Largo [In Situ],,,Blue55,1
+,AC,AC2936,Mote Key Largo [In Situ],,,Blue55,1
+,AP,AP19,Mote Key Largo [In Situ],,,Blue44,1
+,RADIANS,SR253,Mote Summerland,All Summerland,G8,R1570,0
+,INTERSEPTA,SI210,Mote Summerland,All Summerland,G8,R1460,0
+,DL,DL231,Mote Summerland,All Summerland,F5,R154,-6
+,DL,DL5,Mote Summerland,All Summerland,F5,R909,-9

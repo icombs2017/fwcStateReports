@@ -1,0 +1,127 @@
+---
+title: "State Year 8 Inventory Snapshot"
+author: "Ian Combs"
+date: "2024-07-15"
+output: html_document:
+    theme: flatly
+    code_folding: show
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+  pdf_doctument:
+      toc: yes
+      toc_depth: 3
+---
+```{r, setup, include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, fig.align = 'left')
+knitr::opts_knit$set(root.dir = "../data")
+options(width = 88)
+library(magrittr)
+```
+
+
+
+
+
+### version: `r Sys.Date() %>% format(format="%B %d, %Y")`
+
+<!-- this is where the DOI would go  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3675991.svg)](https://doi.org/10.5281/zenodo.3675991)
+-->
+
+
+#### [GitHub repository](https://github.com/icombs2017/nfwfEdrMonitoring){target="_blank"}
+###
+
+***
+This is the working analysis pipeline to analyze data generated from outplant monitoring for the State Year 8 grant.
+
+***
+
+### All analyses performed with R version `r getRversion()`
+
+
+# Basic setup of R environment
+***
+## Loading required packages
+For the following analyses we will require the use of a number of different R packages. Most of which can be sourced from CRAN, but some must be downloaded from GitHub. We can use the following code to load in the packages and install any packages not previously installed in the R console. 
+
+
+```{r,packages, include = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools", "lubridate", "data.table", "forcats")
+
+```
+
+
+# Importing Data
+***
+## We are downloading this dataset from our GoogleDrive folder. We will be using the package `googledrive`. Each GoogleDrive file has a unique ID that does not change throughout the lifespan of the document, even if the file name is changed. This ID is housed in the file's URL. 
+Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Below you will copy and paste that into the function `drive_download` within `as_id`. This will save the file locally in the specified path (in this case our data folder) and you will import the folder as you normally would. Downloading it this way decreases the potential human error when downloading, moving folders, renaming, saving etc and ensures that the most up to date file is being utilized. 
+
+# Here we are importing data for our plug counts from google drive
+
+```{r, outplantLoadingData, include = TRUE}
+
+snap <- read.csv("../data/inventorySnapshot.csv")
+current <- read.csv("../data/currentInventory.csv")
+
+summer1 <- read.csv("../data/currentInventorySummerland.csv")
+isla1 <- read.csv("../data/currentInventoryIsla.csv")
+kl1 <- read.csv("../data/currentInventoryKL.csv")
+
+
+
+
+```
+
+
+```{r}
+
+summer <- summer1 %>% 
+  select(location, genotype, qty, size) %>% 
+  mutate(location = 'summerland') %>%
+  separate(genotype, into = c("species", "geno"), sep = 2, remove = FALSE) %>% 
+  mutate(across(c(location, genotype, species), as.factor))
+  
+isla <- isla1 %>% 
+  select(location, genotype, qty, size) %>% 
+  mutate(location = 'isla') %>%
+ separate(genotype, into = c("species", "geno"), sep = 2, remove = FALSE) %>% 
+  mutate(across(c(location, genotype, species), as.factor))
+
+kl <- kl1 %>% 
+  select(location, genotype, qty, size) %>% 
+  mutate(location = 'KL') %>%
+ separate(genotype, into = c("species", "geno"), sep = 2, remove = FALSE) %>% 
+  mutate(across(c(location, genotype, species), as.factor))
+
+
+exSit <- rbind(summer, isla, kl) %>%
+  mutate(geno = as.character(geno)) %>% 
+  # removing all non numeric geno's  (e.g. anything weird like 0?000? etc)
+  filter(grepl("^\\d+$", geno))
+
+inventoryTab <- exSit %>% 
+  group_by(species) %>%
+  dplyr::summarize(
+    Genos = n_distinct(genotype),
+                   Total = sum(Total),
+                   quarter = sum(quarter),
+                   half = sum(half),
+                   threeQuarter = sum(threeQuarter),
+                   full = sum(full),
+                   Unknown = sum(Unknown))
+
+
+write.csv(inventoryTab, "../data/inventorySnap.csv", row.names = FALSE)
+
+
+```
+```{r}
+
+
+
+
+
+```
+
