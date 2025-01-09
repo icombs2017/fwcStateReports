@@ -69,7 +69,7 @@ summer1 <- read.csv("../data/currentInventorySummerland.csv")
 isla1 <- read.csv("../data/currentInventoryIsla.csv")
 kl1 <- read.csv("../data/currentInventoryKL.csv")
 
-
+total1 <- read.csv("../data/totalinventoryWithSize.csv")
 
 
 ```
@@ -120,8 +120,75 @@ write.csv(inventoryTab, "../data/inventorySnap.csv", row.names = FALSE)
 ```{r}
 
 
+total <- total1 %>% 
+  select(species, genotype, site, qty, rack, size) %>% 
+  separate(genotype, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>% 
+  mutate(geno = as.character(geno)) %>% 
+  # removing all non numeric geno's  (e.g. anything weird like 0?000? etc)
+  filter(grepl("^\\d+$", geno)) %>% 
+  mutate(across(c(site, geno, genotype, species, speciesCode, rack, size), as.factor))
+
+inventoryTab <- total %>% 
+  group_by(site, speciesCode, geno, size ) %>% 
+  pivot_wider(
+    names_from = size,
+    values_from = qty
+  )
+
+
+%>%
+  dplyr::summarize(
+    Genos = n_distinct(genotype),
+                   Total = sum(Total),
+                   quarter = sum(quarter),
+                   half = sum(half),
+                   threeQuarter = sum(threeQuarter),
+                   full = sum(full),
+                   Unknown = sum(Unknown))
+
+
+
 
 
 
 ```
+
+```{r, inventorySnapShot, include = TRUE}
+
+
+
+
+
+```
+
+
+```{r}
+summarized_data <- total %>%
+  group_by(species, site, genotype, size) %>%
+  dplyr::summarize(total_qty = sum(qty, na.rm = TRUE), .groups = "drop")
+
+summarized_data1 <- summarized_data %>% 
+  group_by(species, site) %>% 
+  mutate(total_genotypes = n_distinct(genotype)) %>% 
+  ungroup %>% 
+  pivot_wider(names_from = size, values_from = total_qty, values_fill = list(total_qty = 0)) %>% 
+mutate(totalQty = `0`+`0.25`+`0.5`+`0.75`+`1`)
+
+
+
+
+%>%
+  group_by(species, site) %>%
+  mutate(total_genotypes = n_distinct(genotype)) %>%
+  ungroup()
+
+
+
+
+
+
+
+```
+
+
 
