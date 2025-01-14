@@ -48,7 +48,7 @@ For the following analyses we will require the use of a number of different R pa
 
 ```{r,packages, include = TRUE, message = FALSE, warning = FALSE, results = 'hide'}
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools", "lubridate", "data.table", "forcats")
+pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "stringr", "flextable", "gridExtra", "ggpubr", "Rmisc", "rcompanion", "RColorBrewer", "googledrive", "gdata", "readxl", "DescTools","patchwork", "FSA", "rstatix", "tidyverse", "lme4", 'PMCRMplus', "EnvStats", "emmeans", "MuMIn", "sjstats", "lmerTest", "gargle", "FSA", "vegan", "gtools", "lubridate", "data.table", "forcats", "paletteer")
 
 ```
 
@@ -266,18 +266,28 @@ We are importing data taken from Seafoundry that has all of the deltas from our 
 frag1 <- read.csv("../data/inventoryDeltas.csv")
 
 frag2 <- frag1 %>% 
+    mutate(
+    date = as.POSIXct(date, format = "%m/%d/%Y %I:%M:%S %p"),
+    # Format as YYYY-MM-DD
+    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"), 
+    monthYear = as.POSIXct(monthYear, format = "%Y-%m-%d"),
+    # Convert to POSIXct
+    monthYear = format(monthYear, "%m/%Y")) %>% 
+  filter(monthYear %in% c("10/2024")) %>% 
   select(site, species, genotype_name, reason, qty, comment) %>% 
   mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
   filter(reason %in% ("fragging")) %>%
-  mutate(
-    species = if_else(
-      species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
-      species,  # Keep the original value if it's in the list
-      " "   # Replace with 'other' if it's not
-    )
-  ) %>% 
+  # mutate(
+  #   species = if_else(
+  #     species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+  #     species,  # Keep the original value if it's in the list
+  #     "other"   # Replace with 'other' if it's not
+  #   )
+  # ) %>% 
   group_by(site, species) %>%
-  dplyr::summarize(production  = sum(qty))
+  dplyr::summarize(production  = sum(qty),
+                   numberOfGenets = n_distinct(genotype_name)) %>% 
+  select(site, species, numberOfGenets, production)
 
 
 
@@ -300,8 +310,10 @@ flextable() %>%
   align(align = "center", j = "production") %>% 
   set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
   add_footer_row(values = c("Total", "", 
+          
+          sum(frag2$numberOfGenets, na.rm = TRUE),
           sum(frag2$`production`, na.rm = TRUE)),
-          colwidths = c(1, 1, 1))
+          colwidths = c(1, 1, 1, 1))
 fragTab
 
 
@@ -315,7 +327,7 @@ fragTab
 ```
  ## Creating a figure to show production numbers
  
- Re-wrangling the data
+ Re-wrangling the data, we are just going to use the month of October from this reporting period (07/01/2024 - 12/31/2024) to allocate toward state year 8 deliverables. 
  
 ```{r, production figure wrangling, include = TRUE}
 
@@ -332,52 +344,94 @@ frag3 <- frag1 %>%
   select(monthYear, site, species, genotype_name, qty, reason) %>% 
   mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
   filter(reason %in% ('fragging')) %>% 
- mutate(
-    species = if_else(
-      species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
-      species,  # Keep the original value if it's in the list
-      "other"   # Replace with 'other' if it's not
-    )) %>% 
-      filter(monthYear %in% c("07/2024", "10/2024")) %>% 
+ # mutate(
+    # species = if_else(
+    #   species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+    #   species,  # Keep the original value if it's in the list
+    #   "other"   # Replace with 'other' if it's not
+    # )) %>% 
+  mutate(species = as.factor(species)) %>% 
+    filter(monthYear %in% c("10/2024")) %>%
   group_by(monthYear, site, species) %>%
-  dplyr::summarize(production  = sum(qty))
+  dplyr::summarize(production  = sum(qty)) %>% 
+  mutate(species = case_when(
+    species == "INTERSEPTA" ~ "SI",
+    species == "RADIANS" ~ "SR",
+    species == "SIDEREA" ~ "SI",
+    species == "ASTREOIDES" ~ "PA",
+    TRUE ~ species  # Keep other values as is
+  ))
   
   
   
-  # select(site, species, genotype_name, reason, qty, comment) %>% 
-  # mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
-  # filter(reason %in% ("fragging")) %>%
-  # mutate(
-  #   species = if_else(
-  #     species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
-  #     species,  # Keep the original value if it's in the list
-  #     "other"   # Replace with 'other' if it's not
-  #   )
-  # ) %>% 
-  # group_by(site, species) %>%
-  # dplyr::summarize(production  = sum(qty))
-
+  
 ```
 
 Now we are visualizing the data as stacked bar graph with `date` on the X-axis, `production` numbers on the y axis, and stacked by `species`.
 
 ```{r, visualizing, include = TRUE}
 
-fragPlot <- ggplot(frag3, aes(x = monthYear, y = production, fill = species)) +
+myColors = paletteer::paletteer_c("ggthemes::Classic Blue", n = 12)
+
+
+# frag3$species <- factor(frag3$species, levels = frag3$species[order(frag3$production)])
+
+agg_prod <- aggregate(production ~ species, data = frag3, sum)
+
+frag3$species <- factor(frag3$species, levels = agg_prod$species[order(agg_prod$production)])
+
+
+fragPlot1 <- ggplot(frag3, aes(x = site, y = production, fill = species)) +
   geom_bar(stat = "identity") + # Creates the bar chart
-  facet_wrap(~site, scales = "free_y") +# Facets by site, allowing different y-axis scales
   ylim(0, 4000)+
+  scale_fill_manual(values = myColors,
+                    labels = c("AP" = "APAL",
+               "CN" = "CNAT",
+               "MC" = "MCAV",
+               "SI" = "SINT",
+               "SR" = "SRAD",
+               "SS" = "SSID",
+               "DL" = "DLAB",
+               "OF" = "OFAV",
+               "PS" = "PSTR",
+               "DS" = "DSTO",
+               "PC" = "PCLI", 
+               "PA" = "PAST"        # Custom legend labels
+  ))+
   labs(
-    x = "Month/Year", 
+    x = "Site", 
     y = "Production", 
-    title = "Production by Species and Month/Year"
+    fill = "Species",
+    title = "Coral Fragment Production Through the Reporting Period"
   )
 
-totalFrag <- frag3 %>% 
-  ungroup() %>% 
-  dplyr::summarize(total = sum(production))
+fragPlot <- fragPlot1 + theme(
+    # Title
+    plot.title = element_text(size = 40, face = "bold"),
+    # X Axis
+    axis.text.x = element_text(size = 20),  
+    axis.title.x = element_text(size = 40, face = "bold"),
+    # Y Axis
+    axis.title.y = element_text(size = 100, face = "bold"),
+    axis.text.y = element_text(colour = "black", size = 30, face = "bold"),
+    # Facets <- this will be removed if you don't have facets!
+    strip.text = element_text(size = 50, face = 'bold'),
+    strip.background = element_rect(fill = "#D1D0D0"),
+    # Legend
+    legend.title = element_text(size = 40, face = "bold"),
+    legend.text = element_text(size = 30, face = "bold", colour = "black"),
+    legend.position = "right",
+    # Grid and Background
+    panel.grid.major = element_line(size = 0.3, linetype = 'solid', colour = "black"),
+    panel.background = element_rect(fill = '#f3f3f3'),
+    # Axis Lines and Ticks
+    axis.line = element_line(colour = "black"),
+    axis.ticks = element_line(color="black"),
+    # Text
+    text = element_text(size=20, color="black"))
 
-write.csv(frag3, "../data/stateY8production.csv")
+
+ggsave("../figures/productionPlot.png", plot = fragPlot, width = 20, height = 15, units = 'in', dpi = 600)
 
 
 
