@@ -181,10 +181,10 @@ inSitu1 <- readxl::read_xlsx("../data/inSituInventory.xlsx")
 
 ```{r, in situ inventory acer, include = TRUE}
 
-
-inSituACERtab <- inSitu1 %>% 
+inSituACER <- inSitu1 %>% 
   filter(Species %in% "ACER") %>% 
-  arrange(Site) %>% 
+  arrange(Site) 
+inSituACERtab <- inSituACER %>% 
   flextable() %>%
   set_header_labels(Data.set = "Data set") %>% 
   flextable::compose(part = "header", j = "Species", value = as_paragraph("Species")) %>%
@@ -199,9 +199,9 @@ inSituACERtab <- inSitu1 %>%
   align(align = "center", j = "Total") %>% 
   set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
   add_footer_row(values = c("Total", "", 
-          sum(inSitu1$`# of Putative Genotypes`, na.rm = TRUE), 
-          sum(inSitu1$Total, na.rm = TRUE), 
-          sum(inSitu1$TLE, na.rm = TRUE)),
+          sum(inSituACER$`# of Putative Genotypes`, na.rm = TRUE), 
+          sum(inSituACER$Total, na.rm = TRUE), 
+          sum(inSituACER$TLE, na.rm = TRUE)),
           colwidths = c(1, 1, 1,1,1))
 
 # Print or view the final flextable
@@ -219,12 +219,15 @@ inSituACERtab
 
 ```{r, in situ inventory massives, include = TRUE}
 
-
-inSituMSVStab <- inSitu1 %>% 
+inSituMSVS <- inSitu1 %>% 
   filter(Species != "ACER", Total > 0) %>%
   select(-c(TLE)) %>% 
-  arrange(Site) %>% 
-  flextable() %>%
+  arrange(Site)
+
+
+
+inSituMSVStab <- inSituMSVS %>% 
+   flextable() %>%
   set_header_labels(Data.set = "Data set") %>% 
   flextable::compose(part = "header", j = "Species", value = as_paragraph("Species")) %>%
   flextable::compose(part = "header", j = "# of Putative Genotypes", value = as_paragraph("# of Putative Genotypes")) %>%
@@ -237,8 +240,8 @@ inSituMSVStab <- inSitu1 %>%
   align(align = "center", j = "Total") %>% 
   set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
   add_footer_row(values = c("Total", "", 
-          sum(inSitu1$`# of Putative Genotypes`, na.rm = TRUE), 
-          sum(inSitu1$Total, na.rm = TRUE)),
+          sum(inSituMSVS$`# of Putative Genotypes`, na.rm = TRUE), 
+          sum(inSituMSVS$Total, na.rm = TRUE)),
           colwidths = c(1, 1, 1, 1))
 
 # Print or view the final flextable
@@ -251,6 +254,137 @@ inSituMSVSDoc = body_add_flextable(inSituMSVSDoc, value = inSituMSVStab)
 inSituMSVStab
 
 ```
+
+# Production
+***
+We are going to explore our production numbers during this reporting period. 
+
+## Importing Data
+We are importing data taken from Seafoundry that has all of the deltas from our reporting period. We then will remove everything that isn't listed as 'fragging' (e.g. transfers) and just focus on our fragging production. 
+```{r, ex situ production, include = TRUE}
+
+frag1 <- read.csv("../data/inventoryDeltas.csv")
+
+frag2 <- frag1 %>% 
+  select(site, species, genotype_name, reason, qty, comment) %>% 
+  mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
+  filter(reason %in% ("fragging")) %>%
+  mutate(
+    species = if_else(
+      species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+      species,  # Keep the original value if it's in the list
+      " "   # Replace with 'other' if it's not
+    )
+  ) %>% 
+  group_by(site, species) %>%
+  dplyr::summarize(production  = sum(qty))
+
+
+
+```
+##Fragging Table
+Making a table to summarize our production Outputs
+
+```{r}
+
+fragTab <- frag2 %>% 
+flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "site", value = as_paragraph("Site")) %>%
+  flextable::compose(part = "header", j = "species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "production", value = as_paragraph("Total Fragments Produced")) %>%
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") %>%
+  align(align = "center", j = "production") %>% 
+  set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
+  add_footer_row(values = c("Total", "", 
+          sum(frag2$`production`, na.rm = TRUE)),
+          colwidths = c(1, 1, 1))
+fragTab
+
+
+fragDoc = read_docx()
+fragDoc = body_add_flextable(fragDoc, value = fragTab)
+# print(fragDoc, target = "../tables/productionTable.docx")
+fragTab
+
+
+
+```
+ ## Creating a figure to show production numbers
+ 
+ Re-wrangling the data
+ 
+```{r, production figure wrangling, include = TRUE}
+
+
+
+frag3 <- frag1 %>% 
+ mutate(
+    date = as.POSIXct(date, format = "%m/%d/%Y %I:%M:%S %p"),
+    # Format as YYYY-MM-DD
+    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"), 
+    monthYear = as.POSIXct(monthYear, format = "%Y-%m-%d"),
+    # Convert to POSIXct
+    monthYear = format(monthYear, "%m/%Y")) %>% 
+  select(monthYear, site, species, genotype_name, qty, reason) %>% 
+  mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
+  filter(reason %in% ('fragging')) %>% 
+ mutate(
+    species = if_else(
+      species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+      species,  # Keep the original value if it's in the list
+      "other"   # Replace with 'other' if it's not
+    )) %>% 
+      filter(monthYear %in% c("07/2024", "10/2024")) %>% 
+  group_by(monthYear, site, species) %>%
+  dplyr::summarize(production  = sum(qty))
+  
+  
+  
+  # select(site, species, genotype_name, reason, qty, comment) %>% 
+  # mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
+  # filter(reason %in% ("fragging")) %>%
+  # mutate(
+  #   species = if_else(
+  #     species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+  #     species,  # Keep the original value if it's in the list
+  #     "other"   # Replace with 'other' if it's not
+  #   )
+  # ) %>% 
+  # group_by(site, species) %>%
+  # dplyr::summarize(production  = sum(qty))
+
+```
+
+Now we are visualizing the data as stacked bar graph with `date` on the X-axis, `production` numbers on the y axis, and stacked by `species`.
+
+```{r, visualizing, include = TRUE}
+
+fragPlot <- ggplot(frag3, aes(x = monthYear, y = production, fill = species)) +
+  geom_bar(stat = "identity") + # Creates the bar chart
+  facet_wrap(~site, scales = "free_y") +# Facets by site, allowing different y-axis scales
+  ylim(0, 4000)+
+  labs(
+    x = "Month/Year", 
+    y = "Production", 
+    title = "Production by Species and Month/Year"
+  )
+
+totalFrag <- frag3 %>% 
+  ungroup() %>% 
+  dplyr::summarize(total = sum(production))
+
+write.csv(frag3, "../data/stateY8production.csv")
+
+
+
+```
+
+
+
 
 
 
