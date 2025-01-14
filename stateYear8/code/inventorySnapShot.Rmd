@@ -53,77 +53,29 @@ pacman::p_load("ggplot2", "googlesheets4", "dplyr", "officer","reshape2", "strin
 ```
 
 
-# Importing Data
+# Importing *Ex Situ* Data
 ***
-## We are downloading this dataset from our GoogleDrive folder. We will be using the package `googledrive`. Each GoogleDrive file has a unique ID that does not change throughout the lifespan of the document, even if the file name is changed. This ID is housed in the file's URL. 
-Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Below you will copy and paste that into the function `drive_download` within `as_id`. This will save the file locally in the specified path (in this case our data folder) and you will import the folder as you normally would. Downloading it this way decreases the potential human error when downloading, moving folders, renaming, saving etc and ensures that the most up to date file is being utilized. 
+##
 
-# Here we are importing data for our plug counts from google drive
+# Here we are importing data for our plug counts that were downloaded from Seafoundry 
 
-```{r, outplantLoadingData, include = TRUE}
-
-# snap <- read.csv("../data/inventorySnapshot.csv")
-# current <- read.csv("../data/currentInventory.csv")
-# 
-# summer1 <- read.csv("../data/currentInventorySummerland.csv")
-# isla1 <- read.csv("../data/currentInventoryIsla.csv")
-# kl1 <- read.csv("../data/currentInventoryKL.csv")
-
-total1 <- read.csv("../data/totalinventoryWithSize.csv")
+```{r, ex situ data loading, include = TRUE}
 
 
-```
 
-
-```{r}
-
-# summer <- summer1 %>% 
-#   select(location, genotype, qty, size) %>% 
-#   mutate(location = 'summerland') %>%
-#   separate(genotype, into = c("species", "geno"), sep = 2, remove = FALSE) %>% 
-#   mutate(across(c(location, genotype, species), as.factor))
-#   
-# isla <- isla1 %>% 
-#   select(location, genotype, qty, size) %>% 
-#   mutate(location = 'isla') %>%
-#  separate(genotype, into = c("species", "geno"), sep = 2, remove = FALSE) %>% 
-#   mutate(across(c(location, genotype, species), as.factor))
-# 
-# kl <- kl1 %>% 
-#   select(location, genotype, qty, size) %>% 
-#   mutate(location = 'KL') %>%
-#  separate(genotype, into = c("species", "geno"), sep = 2, remove = FALSE) %>% 
-#   mutate(across(c(location, genotype, species), as.factor))
-
-
-# exSit <- rbind(summer, isla, kl) %>%
-#   mutate(geno = as.character(geno)) %>% 
-#   # removing all non numeric geno's  (e.g. anything weird like 0?000? etc)
-#   filter(grepl("^\\d+$", geno))
-# 
-# inventoryTab <- exSit %>% 
-#   group_by(species) %>%
-#   dplyr::summarize(
-#     Genos = n_distinct(genotype),
-#                    Total = sum(Total),
-#                    quarter = sum(quarter),
-#                    half = sum(half),
-#                    threeQuarter = sum(threeQuarter),
-#                    full = sum(full),
-#                    Unknown = sum(Unknown))
-# 
-# 
-# write.csv(inventoryTab, "../data/inventorySnap.csv", row.names = FALSE)
+total1 <- read.csv("../data/wholeInventory.csv")
 
 
 ```
 
 
 
-```{r}
+*Ex Situ* Inventory (Total)
+
+```{r, ex situ inventory total, include = TRUE}
 
 
-summerlandTotal <- total1 %>% 
+allSitesTotal1 <- total1 %>% 
   select(species, genotype, site, qty, rack, size) %>% 
   separate(genotype, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>% 
   mutate(geno = as.character(geno)) %>% 
@@ -138,13 +90,13 @@ summerlandTotal <- total1 %>%
     )
   )
 
-summerlandTotal2 <- summerlandTotal %>%
+allSitesTotal2 <- allSitesTotal1 %>%
   group_by(species, site, genotype, size) %>%
   dplyr::summarize(total_qty = sum(qty, na.rm = TRUE), .groups = "drop") %>% 
   mutate(size = as.factor(size)) %>% 
   mutate(size = recode(size, "NA" = "TBD", "0" = "TBD"))
 
-summerlandTotal3 <- summerlandTotal2 %>% 
+allSitesTotal3 <- allSitesTotal2 %>% 
   group_by(species, site) %>% 
   mutate(total_genotypes = n_distinct(genotype)) %>% 
   ungroup %>% 
@@ -152,7 +104,7 @@ summerlandTotal3 <- summerlandTotal2 %>%
   mutate(totalQty = `TBD` + `0.25` + `0.5` + `0.75` + `1`)
 
 # Correct summing of totals after pivoting
-summerlandTotal4 <- summerlandTotal3 %>%
+allSitesTotal4 <- allSitesTotal3 %>%
   group_by(species, site) %>%
   dplyr::summarize(
     total_genotypes = first(total_genotypes),  # Keep the total_genotypes column
@@ -164,11 +116,12 @@ summerlandTotal4 <- summerlandTotal3 %>%
     totalQty = sum(totalQty, na.rm = TRUE),
   )
 
-summerlandTotal5 <- summerlandTotal4 %>% 
+allSitesTotal5 <- allSitesTotal4 %>% 
   filter(!str_ends(site, "\\[In Situ\\]"))
 
-summerlandTab <- summerlandTotal5 %>% 
-  select(site, species,total_genotypes, total_TBD, total_0_25, total_0_5, total_0_75, total_1, totalQty) %>% 
+allSitesTotalTab <- allSitesTotal5 %>% 
+  select(site, species,total_genotypes, total_TBD, total_0_25, total_0_5, total_0_75, total_1, totalQty) %>%
+  arrange(site) %>% 
   flextable() %>%
   set_header_labels(Data.set = "Data set") %>% 
   flextable::compose(part = "header", j = "species", value = as_paragraph("Species")) %>%
@@ -187,27 +140,117 @@ summerlandTab <- summerlandTotal5 %>%
   align(align = "center", j = "totalQty") %>% 
   set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
   add_footer_row(values = c("Total", "", 
-                            sum(summerlandEx$total_genotypes, na.rm = TRUE), 
-                            sum(summerlandEx$total_TBD, na.rm = TRUE), 
-                            sum(summerlandEx$total_0_25, na.rm = TRUE), 
-                            sum(summerlandEx$total_0_5, na.rm = TRUE), 
-                            sum(summerlandEx$total_0_75, na.rm = TRUE), 
-                            sum(summerlandEx$total_1, na.rm = TRUE), 
-                            sum(summerlandEx$totalQty, na.rm = TRUE)),
-                 colwidths = c(1, 1, 1, 1, 1, 1, 1, 1, 1))
+          sum(allSitesTotal5$total_genotypes, na.rm = TRUE), 
+          sum(allSitesTotal5$total_TBD, na.rm = TRUE), 
+          sum(allSitesTotal5$total_0_25, na.rm = TRUE), 
+          sum(allSitesTotal5$total_0_5, na.rm = TRUE), 
+          sum(allSitesTotal5$total_0_75, na.rm = TRUE), 
+          sum(allSitesTotal5$total_1, na.rm = TRUE), 
+          sum(allSitesTotal5$totalQty, na.rm = TRUE)),
+          colwidths = c(1, 1, 1, 1, 1, 1, 1, 1, 1))
 
 # Print or view the final flextable
-summerlandTab
+allSitesTotalTab
 
 
-summerlandTabDoc = read_docx()
-summerlandTabDoc = body_add_flextable(summerlandTabDoc, value = summerlandTab)
-# print(summerlandTabDoc, target = "../tables/summerlandInventorySnapShot.docx")
-summerlandTab
+allSitesTotalDoc = read_docx()
+allSitesTotalDoc = body_add_flextable(allSitesTotalDoc, value = allSitesTotalTab)
+# print(allSitesTotalDoc, target = "../tables/totalInventory.docx")
+allSitesTotalTab
+
+```
+
+# Importing *In Situ* Data
+***
+##
+
+# Here we are importing data for our tree counts that were downloaded from Seafoundry 
+
+```{r, in situ data loading, include = TRUE}
 
 
+
+inSitu1 <- readxl::read_xlsx("../data/inSituInventory.xlsx")
 
 
 ```
+
+
+
+*In Situ* Inventory (ACER)
+
+```{r, in situ inventory acer, include = TRUE}
+
+
+inSituACERtab <- inSitu1 %>% 
+  filter(Species %in% "ACER") %>% 
+  arrange(Site) %>% 
+  flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "Species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "# of Putative Genotypes", value = as_paragraph("# of Putative Genotypes")) %>%
+  flextable::compose(part = "header", j = "Site", value = as_paragraph("Site")) %>%
+  flextable::compose(part = "header", j = "Total", value = as_paragraph("Total")) %>%
+  flextable::compose(part = "header", j = "TLE", value = as_paragraph("TLE")) %>%
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") %>%
+  align(align = "center", j = "Total") %>% 
+  set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
+  add_footer_row(values = c("Total", "", 
+          sum(inSitu1$`# of Putative Genotypes`, na.rm = TRUE), 
+          sum(inSitu1$Total, na.rm = TRUE), 
+          sum(inSitu1$TLE, na.rm = TRUE)),
+          colwidths = c(1, 1, 1,1,1))
+
+# Print or view the final flextable
+inSituACERtab
+
+
+inSituACERDoc = read_docx()
+inSituACERDoc = body_add_flextable(inSituACERDoc, value = inSituACERtab)
+# print(inSituACERDoc, target = "../tables/inSituACERinventory.docx")
+inSituACERtab
+
+```
+
+*In Situ* Inventory (Massives)
+
+```{r, in situ inventory massives, include = TRUE}
+
+
+inSituMSVStab <- inSitu1 %>% 
+  filter(Species != "ACER", Total > 0) %>%
+  select(-c(TLE)) %>% 
+  arrange(Site) %>% 
+  flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "Species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "# of Putative Genotypes", value = as_paragraph("# of Putative Genotypes")) %>%
+  flextable::compose(part = "header", j = "Site", value = as_paragraph("Site")) %>%
+  flextable::compose(part = "header", j = "Total", value = as_paragraph("Total")) %>%
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") %>%
+  align(align = "center", j = "Total") %>% 
+  set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
+  add_footer_row(values = c("Total", "", 
+          sum(inSitu1$`# of Putative Genotypes`, na.rm = TRUE), 
+          sum(inSitu1$Total, na.rm = TRUE)),
+          colwidths = c(1, 1, 1, 1))
+
+# Print or view the final flextable
+inSituMSVStab
+
+
+inSituMSVSDoc = read_docx()
+inSituMSVSDoc = body_add_flextable(inSituMSVSDoc, value = inSituMSVStab)
+# print(inSituMSVSDoc, target = "../tables/inSituMSVSinventory.docx")
+inSituMSVStab
+
+```
+
 
 
