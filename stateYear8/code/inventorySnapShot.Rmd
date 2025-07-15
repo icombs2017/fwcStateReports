@@ -75,7 +75,18 @@ total1 <- read.csv("../data/wholeInventory.csv")
 ```{r, ex situ inventory total, include = TRUE}
 
 
-allSitesTotal1 <- total1 %>% 
+# numberOfGenotypes <- total1 %>% 
+#     select(species, genotype, site, qty, rack, size) %>% 
+#     filter(!str_ends(site, "\\[In Situ\\]")) %>% 
+#     separate(genotype, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>% 
+#     filter(grepl("^\\d+$", geno)) %>% 
+#     mutate(across(c(site, geno, genotype, species, speciesCode, rack, size), as.factor)) %>% 
+#   group_by(speciesCode) %>% 
+#   dplyr::summarize(total_genotypes = n_distinct(genotype)) %>% 
+# 
+#   
+  
+ allSitesTotal1 <- total1 %>% 
   select(species, genotype, site, qty, rack, size) %>% 
   separate(genotype, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>% 
   mutate(geno = as.character(geno)) %>% 
@@ -84,23 +95,37 @@ allSitesTotal1 <- total1 %>%
   mutate(across(c(site, geno, genotype, species, speciesCode, rack, size), as.factor)) %>% 
   mutate(
     species = if_else(
-      species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
-      species,  # Keep the original value if it's in the list
+      speciesCode %in% c("AC", "AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+      speciesCode,  # Keep the original value if it's in the list
       "other"   # Replace with 'other' if it's not
     )
-  )
+  ) %>% 
+  group_by(species, genotype, site, rack, size) %>% 
+  dplyr::summarize(total_qty = sum(qty)) %>% 
+  filter(total_qty > 0)
 
 allSitesTotal2 <- allSitesTotal1 %>%
   group_by(species, site, genotype, size) %>%
-  dplyr::summarize(total_qty = sum(qty, na.rm = TRUE), .groups = "drop") %>% 
   mutate(size = as.factor(size)) %>% 
-  mutate(size = recode(size, "NA" = "TBD", "0" = "TBD"))
+  dplyr::summarize(total_qty = sum(total_qty, na.rm = TRUE), .groups = "drop") %>% 
+  mutate(
+    # Replace NA factor levels with "TBD"
+    size = fct_explicit_na(size, na_level = "TBD"),
+    # Recode other specific size values to "TBD" or "1"
+    size = recode(size, "0" = "TBD", "0.4375" = "TBD", "0.45" = "TBD", "1.5" = "1")
+  )
 
-allSitesTotal3 <- allSitesTotal2 %>% 
-  group_by(species, site) %>% 
-  mutate(total_genotypes = n_distinct(genotype)) %>% 
-  ungroup %>% 
-  pivot_wider(names_from = size, values_from = total_qty, values_fill = list(total_qty = 0)) %>% 
+allSitesTotal3 <- allSitesTotal2 %>%
+  group_by(species, site) %>%
+  mutate(total_genotypes = n_distinct(genotype)) %>%
+  ungroup() %>%
+  mutate(total_qty = as.numeric(total_qty)) %>%
+  tidyr::pivot_wider(
+    names_from = size,
+    values_from = total_qty,
+    values_fill = list(total_qty = 0),
+    values_fn = sum  # This sums duplicates for each species-site-size combo
+  ) %>%
   mutate(totalQty = `TBD` + `0.25` + `0.5` + `0.75` + `1`)
 
 # Correct summing of totals after pivoting
@@ -118,6 +143,8 @@ allSitesTotal4 <- allSitesTotal3 %>%
 
 allSitesTotal5 <- allSitesTotal4 %>% 
   filter(!str_ends(site, "\\[In Situ\\]"))
+
+
 
 allSitesTotalTab <- allSitesTotal5 %>% 
   select(site, species,total_genotypes, total_TBD, total_0_25, total_0_5, total_0_75, total_1, totalQty) %>%
@@ -170,7 +197,7 @@ allSitesTotalTab
 
 
 
-inSitu1 <- readxl::read_xlsx("../data/inSituInventory.xlsx")
+inSitu1 <- read.csv("../data/inSituInventory.csv")
 
 
 ```
@@ -181,28 +208,98 @@ inSitu1 <- readxl::read_xlsx("../data/inSituInventory.xlsx")
 
 ```{r, in situ inventory acer, include = TRUE}
 
-inSituACER <- inSitu1 %>% 
-  filter(Species %in% "ACER") %>% 
-  arrange(Site) 
-inSituACERtab <- inSituACER %>% 
+
+inSituACER1 <- inSitu1 %>% 
+  select(species, genotype, site, qty, rack, size) %>% 
+  separate(genotype, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>% 
+  mutate(geno = as.character(geno)) %>% 
+  # Removing all non-numeric genotypes (e.g. anything weird like 0?000? etc)
+  filter(grepl("^\\d+$", geno)) %>% 
+  mutate(across(c(site, geno, genotype, species, speciesCode, rack, size), as.factor)) %>% 
+  mutate(
+    species = if_else(
+      speciesCode %in% c("AC", "AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+      speciesCode,  # Keep the original value if it's in the list
+      "other"   # Replace with 'other' if it's not
+    )
+  ) %>% 
+  group_by(species, genotype, site, rack, size) %>% 
+  dplyr::summarize(total_qty = sum(qty)) %>% 
+  filter(total_qty > 0)
+
+inSituACER2 <- inSituACER1 %>%
+  group_by(species, site, genotype, size) %>%
+  mutate(size = as.factor(size)) %>% 
+  dplyr::summarize(total_qty = sum(total_qty, na.rm = TRUE), .groups = "drop") %>% 
+  mutate(
+    # Replace NA factor levels with "TBD"
+    size = fct_explicit_na(size, na_level = "TBD"),
+    # Recode other specific size values to "TBD" or "1"
+    size = recode(size, "0" = "TBD", "0.4375" = "TBD", "0.45" = "TBD", "1.5" = "1")
+  )
+
+inSituACER3 <- inSituACER2 %>%
+  group_by(species, site) %>%
+  mutate(total_genotypes = n_distinct(genotype)) %>%
+  ungroup() %>%
+  mutate(total_qty = as.numeric(total_qty)) %>%
+  tidyr::pivot_wider(
+    names_from = size,
+    values_from = total_qty,
+    values_fill = list(total_qty = 0),
+    values_fn = sum  # This sums duplicates for each species-site-size combo
+  ) %>%
+  mutate(totalQty = `TBD` + `0.25` + `0.5` + `0.75` + `1`)
+
+inSituACER4 <- inSituACER3 %>%
+  group_by(species, site) %>%
+  dplyr::summarize(
+    total_genotypes = first(total_genotypes),  # Keep the total_genotypes column
+    total_TBD = sum(`TBD`, na.rm = TRUE),
+    total_0_25 = sum(`0.25`, na.rm = TRUE),
+    total_0_5 = sum(`0.5`, na.rm = TRUE),
+    total_0_75 = sum(`0.75`, na.rm = TRUE),
+    total_1 = sum(`1`, na.rm = TRUE),
+    totalQty = sum(totalQty, na.rm = TRUE),
+  )
+
+inSituACER5 <- inSituACER4 %>% 
+  filter(species %in% "AC")
+
+
+
+inSituACER6 <- inSituACER5 %>% 
   flextable() %>%
   set_header_labels(Data.set = "Data set") %>% 
-  flextable::compose(part = "header", j = "Species", value = as_paragraph("Species")) %>%
-  flextable::compose(part = "header", j = "# of Putative Genotypes", value = as_paragraph("# of Putative Genotypes")) %>%
-  flextable::compose(part = "header", j = "Site", value = as_paragraph("Site")) %>%
-  flextable::compose(part = "header", j = "Total", value = as_paragraph("Total")) %>%
-  flextable::compose(part = "header", j = "TLE", value = as_paragraph("TLE")) %>%
+  flextable::compose(part = "header", j = "species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "total_genotypes", value = as_paragraph("# Putative Genotypes")) %>%
+  flextable::compose(part = "header", j = "site", value = as_paragraph("Site")) %>%
+  flextable::compose(part = "header", j = "total_TBD", value = as_paragraph("To Be Recorded")) %>% 
+  flextable::compose(part = "header", j = "total_0_25", value = as_paragraph("1/4")) %>%
+  flextable::compose(part = "header", j = "total_0_5", value = as_paragraph("1/2")) %>%
+  flextable::compose(part = "header", j = "total_0_75", value = as_paragraph("3/4")) %>%
+  flextable::compose(part = "header", j = "total_1", value = as_paragraph("1")) %>%
+  flextable::compose(part = "header", j = "totalQty", value = as_paragraph("Total")) %>% 
   autofit() %>%
   flextable::font(fontname = "Times New Roman", part = "all") %>%
   fontsize(size = 12, part = "all") %>%
   bold(part = "header") %>%
-  align(align = "center", j = "Total") %>% 
+  align(align = "center", j = "totalQty") %>% 
   set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
   add_footer_row(values = c("Total", "", 
-          sum(inSituACER$`# of Putative Genotypes`, na.rm = TRUE), 
-          sum(inSituACER$Total, na.rm = TRUE), 
-          sum(inSituACER$TLE, na.rm = TRUE)),
-          colwidths = c(1, 1, 1,1,1))
+          sum(inSituACER5$total_genotypes, na.rm = TRUE), 
+          sum(inSituACER5$total_TBD, na.rm = TRUE), 
+          sum(inSituACER5$total_0_25, na.rm = TRUE), 
+          sum(inSituACER5$total_0_5, na.rm = TRUE), 
+          sum(inSituACER5$total_0_75, na.rm = TRUE), 
+          sum(inSituACER5$total_1, na.rm = TRUE), 
+          sum(inSituACER5$totalQty, na.rm = TRUE)),
+          colwidths = c(1, 1, 1, 1, 1, 1, 1, 1, 1))
+
+
+
+
+
 
 # Print or view the final flextable
 inSituACERtab
@@ -223,7 +320,6 @@ inSituMSVS <- inSitu1 %>%
   filter(Species != "ACER", Total > 0) %>%
   select(-c(TLE)) %>% 
   arrange(Site)
-
 
 
 inSituMSVStab <- inSituMSVS %>% 
@@ -289,7 +385,30 @@ frag2 <- frag1 %>%
                    numberOfGenets = n_distinct(genotype_name)) %>% 
   select(site, species, numberOfGenets, production)
 
-
+numberOfFragGenos <- frag1 %>% 
+    mutate(
+    date = as.POSIXct(date, format = "%m/%d/%Y %I:%M:%S %p"),
+    # Format as YYYY-MM-DD
+    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"), 
+    monthYear = as.POSIXct(monthYear, format = "%Y-%m-%d"),
+    # Convert to POSIXct
+    monthYear = format(monthYear, "%m/%Y")) %>% 
+  filter(monthYear %in% c("10/2024")) %>% 
+  select(site, species, genotype_name, reason, qty, comment) %>% 
+  mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
+  filter(reason %in% ("fragging")) %>%
+  # mutate(
+  #   species = if_else(
+  #     species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+  #     species,  # Keep the original value if it's in the list
+  #     "other"   # Replace with 'other' if it's not
+  #   )
+  # ) %>% 
+  group_by(species) %>%
+  dplyr::summarize(production  = sum(qty),
+                   numberOfGenets = n_distinct(genotype_name)) %>% 
+  select(species, numberOfGenets, production) %>% 
+  dplyr::summarize(totalNumberOfGenets = sum(numberOfGenets))
 
 ```
 ##Fragging Table
@@ -311,7 +430,7 @@ flextable() %>%
   set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
   add_footer_row(values = c("Total", "", 
           
-          sum(frag2$numberOfGenets, na.rm = TRUE),
+          sum(numberOfFragGenos$totalNumberOfGenets, na.rm = TRUE),
           sum(frag2$`production`, na.rm = TRUE)),
           colwidths = c(1, 1, 1, 1))
 fragTab
@@ -371,7 +490,7 @@ Now we are visualizing the data as stacked bar graph with `date` on the X-axis, 
 
 ```{r, visualizing, include = TRUE}
 
-myColors = paletteer::paletteer_c("ggthemes::Classic Blue", n = 12)
+# myColors = paletteer::paletteer_c("ggthemes::Classic Blue", n = 12)
 
 
 # frag3$species <- factor(frag3$species, levels = frag3$species[order(frag3$production)])
@@ -384,8 +503,7 @@ frag3$species <- factor(frag3$species, levels = agg_prod$species[order(agg_prod$
 fragPlot1 <- ggplot(frag3, aes(x = site, y = production, fill = species)) +
   geom_bar(stat = "identity") + # Creates the bar chart
   ylim(0, 4000)+
-  scale_fill_manual(values = myColors,
-                    labels = c("AP" = "APAL",
+  scale_fill_discrete(labels = c("AP" = "APAL",
                "CN" = "CNAT",
                "MC" = "MCAV",
                "SI" = "SINT",
