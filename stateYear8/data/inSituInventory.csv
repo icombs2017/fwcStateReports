@@ -1,487 +1,111 @@
 id,species,genotype,site,subsystem,tank,rack,qty,size
-a8d1a1c6-7f4b-487e-813f-1e2e731ada0a,INTERSEPTA,SI80,Mote Looe Key [In Situ],,SI-80,R493,304,0
-a33b5e6c-634d-48e9-955b-56fd461d6c3d,MC,MC102,Mote Key Largo [In Situ],,Blue81,R16,216,0.25
+f193254f-ab85-4574-96d3-370dd7fd8279,PC,PC0,Mote Islamorada [In Situ],,Red73,R99,1,1.5
 4728a254-27ba-4a46-8bd5-202ff2d45f4b,PS,PS7,Mote Islamorada [In Situ],,Red84,R108,212,1
-bbcf3c8f-9a66-422d-8ff0-8eb8d6dfb9ac,OF,OF957,Mote Islamorada [In Situ],,Red92,R124,207,0.75
-e873276e-3dcb-4d11-a86e-b07865838a9f,PC,PC26,Mote Key Largo [In Situ],,Blue52,R8,201,0.25
-d6708965-efa4-41ab-8813-13ab59d50014,MC,MC203,Mote Looe Key [In Situ],,MC-203,R95,193,0
-b11b1616-6cee-4bb6-bd15-cd2643574a97,SB,SB30,Mote Islamorada [In Situ],,Red88,R102,183,0.75
-93ead21c-919b-4e10-83fa-44c6ddd0b105,MC,MC108,Mote Looe Key [In Situ],,MC-108,R65,181,0
-7368d63c-f1d9-4bdc-98ec-a95ef64b1e46,SS,SS463,Mote Looe Key [In Situ],,SS-463,R514,174,0
-3afbf1bf-e4af-4531-9567-0ca818c93108,DL,DL271,Mote Looe Key [In Situ],,DL-271,R313,173,0
-960d7a1d-abfd-478f-b91f-f110e0a4413f,PC,PC38,Mote Looe Key [In Situ],,PC-38,R464,159,0
 087b900f-7809-4f04-b138-5d9cb06b458e,PC,PC19,Mote Looe Key [In Situ],,PC-19,R2,156,1
+10fbd4b1-f014-4893-985a-c731b11fb650,AC,AC5,Mote Islamorada [In Situ],,Blue03,R159,99,1
+a3da8700-b810-45cb-8816-34ff565a0d7f,AC,AC5,Mote Islamorada [In Situ],,Blue04,R160,98,1
+67d9e03a-3639-40fb-b8fa-e2e3828cd710,AC,AC5,Mote Islamorada [In Situ],,Blue05,R60,93,1
+ded0f318-04e1-447c-801b-384a081eb2b0,MC,MC95,Mote Looe Key [In Situ],,MC-95,R49,87,1
+499ab788-96d2-42cf-97ae-fe134b0781bc,AC,AC5,Mote Islamorada [In Situ],,Blue06,R28,85,1
+14286855-ae0f-47aa-9efb-63681544592b,MC,MC71,Mote Looe Key [In Situ],,MC-71,R43,74,1
+893efe53-bf72-4d3e-9f8a-613b58c0a181,MC,MC75,Mote Looe Key [In Situ],,MC-75,R46,73,1
+01a0d1f3-178c-4ef8-b127-0a28cbbfbf30,MC,MC94,Mote Looe Key [In Situ],,MC-94,R47,69,1
+d8033f5b-756c-498f-aba4-80c372cb1b96,MC,MC202,Mote Islamorada [In Situ],,Red53,R6,63,1
+7d9c0aa6-4f6b-4c2e-a981-de51cbb218cf,PS,PS15,Mote Islamorada [In Situ],,Red81,R21,53,1
+f5972bfe-34af-4ff7-8643-d784b9ede13b,MC,MC1,Mote Looe Key [In Situ],,MC-1,R9,51,1
+cc697f44-4bc0-4354-b0d1-c443c332298b,MC,MC11,Mote Looe Key [In Situ],,MC-11,R42,48,1
+c54aef85-c50d-4f15-a477-392b253f44d8,MC,MC72,Mote Looe Key [In Situ],,MC-72,R44,40,1
+dce71bde-93ec-4238-888b-3dca2bf0c286,MC,MC74,Mote Looe Key [In Situ],,MC-74,R45,39,1
+78657730-931f-474f-889e-11e91fa44322,OF,OF1022,Mote Islamorada [In Situ],,Red81,R21,21,1
+c0216066-2af0-4edc-a10e-55a715dffa73,AC,AC58,Mote Islamorada [In Situ],,Red10,R181,20,1
+f9a1a7e3-77c3-4cd5-bd8d-0ed9a802213a,OF,OF1040,Mote Islamorada [In Situ],,Red82,R107,20,1
+ed77cf4b-8d0b-4622-adfe-a46845378f4e,OF,OF1027,Mote Islamorada [In Situ],,Red83,R26,10,1
+76fcd401-d8c3-4b8d-9618-9f946ef5201a,PS,PS7,Mote Islamorada [In Situ],,Red85,R110,6,1
+cdc822ed-e75c-41ce-bbba-1badcce17167,AP,AP126,Mote Key Largo [In Situ],,Blue44,R29,3,1
+48afda32-a671-4f8e-ba6e-0369f49f66ad,AP,AP124,Mote Key Largo [In Situ],,Blue44,R29,2,1
+c02278d9-f8cb-4cc4-aff7-4df55d3c22e2,AC,AC91,Mote Key Largo [In Situ],,Blue58,R1041,1,1
+831fc058-d1bd-48ec-99b3-9183cf6b95b8,AC,AC80,Mote Key Largo [In Situ],,Blue58,R1041,1,1
+64af2b57-8113-4396-9843-9b42bdcf412a,AC,AC78,Mote Key Largo [In Situ],,Blue58,R1041,1,1
+af9d1b3b-6cab-4032-9c86-371220d79cb7,AC,AC54,Mote Key Largo [In Situ],,Blue58,R1040,1,1
+8a78b05f-96f1-4b9a-9c1f-0a123df44169,AC,AC48,Mote Key Largo [In Situ],,Blue58,R1040,1,1
+c8baaf88-8459-4238-a2a5-a28dcb55daa3,AC,AC46,Mote Key Largo [In Situ],,Blue58,R1040,1,1
+f4f5a4a7-47c3-4d95-ba2e-cbc1a39c5652,AC,AC38,Mote Key Largo [In Situ],,Blue58,R1040,1,1
+4b26face-7202-4ca3-8ac6-101896e2af59,AC,AC10,Mote Key Largo [In Situ],,Blue58,R1040,1,1
+fce0fba7-69e4-4204-839e-ed3809c9ced9,AC,AC77,Mote Key Largo [In Situ],,Blue58,R1040,1,1
+bbcf3c8f-9a66-422d-8ff0-8eb8d6dfb9ac,OF,OF957,Mote Islamorada [In Situ],,Red92,R124,207,0.75
+b11b1616-6cee-4bb6-bd15-cd2643574a97,SB,SB30,Mote Islamorada [In Situ],,Red88,R102,183,0.75
 693f0ed4-7ddb-4618-9ce5-1619d3fff2c9,OF,OF940,Mote Islamorada [In Situ],,Red48,R39,154,0.75
-88c24bde-d6d5-476a-bf5f-c0fa36fc5f98,PC,PC26,Mote Key Largo [In Situ],,Blue51,R148,152,0.25
 20414679-b030-4119-8c57-276ff3c3fcf0,SB,SB41,Mote Islamorada [In Situ],,Red89,R308,148,0.75
 ecc0837a-0866-4bd7-bfe7-95554743804f,PC,PC25,Mote Islamorada [In Situ],,Red64,R92,141,0.75
-d0a94732-3d5e-48e1-bf3b-a6ecab30b737,SB,SB53,Mote Islamorada [In Situ],,Red78,R273,140,0.25
-27fda12d-9de0-44e2-bdc5-c05d33cd7e99,OF,OF971,Mote Looe Key [In Situ],,OF971,R215,135,0
-16a76908-da9b-4459-b9dd-0a376c3dc54b,SI,SI76,Mote Looe Key [In Situ],,SI-76,R490,132,0
-65daa9ec-389e-4368-b528-27fb97990154,OA,OA9,Mote Looe Key [In Situ],,OA-9,R337,121,0
 3b0eacdc-b130-415f-9d9e-d9590037428e,MC,MC204,Mote Key Largo [In Situ],,Blue93,R53,120,0.75
 72066b35-efaa-4d21-8148-b9e2dbc2e621,MC,MC205,Mote Islamorada [In Situ],,Red73,R99,118,0.75
-24dcc6b4-d57b-44c7-856a-64b65c6fedc0,CN,CN46,Mote Looe Key [In Situ],,CN-29/46,R684,116,0
 ed61d354-9697-408c-bb9b-d500a7dbb253,OF,OF954,Mote Islamorada [In Situ],,Red97,R49,110,0.75
 11208a96-13d4-42f0-9660-7f05ca4c9e1f,OF,OF942,Mote Islamorada [In Situ],,Red68,R1,108,0.75
-704d6252-5468-4a36-a0f1-deab28cd43fa,CN,CN39,Mote Looe Key [In Situ],,CN-12/39,R365,104,0
 88629d2a-5772-443b-bee8-eed8c85b79e8,OF,OF934,Mote Islamorada [In Situ],,Red94,R130,101,0.75
 0b885f44-9507-42c4-8f5c-e0abdc824627,AC,AC5,Mote Key Largo [In Situ],,Green84,R89,100,0.75
-1e7c57f1-d51d-438c-8ffe-1bc70497e59a,AC,AC51,Mote Key Largo [In Situ],,Blue19,R1,100,0.5
 d917908c-1586-4b86-935e-5f11fa601bc2,AC,AC62,Mote Key Largo [In Situ],,Blue21,R47,100,0.75
-3188eff9-a130-403c-bfb6-598031d1db1d,AC,AC4,Mote Key Largo [In Situ],,Green93,R94,100,0.25
-9e5babb8-3fad-4e7d-b12f-193333fad3f3,AC,AC3,Mote Key Largo [In Situ],,Green92,R31,100,0.25
-184da116-8948-4fc4-9c50-80cf0c751228,AC,AC88,Mote Key Largo [In Situ],,Blue09,R35,100,0.25
-58e98d0a-0307-46c2-bcb0-fb6926d83de8,AC,AC4,Mote Key Largo [In Situ],,Green83,R37,100,0.25
-20005b45-c4aa-4125-b6c7-8d8d1030a0c4,AC,AC51,Mote Key Largo [In Situ],,Blue13,R38,100,0.25
-9ecea59a-d485-40db-9260-790fde850474,AC,AC1,Mote Key Largo [In Situ],,Green81,R39,100,0.25
-e4ebebd4-8b18-4611-865f-cda5125eaa61,AC,AC8,Mote Key Largo [In Situ],,Green97,R34,100,0.5
 3fc0c95c-105d-45a6-bd7a-d5d0a8e6085c,OF,OF951,Mote Islamorada [In Situ],,Red46,R37,100,0.75
-f62bb3f3-29b6-40f0-bb38-6ec868b0ccc3,AC,AC76,Mote Key Largo [In Situ],,Blue15,R79,100,0.25
-2402eaf7-14a5-4226-9a0f-f9a7728840fe,AC,AC2518,Mote Looe Key [In Situ],,AC-2518,R61,100,0.25
-3be393a0-a055-4e39-8ead-4d2b0da7931e,AC,AC2516,Mote Looe Key [In Situ],,AC-2516,R62,100,0.25
-d7638ff4-2ce9-4ee9-8671-92837537d82d,AC,AC75,Mote Looe Key [In Situ],,AC-75,R381,100,0.5
-81dc386d-d09b-4c60-af27-67a8708c3938,AC,AC58,Mote Looe Key [In Situ],,AC-58,R385,100,0.25
-34f1ba14-a331-4783-9981-66f84668d5d5,AC,AC51,Mote Sand Key [In Situ],,AC-51,R18,100,0
-079bedf2-2290-4759-a7e1-c9e3120211e7,AC,AC3,Mote Looe Key [In Situ],,AC-3,R308,100,0
-de900f69-452f-48bb-a9a9-4bf414231d89,AC,AC1,Mote Islamorada [In Situ],,Blue01,R79,100,0.25
-0aacf3c7-96e0-4282-a6d4-d93e8ec387dc,AC,AC88,Mote Key Largo [In Situ],,Blue23,R60,100,0
-a839a08c-cce7-411e-a58c-37a607169d0b,AC,AC62,Mote Looe Key [In Situ],,AC-62,R383,100,0
-8aaff6e9-af72-440f-8c39-d8e7ba015780,AC,AC80,Mote Sand Key [In Situ],,80,R16,100,0
-7395f6b3-1412-40d5-836c-e29f7d2ec94b,AC,AC58,Mote Key Largo [In Situ],,Blue01,R50,100,0
-851e9c1d-8a26-46e3-8865-d65e538614f9,AC,AC76,Mote Key Largo [In Situ],,Blue06,R81,99,0.5
-10fbd4b1-f014-4893-985a-c731b11fb650,AC,AC5,Mote Islamorada [In Situ],,Blue03,R159,99,1
-02230569-890d-4cca-b49c-aa9b9cfc5c20,AC,AC2501,Mote Looe Key [In Situ],,AC-2501,R39,99,0.25
-aa250273-bc15-43d7-9a98-36d0d50329d3,AC,AC31,Mote Looe Key [In Situ],,AC-31,R271,99,0.5
-069f6728-490d-45dd-9a5a-cf4f92f17ce0,AC,AC36,Mote Looe Key [In Situ],,AC-36,R332,99,0
-7eb07a6c-4d74-41a0-bb01-e44d6505516b,AC,AC34,Mote Looe Key [In Situ],,AC-34,R333,99,0
-0948687a-bbb0-4e95-8512-10d1ae71979c,AC,AC80,Mote Looe Key [In Situ],,AC-80,R376,99,0.25
-9c76f66a-0e7d-4701-bbed-de8acfcc52f8,AC,AC1962,Mote Looe Key [In Situ],,AC-1962,R483,99,0.25
-0cf2b13b-bfb1-4348-9b46-5d1c241f74e3,AC,AC75,Mote Key Largo [In Situ],,Blue22,R110,99,0
-a3da8700-b810-45cb-8816-34ff565a0d7f,AC,AC5,Mote Islamorada [In Situ],,Blue04,R160,98,1
-c6a411fb-681f-4e8b-a7d0-ee484dbb99fe,AC,AC2508,Mote Looe Key [In Situ],,AC-2508,R11,98,0.25
-5922e233-ef8f-4db0-951d-fef7b3b598bd,AC,AC2627,Mote Looe Key [In Situ],,AC-2627,R207,98,0.25
-12dbc6e8-1b69-4d38-91a9-703b0ee8c2f8,AC,AC2627,Mote Looe Key [In Situ],,AC-2627,R235,98,0.5
-85b4879f-dde9-4df8-8e98-ea1b6c1596d8,AC,AC10,Mote Looe Key [In Situ],,AC-10,R302,98,0
-fa04fe1c-9a8a-4828-9515-7f160d7b8d13,AC,AC84,Mote Looe Key [In Situ],,AC-84,R375,98,0.25
 1c933f38-f386-44c7-9ce6-2e5cf6b2701a,AC,AC5,Mote Key Largo [In Situ],,Green94,R73,98,0.75
-49c20a47-058a-4546-8d42-146f81b43314,AC,AC58,Mote Key Largo [In Situ],,Blue17,R123,96,0.5
-da08cfb5-a137-4f29-a45f-5be5a7cd2b41,SIDEREA,SS163,Mote Islamorada [In Situ],,Red74,R27,96,0.5
-0c384081-4540-4475-bd5a-bafcbbcb3b7d,AC,AC51,Mote Looe Key [In Situ],,AC-51,R326,96,0.25
-90bc4d71-3f90-492e-ad0d-52c04f3ad3b2,PC,PC12,Mote Looe Key [In Situ],,PC-12,R419,96,0
 dc09af61-f70b-47fc-96e7-9bbcda34ec6c,AC,AC8,Mote Key Largo [In Situ],,Green87,R49,95,0.75
-a8870c75-0988-4b50-8a77-c94759bda714,AC,AC58,Mote Key Largo [In Situ],,Blue20,R88,95,0.5
 af584687-1f90-49bb-ab78-703ee9a8ede4,MC,MC114,Mote Islamorada [In Situ],,Red91,R34,95,0.75
-aab5f420-1ef7-4c9f-8998-7a751063d77e,AC,AC2635,Mote Looe Key [In Situ],,AC-2635,R259,95,0.25
-5f953c00-60b5-4cf8-93f4-c1f53e49e0a3,OF,OF187,Mote Looe Key [In Situ],,OF-186/187,R17,95,0
-b31c3cae-eccf-4455-905e-bc9fd3274bd3,AC,AC51,Mote Sand Key [In Situ],,51,R10,95,0
-792891eb-277a-4685-82f9-3ba6bc9cbc1a,AC,AC62,Mote Sand Key [In Situ],,62,R17,95,0
 91f8219e-9bcb-4cd7-a185-8e55773d6c85,OF,OF918,Mote Islamorada [In Situ],,Red86,R112,94,0.75
-6574d4e8-9774-4d43-b9e7-afa56965cb4e,AC,AC1287,Mote Looe Key [In Situ],,AC-1287,R484,94,0.25
-67d9e03a-3639-40fb-b8fa-e2e3828cd710,AC,AC5,Mote Islamorada [In Situ],,Blue05,R60,93,1
-26ff2dfa-c399-46b6-9864-660729b3e21a,AC,AC80,Mote Looe Key [In Situ],,AC-80,R351,93,0.25
-1ef39122-379f-40be-be29-ed355567e669,CN,CN75,Mote Looe Key [In Situ],,CN-49/75,R367,92,0
-5db47fa9-81e3-4040-a5da-6eaaeef1c5c6,AC,AC75,Mote Key Largo [In Situ],,Blue04,R63,92,0.5
-bffba2ca-2a03-4171-b1c6-ae8ccafed490,OF,OF957,Mote Islamorada [In Situ],,Red54,R78,91,0.5
 e6626719-46a3-4d82-84c0-fc76a8c1b98a,OF,OF1008,Mote Islamorada [In Situ],,Red45,R161,91,0.75
-f305e655-eaeb-4942-8efe-ba9bffa2893e,AC,AC76,Mote Key Largo [In Situ],,Blue05,R69,90,0.5
-119e975e-8e65-4876-8568-41e3a5220154,AC,AC20,Mote Key Largo [In Situ],,Green90,R36,90,0.5
-1100c562-24dc-480a-9a12-8409075a82b0,AC,AC13,Mote Key Largo [In Situ],,Green99,R25,90,0.5
-12e016c2-dc0f-4674-824e-7f0ef230a5bc,CN,CN49,Mote Looe Key [In Situ],,CN-49/75,R683,90,0
-6e3c642e-41ef-4d5b-99ff-a8afa57e64ae,PS,PS14,Mote Key Largo [In Situ],,Blue74,R329,90,0.25
-db51ffac-af61-469d-8def-7b9eca3c8522,AC,AC56,Mote Islamorada [In Situ],,Red09,R175,90,0.25
-4760daab-e2f9-4939-a5f0-89656cb341c8,OF,OF1041,Mote Islamorada [In Situ],,Red55,R29,90,0.5
-08a089a8-04d6-4d19-a4cb-6a86e316e3cf,AC,AC2603,Mote Looe Key [In Situ],,AC-2603,R192,90,0.25
 83695e57-80d5-4e70-8889-2e6ff8c0ced9,AC,AC62,Mote Key Largo [In Situ],,Blue02,R102,90,0.75
 3fbeb6b3-525d-4de2-801f-20774d1a17cf,AC,AC7,Mote Islamorada [In Situ],,Blue08,R48,90,0.75
-3f145301-6f67-494b-b25d-a187edd87df1,AC,AC62,Mote Sand Key [In Situ],,AC-62,R19,89,0
 83b116e8-143c-427b-9f63-3f9ce0e10993,INTERSEPTA,SI245,Mote Islamorada [In Situ],,Red69,R190,89,0.75
-01042469-156d-49af-9c37-6e949300bd27,PC,PC39,Mote Looe Key [In Situ],,PC-39,R465,89,0
-c7437bb2-6185-485a-b291-70a68d3a46f0,AC,AC47,Mote Key Largo [In Situ],,Blue18,R133,89,0.5
-bf2d5ff4-cb46-4059-9471-2985f8fdfad8,RADIANS,SR21,Mote Looe Key [In Situ],,SR-21,R537,88,0
-ded0f318-04e1-447c-801b-384a081eb2b0,MC,MC95,Mote Looe Key [In Situ],,MC-95,R49,87,1
-a04775df-d6a0-4a6a-bd9c-0ddc5a1b3268,PC,PC35,Mote Looe Key [In Situ],,PC-35,R445,87,0
-5be66082-c500-4975-91d3-31a8300a9adf,AC,AC3,Mote Key Largo [In Situ],,Blue14,R33,87,0
-bbf8a533-e439-46fb-801f-d7ca0ca796ff,OF,OF955,Mote Islamorada [In Situ],,Red47,R38,86,0.5
-c13c3345-241c-4ceb-8010-6cb6e647e505,AC,AC2580,Mote Looe Key [In Situ],,AC-2580,R138,86,0
 fa9556b3-a8ac-46f0-ac58-bb4451e34e91,OF,OF1009,Mote Islamorada [In Situ],,Red43,R141,85,0.75
-499ab788-96d2-42cf-97ae-fe134b0781bc,AC,AC5,Mote Islamorada [In Situ],,Blue06,R28,85,1
-bcc1df56-a4ed-478e-91b1-931b89f9d1d9,PC,PC50,Mote Key Largo [In Situ],,Blue64,R26,84,0.25
-317e38f6-45f5-4f72-8193-33ccaa223e85,AC,AC2515,Mote Looe Key [In Situ],,AC-2515,R63,84,0.25
-7ea67320-cf76-4179-95fa-d30c2fe26e4a,OF,OF920,Mote Islamorada [In Situ],,Red52,R76,83,0.5
-e0b2afb4-498d-4260-87e6-261e04f03e55,DL,DL20,Mote Looe Key [In Situ],,DL-20,R263,82,0
-72fd864e-a950-4239-8ab4-1123c3355809,AC,AC20,Mote Key Largo [In Situ],,Green100,R61,80,0.5
-0113952f-9be0-4099-bfc1-f2f9e3fe67a4,PS,PS23,Mote Looe Key [In Situ],,PS-23,R133,80,0
-b4bff960-31c8-4773-851f-1c8b362006ec,PC,PC32,Mote Looe Key [In Situ],,PC-32,R442,79,0
 2144cc21-86b6-4198-8682-7a25a8a58ed3,OF,OF1016,Mote Islamorada [In Situ],,Red41,R40,78,0.75
-1f5eb9ea-f685-4b9d-b0e8-961cee53ce7f,OF,OF930,Mote Islamorada [In Situ],,Red44,R158,78,0.5
-44467841-21fa-4c4f-b8d5-736fccb904b1,OF,OF1038,Mote Islamorada [In Situ],,Red75,R103,78,0.5
-9f966e5a-daa1-496f-930a-1fb47c4b70b4,AC,AC2651,Mote Looe Key [In Situ],,AC-2651,R161,78,0
-cd750d04-10c8-4d29-be43-d68f964df93e,PC,PC33,Mote Looe Key [In Situ],,PC-33,R443,78,0
-40e53bdf-388e-491b-b3b8-ef422c18deef,AC,AC2528,Mote Looe Key [In Situ],,AC-2528,R58,77,0.25
-e6b77c44-0cf7-4fc6-b140-3636511214e9,AP,AP14,Mote Key Largo [In Situ],,Blue42,R372,76,0.25
-820b1ce9-d759-4da3-822d-8d6e80df3735,DL,DL0,Mote Looe Key [In Situ],,2021 SR,R391,76,0
-6490dbbe-a373-4165-9bb8-ee8ff36447d9,PC,PC28,Mote Looe Key [In Situ],,PC-28,R439,76,0
-a562c546-f43c-48f0-87ff-7818735abb85,CN,CN30,Mote Looe Key [In Situ],,CN-8/30,R681,75,0
-697a1d86-c72f-40ab-b80e-bb79591db450,PC,PC23,Mote Looe Key [In Situ],,PC-23,R438,75,0
-c73423f5-ed4d-45bf-bc83-b05e40332b63,AC,AC2627,Mote Sand Key [In Situ],,RD-2,R7,75,0
-bdc90e1b-10b7-4b0d-901d-a2d3bf2a1c3f,AC,AC10,Mote Sand Key [In Situ],,10,R8,75,0
-14286855-ae0f-47aa-9efb-63681544592b,MC,MC71,Mote Looe Key [In Situ],,MC-71,R43,74,1
 8381a059-f7a4-438b-ade8-16a8e6303c73,OF,OF1015,Mote Islamorada [In Situ],,Red43,R141,74,0.75
-893efe53-bf72-4d3e-9f8a-613b58c0a181,MC,MC75,Mote Looe Key [In Situ],,MC-75,R46,73,1
 e26e6fc5-286a-481a-8fa3-a468c7b52d0f,OF,OF956,Mote Islamorada [In Situ],,Red42,R35,73,0.75
 b0c219e0-a5ee-4022-985f-11cd95522c4c,AC,AC8,Mote Islamorada [In Situ],,Blue09,R32,73,0.75
-c9268703-26bb-4f16-8ddf-2c3d18fd64c1,SS,SS160,Mote Looe Key [In Situ],,SS-99/160,R513,72,0
-2507c70e-8498-42ca-a878-f84c51b7b973,AC,AC0,Mote Key Largo [In Situ],,Blue34,R30,70,
-c291f6bf-bf70-4a8f-beb4-a585d67f531e,AC,AC7,Mote Islamorada [In Situ],,Red15,R5,70,0.25
-722745ca-7093-4f84-af6e-28a673fe4560,AC,AC2502,Mote Looe Key [In Situ],,AC-2502,R38,70,0.25
-01a0d1f3-178c-4ef8-b127-0a28cbbfbf30,MC,MC94,Mote Looe Key [In Situ],,MC-94,R47,69,1
 17f917b2-753d-4edd-8bf3-982491720bbb,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,2,69,0.75
-36383eb1-fe1d-4ee5-9ea7-e00af4ee2cb9,PC,PC20,Mote Key Largo [In Situ],,Blue61,R146,69,0.5
 b12ec740-adac-411d-9c26-de1e18ce6746,PC,PC45,Mote Key Largo [In Situ],,Red04,R22,68,0.75
-b1d46625-fbe2-4abc-bd05-539aba091707,CN,CN31,Mote Looe Key [In Situ],,CN-7/31,R363,68,0
-b76d1e3c-dccd-46eb-b8e6-c4f0e5682007,OF,OF1035,Mote Looe Key [In Situ],,OF-1035,R210,67,0
-18afca0f-3a91-4e34-bf76-d255c9033273,PC,PC30,Mote Looe Key [In Situ],,PC-30,R440,66,0
-f3583860-0077-4bc2-a0fe-286e0191f32c,PC,PC21,Mote Key Largo [In Situ],,Blue95,R65,65,0.25
-9e570839-e3da-4cda-925f-f82622e5da30,AC,AC1,Mote Key Largo [In Situ],,Green91,R76,65,0
-659bceda-a62d-4f73-a00c-bade6941f95e,AC,AC77,Mote Looe Key [In Situ],,AC-77,R379,64,0
-d8033f5b-756c-498f-aba4-80c372cb1b96,MC,MC202,Mote Islamorada [In Situ],,Red53,R6,63,1
 6cd43819-b65d-49e0-9101-9559fd6ebc13,CN,CN51,Mote Islamorada [In Situ],,Red61,R84,62,0.75
 b1a1eaa6-0a71-4f86-89bb-11a06e947aed,DL,DL269,Mote Islamorada [In Situ],,Red51,R75,62,0.75
 bc6ceccc-6018-46d8-93d1-c4d75441945d,OF,OF995,Mote Islamorada [In Situ],,Red96,R149,62,0.75
-94749931-1b64-4ef6-bb77-0f07a45be690,PC,PC34,Mote Looe Key [In Situ],,PC-34,R444,62,0
 bb6b436e-2fee-4398-a26d-d491f825adef,OF,OF932,Mote Islamorada [In Situ],,Red87,R114,61,0.75
-f06e7b16-85a7-4f06-8ea5-901f88c89a26,INTERSEPTA,SI257,Mote Islamorada [In Situ],,Red59,R36,61,0.25
-7733ad30-4dbd-49fa-9161-2a79c2b5126c,MC,MC127,Mote Looe Key [In Situ],,MC-126/127,R94,61,0
-d92f781f-825b-443a-99ef-f8c9f2ab35f0,PC,PC15,Mote Looe Key [In Situ],,PC-15,R409,61,0
 834d3575-d3b7-4f9b-9fe1-ba369ee824c6,CN,CN63,Mote Islamorada [In Situ],,Red79,R217,60,0.75
 02ba2775-1d54-4136-a183-12b346a0c47a,OF,OF1027,Mote Islamorada [In Situ],,Red83,R26,60,0.75
-0fb42e2a-ec7f-4549-97ba-ef86d15b075a,PC,PC50,Mote Key Largo [In Situ],,Unassigned,R145,60,0.25
-57b8a1ba-21d2-4fd8-8ad9-7637b8f1c292,AC,AC31,Mote Sand Key [In Situ],,31,R15,60,0
-22dd4aa7-345c-4c42-a82a-f463ac7c8b83,AC,AC94,Mote Looe Key [In Situ],,AC-94,R413,59,0.25
-ce781feb-7d0b-4ef1-b959-d2c4b807e029,AC,AC2516,Mote Sand Key [In Situ],,CU-038,R14,59,0
 750882e3-5606-4756-9559-67773ec651d1,CN,CN73,Mote Islamorada [In Situ],,Red61,R84,58,0.75
-3432602c-bc1a-46e4-bdb2-06af9181f6d4,DL,DL17,Mote Looe Key [In Situ],,DL-17,R311,57,0
-de965a29-8968-463f-9699-4cf111df0761,PC,PC31,Mote Looe Key [In Situ],,PC-31,R441,57,0
-5649cb53-b0cf-4e56-8a6a-a97a43fca27b,AC,AC50,Mote Islamorada [In Situ],,Blue10,R172,57,0.5
 c2a7ee3d-8bdf-4653-9077-d4863e31b04a,PC,PC23,Mote Islamorada [In Situ],,Red50,R43,55,0.75
-ce9b5c7e-6f0e-4aec-a261-616340be9511,OA,OA10,Mote Looe Key [In Situ],,OA-10,R338,55,0
-2c2b2c6b-893a-4ba0-ba80-bb5d876d60a7,SI,SI79,Mote Looe Key [In Situ],,SI-79,R491,55,0
-8a0de5fc-2663-460b-a0be-cdd398ab1839,PC,PC49,Mote Key Largo [In Situ],,Blue73,R11,54,0.25
-9647bfed-82d4-4599-98c2-e826084efbe5,AC,AC7,Mote Looe Key [In Situ],,AC-7,R304,54,0.25
-8342c9e5-edd9-447d-8196-fdf00ae4ae39,AC,AC47,Mote Looe Key [In Situ],,AC-47,R329,54,0.25
-e987277f-5096-409a-82c2-dbe0e8370145,AC,AC725,Mote Looe Key [In Situ],,AC-725,R486,54,0.25
-d4596eff-7c09-431d-b604-a40797fb1281,PS,PS5,Mote Looe Key [In Situ],,PS-5,R16,54,0
-7d9c0aa6-4f6b-4c2e-a981-de51cbb218cf,PS,PS15,Mote Islamorada [In Situ],,Red81,R21,53,1
-bcc765b0-ca14-4e76-8199-a48d824c61e0,CN,CN38,Mote Islamorada [In Situ],,Red56,R151,53,0.5
 775a5a0b-414c-477d-8ab8-2a7f6ed4ba7a,MC,MC116,Mote Islamorada [In Situ],,Red60,R148,53,0.75
-2b692b16-a723-4ebb-8831-c1828e28e49c,AC,AC5,Mote Islamorada [In Situ],,Blue07,R2,53,0.5
-11d1dd61-5ec2-4f3e-bba4-fb4032eece20,SR,SR188,Mote Looe Key [In Situ],,SR-188/189,R536,53,0
 4e3dec68-7d05-4a2f-b269-8ee59fe93e5b,CN,CN40,Mote Islamorada [In Situ],,Red90,R219,53,0.75
-869c9a73-2c0d-43f6-bcef-5e2f419b492d,AC,AC2513,Mote Looe Key [In Situ],,AC-2513,R3,52,0.25
-f5972bfe-34af-4ff7-8643-d784b9ede13b,MC,MC1,Mote Looe Key [In Situ],,MC-1,R9,51,1
-1c373aaa-56c2-415c-8994-a096ce06140b,OF,OF183,Mote Looe Key [In Situ],,OF-183,R198,51,0
-56a0b044-60b6-43a3-aa70-8e97e14d8105,OF,OF186,Mote Looe Key [In Situ],,OF-186/187,R17,51,0
-5e1d71a6-1c1d-44d1-91ba-388141747243,PS,PS17,Mote Looe Key [In Situ],,PS-17,R169,50,0
-8a1217a9-9720-4b49-88c7-622d97fbe6c4,MC,MC73,Mote Looe Key [In Situ],,MC-73,R97,50,0
 ddeb62c9-32e7-4705-9a12-87532490cadb,PC,PC46,Mote Key Largo [In Situ],,Blue83,R54,50,0.75
-3e8970fe-2602-4db5-89ce-dba62f47f893,AC,AC2522,Mote Looe Key [In Situ],,AC-2522,R60,50,0
-6c393a50-11b0-4bac-9737-63257838d123,PS,PS14,Mote Looe Key [In Situ],,PS-14,R129,50,0
-e612ef49-4ae1-41c3-be10-294ce065672b,AC,AC29,Mote Looe Key [In Situ],,AC-29,R481,49,0
-30d82bd7-00d5-4eb6-8eab-1e5b7ffe75fd,AC,AC95,Mote Looe Key [In Situ],,AC-95,R412,49,0.25
-10b01957-3cb4-49b5-a7f1-0f9af1a5c7ac,OF,OF941,Mote Islamorada [In Situ],,Red93,R127,48,0.5
-e8150ac6-85c5-4037-a0e8-e94c269e9a54,MC,MC87,Mote Islamorada [In Situ],,Red65,R93,48,0.5
-cc697f44-4bc0-4354-b0d1-c443c332298b,MC,MC11,Mote Looe Key [In Situ],,MC-11,R42,48,1
-08cae47d-dcd5-4ecc-a421-28c29432a1c0,PS,PS3,Mote Looe Key [In Situ],,PS-3,R125,48,0
-e185b1db-b726-4e8b-b4a9-afe57d10b85f,OF,OF927,Mote Islamorada [In Situ],,Red95,R132,47,0.5
-6adc0e3a-4a1c-4b28-8a3d-692155559cef,OF,OF1015,Mote Islamorada [In Situ],,Red42,R4,47,0.5
-1961f11b-91ee-4af6-bbba-2f021bd9f554,PS,PS2,Mote Looe Key [In Situ],,PS-2,R124,47,0
 4769df0f-5206-4545-a664-f135ecdab341,PC,PC37,Mote Looe Key [In Situ],,PC-37,R448,47,0.75
-ae08d831-bcb9-4887-b8d2-4a922e8b575d,PC,PC13,Mote Looe Key [In Situ],,PC-13,R408,46,0
-37abdb26-e2e7-47ec-a078-45ae91ddb329,PC,PC18,Mote Looe Key [In Situ],,PC-18,R28,46,0
-a6c7fc38-7e85-4c83-83f9-488934568b57,PS,PS4,Mote Looe Key [In Situ],,PS-4,R127,45,0
-02d31933-7413-4c93-92c5-9203131dec4b,AC,AC76,Mote Looe Key [In Situ],,AC-76,R380,45,0
 1ad5e914-1e17-4af3-92fe-545ac27de16b,CN,CN84,Mote Islamorada [In Situ],,Red80,R198,44,0.75
-d540a643-3b99-49d5-8212-5a2d13c5fb16,OF,OF988,Mote Islamorada [In Situ],,Red77,R154,44,0.5
 eec863db-da0d-4cbf-91f5-47ea84211ae8,INTERSEPTA,SI250,Mote Islamorada [In Situ],,Red70,R306,43,0.75
-768f4aed-6f8d-4e27-a750-cd0e593285da,SIDEREA,SS88,Mote Islamorada [In Situ],,Red74,R27,43,0.5
 439cf642-4529-469f-a376-227b49f5bc69,CN,CN32,Mote Islamorada [In Situ],,Red56,R151,43,0.75
-95c26410-1611-4f52-8af0-449b50776512,AC,AC38,Mote Looe Key [In Situ],,AC-38,R331,43,0.25
-33109bc0-52ca-47cc-a3d9-1ce0728e07a9,DL,DL21,Mote Looe Key [In Situ],,DL-21,R264,43,0
-56346b7d-a0b5-43bd-93ec-a0d866813eb4,DL,DL23,Mote Looe Key [In Situ],,DL-23,R285,43,0
-24e739c4-45cf-47dc-8dcc-6d96088a65d6,OF,OF950,Mote Islamorada [In Situ],,Red63,R90,42,0.5
-f447a349-a10b-4e35-ad45-6d8a55dbc449,AC,AC84,Mote Looe Key [In Situ],,AC-84,R350,42,0.25
-7924851d-6bdb-4b0c-9dca-e2984f7d6235,OF,OF1034,Mote Islamorada [In Situ],,Red72,R23,41,0.5
-12860f9d-27cf-4986-9cb8-4905578ee2a9,AC,AC55,Mote Looe Key [In Situ],,AC-55,R324,41,0
-a2ddb421-f456-4a98-be24-055772b86b38,OF,OF928,Mote Islamorada [In Situ],,Red94,R130,41,0.5
 c072c359-342c-4054-8cb8-b1bad2ef9df6,OF,OF1037,Mote Islamorada [In Situ],,Red62,R86,40,0.75
-b1ad969b-541b-4905-a8d4-4e87c35a2e06,AC,AC76,Mote Key Largo [In Situ],,Blue26,R112,40,0
-6a0d8442-2cb1-445b-ad6a-bc42aa4e6970,OA,OA12,Mote Looe Key [In Situ],,OA-11/12,R240,40,0
-20c7745a-2e26-44e0-8c31-6e780704d009,PS,PS37,Mote Looe Key [In Situ],,PS-37,R680,40,0
-4c9a56c7-0f19-45c8-b9d5-a44a618f2d1b,AP,AP124,Mote Key Largo [In Situ],,Blue42,R357,40,0.25
-e3d2bed6-95c3-42d5-a40e-dbd41d29bbf3,MC,MC204,Mote Key Largo [In Situ],,Blue93,R154,40,0.25
-c54aef85-c50d-4f15-a477-392b253f44d8,MC,MC72,Mote Looe Key [In Situ],,MC-72,R44,40,1
-5a25fc85-de7f-4aa0-ac5e-fa509bfa8c4b,AC,AC2503,Mote Looe Key [In Situ],,AC-2503,R37,40,0.25
-d4ced1fa-49fb-4a7f-b658-24505c6c3aa5,OF,OF977,Mote Looe Key [In Situ],,OF977,R212,40,0
-a076db49-cefd-47c2-b100-38cc4b07a2be,DL,DL3,Mote Looe Key [In Situ],,DL-3,R262,40,0
-4b3d569a-b049-423e-9e57-f0b1e7aa009b,PC,PC16,Mote Looe Key [In Situ],,PC-16,R420,40,0
 13fb310a-1377-4984-b369-2befb100de9a,AC,AC58,Mote Islamorada [In Situ],,Red10,R181,40,0.75
-d7321a11-d4df-4b6e-a0df-1b7270555ce4,AC,AC7,Mote Key Largo [In Situ],,Green96,R131,39,0.5
-5f3467a2-620a-4dbc-9e04-31d95a9da4d5,PC,PC22,Mote Key Largo [In Situ],,Blue76,R12,39,0
-e0af5938-9c5a-42a4-bc76-52883414eb6c,DL,DL15,Mote Looe Key [In Situ],,DL-15,R6,39,
-fd1f1707-5761-4f04-b2ae-ceff6c2e71d1,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R632,39,0.5
-4f85ca56-4a12-4057-bef7-069fb5475e24,DL,DL270,Mote Looe Key [In Situ],,DL-256/270,R312,39,
-31c5533b-a57d-4d4e-abfd-59b0555f9c7f,CN,CN29,Mote Looe Key [In Situ],,CN-29/46,R368,39,0
-dce71bde-93ec-4238-888b-3dca2bf0c286,MC,MC74,Mote Looe Key [In Situ],,MC-74,R45,39,1
-01c381a9-e7f3-4cd1-bbc4-36b76de26c2c,AC,AC0,Mote Looe Key [In Situ],,AC-UNK,R482,39,0
-550e6a58-94fc-4f65-9fe2-e3929cc15ee5,OF,OF1018,Mote Looe Key [In Situ],,OF-1018/1019,R242,39,0
-5125bfd1-2524-4a45-b166-a383d44c8495,PC,PC40,Mote Looe Key [In Situ],,PC-40,R466,39,0
-1a7a6008-6557-409d-8a40-cf9498e71269,AC,AC47,Mote Islamorada [In Situ],,Red07,R167,39,0.25
 44806bc8-f533-41c5-a32f-7058d21fab0b,OF,OF947,Mote Islamorada [In Situ],,Red45,R161,39,0.75
 c3c59a03-f836-42e1-902f-254b786072ac,PC,PC26,Mote Key Largo [In Situ],,Blue51,R148,38,0.75
-81617306-5641-4413-8596-f51b5e24fc04,MC,MC112,Mote Key Largo [In Situ],,Blue86,R13,38,0.25
-49632a15-6a1b-4c61-b16b-7b5d97dcb7f2,MC,MC63,Mote Looe Key [In Situ],,MC-63/92,R93,38,0
-4a2a2489-2dd0-4103-b0de-8edf35e55f53,OF,OF987,Mote Looe Key [In Situ],,OF-987,R171,38,0
 a75fccfe-b2ed-4cce-9d25-fb7d82a3b128,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,3,38,0.75
-638304b1-fc63-4550-a283-085a58378cdd,CN,CN9,Mote Looe Key [In Situ],,CN-3/9,R682,37,0
-40258443-bfca-484b-90bf-9f0a19307ba8,OF,OF924,Mote Looe Key [In Situ],,OF-924,R18,37,0
-3b3f967d-5cc8-4c29-a3ca-353c8c04be99,DL,DL256,Mote Looe Key [In Situ],,DL-256/270,R312,37,0
 6654d266-df94-43cf-9b89-1ca7f5786e29,MC,MC204,Mote Islamorada [In Situ],,Red82,R107,36,0.75
-ab8e2cea-bc7f-413a-a455-860e2b239475,SIDEREA,SS100,Mote Looe Key [In Situ],,SS-87/100,R687,36,
 e4761b4a-f4e9-48f3-93e7-6647f12b9ccc,SIDEREA,SS87,Mote Looe Key [In Situ],,SS-87/100,R1778,36,0.75
-cc4982cb-fe96-4af1-8b9c-a092ff765a68,PC,PC38,Mote Looe Key [In Situ],,PC-38,R1973,36,0.5
-06252e45-348a-4058-8d2c-eba16acdb4a8,AC,AC6,Mote Looe Key [In Situ],,AC-6,R305,36,0
-8907c2fe-1620-42ef-975d-0a5428118cce,OF,OF995,Mote Looe Key [In Situ],,OF995,R217,36,0
-1132c702-5afe-4414-abe4-2801a873c70c,MC,MC97,Mote Key Largo [In Situ],,Blue94,R23,36,0.25
-c9106327-80c9-492e-9f7d-502f1cc215be,MC,MC4,Mote Looe Key [In Situ],,MC-4/205,R679,35,0
-8e43affd-3f13-42da-8f06-18bd78f00179,SIDEREA,SS469,Mote Looe Key [In Situ],,SS-468/469,R875,35,0.5
-7e7c8631-f09e-49f0-bd5e-9739d919da77,AC,AC2540,Mote Looe Key [In Situ],,AC-2540,R88,35,0.25
 55587194-2be7-4255-aaa7-410a0078623b,PC,PC36,Mote Looe Key [In Situ],,PC-36,R446,35,0.75
-95cc05e0-4594-4c61-9b94-dce493932c3d,AC,AC31,Mote Key Largo [In Situ],,Blue37,R121,35,0
 db22c801-cd78-4d60-aede-f44da4c52317,MC,MC110,Mote Islamorada [In Situ],,Red66,R94,34,0.75
-6b40f5ea-adab-47d5-93b7-9d6649ae42ed,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R1440,34,0.5
-2bf8e6b9-360e-4f03-8fbe-d88839332c66,MC,MC92,Mote Looe Key [In Situ],,MC-63/92,R1997,34,0.25
-823ff7ec-122b-4baf-ab02-b27f0f248352,PC,PC23,Mote Key Largo [In Situ],,Blue61,R146,34,0.25
-639572a4-cd0f-40bf-b1c6-9d8b01d8d662,SIDEREA,SS87,Mote Looe Key [In Situ],,SS-87/100,R1801,34,0.5
-fcd7f093-d52e-4a52-b958-18c8ca5285ed,AC,AC2511,Mote Looe Key [In Situ],,AC-2511,R10,34,0.25
-64ba9976-a374-4d02-bf0f-345059451b10,AC,AC46,Mote Looe Key [In Situ],,AC-46,R330,34,0.25
-2d4902b5-d56e-4d89-a614-f5f174e5c1d6,OF,OF184,Mote Looe Key [In Situ],,OF-184,R241,34,0
-ae733e78-a8bc-4465-be26-fee32d2f577e,DL,DL1,Mote Looe Key [In Situ],,DL-1,R261,34,0
-406dcb5c-5b65-440b-a282-854235101457,OA,OA13,Mote Looe Key [In Situ],,OA-13,R339,34,0
-046a782d-19c8-4321-b06b-3fab958b525c,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R1406,34,0.5
-843c537f-49ed-4b80-83f7-a893a75b7408,AC,AC13,Mote Key Largo [In Situ],,Blue24,R32,34,0
-6445cc6f-3b91-4d4f-a838-8f3a32977b99,RADIANS,SR21,Mote Looe Key [In Situ],,SR-21,R688,33,
-adfe61cc-51a0-423d-b777-24ab1b8c4044,INTERSEPTA,SI72,Mote Looe Key [In Situ],,SI-18/72,R1730,33,0.5
-2fc930fd-3ba6-4510-889d-d6035bedfd1a,OF,OF953,Mote Islamorada [In Situ],,Red44,R158,33,0.5
-c087f8fc-48e9-4f93-b5eb-31a6e221ff54,INTERSEPTA,SI46,Mote Islamorada [In Situ],,Red62,R86,33,0.5
-99873ee1-244a-47fe-969c-1bd0bb74c41f,ASTREOIDES,PA74,Mote Looe Key [In Situ],,PA-56/74,R1577,33,0.25
-ff39bff8-2712-4fd4-b3b1-64cfd08d7f4f,SIDEREA,SS469,Mote Looe Key [In Situ],,SS-468/469,R1489,33,0.5
-ac78fa68-31dd-4afd-bdf7-908934772cf7,SIDEREA,SS99,Mote Looe Key [In Situ],,SS-99/160,R1595,33,0.5
-b98992ed-4614-468e-905d-67f09afc1bf4,INTERSEPTA,SI81,Mote Looe Key [In Situ],,SI-81,R886,33,0.5
-56485aac-62b2-42b2-8752-e240532dcb5b,INTERSEPTA,SI77,Mote Looe Key [In Situ],,SI-77,R775,33,0.5
-273cf563-c21a-4de5-a099-d8723d84dd97,INTERSEPTA,SI77,Mote Looe Key [In Situ],,SI-77,R1016,33,0.5
-b8716adf-ed35-4f50-b18d-deb94483bad3,INTERSEPTA,SI72,Mote Looe Key [In Situ],,SI-18/72,R1909,33,0.5
-2743da75-c0aa-488c-be85-d09378593916,SIDEREA,SS87,Mote Looe Key [In Situ],,SS-87/100,R1977,33,0.5
-c967083d-0ff8-48b0-bd61-52a8ef32962d,SIDEREA,SS469,Mote Looe Key [In Situ],,SS-468/469,R1868,33,0.5
-31fb0ec1-2478-4422-b0ab-3aefa54e900b,RADIANS,SR190,Mote Looe Key [In Situ],,SR-4/190,R538,33,0
-a50415d0-5493-4ade-98cc-5660edd29bb1,INTERSEPTA,SI18,Mote Looe Key [In Situ],,SI-18/72,R172,33,0.5
-297282c9-5c1d-424c-a53e-30ab2a8f3446,PC,PC50,Mote Key Largo [In Situ],,Red03,R52,32,0.5
-128b5ad0-9f78-4c7c-96c1-3882c9947f1d,INTERSEPTA,SI81,Mote Looe Key [In Situ],,SI-81,R518,32,
-1271515b-889a-4a90-a651-06cd2938bd04,INTERSEPTA,SI81,Mote Looe Key [In Situ],,SI-81,R876,32,0.5
-d70b164b-d7f0-41df-a529-f746ff02b405,AC,AC2940,Mote Looe Key [In Situ],,AC-2940,R505,32,0
-73e8624e-bb64-48fe-a8c3-7ad03681da13,PS,PS27,Mote Looe Key [In Situ],,PS-27,R144,32,0
 2d50c241-ba33-4a1a-bc04-c79ef1d1d118,MC,MC82,Mote Islamorada [In Situ],,Red49,R44,31,0.75
-2ad86657-e415-4d08-a3ba-392e371819b0,OF,OF949,Mote Islamorada [In Situ],,Red76,R150,31,0.5
 84ec9c45-e259-4f49-9cd2-1b22f8862c33,SIDEREA,SS487,Mote Islamorada [In Situ],,Red58,R81,31,0.75
-316e9648-a4a8-4526-aa44-29e0fed3537f,PS,PS29,Mote Looe Key [In Situ],,PS-29,R170,31,0
-150a3d87-5986-44ff-a806-e40462be5222,SS,SS86,Mote Looe Key [In Situ],,SS-85/86,R516,31,0.5
-91b88ee3-4e31-4448-b847-77bd36fadfb4,SS,SS85,Mote Looe Key [In Situ],,SS-85/86,R276,31,0.5
 830e5f60-e636-4090-a197-8cdb252d4b03,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R1262,31,0.75
-320aa3ef-5147-4920-a318-39c95243fdda,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R1540,31,0.5
-30f3c61b-9371-4265-a793-a44c43779ac5,DL,DL13,Mote Key Largo [In Situ],,Blue65,R91,31,0.5
-3ed72740-667b-4192-96b3-d15730904750,OF,OF1013,Mote Islamorada [In Situ],,Red71,R98,30,0.5
-4c407ac8-b66a-44ce-80bd-62f96eb93583,CN,CN45,Mote Islamorada [In Situ],,Red56,R151,30,0.5
-19e4add7-c573-47c9-a1c8-b0e43cd66fd6,PC,PC28,Mote Looe Key [In Situ],,PC-28,R1880,30,0.25
-fa2323a6-2fda-43b6-83e0-605f0cde976d,MC,MC125,Mote Key Largo [In Situ],,Red03,R52,30,0.5
-db1d2a6e-cc66-4734-af5c-704ccf6eb21f,PS,PS14,Mote Key Largo [In Situ],,,R150,30,0.25
-cd5ad88e-dfc1-44f6-9d77-7841f6fa434e,RADIANS,SR21,Mote Looe Key [In Situ],,SR-21,R447,30,0.5
-b5477538-41c8-44d2-a43d-26f15bd5a919,INTERSEPTA,SI77,Mote Looe Key [In Situ],,SI-77,R1167,30,0.5
-8b98e23b-cb71-4bd0-88cb-a448fd0721d4,INTERSEPTA,SI77,Mote Looe Key [In Situ],,SI-77,R773,30,0.5
-c6134716-dbfd-4720-a7fe-24becc932391,AC,AC29,Mote Key Largo [In Situ],,Blue29,R21,30,0.25
 54016498-7e6c-41a4-8d6f-c95c124569e8,PC,PC24,Mote Key Largo [In Situ],,,R243,30,0.75
-3da391c9-ea6b-4319-8608-8b3f686631e0,MC,MC93,Mote Looe Key [In Situ],,MC-93,R92,30,0
-671b2e74-90f4-4574-a198-d1debd81f4c6,AC,AC2539,Mote Looe Key [In Situ],,AC-2539,R89,30,0.25
-3422a61c-f6b1-43a8-865a-f892786cf6ca,OF,OF1019,Mote Looe Key [In Situ],,OF-1018/1019,R242,30,0
-ab6c5bd4-46a4-43e0-8446-a45fb5644357,INTERSEPTA,SI18,Mote Looe Key [In Situ],,SI-18/72,R1613,30,0.5
-941651cf-6495-43d5-ac66-2a705147ae53,AC,AC51,Mote Key Largo [In Situ],,Blue25,R68,30,0
-67da05ae-0043-4325-ad57-6866839773aa,AC,AC31,Mote Sand Key [In Situ],,31,R15,30,0
-dd2c4ed2-f494-4059-9f3f-d8cfa43f2f29,ASTREOIDES,PA74,Mote Looe Key [In Situ],,PA-56/74,R1213,29,0.25
 0d2b2bd8-9841-4535-8266-f5045ef66384,CN,CN47,Mote Islamorada [In Situ],,Red57,R80,29,0.75
-43e381fc-ba9b-424a-9ee8-28a54b6c817e,MC,MC42,Mote Looe Key [In Situ],,Unassigned,R1930,29,0.5
-84eaa114-9a61-4b80-9a3e-a1ccc3ad04a4,PC,PC48,Mote Key Largo [In Situ],,,R94,29,0.25
-df8266ad-7315-40f3-8f4b-bca2bde99eeb,RADIANS,SR189,Mote Looe Key [In Situ],,SR-188/189,R690,29,0
-704177b2-47c2-4746-942d-4844f6088b4d,PS,PS1,Mote Looe Key [In Situ],,PS-1,R123,29,0
-ce34a6aa-8b3e-40f8-94e3-53a08b9a9a3d,OF,OF0,Mote Looe Key [In Situ],,2021 SR,R391,29,0
-e173eaa8-d4e9-44df-a5e2-6393b7af2e35,PC,PC31,Mote Key Largo [In Situ],,Blue85,R66,28,0.25
-ac502ad7-f5d1-46e6-be09-b433c3e13dea,MC,MC92,Mote Looe Key [In Situ],,MC-63/92,R678,28,0
-c7d9e21a-1263-4f13-9b8f-a623699ee9aa,CN,CN12,Mote Looe Key [In Situ],,CN-12/39,R365,28,0
-fb3c8434-3e7e-4d47-a880-836d75a21006,AC,AC2616,Mote Looe Key [In Situ],,AC-2616,R187,28,0.25
-33c58110-27bf-43e8-a6a5-7d3f18b8f156,AC,AC2634,Mote Looe Key [In Situ],,AC-2634,R255,28,0.25
-0d765bb1-c402-43e9-bf86-3c0942ed2a9a,DL,DL22,Mote Looe Key [In Situ],,DL-22,R265,28,0
 495fedbd-c900-4ed8-ab7a-c4781db9dd8e,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R674,28,0.75
-5ee725fc-2ad5-4bf2-9dd1-2a0ff0c5dc8b,SIDEREA,SS468,Mote Looe Key [In Situ],,SS-468/469,R1578,28,0.5
-70a48e3f-105f-401a-8607-11384e8f022d,OF,OF926,Mote Key Largo [In Situ],,Blue76,R12,27,0
-91877705-e654-4a35-a788-c1a149a085e1,OF,OF1003,Mote Key Largo [In Situ],,Blue85,R66,27,0.25
-5b75b8c1-2d7f-4eeb-8973-b6094609f8db,AC,AC90,Mote Looe Key [In Situ],,AC-90,R415,27,0.25
-488f4f40-f7aa-4150-abae-fd3690c1778a,INTERSEPTA,SI81,Mote Looe Key [In Situ],,SI-81,R184,27,0.5
-3173a7ea-2ef6-46d4-be32-7509a4bd5294,MC,MC3,Mote Looe Key [In Situ],,MC-3,R14,27,0
-ff309aac-2795-4630-8a57-492d000dee20,OF,OF450,Mote Key Largo [In Situ],,Blue41,R3,26,0.25
-57c1bbbf-2674-47bc-883c-29e59df6e1b0,SIDEREA,SS99,Mote Looe Key [In Situ],,SS-99/160,R1605,26,0.5
-52ca8edc-2341-4b78-82db-9f1ef75f9674,SIDEREA,SS468,Mote Looe Key [In Situ],,SS-468/469,R1054,26,0.5
-8c1a647e-52f2-4a12-b28e-6f306bfa772b,OF,OF1004,Mote Looe Key [In Situ],,OF-1004,R211,26,0
-2ac44cf8-27be-4632-bb81-aa3d80d1590f,OF,OF1011,Mote Islamorada [In Situ],,Red71,R98,25,0.5
-8c924d5c-69ba-486c-8d0f-f4e285bda6c0,SIDEREA,SS99,Mote Looe Key [In Situ],,SS-99/160,R230,25,0.5
-4c21dc0d-1772-4873-9f2d-028b72edca62,OF,OF801,Mote Looe Key [In Situ],,OF-801,R20,25,0
-f49262ac-eb51-4067-8fd3-cc089fb92236,OF,OF1017,Mote Looe Key [In Situ],,OF-1017,R238,25,0
-d5deb120-fc54-46a3-b1a0-b357802c17e1,MC,MC62,Mote Looe Key [In Situ],,MC-53/62,R677,25,0
-0b4a225f-1422-41d3-b064-d03feaa71696,DL,DL16,Mote Looe Key [In Situ],,DL 16/18,R286,25,0
-bb194a11-7900-4c5c-914e-b413cf3f43ca,PS,PS8,Mote Looe Key [In Situ],,PS-8,R128,25,0
-d4876a63-4be6-4b61-80d0-443fb09d8ff2,PC,PC17,Mote Looe Key [In Situ],,PC-17,R421,25,0
-9f84c252-4c75-4cf5-8aab-557437559002,ASTREOIDES,PA56,Mote Looe Key [In Situ],,PA-56/74,R1659,25,0.25
-a3cdd7c8-3eb5-4cba-b7f5-53273d58ffdc,AC,AC94,Mote Key Largo [In Situ],,Blue39,R124,24,0.25
-cd9c44d0-3418-4923-bdee-8aba4d18c7b2,OF,OF1019,Mote Looe Key [In Situ],,OF-1018/1019,R526,24,0.25
-e47af590-a654-4cb7-b688-7d4495f867fc,OF,OF1018,Mote Looe Key [In Situ],,OF-1018/1019,R526,24,0.5
-c444d6d0-8b63-4a92-8645-71194a2e7f22,AC,AC89,Mote Looe Key [In Situ],,AC-89,R373,24,0.25
-ae8f3dd7-0220-4374-8da4-d5c7556284ba,PS,PS25,Mote Looe Key [In Situ],,PS-25,R134,24,0
-a2d486ac-4646-4ba8-a339-1dafbbc6ef56,ASTREOIDES,PA56,Mote Looe Key [In Situ],,PA-56/74,R1833,24,0.25
-fb56c305-d1d4-4957-a64f-1f9a1c36cf80,ASTREOIDES,PA56,Mote Looe Key [In Situ],,PA-56/74,R1994,24,0.25
-9e70a752-5c8c-47ac-890c-a91f93ff19ce,ASTREOIDES,PA74,Mote Looe Key [In Situ],,PA-56/74,R1766,23,0.25
-2902d287-2c7e-4f05-9b0f-fd0e76fa7f65,MC,MC80,Mote Key Largo [In Situ],,Blue86,R13,23,0.25
-80cb38e2-b3e4-4c37-80ec-e9cd009a799f,RADIANS,SR4,Mote Looe Key [In Situ],,SR-4/190,R1200,23,0.25
-d5e29a2a-d0cb-463b-b8a1-b241ebeee787,RADIANS,SR21,Mote Looe Key [In Situ],,SR-21,R1464,23,0.5
-8b102bb3-7c03-46fd-a4af-3d9bc50ed67b,PS,PS13,Mote Looe Key [In Situ],,PS-13,R145,23,
-ac6d85d3-5c8a-42a5-a7d3-4b7462929da3,MC,MC126,Mote Looe Key [In Situ],,MC-126/127,R94,23,0
-50d56e05-0e46-454f-9cc2-0cf3926bdd43,CN,CN3,Mote Looe Key [In Situ],,CN-3/9,R366,23,0
-4a04b5f2-6ea9-4302-a962-710758fab098,ASTREOIDES,PA56,Mote Looe Key [In Situ],,PA-56/74,R1667,23,0.25
-542ceccd-e5a8-46f7-b046-915e8d4d555a,RADIANS,SR4,Mote Looe Key [In Situ],,SR-4/190,R689,22,
-5b2ce35b-1ce1-4657-bad8-2332cec41fc4,DL,DL18,Mote Looe Key [In Situ],,DL 16/18,R239,22,0
-9d52ef09-c275-4b1b-8482-c22186cff6da,OA,OA11,Mote Looe Key [In Situ],,OA-11/12,R340,22,0
-f643ad64-ba00-4236-a219-281423ff4c7c,AC,AC2533,Mote Looe Key [In Situ],,AC-2533,R90,22,0.25
-0b8535f9-0d58-4a3f-942c-7b89ba445bac,OF,OF328,Mote Looe Key [In Situ],,OF328,R216,22,0
-47634d73-69fb-4e29-b406-d02f75420754,DL,DL2,Mote Looe Key [In Situ],,DL-2,R291,22,0
-4be13873-6912-4b1a-b4e0-3e025b830537,OF,OF1031,Mote Islamorada [In Situ],,Red81,R21,22,0.5
-bc068a95-0f01-4afc-9b8e-40ceec0fd004,OF,OF1025,Mote Key Largo [In Situ],,Red02,R18,21,0.25
-3d40b5e7-31c4-47cb-ab73-a5f6f437374d,OF,OF1028,Mote Key Largo [In Situ],,Red02,R18,21,0.25
-de614105-4a5b-4e30-b3e6-bc1f7db9899e,PC,PC46,Mote Key Largo [In Situ],,Blue83,R54,21,0.25
-0d6e3bf8-db72-49b8-a7b7-eb11f6819d3b,AC,AC4,Mote Islamorada [In Situ],,Blue02,R157,21,0.25
-2d06b897-cdb4-4965-bee5-600a3ee24192,SB,SB13,Mote Looe Key [In Situ],,SB-13,R1285,21,0.5
-78657730-931f-474f-889e-11e91fa44322,OF,OF1022,Mote Islamorada [In Situ],,Red81,R21,21,1
-c0216066-2af0-4edc-a10e-55a715dffa73,AC,AC58,Mote Islamorada [In Situ],,Red10,R181,20,1
-8e748250-d46c-4e7a-a9f6-b454d678ce9e,AC,AC62,Mote Key Largo [In Situ],,Blue25,R68,20,0
-876859bb-c48d-4b6a-869c-87fd49efdb7b,DL,DL18,Mote Key Largo [In Situ],,Blue85,R66,20,0.5
 8472959b-aa0d-4af3-8522-d3811a0bb0ef,PS,PS4,Mote Islamorada [In Situ],,Red85,R110,20,0.75
-f9a1a7e3-77c3-4cd5-bd8d-0ed9a802213a,OF,OF1040,Mote Islamorada [In Situ],,Red82,R107,20,1
-6b9e3e9f-aace-40f6-8ca6-d594c2b68ba5,MC,MC121,Mote Islamorada [In Situ],,Red67,R95,20,0.5
 5de5102a-497d-4028-a61a-c7f06247d0e9,PC,PC20,Mote Islamorada [In Situ],,Red61,R84,20,0.75
-676eba73-b485-4f01-a85a-42d1beadee2e,PS,PS1,Mote Looe Key [In Situ],,PS-1,R7,20,0.25
-2d125441-48d5-4780-b3a3-22841db3cd29,AC,AC1287,Mote Looe Key [In Situ],,AC-1287,R484,20,
-b3dcfe60-df0f-43f6-a4fd-f8cc1b944fd6,AC,AC1287,Mote Looe Key [In Situ],,AC-1287,R484,20,
-f3dea2e3-924c-43fe-b5e3-23959cf53c88,AC,AC80,Mote Looe Key [In Situ],,AC-80,R351,20,0
-2f2cf3ea-257a-46e1-a545-9b5dd51e7c24,AC,AC80,Mote Looe Key [In Situ],,AC-80,R351,20,0
-8570374b-2dfe-42f4-82bc-64a2ea34724b,AC,AC2534,Mote Looe Key [In Situ],,AC-2534,R77,20,0
-aeae6f1a-f924-40ff-bfe6-33e9f15c8fe3,AC,AC2631,Mote Looe Key [In Situ],,AC-2631,R233,20,0.25
-5c27af74-061c-42d9-b793-a3e9d9b2d934,AC,AC79,Mote Looe Key [In Situ],,AC-79,R377,20,0.25
-e87455ab-fff9-432d-ac39-7636c71de5ce,PS,PS24,Mote Looe Key [In Situ],,PS-24,R143,20,0
-0bf92f54-d03b-48cd-b7fc-000acd202ddb,OF,OF1,Mote Looe Key [In Situ],,OF-1,R195,20,0
-37aec7a8-dfce-4e2b-86f0-db13e0f46b65,AC,AC2514,Mote Looe Key [In Situ],,AC-2514,R8,20,0
-63a73330-b04f-4295-8546-69a3529b33e5,AC,AC5,Mote Looe Key [In Situ],,AC-5,R306,20,0
-0d753c52-4e34-42b2-88e1-6aec2a79cf64,AC,AC0,Mote Sand Key [In Situ],,21-285,R1,20,0
-a2e13630-28c3-4979-8d79-cf51e14ab6ab,AC,AC2627,Mote Sand Key [In Situ],,RD-2,R7,20,0
-86fc41e4-42bd-4635-88e1-61d25db380ba,AC,AC10,Mote Sand Key [In Situ],,10,R8,20,0
-324f09cc-1a3f-43db-83e0-ecef526215af,PC,PC28,Mote Looe Key [In Situ],,PC-28,R1903,19,0.25
-25f0a27d-9e84-4d62-99e1-cc71dc6e8c0f,SB,SB13,Mote Looe Key [In Situ],,SB-13,R1249,19,0.5
-7ec585b2-97f7-46ef-a015-2f9f08558f61,AC,AC2939,Mote Looe Key [In Situ],,AC-2939,R506,19,0
-e6728f29-61db-4872-b223-d0e2adcac1d8,AC,AC70,Mote Key Largo [In Situ],,Blue16,R113,19,0.5
-2a6d10d8-5c51-4203-af21-c95778f900e1,AC,AC56,Mote Key Largo [In Situ],,Blue25,R68,18,0
-a61bd7b9-590d-4225-8cd7-1bac8b2ae875,OF,OF1012,Mote Islamorada [In Situ],,Red71,R98,18,0.25
-a0d6824f-59af-4d30-a555-db1c57df40be,SI,SI232,Mote Islamorada [In Situ],,Red58,R81,18,0.5
-ac757783-50f1-4daa-b547-a1e741d0e637,CN,CN12,Mote Looe Key [In Situ],,CN-12/39,R1805,18,0.5
-61694c79-5097-415b-a4ac-c53141416d97,MC,MC53,Mote Looe Key [In Situ],,MC-53/62,R15,18,0
-e2ed390a-0646-42dc-96c7-c6ab93ff91f5,PS,PS4,Mote Looe Key [In Situ],,PS-4,R4,18,0.25
-8cef4a48-f5db-439b-9351-67afde35bbea,OF,OF943,Mote Key Largo [In Situ],,,R258,18,0.5
-b37356a9-a09c-4e04-9ac4-7559e7233167,AC,AC51,Mote Sand Key [In Situ],,CU-128,R13,18,0
-074e73a8-3032-4fc7-9027-71f1366b9cd7,PS,PS21,Mote Looe Key [In Situ],,PS-21,R130,18,0
-a6f095e0-8ad8-4f86-9654-1cd693ff4b06,OF,OF180,Mote Looe Key [In Situ],,OF-180,R197,18,0
-d5e5cad1-aff2-42c8-8d90-4ea51f57c866,OF,OF185,Mote Looe Key [In Situ],,OF-185,R199,18,0
-d3cccba6-96e2-42fe-b530-307650dc5406,AP,AP24,Mote Looe Key [In Situ],,AP24,R555,18,0
-95441c5a-2db1-45dc-beef-c460ac3d1f95,OF,OF1023,Mote Key Largo [In Situ],,Red02,R18,17,0.25
-0a8c0920-d5cd-485e-b3dc-9d6d2aee97f9,AC,AC34,Mote Key Largo [In Situ],,Blue08,R80,17,0.5
-1ea54ca9-41d4-4b80-a232-93d630d49834,PC,PC43,Mote Key Largo [In Situ],,Blue71,R10,16,0.25
-46e5e52f-6bdb-4bd3-a085-5e1af509c5f9,DS,DS5,Mote Key Largo [In Situ],,Blue71,R10,16,0.25
-6a3d9690-2d60-4f63-985e-d71598623386,MC,MC104,Mote Key Largo [In Situ],,Blue84,R24,16,0.25
-e1e33b31-393a-416b-9c60-859ca181add2,CN,CN7,Mote Looe Key [In Situ],,CN-7/31,R363,16,0
-e67f59c4-1b0a-42ae-b73e-723e70853f66,PC,PC38,Mote Looe Key [In Situ],,PC-38,R1689,16,0.5
-15cfe92b-7c68-4953-95db-ee77a00c717e,AC,AC13,Mote Looe Key [In Situ],,AC-13,R301,16,0
-5edb8624-68c4-457c-91ed-0a9efadd6ab3,AC,AC48,Mote Looe Key [In Situ],,AC-48,R328,16,0.25
-04f5e099-edbd-4826-88d4-e2421b5da090,AC,AC56,Mote Looe Key [In Situ],,AC-56,R323,16,0
-a8b7eaec-1c66-4804-9be2-a33a7a8b8a81,AC,AC70,Mote Sand Key [In Situ],,70,R11,16,0
-f3fa3f20-2ff2-40c0-9690-18753f8d344e,OF,OF1033,Mote Key Largo [In Situ],,Blue84,R24,15,0.25
 a031224b-cc98-47dd-b48b-3b5fdebb5a77,OF,OF918,Mote Islamorada [In Situ],,Red93,R127,15,0.75
-bb8780f7-3a13-4b03-a442-38aae33c03ba,CN,CN39,Mote Looe Key [In Situ],,CN-12/39,R1774,15,0.5
-7168d7f7-17d0-4e2d-8db4-3ed1ea362ddb,MC,MC205,Mote Looe Key [In Situ],,MC-4/205,R96,15,0
-b72cd20c-2fb9-4904-9f5c-cae22821a4c2,CN,CN8,Mote Looe Key [In Situ],,CN-8/30,R364,15,
 f3db85ad-d6d1-4bbd-8075-e1da7d348795,AC,AC58,Mote Key Largo [In Situ],,Blue33,R64,15,0.75
-01f6cfe0-1091-4d7e-86fd-2396f8f70101,OF,OF0,Mote Looe Key [In Situ],,OF-UNK,R19,15,0
-afde6564-dab7-4dba-abc4-2dbf873e7104,AC,AC92,Mote Sand Key [In Situ],,92,R3,15,0
-5f576e03-9d77-47ae-9ae3-656ae353822f,MC,MC11,Mote Islamorada [In Situ],,Red98,R136,14,0.5
-910afc95-57bb-49a9-98c0-63138d9a7e7e,AC,AC50,Mote Key Largo [In Situ],,Blue03,R1056,14,0.5
-f793c58f-803d-4730-9256-930390ef80b8,AC,AC2505,Mote Looe Key [In Situ],,AC-2505,R36,14,0.25
-48c036e6-4a16-497b-b0e0-1ddf771abea7,PS,PS22,Mote Looe Key [In Situ],,PS-22,R132,14,0
 d1b25123-88ba-471f-a0dd-455919eec993,MC,MC78,Mote Key Largo [In Situ],,Red03,R52,13,0.75
-18a709ef-d41a-4b07-813c-c92593241843,PC,PC27,Mote Key Largo [In Situ],,Red03,R52,13,0.5
 91d84645-623f-457a-8d1b-aadeed895b4e,PC,PC20,Mote Key Largo [In Situ],,Blue61,R146,13,0.75
-73cf4895-e292-487f-8f6a-a199715e238b,AC,AC2575,Mote Looe Key [In Situ],,AC-2575,R140,13,0
-0a340376-b270-4154-8aa9-fb8fa50bdb4c,AC,AC2611,Mote Looe Key [In Situ],,AC-2611,R190,13,0
-99a04ce8-b62d-4207-9a7b-45141a76e937,AC,AC50,Mote Looe Key [In Situ],,AC-50,R327,13,0
-c408c0d9-d4aa-4807-ba5a-58006faaf071,OF,OF953,Mote Key Largo [In Situ],,Blue43,R4,12,0.25
-12198d84-7465-4577-8469-840d59e0cfd6,OF,OF990,Mote Key Largo [In Situ],,Blue76,R12,12,0
 f92f9961-cb6d-486e-8e76-91b5841086d7,MC,MC105,Mote Key Largo [In Situ],,Blue85,R66,12,0.75
-4f95225a-3e23-44c7-964a-8dc049072841,OF,OF919,Mote Key Largo [In Situ],,Blue41,R3,12,0.25
-4b613276-519d-4c81-8cd7-d0079d2f4ed9,SIDEREA,SS39,Mote Key Largo [In Situ],,Blue41,R3,12,0.25
-77d416ba-9ee8-4f71-bce3-0eec7f74e9ad,AC,AC2637,Mote Looe Key [In Situ],,AC-2637,R258,12,0
-23e80bb6-dda5-41cc-a70f-776d926e5d00,AC,AC4,Mote Looe Key [In Situ],,AC-4,R307,12,0.25
-7c7f4ff8-89de-495f-b1bc-c639795c7009,AC,AC1,Mote Looe Key [In Situ],,AC-1,R309,12,0
-8fb460cf-0cae-48b7-8804-8f3bd8d2709d,AC,AC0,Mote Sand Key [In Situ],,UNK-2,R2,12,0
-cce27e70-384b-4075-8b63-b2aade3f505f,OF,OF951,Mote Key Largo [In Situ],,Blue41,R3,11,0.25
-e78ae79a-a13f-4d41-8e37-fd9155b65301,SIDEREA,SS40,Mote Key Largo [In Situ],,Blue71,R10,11,0.25
-713d7cb1-7675-439b-acbb-b627638f94a1,AP,AP22,Mote Looe Key [In Situ],,AP24,R555,11,0
-ad2be621-8df1-4d65-9e65-2e331dd06241,OF,OF1097,Mote Looe Key [In Situ],,OF Project,R214,10,
-c04312c3-8a08-4ff9-8f23-f12896db5c9a,OF,OF1099,Mote Looe Key [In Situ],,OF Project,R214,10,
 298cd781-856a-45d9-9e17-02c9f53ea4d6,OF,OF1105,Mote Looe Key [In Situ],,OF Project,R928,10,0.75
 8bf8ea07-08a7-4f27-8b5a-3efb702e7d0c,OF,OF1095,Mote Looe Key [In Situ],,OF Project,R928,10,0.75
 00d7ccd5-bb2b-4ce6-befc-f8fd80e01c87,OF,OF1101,Mote Looe Key [In Situ],,OF Project,R741,10,0.75
 f8fc787e-b402-4c97-bcd1-27e59a5da4d7,OF,OF1102,Mote Looe Key [In Situ],,OF Project,R1379,10,0.75
 aaa92dc5-b947-4f41-b17e-5789747d9b74,OF,OF1104,Mote Looe Key [In Situ],,OF Project,R1767,10,0.75
 16939fcd-a024-4952-b50f-4ac95d1b679f,OF,OF1103,Mote Looe Key [In Situ],,OF Project,R1767,10,0.75
-4bf189e6-b1c0-4ed7-b81b-21e277d3a55f,OF,OF1096,Mote Looe Key [In Situ],,OF Project,R721,10,0.25
-5288a496-619e-4373-b2b4-8c76f08c6135,OF,OF1098,Mote Looe Key [In Situ],,OF Project,R741,10,0.25
 b2acbe77-f4ab-4f54-b29a-a83997f186f3,OF,OF1100,Mote Looe Key [In Situ],,OF Project,R1379,10,0.75
-888f364c-43c2-4f25-938f-77d28d0493b8,SIDEREA,SS83,Mote Key Largo [In Situ],,Blue41,R3,10,0.25
-3b85ddf6-5c81-4387-b2dd-32e7b3047eba,OF,OF1034,Mote Key Largo [In Situ],,Blue84,R24,10,0.25
-af7dc415-a66c-4f04-8bba-728295a6f5df,AC,AC58,Mote Key Largo [In Situ],,Blue30,R41,10,0.25
-a0cb13ea-b41b-40ec-a8e4-29c367b30d27,OF,OF1105,Mote Islamorada [In Situ],,Red100,R129,10,0.25
-39a23d6d-c8c3-4f76-a5f7-f64e483ee40d,OF,OF1104,Mote Islamorada [In Situ],,Red100,R129,10,0.25
-8279400e-335b-49d6-b358-803d643d2d2f,OF,OF1098,Mote Islamorada [In Situ],,Red99,R359,10,0.25
-16f4f193-8c06-4622-bd27-bd93eb2da52a,OF,OF1099,Mote Islamorada [In Situ],,Red99,R359,10,0.25
 667c9015-41c7-4a84-8725-675dfa01f282,OF,OF1099,Mote Key Largo [In Situ],,Red05,R408,10,0.75
 a009c71e-6f87-4964-b4f5-0e3dde6a219a,OF,OF1104,Mote Key Largo [In Situ],,Red06,R407,10,0.75
-184306d2-d970-44fb-988f-a5f8dd6995b2,OF,OF1095,Mote Islamorada [In Situ],,Red99,R359,10,0.25
-a7262eb7-41dd-4359-ae2b-3334813e75f4,OF,OF1096,Mote Islamorada [In Situ],,Red99,R359,10,0.25
-535e39e9-aefd-4bc8-930a-4af9211f7c50,OF,OF1097,Mote Islamorada [In Situ],,Red99,R359,10,0.25
-c07763e5-8a5c-4cc2-9cbb-a27dd610043d,OF,OF1100,Mote Islamorada [In Situ],,Red100,R129,10,0.25
-f8733243-9372-4a37-a69f-9083f10282a3,OF,OF1101,Mote Islamorada [In Situ],,Red100,R129,10,0.25
-7608eff9-8ea0-4beb-829d-8f7707485215,OF,OF1102,Mote Islamorada [In Situ],,Red100,R129,10,0.25
-905507b4-dd4c-4f9e-88dc-95a3e14f5948,OF,OF1103,Mote Islamorada [In Situ],,Red100,R129,10,0.25
 572936eb-567f-4ce7-86c5-9638894f482c,OF,OF1096,Mote Key Largo [In Situ],,Red05,R408,10,0.75
 2bcb6a6e-331e-410a-911d-413cd175aa15,OF,OF1095,Mote Key Largo [In Situ],,Red05,R408,10,0.75
 dbd4de88-b17d-4740-b288-97d28163b61c,OF,OF1098,Mote Key Largo [In Situ],,Red05,R408,10,0.75
@@ -491,8 +115,566 @@ f653b3dc-3c0a-455b-abef-7814e88d532f,OF,OF1100,Mote Key Largo [In Situ],,Red06,R
 aa76db4f-a562-4f2e-99df-05e9d0e1311e,OF,OF1102,Mote Key Largo [In Situ],,Red06,R407,10,0.75
 cac54306-9ac3-4943-8bd2-5de7712a7aa4,OF,OF1105,Mote Key Largo [In Situ],,Red06,R407,10,0.75
 32b1923f-a347-438b-a2b8-684d79cd8834,AC,AC47,Mote Key Largo [In Situ],,Blue18,R133,10,0.75
+b6faadf6-ee71-4d9f-b647-c646e5940ea4,OF,OF931,Mote Islamorada [In Situ],,Red41,R40,9,0.75
+63110fae-fa68-40dd-869d-bede58f01126,DL,DL283,Mote Islamorada [In Situ],,Red51,R75,8,0.75
+c3bccdb4-9925-4fc9-baea-3fe2f7cb7f96,OF,OF1034,Mote Islamorada [In Situ],,Red72,R23,6,0.75
+b33802ec-95f4-4856-af91-9e234877147e,PC,PC48,Mote Key Largo [In Situ],,Red04,R22,6,0.75
+462f75a2-90e2-4dc3-af5b-e8eb5170ea26,AP,AP44,Mote Key Largo [In Situ],,Unassigned,R1015,6,0.75
+cecc3967-10d1-49d2-855f-28c86e80b55f,AP,AP45,Mote Key Largo [In Situ],,Unassigned,R1016,6,0.75
+8c4b106f-6b79-42c3-b5fb-2536a4762c8f,AC,AC50,Mote Key Largo [In Situ],,Blue03,R1056,6,0.75
+42aebfce-82ce-470f-8758-d7223295c59e,PC,PC24,Mote Key Largo [In Situ],,Blue92,R103,6,0.75
+d73f29e8-ef77-4bbf-b643-46b2892a4925,MC,MC117,Mote Islamorada [In Situ],,Red47,R38,6,0.75
+1f508807-e624-4098-80f2-694726287f7f,MC,MC84,Mote Islamorada [In Situ],,Red49,R44,5,0.75
+bba46c81-9648-4e96-b428-14eb2c57c30e,AC,AC90,Mote Key Largo [In Situ],,Blue28,R132,4,0.75
+473d6287-007c-4b59-94b5-ccaf0fe42a65,OF,OF948,Mote Key Largo [In Situ],,Blue54,R28,4,0.75
+75e858cb-e322-4b50-86e3-c5997aa51b33,AP,AP46,Mote Key Largo [In Situ],,Unassigned,R1017,3,0.75
+8b0610cb-bbaf-4128-84d8-031615a7ee58,AP,AP47,Mote Key Largo [In Situ],,Unassigned,R1018,3,0.75
+832ff63f-ca79-4cba-9a98-2d15db99e379,AP,AP58,Mote Key Largo [In Situ],,Unassigned,R1019,3,0.75
+48667bcf-e480-4c88-a152-382aaba12977,MC,MC77,Mote Key Largo [In Situ],,Blue53,R57,3,0.75
+eba8f682-b193-4ffe-9cb9-b847e68f65be,OF,OF950,Mote Islamorada [In Situ],,Red63,R90,2,0.75
+e39c20f2-a7ce-451c-ac4b-5666f1c68bbc,AP,AP365,Mote Key Largo [In Situ],,Unassigned,R1020,2,0.75
+7f7bca1b-4608-42ee-a57c-90fa6485e429,AP,AP567,Mote Key Largo [In Situ],,Blue44,R29,1,0.75
+187cd090-a9c2-49e7-a7f7-4e398a782ed9,AC,AC2539,Mote Key Largo [In Situ],,Blue68,R1045,1,0.75
+451b8f87-8192-44da-9a67-d9945828fff0,AC,AC2540,Mote Key Largo [In Situ],,Blue68,R1045,1,0.75
+c36a661d-669b-4313-9f3d-5977d7a5b657,AC,AC2578,Mote Key Largo [In Situ],,Blue68,R1045,1,0.75
+d174bb41-4316-4c22-a202-b3dfe8e30dd1,AC,AC2579,Mote Key Largo [In Situ],,Blue68,R1045,1,0.75
+f61a09b6-5c0a-4d13-af5c-00d209a709f1,AP,AP366,Mote Key Largo [In Situ],,Unassigned,R1021,1,0.75
+1e7c57f1-d51d-438c-8ffe-1bc70497e59a,AC,AC51,Mote Key Largo [In Situ],,Blue19,R1,100,0.5
+e4ebebd4-8b18-4611-865f-cda5125eaa61,AC,AC8,Mote Key Largo [In Situ],,Green97,R34,100,0.5
+d7638ff4-2ce9-4ee9-8671-92837537d82d,AC,AC75,Mote Looe Key [In Situ],,AC-75,R381,100,0.5
+851e9c1d-8a26-46e3-8865-d65e538614f9,AC,AC76,Mote Key Largo [In Situ],,Blue06,R81,99,0.5
+aa250273-bc15-43d7-9a98-36d0d50329d3,AC,AC31,Mote Looe Key [In Situ],,AC-31,R271,99,0.5
+12dbc6e8-1b69-4d38-91a9-703b0ee8c2f8,AC,AC2627,Mote Looe Key [In Situ],,AC-2627,R235,98,0.5
+49c20a47-058a-4546-8d42-146f81b43314,AC,AC58,Mote Key Largo [In Situ],,Blue17,R123,96,0.5
+da08cfb5-a137-4f29-a45f-5be5a7cd2b41,SIDEREA,SS163,Mote Islamorada [In Situ],,Red74,R27,96,0.5
+a8870c75-0988-4b50-8a77-c94759bda714,AC,AC58,Mote Key Largo [In Situ],,Blue20,R88,95,0.5
+5db47fa9-81e3-4040-a5da-6eaaeef1c5c6,AC,AC75,Mote Key Largo [In Situ],,Blue04,R63,92,0.5
+bffba2ca-2a03-4171-b1c6-ae8ccafed490,OF,OF957,Mote Islamorada [In Situ],,Red54,R78,91,0.5
+f305e655-eaeb-4942-8efe-ba9bffa2893e,AC,AC76,Mote Key Largo [In Situ],,Blue05,R69,90,0.5
+119e975e-8e65-4876-8568-41e3a5220154,AC,AC20,Mote Key Largo [In Situ],,Green90,R36,90,0.5
+1100c562-24dc-480a-9a12-8409075a82b0,AC,AC13,Mote Key Largo [In Situ],,Green99,R25,90,0.5
+4760daab-e2f9-4939-a5f0-89656cb341c8,OF,OF1041,Mote Islamorada [In Situ],,Red55,R29,90,0.5
+c7437bb2-6185-485a-b291-70a68d3a46f0,AC,AC47,Mote Key Largo [In Situ],,Blue18,R133,89,0.5
+bbf8a533-e439-46fb-801f-d7ca0ca796ff,OF,OF955,Mote Islamorada [In Situ],,Red47,R38,86,0.5
+7ea67320-cf76-4179-95fa-d30c2fe26e4a,OF,OF920,Mote Islamorada [In Situ],,Red52,R76,83,0.5
+72fd864e-a950-4239-8ab4-1123c3355809,AC,AC20,Mote Key Largo [In Situ],,Green100,R61,80,0.5
+1f5eb9ea-f685-4b9d-b0e8-961cee53ce7f,OF,OF930,Mote Islamorada [In Situ],,Red44,R158,78,0.5
+44467841-21fa-4c4f-b8d5-736fccb904b1,OF,OF1038,Mote Islamorada [In Situ],,Red75,R103,78,0.5
+36383eb1-fe1d-4ee5-9ea7-e00af4ee2cb9,PC,PC20,Mote Key Largo [In Situ],,Blue61,R146,69,0.5
+5649cb53-b0cf-4e56-8a6a-a97a43fca27b,AC,AC50,Mote Islamorada [In Situ],,Blue10,R172,57,0.5
+bcc765b0-ca14-4e76-8199-a48d824c61e0,CN,CN38,Mote Islamorada [In Situ],,Red56,R151,53,0.5
+2b692b16-a723-4ebb-8831-c1828e28e49c,AC,AC5,Mote Islamorada [In Situ],,Blue07,R2,53,0.5
+10b01957-3cb4-49b5-a7f1-0f9af1a5c7ac,OF,OF941,Mote Islamorada [In Situ],,Red93,R127,48,0.5
+e8150ac6-85c5-4037-a0e8-e94c269e9a54,MC,MC87,Mote Islamorada [In Situ],,Red65,R93,48,0.5
+e185b1db-b726-4e8b-b4a9-afe57d10b85f,OF,OF927,Mote Islamorada [In Situ],,Red95,R132,47,0.5
+6adc0e3a-4a1c-4b28-8a3d-692155559cef,OF,OF1015,Mote Islamorada [In Situ],,Red42,R4,47,0.5
+d540a643-3b99-49d5-8212-5a2d13c5fb16,OF,OF988,Mote Islamorada [In Situ],,Red77,R154,44,0.5
+768f4aed-6f8d-4e27-a750-cd0e593285da,SIDEREA,SS88,Mote Islamorada [In Situ],,Red74,R27,43,0.5
+24e739c4-45cf-47dc-8dcc-6d96088a65d6,OF,OF950,Mote Islamorada [In Situ],,Red63,R90,42,0.5
+7924851d-6bdb-4b0c-9dca-e2984f7d6235,OF,OF1034,Mote Islamorada [In Situ],,Red72,R23,41,0.5
+a2ddb421-f456-4a98-be24-055772b86b38,OF,OF928,Mote Islamorada [In Situ],,Red94,R130,41,0.5
+d7321a11-d4df-4b6e-a0df-1b7270555ce4,AC,AC7,Mote Key Largo [In Situ],,Green96,R131,39,0.5
+fd1f1707-5761-4f04-b2ae-ceff6c2e71d1,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R632,39,0.5
+cc4982cb-fe96-4af1-8b9c-a092ff765a68,PC,PC38,Mote Looe Key [In Situ],,PC-38,R1973,36,0.5
+8e43affd-3f13-42da-8f06-18bd78f00179,SIDEREA,SS469,Mote Looe Key [In Situ],,SS-468/469,R875,35,0.5
+6b40f5ea-adab-47d5-93b7-9d6649ae42ed,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R1440,34,0.5
+639572a4-cd0f-40bf-b1c6-9d8b01d8d662,SIDEREA,SS87,Mote Looe Key [In Situ],,SS-87/100,R1801,34,0.5
+046a782d-19c8-4321-b06b-3fab958b525c,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R1406,34,0.5
+adfe61cc-51a0-423d-b777-24ab1b8c4044,INTERSEPTA,SI72,Mote Looe Key [In Situ],,SI-18/72,R1730,33,0.5
+2fc930fd-3ba6-4510-889d-d6035bedfd1a,OF,OF953,Mote Islamorada [In Situ],,Red44,R158,33,0.5
+c087f8fc-48e9-4f93-b5eb-31a6e221ff54,INTERSEPTA,SI46,Mote Islamorada [In Situ],,Red62,R86,33,0.5
+ff39bff8-2712-4fd4-b3b1-64cfd08d7f4f,SIDEREA,SS469,Mote Looe Key [In Situ],,SS-468/469,R1489,33,0.5
+ac78fa68-31dd-4afd-bdf7-908934772cf7,SIDEREA,SS99,Mote Looe Key [In Situ],,SS-99/160,R1595,33,0.5
+b98992ed-4614-468e-905d-67f09afc1bf4,INTERSEPTA,SI81,Mote Looe Key [In Situ],,SI-81,R886,33,0.5
+56485aac-62b2-42b2-8752-e240532dcb5b,INTERSEPTA,SI77,Mote Looe Key [In Situ],,SI-77,R775,33,0.5
+273cf563-c21a-4de5-a099-d8723d84dd97,INTERSEPTA,SI77,Mote Looe Key [In Situ],,SI-77,R1016,33,0.5
+b8716adf-ed35-4f50-b18d-deb94483bad3,INTERSEPTA,SI72,Mote Looe Key [In Situ],,SI-18/72,R1909,33,0.5
+2743da75-c0aa-488c-be85-d09378593916,SIDEREA,SS87,Mote Looe Key [In Situ],,SS-87/100,R1977,33,0.5
+c967083d-0ff8-48b0-bd61-52a8ef32962d,SIDEREA,SS469,Mote Looe Key [In Situ],,SS-468/469,R1868,33,0.5
+a50415d0-5493-4ade-98cc-5660edd29bb1,INTERSEPTA,SI18,Mote Looe Key [In Situ],,SI-18/72,R172,33,0.5
+297282c9-5c1d-424c-a53e-30ab2a8f3446,PC,PC50,Mote Key Largo [In Situ],,Red03,R52,32,0.5
+1271515b-889a-4a90-a651-06cd2938bd04,INTERSEPTA,SI81,Mote Looe Key [In Situ],,SI-81,R876,32,0.5
+2ad86657-e415-4d08-a3ba-392e371819b0,OF,OF949,Mote Islamorada [In Situ],,Red76,R150,31,0.5
+150a3d87-5986-44ff-a806-e40462be5222,SS,SS86,Mote Looe Key [In Situ],,SS-85/86,R516,31,0.5
+91b88ee3-4e31-4448-b847-77bd36fadfb4,SS,SS85,Mote Looe Key [In Situ],,SS-85/86,R276,31,0.5
+320aa3ef-5147-4920-a318-39c95243fdda,SIDEREA,SS95,Mote Looe Key [In Situ],,SS-95,R1540,31,0.5
+30f3c61b-9371-4265-a793-a44c43779ac5,DL,DL13,Mote Key Largo [In Situ],,Blue65,R91,31,0.5
+3ed72740-667b-4192-96b3-d15730904750,OF,OF1013,Mote Islamorada [In Situ],,Red71,R98,30,0.5
+4c407ac8-b66a-44ce-80bd-62f96eb93583,CN,CN45,Mote Islamorada [In Situ],,Red56,R151,30,0.5
+fa2323a6-2fda-43b6-83e0-605f0cde976d,MC,MC125,Mote Key Largo [In Situ],,Red03,R52,30,0.5
+cd5ad88e-dfc1-44f6-9d77-7841f6fa434e,RADIANS,SR21,Mote Looe Key [In Situ],,SR-21,R447,30,0.5
+b5477538-41c8-44d2-a43d-26f15bd5a919,INTERSEPTA,SI77,Mote Looe Key [In Situ],,SI-77,R1167,30,0.5
+8b98e23b-cb71-4bd0-88cb-a448fd0721d4,INTERSEPTA,SI77,Mote Looe Key [In Situ],,SI-77,R773,30,0.5
+ab6c5bd4-46a4-43e0-8446-a45fb5644357,INTERSEPTA,SI18,Mote Looe Key [In Situ],,SI-18/72,R1613,30,0.5
+43e381fc-ba9b-424a-9ee8-28a54b6c817e,MC,MC42,Mote Looe Key [In Situ],,Unassigned,R1930,29,0.5
+5ee725fc-2ad5-4bf2-9dd1-2a0ff0c5dc8b,SIDEREA,SS468,Mote Looe Key [In Situ],,SS-468/469,R1578,28,0.5
+488f4f40-f7aa-4150-abae-fd3690c1778a,INTERSEPTA,SI81,Mote Looe Key [In Situ],,SI-81,R184,27,0.5
+57c1bbbf-2674-47bc-883c-29e59df6e1b0,SIDEREA,SS99,Mote Looe Key [In Situ],,SS-99/160,R1605,26,0.5
+52ca8edc-2341-4b78-82db-9f1ef75f9674,SIDEREA,SS468,Mote Looe Key [In Situ],,SS-468/469,R1054,26,0.5
+2ac44cf8-27be-4632-bb81-aa3d80d1590f,OF,OF1011,Mote Islamorada [In Situ],,Red71,R98,25,0.5
+8c924d5c-69ba-486c-8d0f-f4e285bda6c0,SIDEREA,SS99,Mote Looe Key [In Situ],,SS-99/160,R230,25,0.5
+e47af590-a654-4cb7-b688-7d4495f867fc,OF,OF1018,Mote Looe Key [In Situ],,OF-1018/1019,R526,24,0.5
+d5e29a2a-d0cb-463b-b8a1-b241ebeee787,RADIANS,SR21,Mote Looe Key [In Situ],,SR-21,R1464,23,0.5
+4be13873-6912-4b1a-b4e0-3e025b830537,OF,OF1031,Mote Islamorada [In Situ],,Red81,R21,22,0.5
+2d06b897-cdb4-4965-bee5-600a3ee24192,SB,SB13,Mote Looe Key [In Situ],,SB-13,R1285,21,0.5
+876859bb-c48d-4b6a-869c-87fd49efdb7b,DL,DL18,Mote Key Largo [In Situ],,Blue85,R66,20,0.5
+6b9e3e9f-aace-40f6-8ca6-d594c2b68ba5,MC,MC121,Mote Islamorada [In Situ],,Red67,R95,20,0.5
+25f0a27d-9e84-4d62-99e1-cc71dc6e8c0f,SB,SB13,Mote Looe Key [In Situ],,SB-13,R1249,19,0.5
+e6728f29-61db-4872-b223-d0e2adcac1d8,AC,AC70,Mote Key Largo [In Situ],,Blue16,R113,19,0.5
+a0d6824f-59af-4d30-a555-db1c57df40be,SI,SI232,Mote Islamorada [In Situ],,Red58,R81,18,0.5
+ac757783-50f1-4daa-b547-a1e741d0e637,CN,CN12,Mote Looe Key [In Situ],,CN-12/39,R1805,18,0.5
+8cef4a48-f5db-439b-9351-67afde35bbea,OF,OF943,Mote Key Largo [In Situ],,,R258,18,0.5
+0a8c0920-d5cd-485e-b3dc-9d6d2aee97f9,AC,AC34,Mote Key Largo [In Situ],,Blue08,R80,17,0.5
+e67f59c4-1b0a-42ae-b73e-723e70853f66,PC,PC38,Mote Looe Key [In Situ],,PC-38,R1689,16,0.5
+bb8780f7-3a13-4b03-a442-38aae33c03ba,CN,CN39,Mote Looe Key [In Situ],,CN-12/39,R1774,15,0.5
+5f576e03-9d77-47ae-9ae3-656ae353822f,MC,MC11,Mote Islamorada [In Situ],,Red98,R136,14,0.5
+910afc95-57bb-49a9-98c0-63138d9a7e7e,AC,AC50,Mote Key Largo [In Situ],,Blue03,R1056,14,0.5
+18a709ef-d41a-4b07-813c-c92593241843,PC,PC27,Mote Key Largo [In Situ],,Red03,R52,13,0.5
+0450899f-0e32-4951-a4f5-82da750387a5,SIDEREA,SS468,Mote Looe Key [In Situ],,SS-468/469,R920,8,0.5
+0a21bcd2-fef4-436b-a654-cd5ad85a5914,AC,AC90,Mote Key Largo [In Situ],,Blue28,R132,7,0.5
+14237fc8-653a-4327-8bfa-042a96c29cb5,AC,AC94,Mote Key Largo [In Situ],,Blue39,R124,5,0.5
+427adba0-5563-4e03-93c1-f85dd159494f,AC,AC84,Mote Key Largo [In Situ],,Blue11,R40,5,0.5
+86271297-abf3-43d3-a28d-c11c3a683460,AP,AP408,Mote Key Largo [In Situ],,Unassigned,R1025,5,0.5
+75f45525-5b50-42d5-9c00-56e2ec7f2fb8,MC,MC85,Mote Key Largo [In Situ],,Blue82,R104,4,0.5
+366b2c6c-8c61-4875-a74d-dce286a23362,AC,AC2651,Mote Key Largo [In Situ],,Blue46,R5,3,0.5
+2b5e25b3-f608-450a-aaec-213e37f4ebe1,AC,AC2542,Mote Sand Key [In Situ],,CU-128,R13,3,0.5
+3b7faa4c-b7bf-4dbd-a84b-bd7a41921060,AC,AC2634,Mote Key Largo [In Situ],,Blue46,R5,2,0.5
+df4c9734-33ea-4569-b05a-108e9b1dafa6,AP,AP110,Mote Key Largo [In Situ],,Unassigned,R1022,2,0.5
+605368d4-caf8-4141-b08d-883c79623b83,AP,AP144,Mote Key Largo [In Situ],,Unassigned,R1023,2,0.5
+24c8b9a2-28a1-4b4c-bd60-f37a8df9461c,MC,MC124,Mote Key Largo [In Situ],,Blue72,R19,1,0.5
+efc789c6-08fc-4f03-8bd1-b52ec26598a9,OF,OF0,Mote Key Largo [In Situ],,Blue82,R104,1,0.5
+e4c7264b-b008-499e-aba4-6c1f9798cc0e,AP,AP589,Mote Key Largo [In Situ],,Blue44,R29,1,0.5
+55383bd1-47aa-449a-a0fc-ac9d719bd224,AC,AC96,Mote Key Largo [In Situ],,Unassigned,R1042,1,0.5
+b19609f7-fbb6-4f6a-8c34-9b139972f5c3,AC,AC79,Mote Key Largo [In Situ],,Blue58,R1041,1,0.5
+3387b765-9892-483d-8ffe-eaefedebd25f,AP,AP146,Mote Key Largo [In Situ],,Unassigned,R1024,1,0.5
+f3544b7c-d410-47a0-ba17-5e98d216de5d,AC,AC2525,Mote Key Largo [In Situ],,Blue60,R1044,1,0.5
+2758be15-85f4-408f-948d-e45544bc6271,AC,AC2575,Mote Key Largo [In Situ],,Blue68,R1045,1,0.5
+6df0f7d3-d65a-4667-a534-89f1e497bc34,AC,AC2580,Mote Key Largo [In Situ],,Blue68,R85,1,0.5
+f68d1daf-d3c3-4c68-983e-485494551321,AC,AC2607,Mote Key Largo [In Situ],,Purple21,R98,1,0.5
+262a205e-6d01-4f8b-b7fa-7f2bebbf5f7d,AC,AC2582,Mote Key Largo [In Situ],,Blue68,R85,1,0.5
+513d3cc3-63af-428e-a57b-003fd7456faa,AC,AC2611,Mote Key Largo [In Situ],,Blue68,R85,1,0.5
+1e0cb8e8-f7eb-4fc6-9b47-131775fd5ec8,AC,AC2615,Mote Key Largo [In Situ],,Blue68,R85,1,0.5
+a72ce939-64ca-468c-86b7-5de14ad78ff8,AP,AP397,Mote Islamorada [In Situ],,Red11,R3,1,0.5
+337f598f-854d-42a7-b334-30b3dc086a10,AP,AP426,Mote Key Largo [In Situ],,Unassigned,R1027,1,0.5
+118c66eb-9697-4f71-a306-0ea6e626259b,AC,AC34,Mote Key Largo [In Situ],,Blue27,R122,1,0.5
+a18a8283-c482-4d7c-add5-a971b2598f2a,AC,AC3,Mote Looe Key [In Situ],,AC-3,R308,-20,0.5
+a33b5e6c-634d-48e9-955b-56fd461d6c3d,MC,MC102,Mote Key Largo [In Situ],,Blue81,R16,216,0.25
+e873276e-3dcb-4d11-a86e-b07865838a9f,PC,PC26,Mote Key Largo [In Situ],,Blue52,R8,201,0.25
+88c24bde-d6d5-476a-bf5f-c0fa36fc5f98,PC,PC26,Mote Key Largo [In Situ],,Blue51,R148,152,0.25
+d0a94732-3d5e-48e1-bf3b-a6ecab30b737,SB,SB53,Mote Islamorada [In Situ],,Red78,R273,140,0.25
+3188eff9-a130-403c-bfb6-598031d1db1d,AC,AC4,Mote Key Largo [In Situ],,Green93,R94,100,0.25
+9e5babb8-3fad-4e7d-b12f-193333fad3f3,AC,AC3,Mote Key Largo [In Situ],,Green92,R31,100,0.25
+184da116-8948-4fc4-9c50-80cf0c751228,AC,AC88,Mote Key Largo [In Situ],,Blue09,R35,100,0.25
+58e98d0a-0307-46c2-bcb0-fb6926d83de8,AC,AC4,Mote Key Largo [In Situ],,Green83,R37,100,0.25
+20005b45-c4aa-4125-b6c7-8d8d1030a0c4,AC,AC51,Mote Key Largo [In Situ],,Blue13,R38,100,0.25
+9ecea59a-d485-40db-9260-790fde850474,AC,AC1,Mote Key Largo [In Situ],,Green81,R39,100,0.25
+f62bb3f3-29b6-40f0-bb38-6ec868b0ccc3,AC,AC76,Mote Key Largo [In Situ],,Blue15,R79,100,0.25
+2402eaf7-14a5-4226-9a0f-f9a7728840fe,AC,AC2518,Mote Looe Key [In Situ],,AC-2518,R61,100,0.25
+3be393a0-a055-4e39-8ead-4d2b0da7931e,AC,AC2516,Mote Looe Key [In Situ],,AC-2516,R62,100,0.25
+81dc386d-d09b-4c60-af27-67a8708c3938,AC,AC58,Mote Looe Key [In Situ],,AC-58,R385,100,0.25
+de900f69-452f-48bb-a9a9-4bf414231d89,AC,AC1,Mote Islamorada [In Situ],,Blue01,R79,100,0.25
+02230569-890d-4cca-b49c-aa9b9cfc5c20,AC,AC2501,Mote Looe Key [In Situ],,AC-2501,R39,99,0.25
+0948687a-bbb0-4e95-8512-10d1ae71979c,AC,AC80,Mote Looe Key [In Situ],,AC-80,R376,99,0.25
+9c76f66a-0e7d-4701-bbed-de8acfcc52f8,AC,AC1962,Mote Looe Key [In Situ],,AC-1962,R483,99,0.25
+c6a411fb-681f-4e8b-a7d0-ee484dbb99fe,AC,AC2508,Mote Looe Key [In Situ],,AC-2508,R11,98,0.25
+5922e233-ef8f-4db0-951d-fef7b3b598bd,AC,AC2627,Mote Looe Key [In Situ],,AC-2627,R207,98,0.25
+fa04fe1c-9a8a-4828-9515-7f160d7b8d13,AC,AC84,Mote Looe Key [In Situ],,AC-84,R375,98,0.25
+0c384081-4540-4475-bd5a-bafcbbcb3b7d,AC,AC51,Mote Looe Key [In Situ],,AC-51,R326,96,0.25
+aab5f420-1ef7-4c9f-8998-7a751063d77e,AC,AC2635,Mote Looe Key [In Situ],,AC-2635,R259,95,0.25
+6574d4e8-9774-4d43-b9e7-afa56965cb4e,AC,AC1287,Mote Looe Key [In Situ],,AC-1287,R484,94,0.25
+26ff2dfa-c399-46b6-9864-660729b3e21a,AC,AC80,Mote Looe Key [In Situ],,AC-80,R351,93,0.25
+6e3c642e-41ef-4d5b-99ff-a8afa57e64ae,PS,PS14,Mote Key Largo [In Situ],,Blue74,R329,90,0.25
+db51ffac-af61-469d-8def-7b9eca3c8522,AC,AC56,Mote Islamorada [In Situ],,Red09,R175,90,0.25
+08a089a8-04d6-4d19-a4cb-6a86e316e3cf,AC,AC2603,Mote Looe Key [In Situ],,AC-2603,R192,90,0.25
+bcc1df56-a4ed-478e-91b1-931b89f9d1d9,PC,PC50,Mote Key Largo [In Situ],,Blue64,R26,84,0.25
+317e38f6-45f5-4f72-8193-33ccaa223e85,AC,AC2515,Mote Looe Key [In Situ],,AC-2515,R63,84,0.25
+40e53bdf-388e-491b-b3b8-ef422c18deef,AC,AC2528,Mote Looe Key [In Situ],,AC-2528,R58,77,0.25
+e6b77c44-0cf7-4fc6-b140-3636511214e9,AP,AP14,Mote Key Largo [In Situ],,Blue42,R372,76,0.25
+c291f6bf-bf70-4a8f-beb4-a585d67f531e,AC,AC7,Mote Islamorada [In Situ],,Red15,R5,70,0.25
+722745ca-7093-4f84-af6e-28a673fe4560,AC,AC2502,Mote Looe Key [In Situ],,AC-2502,R38,70,0.25
+f3583860-0077-4bc2-a0fe-286e0191f32c,PC,PC21,Mote Key Largo [In Situ],,Blue95,R65,65,0.25
+f06e7b16-85a7-4f06-8ea5-901f88c89a26,INTERSEPTA,SI257,Mote Islamorada [In Situ],,Red59,R36,61,0.25
+0fb42e2a-ec7f-4549-97ba-ef86d15b075a,PC,PC50,Mote Key Largo [In Situ],,Unassigned,R145,60,0.25
+22dd4aa7-345c-4c42-a82a-f463ac7c8b83,AC,AC94,Mote Looe Key [In Situ],,AC-94,R413,59,0.25
+8a0de5fc-2663-460b-a0be-cdd398ab1839,PC,PC49,Mote Key Largo [In Situ],,Blue73,R11,54,0.25
+9647bfed-82d4-4599-98c2-e826084efbe5,AC,AC7,Mote Looe Key [In Situ],,AC-7,R304,54,0.25
+8342c9e5-edd9-447d-8196-fdf00ae4ae39,AC,AC47,Mote Looe Key [In Situ],,AC-47,R329,54,0.25
+e987277f-5096-409a-82c2-dbe0e8370145,AC,AC725,Mote Looe Key [In Situ],,AC-725,R486,54,0.25
+869c9a73-2c0d-43f6-bcef-5e2f419b492d,AC,AC2513,Mote Looe Key [In Situ],,AC-2513,R3,52,0.25
+30d82bd7-00d5-4eb6-8eab-1e5b7ffe75fd,AC,AC95,Mote Looe Key [In Situ],,AC-95,R412,49,0.25
+95c26410-1611-4f52-8af0-449b50776512,AC,AC38,Mote Looe Key [In Situ],,AC-38,R331,43,0.25
+f447a349-a10b-4e35-ad45-6d8a55dbc449,AC,AC84,Mote Looe Key [In Situ],,AC-84,R350,42,0.25
+4c9a56c7-0f19-45c8-b9d5-a44a618f2d1b,AP,AP124,Mote Key Largo [In Situ],,Blue42,R357,40,0.25
+e3d2bed6-95c3-42d5-a40e-dbd41d29bbf3,MC,MC204,Mote Key Largo [In Situ],,Blue93,R154,40,0.25
+5a25fc85-de7f-4aa0-ac5e-fa509bfa8c4b,AC,AC2503,Mote Looe Key [In Situ],,AC-2503,R37,40,0.25
+1a7a6008-6557-409d-8a40-cf9498e71269,AC,AC47,Mote Islamorada [In Situ],,Red07,R167,39,0.25
+81617306-5641-4413-8596-f51b5e24fc04,MC,MC112,Mote Key Largo [In Situ],,Blue86,R13,38,0.25
+1132c702-5afe-4414-abe4-2801a873c70c,MC,MC97,Mote Key Largo [In Situ],,Blue94,R23,36,0.25
+7e7c8631-f09e-49f0-bd5e-9739d919da77,AC,AC2540,Mote Looe Key [In Situ],,AC-2540,R88,35,0.25
+2bf8e6b9-360e-4f03-8fbe-d88839332c66,MC,MC92,Mote Looe Key [In Situ],,MC-63/92,R1997,34,0.25
+823ff7ec-122b-4baf-ab02-b27f0f248352,PC,PC23,Mote Key Largo [In Situ],,Blue61,R146,34,0.25
+fcd7f093-d52e-4a52-b958-18c8ca5285ed,AC,AC2511,Mote Looe Key [In Situ],,AC-2511,R10,34,0.25
+64ba9976-a374-4d02-bf0f-345059451b10,AC,AC46,Mote Looe Key [In Situ],,AC-46,R330,34,0.25
+99873ee1-244a-47fe-969c-1bd0bb74c41f,ASTREOIDES,PA74,Mote Looe Key [In Situ],,PA-56/74,R1577,33,0.25
+19e4add7-c573-47c9-a1c8-b0e43cd66fd6,PC,PC28,Mote Looe Key [In Situ],,PC-28,R1880,30,0.25
+db1d2a6e-cc66-4734-af5c-704ccf6eb21f,PS,PS14,Mote Key Largo [In Situ],,,R150,30,0.25
+c6134716-dbfd-4720-a7fe-24becc932391,AC,AC29,Mote Key Largo [In Situ],,Blue29,R21,30,0.25
+671b2e74-90f4-4574-a198-d1debd81f4c6,AC,AC2539,Mote Looe Key [In Situ],,AC-2539,R89,30,0.25
+dd2c4ed2-f494-4059-9f3f-d8cfa43f2f29,ASTREOIDES,PA74,Mote Looe Key [In Situ],,PA-56/74,R1213,29,0.25
+84eaa114-9a61-4b80-9a3e-a1ccc3ad04a4,PC,PC48,Mote Key Largo [In Situ],,,R94,29,0.25
+e173eaa8-d4e9-44df-a5e2-6393b7af2e35,PC,PC31,Mote Key Largo [In Situ],,Blue85,R66,28,0.25
+fb3c8434-3e7e-4d47-a880-836d75a21006,AC,AC2616,Mote Looe Key [In Situ],,AC-2616,R187,28,0.25
+33c58110-27bf-43e8-a6a5-7d3f18b8f156,AC,AC2634,Mote Looe Key [In Situ],,AC-2634,R255,28,0.25
+91877705-e654-4a35-a788-c1a149a085e1,OF,OF1003,Mote Key Largo [In Situ],,Blue85,R66,27,0.25
+5b75b8c1-2d7f-4eeb-8973-b6094609f8db,AC,AC90,Mote Looe Key [In Situ],,AC-90,R415,27,0.25
+ff309aac-2795-4630-8a57-492d000dee20,OF,OF450,Mote Key Largo [In Situ],,Blue41,R3,26,0.25
+9f84c252-4c75-4cf5-8aab-557437559002,ASTREOIDES,PA56,Mote Looe Key [In Situ],,PA-56/74,R1659,25,0.25
+a3cdd7c8-3eb5-4cba-b7f5-53273d58ffdc,AC,AC94,Mote Key Largo [In Situ],,Blue39,R124,24,0.25
+cd9c44d0-3418-4923-bdee-8aba4d18c7b2,OF,OF1019,Mote Looe Key [In Situ],,OF-1018/1019,R526,24,0.25
+c444d6d0-8b63-4a92-8645-71194a2e7f22,AC,AC89,Mote Looe Key [In Situ],,AC-89,R373,24,0.25
+a2d486ac-4646-4ba8-a339-1dafbbc6ef56,ASTREOIDES,PA56,Mote Looe Key [In Situ],,PA-56/74,R1833,24,0.25
+fb56c305-d1d4-4957-a64f-1f9a1c36cf80,ASTREOIDES,PA56,Mote Looe Key [In Situ],,PA-56/74,R1994,24,0.25
+9e70a752-5c8c-47ac-890c-a91f93ff19ce,ASTREOIDES,PA74,Mote Looe Key [In Situ],,PA-56/74,R1766,23,0.25
+2902d287-2c7e-4f05-9b0f-fd0e76fa7f65,MC,MC80,Mote Key Largo [In Situ],,Blue86,R13,23,0.25
+80cb38e2-b3e4-4c37-80ec-e9cd009a799f,RADIANS,SR4,Mote Looe Key [In Situ],,SR-4/190,R1200,23,0.25
+4a04b5f2-6ea9-4302-a962-710758fab098,ASTREOIDES,PA56,Mote Looe Key [In Situ],,PA-56/74,R1667,23,0.25
+f643ad64-ba00-4236-a219-281423ff4c7c,AC,AC2533,Mote Looe Key [In Situ],,AC-2533,R90,22,0.25
+bc068a95-0f01-4afc-9b8e-40ceec0fd004,OF,OF1025,Mote Key Largo [In Situ],,Red02,R18,21,0.25
+3d40b5e7-31c4-47cb-ab73-a5f6f437374d,OF,OF1028,Mote Key Largo [In Situ],,Red02,R18,21,0.25
+de614105-4a5b-4e30-b3e6-bc1f7db9899e,PC,PC46,Mote Key Largo [In Situ],,Blue83,R54,21,0.25
+0d6e3bf8-db72-49b8-a7b7-eb11f6819d3b,AC,AC4,Mote Islamorada [In Situ],,Blue02,R157,21,0.25
+676eba73-b485-4f01-a85a-42d1beadee2e,PS,PS1,Mote Looe Key [In Situ],,PS-1,R7,20,0.25
+aeae6f1a-f924-40ff-bfe6-33e9f15c8fe3,AC,AC2631,Mote Looe Key [In Situ],,AC-2631,R233,20,0.25
+5c27af74-061c-42d9-b793-a3e9d9b2d934,AC,AC79,Mote Looe Key [In Situ],,AC-79,R377,20,0.25
+324f09cc-1a3f-43db-83e0-ecef526215af,PC,PC28,Mote Looe Key [In Situ],,PC-28,R1903,19,0.25
+a61bd7b9-590d-4225-8cd7-1bac8b2ae875,OF,OF1012,Mote Islamorada [In Situ],,Red71,R98,18,0.25
+e2ed390a-0646-42dc-96c7-c6ab93ff91f5,PS,PS4,Mote Looe Key [In Situ],,PS-4,R4,18,0.25
+95441c5a-2db1-45dc-beef-c460ac3d1f95,OF,OF1023,Mote Key Largo [In Situ],,Red02,R18,17,0.25
+1ea54ca9-41d4-4b80-a232-93d630d49834,PC,PC43,Mote Key Largo [In Situ],,Blue71,R10,16,0.25
+46e5e52f-6bdb-4bd3-a085-5e1af509c5f9,DS,DS5,Mote Key Largo [In Situ],,Blue71,R10,16,0.25
+6a3d9690-2d60-4f63-985e-d71598623386,MC,MC104,Mote Key Largo [In Situ],,Blue84,R24,16,0.25
+5edb8624-68c4-457c-91ed-0a9efadd6ab3,AC,AC48,Mote Looe Key [In Situ],,AC-48,R328,16,0.25
+f3fa3f20-2ff2-40c0-9690-18753f8d344e,OF,OF1033,Mote Key Largo [In Situ],,Blue84,R24,15,0.25
+f793c58f-803d-4730-9256-930390ef80b8,AC,AC2505,Mote Looe Key [In Situ],,AC-2505,R36,14,0.25
+c408c0d9-d4aa-4807-ba5a-58006faaf071,OF,OF953,Mote Key Largo [In Situ],,Blue43,R4,12,0.25
+4f95225a-3e23-44c7-964a-8dc049072841,OF,OF919,Mote Key Largo [In Situ],,Blue41,R3,12,0.25
+4b613276-519d-4c81-8cd7-d0079d2f4ed9,SIDEREA,SS39,Mote Key Largo [In Situ],,Blue41,R3,12,0.25
+23e80bb6-dda5-41cc-a70f-776d926e5d00,AC,AC4,Mote Looe Key [In Situ],,AC-4,R307,12,0.25
+cce27e70-384b-4075-8b63-b2aade3f505f,OF,OF951,Mote Key Largo [In Situ],,Blue41,R3,11,0.25
+e78ae79a-a13f-4d41-8e37-fd9155b65301,SIDEREA,SS40,Mote Key Largo [In Situ],,Blue71,R10,11,0.25
+4bf189e6-b1c0-4ed7-b81b-21e277d3a55f,OF,OF1096,Mote Looe Key [In Situ],,OF Project,R721,10,0.25
+5288a496-619e-4373-b2b4-8c76f08c6135,OF,OF1098,Mote Looe Key [In Situ],,OF Project,R741,10,0.25
+888f364c-43c2-4f25-938f-77d28d0493b8,SIDEREA,SS83,Mote Key Largo [In Situ],,Blue41,R3,10,0.25
+3b85ddf6-5c81-4387-b2dd-32e7b3047eba,OF,OF1034,Mote Key Largo [In Situ],,Blue84,R24,10,0.25
+af7dc415-a66c-4f04-8bba-728295a6f5df,AC,AC58,Mote Key Largo [In Situ],,Blue30,R41,10,0.25
+a0cb13ea-b41b-40ec-a8e4-29c367b30d27,OF,OF1105,Mote Islamorada [In Situ],,Red100,R129,10,0.25
+39a23d6d-c8c3-4f76-a5f7-f64e483ee40d,OF,OF1104,Mote Islamorada [In Situ],,Red100,R129,10,0.25
+8279400e-335b-49d6-b358-803d643d2d2f,OF,OF1098,Mote Islamorada [In Situ],,Red99,R359,10,0.25
+16f4f193-8c06-4622-bd27-bd93eb2da52a,OF,OF1099,Mote Islamorada [In Situ],,Red99,R359,10,0.25
+184306d2-d970-44fb-988f-a5f8dd6995b2,OF,OF1095,Mote Islamorada [In Situ],,Red99,R359,10,0.25
+a7262eb7-41dd-4359-ae2b-3334813e75f4,OF,OF1096,Mote Islamorada [In Situ],,Red99,R359,10,0.25
+535e39e9-aefd-4bc8-930a-4af9211f7c50,OF,OF1097,Mote Islamorada [In Situ],,Red99,R359,10,0.25
+c07763e5-8a5c-4cc2-9cbb-a27dd610043d,OF,OF1100,Mote Islamorada [In Situ],,Red100,R129,10,0.25
+f8733243-9372-4a37-a69f-9083f10282a3,OF,OF1101,Mote Islamorada [In Situ],,Red100,R129,10,0.25
+7608eff9-8ea0-4beb-829d-8f7707485215,OF,OF1102,Mote Islamorada [In Situ],,Red100,R129,10,0.25
+905507b4-dd4c-4f9e-88dc-95a3e14f5948,OF,OF1103,Mote Islamorada [In Situ],,Red100,R129,10,0.25
+72335324-7e52-435f-a930-7de5e59380d5,AC,AC2512,Mote Looe Key [In Situ],,AC-2512,R5,10,0.25
+20d43ad5-05d6-40bd-836a-bd8118d24448,AC,AC2582,Mote Looe Key [In Situ],,AC-2582,R137,10,0.25
+2fc9010f-c9a1-4aea-93af-a5167762873c,OF,OF995,Mote Key Largo [In Situ],,Blue43,R4,9,0.25
+60a07a8a-2946-4fd5-ba7d-8a01959ff585,MC,MC108,Mote Key Largo [In Situ],,Blue71,R10,8,0.25
+742804bf-725c-467a-8c4b-58c44bca124c,AC,AC56,Mote Key Largo [In Situ],,Blue30,R41,8,0.25
+74537b58-8595-4ad4-b8d6-c3cb708633fb,AC,AC2544,Mote Looe Key [In Situ],,AC-2544,R87,8,0.25
+30f0abd6-7038-4281-b26d-5688a131a856,OF,OF995,Mote Key Largo [In Situ],,Blue41,R3,7,0.25
+a597091c-3730-4a9b-8920-b630f7f93d2d,AC,AC2985,Mote Key Largo [In Situ],,Blue57,R1069,7,0.25
+df108c7c-3567-4a72-928d-d9df1062e488,OF,OF1014,Mote Key Largo [In Situ],,Red02,R18,7,0.25
+ade17f14-c029-4f45-9e26-ab641db9e445,SIDEREA,SS41,Mote Key Largo [In Situ],,Blue71,R10,6,0.25
+54491b8d-d1a3-4674-b049-a94256ceadfd,OF,OF1006,Mote Key Largo [In Situ],,Red02,R18,6,0.25
+34c20e55-496b-4455-b2b9-884ece8050bb,AC,AC2982,Mote Key Largo [In Situ],,Blue57,R1069,6,0.25
+ea087ae3-0693-4ea7-bbee-896aa66618d5,AP,AP19,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
+6a9fba67-a0f7-4988-bc8d-58b0a62c114e,AP,AP24,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
+39b18b5b-f0da-449c-b5e5-b7f08ec7ac59,AP,AP36,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
+24f86722-3ad5-4c15-910f-b7defece721f,AP,AP37,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
+5f477ae7-46dd-434e-932a-443269d0efff,AP,AP39,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
+d0a946bd-ad13-4fee-a882-d2588f48d9ff,AP,AP40,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
+c5dbda26-1ad5-493d-9277-c06097aebe0c,AP,AP41,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
+361dd815-a147-42a0-a49d-fbbc17e83c00,AP,AP42,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
+08bf289f-27ed-44e7-a73c-f822b3284846,AP,AP1,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
+b9166f27-b7b6-4845-b2a8-1174e2a1e419,AP,AP7,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
+c2ff7bed-910d-46e1-95d9-84c36ff2a81b,AP,AP8,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
+d50e1f79-6078-475b-be9a-126a2a4a333b,AP,AP14,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
+6f0aaa36-123b-4cae-a9f4-eb449dd66b76,AP,AP16,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
+7c68a4ef-c014-4eb9-bbd5-a446cac551db,AP,AP45,Mote Key Largo [In Situ],,Blue32,R56,6,0.25
+358df58d-d8a9-4cfa-9ec1-4ca1dbd5cccd,AP,AP44,Mote Key Largo [In Situ],,Blue32,R56,6,0.25
+5e436392-56fb-4010-8595-9c7ecfa445c1,AC,AC2612,Mote Looe Key [In Situ],,AC-2612,R189,6,0.25
+40316b93-e151-4aaa-bc69-b7c019c03025,OF,OF932,Mote Key Largo [In Situ],,,R79,5,0.25
+7ff37275-199d-4c6c-9ff7-eedbcfc11d0f,AP,AP408,Mote Key Largo [In Situ],,Blue42,R372,5,0.25
+2c80a583-a3e7-43b2-b528-f8ba750d3206,AC,AC50,Mote Key Largo [In Situ],,Blue45,R2,4,0.25
+99d144f5-8527-4f28-b110-895fede97c20,AC,AC2612,Mote Key Largo [In Situ],,Blue45,R2,4,0.25
+f5492681-2e9b-4aba-b5a4-a1105988df9e,AC,AC2986,Mote Key Largo [In Situ],,Blue57,R1069,4,0.25
+864cc99a-68bd-4a49-8f53-adcb68dd0080,AC,AC2616,Mote Key Largo [In Situ],,Blue45,R2,4,0.25
+6d4a0524-9e06-46ab-9be1-76806e457d79,AC,AC2631,Mote Key Largo [In Situ],,Blue45,R2,4,0.25
+537f36f2-406e-4791-a80f-d3c30e1ebed5,OF,OF957,Mote Key Largo [In Situ],,Blue43,R4,3,0.25
+77bed7d2-fda7-43ce-8de9-53dcc4a1b8c0,AC,AC2601,Mote Key Largo [In Situ],,Blue45,R2,3,0.25
+c5b4ea40-bb29-4931-a1e6-36ebf33ec3f9,AC,AC2984,Mote Key Largo [In Situ],,Blue57,R1069,3,0.25
+577c3ba1-9485-4acc-bd4e-54f4fc95586f,AC,AC2514,Mote Key Largo [In Situ],,Blue56,R9,3,0.25
+adf40997-7b62-432e-b4e9-2e4517ec8995,AC,AC2515,Mote Key Largo [In Situ],,Blue56,R9,3,0.25
+0b0bd5f4-35d7-448a-8a1a-81b1777d5a9d,AP,AP38,Mote Key Largo [In Situ],,Blue49,R20,3,0.25
+667f5cf0-62a3-4653-a3ad-4d89b813e318,AC,AC2516,Mote Key Largo [In Situ],,Blue56,R9,3,0.25
+cafe2703-50af-4ea3-bbe4-7d464b73bd4a,AC,AC2539,Mote Key Largo [In Situ],,Blue47,R6,3,0.25
+5119df92-5736-49bf-bc79-773283c239f8,AC,AC2572,Mote Key Largo [In Situ],,Blue47,R6,3,0.25
+8df57855-6726-4c24-9e58-0af7832917bd,AC,AC2533,Mote Key Largo [In Situ],,Blue47,R6,3,0.25
+bc9c74f8-ba4f-480c-8a9b-f053d18b4168,AP,AP58,Mote Key Largo [In Situ],,Blue32,R56,3,0.25
+ba909b42-2734-429b-821f-f99187252128,AP,AP47,Mote Key Largo [In Situ],,Blue32,R56,3,0.25
+14a383c8-17f9-4502-8f4c-493fbd98f9fe,AP,AP46,Mote Key Largo [In Situ],,Blue32,R56,3,0.25
+359b8050-f6be-4fe8-9c78-bc956f66226e,AC,AC2523,Mote Looe Key [In Situ],,AC-2523,R59,3,0.25
+a67affe6-8c04-433f-a276-312c58fc15e2,AC,AC50,Mote Key Largo [In Situ],,Blue03,R1056,2,0.25
+3d326190-0f7d-4455-88bd-fbd4f666f13a,AC,AC84,Mote Key Largo [In Situ],,Blue11,R40,2,0.25
+b27aa494-2ba3-4889-8a6b-9a6064c19bf8,OF,OF950,Mote Key Largo [In Situ],,Blue43,R4,2,0.25
+2c13fbef-de10-4570-93ec-044494497dca,OF,OF1005,Mote Key Largo [In Situ],,Blue43,R4,2,0.25
+117c2d72-0d05-444b-871a-a5175546425c,AC,AC36,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
+142ae2c1-b48d-4e4c-999e-e7ad76d9a448,AC,AC2603,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
+c00df225-ce96-4ca5-943e-2be3c707c8cc,AC,AC2983,Mote Key Largo [In Situ],,Blue57,R1069,2,0.25
+8b88920f-cd5a-4ba9-b06b-6b6822f78fd5,AC,AC2923,Mote Key Largo [In Situ],,Blue55,R92,2,0.25
+c79fa6ea-05b2-4245-b169-e307a33a1132,AC,AC2924,Mote Key Largo [In Situ],,Blue55,R92,2,0.25
+fd1956ca-3d14-455d-874c-e2c49ec36168,AC,AC2925,Mote Key Largo [In Situ],,Blue55,R92,2,0.25
+b6295c46-fb63-48b3-a517-0a1ebba86078,AC,AC2607,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
+2792070b-9724-43cc-aeb8-b6d7eb254192,AC,AC2627,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
+fea0c332-1c62-433f-b4e1-6bb4be255abc,AC,AC2618,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
+b573dfd0-eee1-4606-b9be-567020b43254,AC,AC2508,Mote Key Largo [In Situ],,Blue56,R9,2,0.25
+06bbf522-7767-477b-91a1-fb0af1238b88,AC,AC2938,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
+c153b942-91cb-448b-956c-12727b644b11,AC,AC2939,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
+a941daad-b836-48b6-a9a1-2cadf165f825,AC,AC2940,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
+e9f8ebfa-5611-4837-8641-211487394d30,AC,AC2926,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
+85ee7d9d-4042-429c-bd7c-0e285d2d342e,AC,AC2635,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
+905070ca-c734-4c8b-a3a3-5dd2a2a81c9c,AC,AC2544,Mote Key Largo [In Situ],,Blue47,R6,2,0.25
+ea876363-902c-453c-8638-2ff92b44b7b7,AC,AC2580,Mote Key Largo [In Situ],,Blue47,R6,2,0.25
+21210289-3ddf-49a4-9457-07cdef36cbb6,AC,AC2518,Mote Key Largo [In Situ],,Blue47,R6,2,0.25
+4814ff70-f7de-40d8-861c-658ab70ba6e0,AP,AP590,Mote Key Largo [In Situ],,Blue44,R83,2,0.25
+59b4c341-c51f-4cfd-9487-c68120bd6599,AC,AC2987,Mote Key Largo [In Situ],,Blue57,R1069,2,0.25
+0669e75f-0ce7-4fb3-8e9f-e3675358e5bc,AP,AP365,Mote Key Largo [In Situ],,Blue32,R56,2,0.25
+1849a9db-be24-4bd8-a6a3-d7a7cd91b37b,AP,AP144,Mote Key Largo [In Situ],,Blue32,R56,2,0.25
+ed0fde08-a4d3-4304-845d-f2a3770ba864,AP,AP110,Mote Key Largo [In Situ],,Blue32,R56,2,0.25
+543a6ba3-93ec-45a8-a90c-58c07e683a69,AC,AC6,Mote Key Largo [In Situ],,Green95,R27,2,0.25
+16855dce-1161-4aa5-a630-34b5a5989cb5,AP,AP480,Mote Key Largo [In Situ],,Blue49,R17,2,0.25
+9903a7a3-510e-47ee-af9e-96ba36bf3b45,AC,AC2634,Mote Key Largo [In Situ],,Purple25,R70,1,0.25
+d777f8f1-7132-4d6d-a532-1dd9fa391769,AC,AC2924,Mote Key Largo [In Situ],,Purple27,R72,1,0.25
+658eefcc-b01d-4bcb-ba2a-5eb0f57cde82,AC,AC2929,Mote Key Largo [In Situ],,Purple28,R74,1,0.25
+fa57f4ee-e1d6-48b4-b2b2-60eda6348ba7,AC,AC2939,Mote Key Largo [In Situ],,Purple29,R75,1,0.25
+ec528734-fbc7-49c8-9741-01cf6136aaf9,AC,AC2613,Mote Key Largo [In Situ],,Purple22,R67,1,0.25
+b957812b-c50b-4d02-bd06-003c7f80ef05,AC,AC2651,Mote Key Largo [In Situ],,Purple26,R71,1,0.25
+80244401-23be-4a60-9fec-c87131bc144e,AC,AC2601,Mote Key Largo [In Situ],,Purple20,R77,1,0.25
+87ea2fd0-2755-4970-b512-924bdb2aef55,AC,AC2638,Mote Key Largo [In Situ],,Blue46,R5,1,0.25
+f2e97cb7-1512-4b42-a403-5106f876da26,AC,AC2639,Mote Key Largo [In Situ],,Blue46,R5,1,0.25
+47ed2f27-6f1b-4df3-a7bc-07c785401af5,AC,AC2988,Mote Key Largo [In Situ],,Blue57,R1069,1,0.25
+8e39b351-00e4-48d7-9136-48703c42e896,AC,AC2505,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
+40791cfe-e59e-498e-b4d7-d380868eb46f,AC,AC1836,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
+406a2a0d-6122-483d-b61a-9502bb683fdb,AC,AC2627,Mote Key Largo [In Situ],,Purple24,R1002,1,0.25
+44c4602f-d01c-4793-b19c-afa2f178a0ee,AC,AC2506,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
+003b8033-bdf8-4c45-96a1-c718c354c9c7,AC,AC2511,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
+85d0d60e-5b40-46cc-bccf-2d19cd9da48d,AC,AC2513,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
+67f89926-39f8-4425-a85e-29ddc18bea92,AC,AC2633,Mote Key Largo [In Situ],,Blue46,R5,1,0.25
+d655f763-8010-4c52-8cf9-32aae70e62c5,AC,AC2534,Mote Key Largo [In Situ],,Blue47,R6,1,0.25
+d43f5b20-f626-40d9-a66f-39c468a82cbe,AC,AC2537,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+8e507435-6304-4b52-b1f1-3e682403d84b,AC,AC2545,Mote Key Largo [In Situ],,Blue68,R1045,1,0.25
+999bf608-4c34-464c-8162-2e0293ef20e7,AC,AC2523,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+c2238845-c5ed-4c5f-9a57-a86765738559,AC,AC2530,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+4afc32db-e85e-4503-9997-44792b93f272,AC,AC2531,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+3f79aeff-7016-48e8-8516-160aee79761d,AC,AC2532,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+9d1ab892-a41b-42fc-ba48-c1c616304b23,AC,AC2572,Mote Key Largo [In Situ],,Purple19,R43,1,0.25
+7dc01793-b0ee-4dfe-9450-74fd9b0fb7e1,AC,AC2528,Mote Key Largo [In Situ],,Purple16,R46,1,0.25
+09e67404-c426-407b-bd80-70e30412729c,AC,AC2513,Mote Key Largo [In Situ],,Purple15,R48,1,0.25
+6613b3e7-223f-4711-9cc8-606202b97346,AC,AC2506,Mote Key Largo [In Situ],,Purple12,R58,1,0.25
+6893497b-eb7a-417e-8085-f2b4db11c3cc,AC,AC1287,Mote Key Largo [In Situ],,Purple11,R62,1,0.25
+d4591bf6-4982-4601-b456-22dcb6fe8a7a,AC,AC2544,Mote Key Largo [In Situ],,Purple18,R44,1,0.25
+409a5894-7eee-4fac-805e-8a062ed8571b,AC,AC2534,Mote Key Largo [In Situ],,Purple17,R45,1,0.25
+0b3e01bb-87e8-4c67-b801-60e89816a495,AC,AC2511,Mote Key Largo [In Situ],,Purple14,R51,1,0.25
+9a84600f-0df0-40b1-a181-3deb3d09ff49,AC,AC2508,Mote Key Largo [In Situ],,Purple13,R55,1,0.25
+4513375d-5a5a-472e-84d3-f95ccac4629d,AC,AC2519,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+a7485273-9f11-48b1-8f41-432f46727ae5,AC,AC2520,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+8fcbbd32-f911-4cf0-9155-4f92bf192c37,AC,AC2522,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+96a127b8-6764-43f7-a085-8d28fdbca658,AC,AC2512,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
+a605da7b-299e-49ec-b240-a4d18222a8df,AC,AC2942,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+2b035fab-9e65-4f43-8d7c-d62eb2f2192c,AC,AC2632,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+f1cfa39e-c6bd-45d8-8015-7b84bd52d27c,AC,AC2637,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+530bfe49-6127-45e0-bd34-1f282d4e503a,AC,AC2640,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+04d79786-bf06-4fd3-b7e0-337bffa958df,AC,AC2930,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+9ab1c464-a70e-4c1f-81d1-667a69b6ce2e,AC,AC2928,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+ba5fc523-6159-420d-8a5c-085a6345a3ea,AC,AC2941,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+e8d45131-aece-44d1-bfbb-b17c3e7fe303,AC,AC2934,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+ba2553ce-96b2-4575-a60b-499bfd053749,AC,AC2932,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+ab298616-578f-4652-823d-6887ca95d574,AC,AC2628,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
+9571f89d-bdcf-4bac-96dd-d842802af377,AC,AC2529,Mote Key Largo [In Situ],,Blue47,R6,1,0.25
+e1662b0b-4443-45cd-b311-1a3a8ad81152,AC,AC96,Mote Key Largo [In Situ],,Blue57,R1069,1,0.25
+94dcc3f2-adbf-4f62-933e-ce4b34954a9d,AP,AP366,Mote Key Largo [In Situ],,Blue32,R56,1,0.25
+5f8460f7-6cf8-4b9e-be35-43cf9ab6eb9c,AP,AP146,Mote Key Largo [In Situ],,Blue32,R56,1,0.25
+1a263013-f419-48c3-b9f1-3c3a3e3e9777,AP,AP426,Mote Key Largo [In Situ],,Blue42,R372,1,0.25
+a8d1a1c6-7f4b-487e-813f-1e2e731ada0a,INTERSEPTA,SI80,Mote Looe Key [In Situ],,SI-80,R493,304,0
+d6708965-efa4-41ab-8813-13ab59d50014,MC,MC203,Mote Looe Key [In Situ],,MC-203,R95,193,0
+93ead21c-919b-4e10-83fa-44c6ddd0b105,MC,MC108,Mote Looe Key [In Situ],,MC-108,R65,181,0
+7368d63c-f1d9-4bdc-98ec-a95ef64b1e46,SS,SS463,Mote Looe Key [In Situ],,SS-463,R514,174,0
+3afbf1bf-e4af-4531-9567-0ca818c93108,DL,DL271,Mote Looe Key [In Situ],,DL-271,R313,173,0
+960d7a1d-abfd-478f-b91f-f110e0a4413f,PC,PC38,Mote Looe Key [In Situ],,PC-38,R464,159,0
+27fda12d-9de0-44e2-bdc5-c05d33cd7e99,OF,OF971,Mote Looe Key [In Situ],,OF971,R215,135,0
+16a76908-da9b-4459-b9dd-0a376c3dc54b,SI,SI76,Mote Looe Key [In Situ],,SI-76,R490,132,0
+65daa9ec-389e-4368-b528-27fb97990154,OA,OA9,Mote Looe Key [In Situ],,OA-9,R337,121,0
+24dcc6b4-d57b-44c7-856a-64b65c6fedc0,CN,CN46,Mote Looe Key [In Situ],,CN-29/46,R684,116,0
+704d6252-5468-4a36-a0f1-deab28cd43fa,CN,CN39,Mote Looe Key [In Situ],,CN-12/39,R365,104,0
+34f1ba14-a331-4783-9981-66f84668d5d5,AC,AC51,Mote Sand Key [In Situ],,AC-51,R18,100,0
+079bedf2-2290-4759-a7e1-c9e3120211e7,AC,AC3,Mote Looe Key [In Situ],,AC-3,R308,100,0
+0aacf3c7-96e0-4282-a6d4-d93e8ec387dc,AC,AC88,Mote Key Largo [In Situ],,Blue23,R60,100,0
+a839a08c-cce7-411e-a58c-37a607169d0b,AC,AC62,Mote Looe Key [In Situ],,AC-62,R383,100,0
+8aaff6e9-af72-440f-8c39-d8e7ba015780,AC,AC80,Mote Sand Key [In Situ],,80,R16,100,0
+7395f6b3-1412-40d5-836c-e29f7d2ec94b,AC,AC58,Mote Key Largo [In Situ],,Blue01,R50,100,0
+069f6728-490d-45dd-9a5a-cf4f92f17ce0,AC,AC36,Mote Looe Key [In Situ],,AC-36,R332,99,0
+7eb07a6c-4d74-41a0-bb01-e44d6505516b,AC,AC34,Mote Looe Key [In Situ],,AC-34,R333,99,0
+0cf2b13b-bfb1-4348-9b46-5d1c241f74e3,AC,AC75,Mote Key Largo [In Situ],,Blue22,R110,99,0
+85b4879f-dde9-4df8-8e98-ea1b6c1596d8,AC,AC10,Mote Looe Key [In Situ],,AC-10,R302,98,0
+90bc4d71-3f90-492e-ad0d-52c04f3ad3b2,PC,PC12,Mote Looe Key [In Situ],,PC-12,R419,96,0
+5f953c00-60b5-4cf8-93f4-c1f53e49e0a3,OF,OF187,Mote Looe Key [In Situ],,OF-186/187,R17,95,0
+b31c3cae-eccf-4455-905e-bc9fd3274bd3,AC,AC51,Mote Sand Key [In Situ],,51,R10,95,0
+792891eb-277a-4685-82f9-3ba6bc9cbc1a,AC,AC62,Mote Sand Key [In Situ],,62,R17,95,0
+1ef39122-379f-40be-be29-ed355567e669,CN,CN75,Mote Looe Key [In Situ],,CN-49/75,R367,92,0
+12e016c2-dc0f-4674-824e-7f0ef230a5bc,CN,CN49,Mote Looe Key [In Situ],,CN-49/75,R683,90,0
+3f145301-6f67-494b-b25d-a187edd87df1,AC,AC62,Mote Sand Key [In Situ],,AC-62,R19,89,0
+01042469-156d-49af-9c37-6e949300bd27,PC,PC39,Mote Looe Key [In Situ],,PC-39,R465,89,0
+bf2d5ff4-cb46-4059-9471-2985f8fdfad8,RADIANS,SR21,Mote Looe Key [In Situ],,SR-21,R537,88,0
+a04775df-d6a0-4a6a-bd9c-0ddc5a1b3268,PC,PC35,Mote Looe Key [In Situ],,PC-35,R445,87,0
+5be66082-c500-4975-91d3-31a8300a9adf,AC,AC3,Mote Key Largo [In Situ],,Blue14,R33,87,0
+c13c3345-241c-4ceb-8010-6cb6e647e505,AC,AC2580,Mote Looe Key [In Situ],,AC-2580,R138,86,0
+e0b2afb4-498d-4260-87e6-261e04f03e55,DL,DL20,Mote Looe Key [In Situ],,DL-20,R263,82,0
+0113952f-9be0-4099-bfc1-f2f9e3fe67a4,PS,PS23,Mote Looe Key [In Situ],,PS-23,R133,80,0
+b4bff960-31c8-4773-851f-1c8b362006ec,PC,PC32,Mote Looe Key [In Situ],,PC-32,R442,79,0
+9f966e5a-daa1-496f-930a-1fb47c4b70b4,AC,AC2651,Mote Looe Key [In Situ],,AC-2651,R161,78,0
+cd750d04-10c8-4d29-be43-d68f964df93e,PC,PC33,Mote Looe Key [In Situ],,PC-33,R443,78,0
+820b1ce9-d759-4da3-822d-8d6e80df3735,DL,DL0,Mote Looe Key [In Situ],,2021 SR,R391,76,0
+6490dbbe-a373-4165-9bb8-ee8ff36447d9,PC,PC28,Mote Looe Key [In Situ],,PC-28,R439,76,0
+a562c546-f43c-48f0-87ff-7818735abb85,CN,CN30,Mote Looe Key [In Situ],,CN-8/30,R681,75,0
+697a1d86-c72f-40ab-b80e-bb79591db450,PC,PC23,Mote Looe Key [In Situ],,PC-23,R438,75,0
+c73423f5-ed4d-45bf-bc83-b05e40332b63,AC,AC2627,Mote Sand Key [In Situ],,RD-2,R7,75,0
+bdc90e1b-10b7-4b0d-901d-a2d3bf2a1c3f,AC,AC10,Mote Sand Key [In Situ],,10,R8,75,0
+c9268703-26bb-4f16-8ddf-2c3d18fd64c1,SS,SS160,Mote Looe Key [In Situ],,SS-99/160,R513,72,0
+b1d46625-fbe2-4abc-bd05-539aba091707,CN,CN31,Mote Looe Key [In Situ],,CN-7/31,R363,68,0
+b76d1e3c-dccd-46eb-b8e6-c4f0e5682007,OF,OF1035,Mote Looe Key [In Situ],,OF-1035,R210,67,0
+18afca0f-3a91-4e34-bf76-d255c9033273,PC,PC30,Mote Looe Key [In Situ],,PC-30,R440,66,0
+9e570839-e3da-4cda-925f-f82622e5da30,AC,AC1,Mote Key Largo [In Situ],,Green91,R76,65,0
+659bceda-a62d-4f73-a00c-bade6941f95e,AC,AC77,Mote Looe Key [In Situ],,AC-77,R379,64,0
+94749931-1b64-4ef6-bb77-0f07a45be690,PC,PC34,Mote Looe Key [In Situ],,PC-34,R444,62,0
+7733ad30-4dbd-49fa-9161-2a79c2b5126c,MC,MC127,Mote Looe Key [In Situ],,MC-126/127,R94,61,0
+d92f781f-825b-443a-99ef-f8c9f2ab35f0,PC,PC15,Mote Looe Key [In Situ],,PC-15,R409,61,0
+57b8a1ba-21d2-4fd8-8ad9-7637b8f1c292,AC,AC31,Mote Sand Key [In Situ],,31,R15,60,0
+ce781feb-7d0b-4ef1-b959-d2c4b807e029,AC,AC2516,Mote Sand Key [In Situ],,CU-038,R14,59,0
+3432602c-bc1a-46e4-bdb2-06af9181f6d4,DL,DL17,Mote Looe Key [In Situ],,DL-17,R311,57,0
+de965a29-8968-463f-9699-4cf111df0761,PC,PC31,Mote Looe Key [In Situ],,PC-31,R441,57,0
+ce9b5c7e-6f0e-4aec-a261-616340be9511,OA,OA10,Mote Looe Key [In Situ],,OA-10,R338,55,0
+2c2b2c6b-893a-4ba0-ba80-bb5d876d60a7,SI,SI79,Mote Looe Key [In Situ],,SI-79,R491,55,0
+d4596eff-7c09-431d-b604-a40797fb1281,PS,PS5,Mote Looe Key [In Situ],,PS-5,R16,54,0
+11d1dd61-5ec2-4f3e-bba4-fb4032eece20,SR,SR188,Mote Looe Key [In Situ],,SR-188/189,R536,53,0
+1c373aaa-56c2-415c-8994-a096ce06140b,OF,OF183,Mote Looe Key [In Situ],,OF-183,R198,51,0
+56a0b044-60b6-43a3-aa70-8e97e14d8105,OF,OF186,Mote Looe Key [In Situ],,OF-186/187,R17,51,0
+5e1d71a6-1c1d-44d1-91ba-388141747243,PS,PS17,Mote Looe Key [In Situ],,PS-17,R169,50,0
+8a1217a9-9720-4b49-88c7-622d97fbe6c4,MC,MC73,Mote Looe Key [In Situ],,MC-73,R97,50,0
+3e8970fe-2602-4db5-89ce-dba62f47f893,AC,AC2522,Mote Looe Key [In Situ],,AC-2522,R60,50,0
+6c393a50-11b0-4bac-9737-63257838d123,PS,PS14,Mote Looe Key [In Situ],,PS-14,R129,50,0
+e612ef49-4ae1-41c3-be10-294ce065672b,AC,AC29,Mote Looe Key [In Situ],,AC-29,R481,49,0
+08cae47d-dcd5-4ecc-a421-28c29432a1c0,PS,PS3,Mote Looe Key [In Situ],,PS-3,R125,48,0
+1961f11b-91ee-4af6-bbba-2f021bd9f554,PS,PS2,Mote Looe Key [In Situ],,PS-2,R124,47,0
+ae08d831-bcb9-4887-b8d2-4a922e8b575d,PC,PC13,Mote Looe Key [In Situ],,PC-13,R408,46,0
+37abdb26-e2e7-47ec-a078-45ae91ddb329,PC,PC18,Mote Looe Key [In Situ],,PC-18,R28,46,0
+a6c7fc38-7e85-4c83-83f9-488934568b57,PS,PS4,Mote Looe Key [In Situ],,PS-4,R127,45,0
+02d31933-7413-4c93-92c5-9203131dec4b,AC,AC76,Mote Looe Key [In Situ],,AC-76,R380,45,0
+33109bc0-52ca-47cc-a3d9-1ce0728e07a9,DL,DL21,Mote Looe Key [In Situ],,DL-21,R264,43,0
+56346b7d-a0b5-43bd-93ec-a0d866813eb4,DL,DL23,Mote Looe Key [In Situ],,DL-23,R285,43,0
+12860f9d-27cf-4986-9cb8-4905578ee2a9,AC,AC55,Mote Looe Key [In Situ],,AC-55,R324,41,0
+b1ad969b-541b-4905-a8d4-4e87c35a2e06,AC,AC76,Mote Key Largo [In Situ],,Blue26,R112,40,0
+6a0d8442-2cb1-445b-ad6a-bc42aa4e6970,OA,OA12,Mote Looe Key [In Situ],,OA-11/12,R240,40,0
+20c7745a-2e26-44e0-8c31-6e780704d009,PS,PS37,Mote Looe Key [In Situ],,PS-37,R680,40,0
+d4ced1fa-49fb-4a7f-b658-24505c6c3aa5,OF,OF977,Mote Looe Key [In Situ],,OF977,R212,40,0
+a076db49-cefd-47c2-b100-38cc4b07a2be,DL,DL3,Mote Looe Key [In Situ],,DL-3,R262,40,0
+4b3d569a-b049-423e-9e57-f0b1e7aa009b,PC,PC16,Mote Looe Key [In Situ],,PC-16,R420,40,0
+5f3467a2-620a-4dbc-9e04-31d95a9da4d5,PC,PC22,Mote Key Largo [In Situ],,Blue76,R12,39,0
+31c5533b-a57d-4d4e-abfd-59b0555f9c7f,CN,CN29,Mote Looe Key [In Situ],,CN-29/46,R368,39,0
+01c381a9-e7f3-4cd1-bbc4-36b76de26c2c,AC,AC0,Mote Looe Key [In Situ],,AC-UNK,R482,39,0
+550e6a58-94fc-4f65-9fe2-e3929cc15ee5,OF,OF1018,Mote Looe Key [In Situ],,OF-1018/1019,R242,39,0
+5125bfd1-2524-4a45-b166-a383d44c8495,PC,PC40,Mote Looe Key [In Situ],,PC-40,R466,39,0
+49632a15-6a1b-4c61-b16b-7b5d97dcb7f2,MC,MC63,Mote Looe Key [In Situ],,MC-63/92,R93,38,0
+4a2a2489-2dd0-4103-b0de-8edf35e55f53,OF,OF987,Mote Looe Key [In Situ],,OF-987,R171,38,0
+638304b1-fc63-4550-a283-085a58378cdd,CN,CN9,Mote Looe Key [In Situ],,CN-3/9,R682,37,0
+40258443-bfca-484b-90bf-9f0a19307ba8,OF,OF924,Mote Looe Key [In Situ],,OF-924,R18,37,0
+3b3f967d-5cc8-4c29-a3ca-353c8c04be99,DL,DL256,Mote Looe Key [In Situ],,DL-256/270,R312,37,0
+06252e45-348a-4058-8d2c-eba16acdb4a8,AC,AC6,Mote Looe Key [In Situ],,AC-6,R305,36,0
+8907c2fe-1620-42ef-975d-0a5428118cce,OF,OF995,Mote Looe Key [In Situ],,OF995,R217,36,0
+c9106327-80c9-492e-9f7d-502f1cc215be,MC,MC4,Mote Looe Key [In Situ],,MC-4/205,R679,35,0
+95cc05e0-4594-4c61-9b94-dce493932c3d,AC,AC31,Mote Key Largo [In Situ],,Blue37,R121,35,0
+2d4902b5-d56e-4d89-a614-f5f174e5c1d6,OF,OF184,Mote Looe Key [In Situ],,OF-184,R241,34,0
+ae733e78-a8bc-4465-be26-fee32d2f577e,DL,DL1,Mote Looe Key [In Situ],,DL-1,R261,34,0
+406dcb5c-5b65-440b-a282-854235101457,OA,OA13,Mote Looe Key [In Situ],,OA-13,R339,34,0
+843c537f-49ed-4b80-83f7-a893a75b7408,AC,AC13,Mote Key Largo [In Situ],,Blue24,R32,34,0
+31fb0ec1-2478-4422-b0ab-3aefa54e900b,RADIANS,SR190,Mote Looe Key [In Situ],,SR-4/190,R538,33,0
+d70b164b-d7f0-41df-a529-f746ff02b405,AC,AC2940,Mote Looe Key [In Situ],,AC-2940,R505,32,0
+73e8624e-bb64-48fe-a8c3-7ad03681da13,PS,PS27,Mote Looe Key [In Situ],,PS-27,R144,32,0
+316e9648-a4a8-4526-aa44-29e0fed3537f,PS,PS29,Mote Looe Key [In Situ],,PS-29,R170,31,0
+3da391c9-ea6b-4319-8608-8b3f686631e0,MC,MC93,Mote Looe Key [In Situ],,MC-93,R92,30,0
+3422a61c-f6b1-43a8-865a-f892786cf6ca,OF,OF1019,Mote Looe Key [In Situ],,OF-1018/1019,R242,30,0
+941651cf-6495-43d5-ac66-2a705147ae53,AC,AC51,Mote Key Largo [In Situ],,Blue25,R68,30,0
+67da05ae-0043-4325-ad57-6866839773aa,AC,AC31,Mote Sand Key [In Situ],,31,R15,30,0
+df8266ad-7315-40f3-8f4b-bca2bde99eeb,RADIANS,SR189,Mote Looe Key [In Situ],,SR-188/189,R690,29,0
+704177b2-47c2-4746-942d-4844f6088b4d,PS,PS1,Mote Looe Key [In Situ],,PS-1,R123,29,0
+ce34a6aa-8b3e-40f8-94e3-53a08b9a9a3d,OF,OF0,Mote Looe Key [In Situ],,2021 SR,R391,29,0
+ac502ad7-f5d1-46e6-be09-b433c3e13dea,MC,MC92,Mote Looe Key [In Situ],,MC-63/92,R678,28,0
+c7d9e21a-1263-4f13-9b8f-a623699ee9aa,CN,CN12,Mote Looe Key [In Situ],,CN-12/39,R365,28,0
+0d765bb1-c402-43e9-bf86-3c0942ed2a9a,DL,DL22,Mote Looe Key [In Situ],,DL-22,R265,28,0
+70a48e3f-105f-401a-8607-11384e8f022d,OF,OF926,Mote Key Largo [In Situ],,Blue76,R12,27,0
+3173a7ea-2ef6-46d4-be32-7509a4bd5294,MC,MC3,Mote Looe Key [In Situ],,MC-3,R14,27,0
+8c1a647e-52f2-4a12-b28e-6f306bfa772b,OF,OF1004,Mote Looe Key [In Situ],,OF-1004,R211,26,0
+4c21dc0d-1772-4873-9f2d-028b72edca62,OF,OF801,Mote Looe Key [In Situ],,OF-801,R20,25,0
+f49262ac-eb51-4067-8fd3-cc089fb92236,OF,OF1017,Mote Looe Key [In Situ],,OF-1017,R238,25,0
+d5deb120-fc54-46a3-b1a0-b357802c17e1,MC,MC62,Mote Looe Key [In Situ],,MC-53/62,R677,25,0
+0b4a225f-1422-41d3-b064-d03feaa71696,DL,DL16,Mote Looe Key [In Situ],,DL 16/18,R286,25,0
+bb194a11-7900-4c5c-914e-b413cf3f43ca,PS,PS8,Mote Looe Key [In Situ],,PS-8,R128,25,0
+d4876a63-4be6-4b61-80d0-443fb09d8ff2,PC,PC17,Mote Looe Key [In Situ],,PC-17,R421,25,0
+ae8f3dd7-0220-4374-8da4-d5c7556284ba,PS,PS25,Mote Looe Key [In Situ],,PS-25,R134,24,0
+ac6d85d3-5c8a-42a5-a7d3-4b7462929da3,MC,MC126,Mote Looe Key [In Situ],,MC-126/127,R94,23,0
+50d56e05-0e46-454f-9cc2-0cf3926bdd43,CN,CN3,Mote Looe Key [In Situ],,CN-3/9,R366,23,0
+5b2ce35b-1ce1-4657-bad8-2332cec41fc4,DL,DL18,Mote Looe Key [In Situ],,DL 16/18,R239,22,0
+9d52ef09-c275-4b1b-8482-c22186cff6da,OA,OA11,Mote Looe Key [In Situ],,OA-11/12,R340,22,0
+0b8535f9-0d58-4a3f-942c-7b89ba445bac,OF,OF328,Mote Looe Key [In Situ],,OF328,R216,22,0
+47634d73-69fb-4e29-b406-d02f75420754,DL,DL2,Mote Looe Key [In Situ],,DL-2,R291,22,0
+8e748250-d46c-4e7a-a9f6-b454d678ce9e,AC,AC62,Mote Key Largo [In Situ],,Blue25,R68,20,0
+f3dea2e3-924c-43fe-b5e3-23959cf53c88,AC,AC80,Mote Looe Key [In Situ],,AC-80,R351,20,0
+2f2cf3ea-257a-46e1-a545-9b5dd51e7c24,AC,AC80,Mote Looe Key [In Situ],,AC-80,R351,20,0
+8570374b-2dfe-42f4-82bc-64a2ea34724b,AC,AC2534,Mote Looe Key [In Situ],,AC-2534,R77,20,0
+e87455ab-fff9-432d-ac39-7636c71de5ce,PS,PS24,Mote Looe Key [In Situ],,PS-24,R143,20,0
+0bf92f54-d03b-48cd-b7fc-000acd202ddb,OF,OF1,Mote Looe Key [In Situ],,OF-1,R195,20,0
+37aec7a8-dfce-4e2b-86f0-db13e0f46b65,AC,AC2514,Mote Looe Key [In Situ],,AC-2514,R8,20,0
+63a73330-b04f-4295-8546-69a3529b33e5,AC,AC5,Mote Looe Key [In Situ],,AC-5,R306,20,0
+0d753c52-4e34-42b2-88e1-6aec2a79cf64,AC,AC0,Mote Sand Key [In Situ],,21-285,R1,20,0
+a2e13630-28c3-4979-8d79-cf51e14ab6ab,AC,AC2627,Mote Sand Key [In Situ],,RD-2,R7,20,0
+86fc41e4-42bd-4635-88e1-61d25db380ba,AC,AC10,Mote Sand Key [In Situ],,10,R8,20,0
+7ec585b2-97f7-46ef-a015-2f9f08558f61,AC,AC2939,Mote Looe Key [In Situ],,AC-2939,R506,19,0
+2a6d10d8-5c51-4203-af21-c95778f900e1,AC,AC56,Mote Key Largo [In Situ],,Blue25,R68,18,0
+61694c79-5097-415b-a4ac-c53141416d97,MC,MC53,Mote Looe Key [In Situ],,MC-53/62,R15,18,0
+b37356a9-a09c-4e04-9ac4-7559e7233167,AC,AC51,Mote Sand Key [In Situ],,CU-128,R13,18,0
+074e73a8-3032-4fc7-9027-71f1366b9cd7,PS,PS21,Mote Looe Key [In Situ],,PS-21,R130,18,0
+a6f095e0-8ad8-4f86-9654-1cd693ff4b06,OF,OF180,Mote Looe Key [In Situ],,OF-180,R197,18,0
+d5e5cad1-aff2-42c8-8d90-4ea51f57c866,OF,OF185,Mote Looe Key [In Situ],,OF-185,R199,18,0
+d3cccba6-96e2-42fe-b530-307650dc5406,AP,AP24,Mote Looe Key [In Situ],,AP24,R555,18,0
+e1e33b31-393a-416b-9c60-859ca181add2,CN,CN7,Mote Looe Key [In Situ],,CN-7/31,R363,16,0
+15cfe92b-7c68-4953-95db-ee77a00c717e,AC,AC13,Mote Looe Key [In Situ],,AC-13,R301,16,0
+04f5e099-edbd-4826-88d4-e2421b5da090,AC,AC56,Mote Looe Key [In Situ],,AC-56,R323,16,0
+a8b7eaec-1c66-4804-9be2-a33a7a8b8a81,AC,AC70,Mote Sand Key [In Situ],,70,R11,16,0
+7168d7f7-17d0-4e2d-8db4-3ed1ea362ddb,MC,MC205,Mote Looe Key [In Situ],,MC-4/205,R96,15,0
+01f6cfe0-1091-4d7e-86fd-2396f8f70101,OF,OF0,Mote Looe Key [In Situ],,OF-UNK,R19,15,0
+afde6564-dab7-4dba-abc4-2dbf873e7104,AC,AC92,Mote Sand Key [In Situ],,92,R3,15,0
+48c036e6-4a16-497b-b0e0-1ddf771abea7,PS,PS22,Mote Looe Key [In Situ],,PS-22,R132,14,0
+73cf4895-e292-487f-8f6a-a199715e238b,AC,AC2575,Mote Looe Key [In Situ],,AC-2575,R140,13,0
+0a340376-b270-4154-8aa9-fb8fa50bdb4c,AC,AC2611,Mote Looe Key [In Situ],,AC-2611,R190,13,0
+99a04ce8-b62d-4207-9a7b-45141a76e937,AC,AC50,Mote Looe Key [In Situ],,AC-50,R327,13,0
+12198d84-7465-4577-8469-840d59e0cfd6,OF,OF990,Mote Key Largo [In Situ],,Blue76,R12,12,0
+77d416ba-9ee8-4f71-bce3-0eec7f74e9ad,AC,AC2637,Mote Looe Key [In Situ],,AC-2637,R258,12,0
+7c7f4ff8-89de-495f-b1bc-c639795c7009,AC,AC1,Mote Looe Key [In Situ],,AC-1,R309,12,0
+8fb460cf-0cae-48b7-8804-8f3bd8d2709d,AC,AC0,Mote Sand Key [In Situ],,UNK-2,R2,12,0
+713d7cb1-7675-439b-acbb-b627638f94a1,AP,AP22,Mote Looe Key [In Situ],,AP24,R555,11,0
 9898b070-6fca-4930-82c6-4c990790ba75,CN,CN7,Mote Looe Key [In Situ],,CN-7/31,R363,10,0
-ed77cf4b-8d0b-4622-adfe-a46845378f4e,OF,OF1027,Mote Islamorada [In Situ],,Red83,R26,10,1
 03f1fab0-a4de-427e-b976-9669080c8c58,AC,AC0,Mote Looe Key [In Situ],,SWAP 4,R432,10,0
 07a9c92e-4fa1-483f-8bbe-ab6fa1efc3a2,AC,AC2602,Mote Looe Key [In Situ],,SWAP 4,R432,10,0
 aa4466ee-a1bb-4028-b790-b172327ef0f8,AC,AC2603,Mote Looe Key [In Situ],,SWAP 4,R432,10,0
@@ -524,16 +706,12 @@ c8f8f7b1-0b17-42da-bc5a-9ebc36a945fc,AC,AC2631,Mote Looe Key [In Situ],,SWAP 1,R
 0a223c95-4d9c-420d-b469-799a60c84e54,AC,AC8,Mote Looe Key [In Situ],,SWAP 1,R676,10,0
 a7f9d4d0-f05a-4bcf-8c95-903552b536ae,AC,AC88,Mote Looe Key [In Situ],,SWAP 1,R676,10,0
 9580e0f1-456e-48a3-906c-145f39c41606,AC,AC2924,Mote Looe Key [In Situ],,AC-2924,R510,10,0
-72335324-7e52-435f-a930-7de5e59380d5,AC,AC2512,Mote Looe Key [In Situ],,AC-2512,R5,10,0.25
 2e0cc546-1cbe-4dd5-8f81-f2795da7cc03,AC,AC2506,Mote Looe Key [In Situ],,AC-2506,R12,10,0
-20d43ad5-05d6-40bd-836a-bd8118d24448,AC,AC2582,Mote Looe Key [In Situ],,AC-2582,R137,10,0.25
 a74d24a7-8fa0-4486-a908-e304de37a7b0,AC,AC2609,Mote Looe Key [In Situ],,SWAP 2,R686,10,0
 3c1295da-822e-48a1-bc0a-0752e2cbb557,AC,AC1,Mote Looe Key [In Situ],,SWAP 1,R488,10,0
 e3f57f01-220e-4c00-aef5-17ae41ca616e,AC,AC70,Mote Looe Key [In Situ],,AC-70,R382,10,0
 fbdbfad9-05a5-4dba-bbc1-2bb6d7732453,AC,AC2505,Mote Sand Key [In Situ],,Multi,R5,10,0
 103d066c-24ff-4e77-b445-7b0d8bcbf09c,AC,AC41,Mote Key Largo [In Situ],,Blue24,R32,9,0
-2fc9010f-c9a1-4aea-93af-a5167762873c,OF,OF995,Mote Key Largo [In Situ],,Blue43,R4,9,0.25
-b6faadf6-ee71-4d9f-b647-c646e5940ea4,OF,OF931,Mote Islamorada [In Situ],,Red41,R40,9,0.75
 62470312-7bcd-4549-bdfe-0df954a20852,OF,OF7,Mote Looe Key [In Situ],,OF-7,R196,9,0
 ca2abf72-fe2e-4d66-b526-0d33f90a4c18,PC,PC52,Mote Looe Key [In Situ],,PC-52,R467,9,0
 8d917918-fce2-4ada-9f2b-0751ffe5c7e2,AC,AC51,Mote Sand Key [In Situ],,Multi,R12,9,0
@@ -541,75 +719,17 @@ ca2abf72-fe2e-4d66-b526-0d33f90a4c18,PC,PC52,Mote Looe Key [In Situ],,PC-52,R467
 dc0099cd-3440-403f-ab88-2a341a117f0a,AC,AC0,Mote Sand Key [In Situ],,Multi,R6,9,0
 1b76be21-e8ac-4caf-8209-43a032b31364,OF,OF943,Mote Key Largo [In Situ],,Blue96,R15,9,0
 fb63e3cb-0e38-4b25-96b2-c2e9ae5a5c65,AC,AC6,Mote Key Largo [In Situ],,Blue24,R32,8,0
-60a07a8a-2946-4fd5-ba7d-8a01959ff585,MC,MC108,Mote Key Largo [In Situ],,Blue71,R10,8,0.25
-63110fae-fa68-40dd-869d-bede58f01126,DL,DL283,Mote Islamorada [In Situ],,Red51,R75,8,0.75
-742804bf-725c-467a-8c4b-58c44bca124c,AC,AC56,Mote Key Largo [In Situ],,Blue30,R41,8,0.25
-74537b58-8595-4ad4-b8d6-c3cb708633fb,AC,AC2544,Mote Looe Key [In Situ],,AC-2544,R87,8,0.25
 3694c596-97b1-4752-bad5-9620023e3f37,AC,AC2603,Mote Looe Key [In Situ],,AC-2603,R166,8,0
-0450899f-0e32-4951-a4f5-82da750387a5,SIDEREA,SS468,Mote Looe Key [In Situ],,SS-468/469,R920,8,0.5
 a15321b7-871e-433d-afa3-854b325d3f36,AC,AC2578,Mote Looe Key [In Situ],,AC-2578,R139,8,0
-30f0abd6-7038-4281-b26d-5688a131a856,OF,OF995,Mote Key Largo [In Situ],,Blue41,R3,7,0.25
-a597091c-3730-4a9b-8920-b630f7f93d2d,AC,AC2985,Mote Key Largo [In Situ],,Blue57,R1069,7,0.25
-df108c7c-3567-4a72-928d-d9df1062e488,OF,OF1014,Mote Key Largo [In Situ],,Red02,R18,7,0.25
 96365f98-78dc-489d-b35a-d320a99a1f24,AC,AC25,Mote Sand Key [In Situ],,Multi,R5,7,0
 cd4d40bf-b71b-40c2-a66c-2ba6228437b9,AC,AC20,Mote Looe Key [In Situ],,X,R300,7,0
-0a21bcd2-fef4-436b-a654-cd5ad85a5914,AC,AC90,Mote Key Largo [In Situ],,Blue28,R132,7,0.5
-c3bccdb4-9925-4fc9-baea-3fe2f7cb7f96,OF,OF1034,Mote Islamorada [In Situ],,Red72,R23,6,0.75
-ade17f14-c029-4f45-9e26-ab641db9e445,SIDEREA,SS41,Mote Key Largo [In Situ],,Blue71,R10,6,0.25
-54491b8d-d1a3-4674-b049-a94256ceadfd,OF,OF1006,Mote Key Largo [In Situ],,Red02,R18,6,0.25
-b33802ec-95f4-4856-af91-9e234877147e,PC,PC48,Mote Key Largo [In Situ],,Red04,R22,6,0.75
-76fcd401-d8c3-4b8d-9618-9f946ef5201a,PS,PS7,Mote Islamorada [In Situ],,Red85,R110,6,1
-34c20e55-496b-4455-b2b9-884ece8050bb,AC,AC2982,Mote Key Largo [In Situ],,Blue57,R1069,6,0.25
-ea087ae3-0693-4ea7-bbee-896aa66618d5,AP,AP19,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
-6a9fba67-a0f7-4988-bc8d-58b0a62c114e,AP,AP24,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
-39b18b5b-f0da-449c-b5e5-b7f08ec7ac59,AP,AP36,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
-24f86722-3ad5-4c15-910f-b7defece721f,AP,AP37,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
-5f477ae7-46dd-434e-932a-443269d0efff,AP,AP39,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
-d0a946bd-ad13-4fee-a882-d2588f48d9ff,AP,AP40,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
-c5dbda26-1ad5-493d-9277-c06097aebe0c,AP,AP41,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
-361dd815-a147-42a0-a49d-fbbc17e83c00,AP,AP42,Mote Key Largo [In Situ],,Blue49,R20,6,0.25
-08bf289f-27ed-44e7-a73c-f822b3284846,AP,AP1,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
-b9166f27-b7b6-4845-b2a8-1174e2a1e419,AP,AP7,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
-c2ff7bed-910d-46e1-95d9-84c36ff2a81b,AP,AP8,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
-d50e1f79-6078-475b-be9a-126a2a4a333b,AP,AP14,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
-6f0aaa36-123b-4cae-a9f4-eb449dd66b76,AP,AP16,Mote Key Largo [In Situ],,Blue48,R7,6,0.25
-462f75a2-90e2-4dc3-af5b-e8eb5170ea26,AP,AP44,Mote Key Largo [In Situ],,Unassigned,R1015,6,0.75
-cecc3967-10d1-49d2-855f-28c86e80b55f,AP,AP45,Mote Key Largo [In Situ],,Unassigned,R1016,6,0.75
 417abe49-c641-40cd-9d25-5cee59a73f0f,AP,AP20,Mote Looe Key [In Situ],,AP24,R555,6,0
-7c68a4ef-c014-4eb9-bbd5-a446cac551db,AP,AP45,Mote Key Largo [In Situ],,Blue32,R56,6,0.25
-358df58d-d8a9-4cfa-9ec1-4ca1dbd5cccd,AP,AP44,Mote Key Largo [In Situ],,Blue32,R56,6,0.25
-8c4b106f-6b79-42c3-b5fb-2536a4762c8f,AC,AC50,Mote Key Largo [In Situ],,Blue03,R1056,6,0.75
 c97a363e-bbb0-4bfa-b064-05561f2a7f2a,AC,AC2927,Mote Looe Key [In Situ],,AC-2927,R509,6,0
-5e436392-56fb-4010-8595-9c7ecfa445c1,AC,AC2612,Mote Looe Key [In Situ],,AC-2612,R189,6,0.25
 2de08014-d810-455d-8dcb-71b6255900be,AC,AC54,Mote Looe Key [In Situ],,AC-54,R325,6,0
-42aebfce-82ce-470f-8758-d7223295c59e,PC,PC24,Mote Key Largo [In Situ],,Blue92,R103,6,0.75
 3cfba284-861d-4958-90f0-c17c36b0ad14,AC,AC2607,Mote Looe Key [In Situ],,AC-2607,R191,6,0
 531949e6-e9d8-4c28-9e68-3be6274bc4ec,AC,AC2633,Mote Looe Key [In Situ],,AC-2633,R213,6,0
 44a2af43-3e3d-4c3a-8798-315460094966,AC,AC91,Mote Looe Key [In Situ],,AC-91,R414,6,0
-d73f29e8-ef77-4bbf-b643-46b2892a4925,MC,MC117,Mote Islamorada [In Situ],,Red47,R38,6,0.75
-40316b93-e151-4aaa-bc69-b7c019c03025,OF,OF932,Mote Key Largo [In Situ],,,R79,5,0.25
-7ff37275-199d-4c6c-9ff7-eedbcfc11d0f,AP,AP408,Mote Key Largo [In Situ],,Blue42,R372,5,0.25
-14237fc8-653a-4327-8bfa-042a96c29cb5,AC,AC94,Mote Key Largo [In Situ],,Blue39,R124,5,0.5
-427adba0-5563-4e03-93c1-f85dd159494f,AC,AC84,Mote Key Largo [In Situ],,Blue11,R40,5,0.5
-92b26d62-e570-4071-89da-627b5b417626,AC,AC0,Mote Key Largo [In Situ],,Blue36,R96,5,
-4ec3e762-c1ef-4410-9d7f-628c4e44bedd,AC,AC0,Mote Key Largo [In Situ],,Blue35,R93,5,
-0eeacfdf-be96-4f43-9b0c-15884d5ed86c,AC,AC2989,Mote Key Largo [In Situ],,Blue97,R115,5,
-68d1afe8-d4f3-428e-ac3c-bed7b26b2c3e,AC,AC2883,Mote Key Largo [In Situ],,Blue97,R115,5,
-302da316-1660-4d25-ad0b-004bdd1798fd,AC,AC2990,Mote Key Largo [In Situ],,Blue97,R115,5,
-81cc117e-169e-4792-bfe5-6621b045f85a,AC,AC2991,Mote Key Largo [In Situ],,Blue97,R115,5,
-961c38b4-fb5d-4f2d-a80e-2f276e3d4ad8,AC,AC2992,Mote Key Largo [In Situ],,Blue97,R115,5,
-c1749dcf-f71c-4543-92ea-44268c87b611,AC,AC2890,Mote Key Largo [In Situ],,Blue97,R115,5,
-c559508f-8384-44b5-a750-90007f7b3fba,AC,AC2993,Mote Key Largo [In Situ],,Blue97,R115,5,
-3afafd86-add0-4066-a353-ec0792d4179a,AC,AC2994,Mote Key Largo [In Situ],,Blue97,R115,5,
-0faecc84-6904-41e3-b739-39b50e65c894,AC,AC2995,Mote Key Largo [In Situ],,Blue97,R115,5,
-517b0b84-dc15-4629-98d2-168465470ce9,AC,AC2989,Mote Key Largo [In Situ],,Blue87,R116,5,
-3f0a7ae2-9e5a-4e6b-aed0-0d9e84f9df1a,AC,AC2883,Mote Key Largo [In Situ],,Blue87,R116,5,
-95a3c5d2-a36f-44d4-8dff-e62386ba5418,AC,AC2991,Mote Key Largo [In Situ],,Blue87,R116,5,
-45acd27f-1fb5-4fa1-9b10-1754aafef4ef,AC,AC2992,Mote Key Largo [In Situ],,Blue87,R116,5,
-35904604-8452-45d6-b2cc-9eebc17a2704,AC,AC2890,Mote Key Largo [In Situ],,Blue87,R116,5,
-0366b40e-eb4f-4304-9931-38f6ab8988cb,AC,AC2994,Mote Key Largo [In Situ],,Blue87,R116,5,
 59f6b083-1c60-476c-98a1-f29a86467075,AC,AC2938,Mote Looe Key [In Situ],,AC-2938,R507,5,0
-86271297-abf3-43d3-a28d-c11c3a683460,AP,AP408,Mote Key Largo [In Situ],,Unassigned,R1025,5,0.5
 8e8749bd-08d8-4633-abda-d77f798c8c6b,AP,AP38,Mote Looe Key [In Situ],,CU-TR5,R554,5,0
 f7e57882-5467-484e-9619-dd583b3cfc52,AC,AC58,Mote Looe Key [In Situ],,Spawning,R624,5,0
 6e28f657-b6a7-428d-b09c-52d77f625248,AC,AC62,Mote Looe Key [In Situ],,Spawning,R625,5,0
@@ -644,19 +764,6 @@ d8bedf98-f140-45ee-82c1-31ef84778759,AC,AC47,Mote Key Largo [In Situ],,Purple07,
 7b8d6af9-668e-40de-bc05-6d11521bc099,AC,AC62,Mote Key Largo [In Situ],,Blue99,R138,5,0
 f29964f3-f06f-468e-a108-5d0fcfa67e85,AC,AC13,Mote Key Largo [In Situ],,Purple05,R82,5,0
 7c831a01-0dea-4253-ae09-52d4aa8f6690,AC,AC31,Mote Key Largo [In Situ],,Purple06,R101,5,0
-1f508807-e624-4098-80f2-694726287f7f,MC,MC84,Mote Islamorada [In Situ],,Red49,R44,5,0.75
-2c80a583-a3e7-43b2-b528-f8ba750d3206,AC,AC50,Mote Key Largo [In Situ],,Blue45,R2,4,0.25
-99d144f5-8527-4f28-b110-895fede97c20,AC,AC2612,Mote Key Largo [In Situ],,Blue45,R2,4,0.25
-f5492681-2e9b-4aba-b5a4-a1105988df9e,AC,AC2986,Mote Key Largo [In Situ],,Blue57,R1069,4,0.25
-9652d0d2-d995-4647-988c-6e84d91a7542,AC,AC2997,Mote Key Largo [In Situ],,Blue97,R115,4,
-7617b704-2cdb-4755-bad2-2c825e76d175,AC,AC3000,Mote Key Largo [In Situ],,Blue97,R115,4,
-864cc99a-68bd-4a49-8f53-adcb68dd0080,AC,AC2616,Mote Key Largo [In Situ],,Blue45,R2,4,0.25
-6d4a0524-9e06-46ab-9be1-76806e457d79,AC,AC2631,Mote Key Largo [In Situ],,Blue45,R2,4,0.25
-bba46c81-9648-4e96-b428-14eb2c57c30e,AC,AC90,Mote Key Largo [In Situ],,Blue28,R132,4,0.75
-208e68d6-f7e0-4b2a-b8df-ea87fbeeda4b,AC,AC2996,Mote Key Largo [In Situ],,Blue97,R115,4,
-6d0cae2c-6e73-450d-892e-84529a6b623b,AC,AC2996,Mote Key Largo [In Situ],,Blue87,R116,4,
-11e15d0e-1996-4a0f-95d3-be41ea8a5d95,AC,AC2990,Mote Key Largo [In Situ],,Blue87,R116,4,
-c33aa538-ff6d-402e-a220-71f10e458419,AC,AC2993,Mote Key Largo [In Situ],,Blue87,R116,4,
 fbb732b4-a517-424e-993c-c87a8e8d5efe,AC,AC2923,Mote Looe Key [In Situ],,AC-2923,R511,4,0
 06d07d40-cdcb-4eeb-b089-6e6fb13176fe,AC,AC78,Mote Looe Key [In Situ],,AC-78,R378,4,0
 d30113c2-c4f3-4227-9cc7-cfa0aa2f407b,AP,AP1,Mote Looe Key [In Situ],,LK-5,R556,4,0
@@ -668,33 +775,8 @@ ddf09f7f-d6cb-4b99-8b04-3c98a18607fb,AC,AC20,Mote Sand Key [In Situ],,Multi,R12,
 c9d9cb2f-1979-4dc4-b006-6b57c85eaf9d,AC,AC2578,Mote Sand Key [In Situ],,Multi,R5,4,0
 839e61b2-e735-4d07-b2f5-3966a7ec793a,AC,AC56,Mote Key Largo [In Situ],,Blue88,R126,4,0
 a4531938-1d5f-4b28-a527-df9b4c0e826a,AC,AC7,Mote Key Largo [In Situ],,Purple04,R14,4,0
-473d6287-007c-4b59-94b5-ccaf0fe42a65,OF,OF948,Mote Key Largo [In Situ],,Blue54,R28,4,0.75
 9b2eecfa-0c95-4e4a-8ebc-2e0aa42d1972,AC,AC1,Mote Key Largo [In Situ],,Purple01,R59,4,0
-75f45525-5b50-42d5-9c00-56e2ec7f2fb8,MC,MC85,Mote Key Largo [In Situ],,Blue82,R104,4,0.5
-537f36f2-406e-4791-a80f-d3c30e1ebed5,OF,OF957,Mote Key Largo [In Situ],,Blue43,R4,3,0.25
-cdc822ed-e75c-41ce-bbba-1badcce17167,AP,AP126,Mote Key Largo [In Situ],,Blue44,R29,3,1
-77bed7d2-fda7-43ce-8de9-53dcc4a1b8c0,AC,AC2601,Mote Key Largo [In Situ],,Blue45,R2,3,0.25
-366b2c6c-8c61-4875-a74d-dce286a23362,AC,AC2651,Mote Key Largo [In Situ],,Blue46,R5,3,0.5
 9b6e6726-bddb-48e7-92d5-a2e1293ea94f,AC,AC50,Mote Key Largo [In Situ],,Purple08,R139,3,0
-c5b4ea40-bb29-4931-a1e6-36ebf33ec3f9,AC,AC2984,Mote Key Largo [In Situ],,Blue57,R1069,3,0.25
-5ea3912e-a273-49dd-91d9-de75d33eeae9,AC,AC2998,Mote Key Largo [In Situ],,Blue97,R115,3,
-0cd37cea-c51f-4a94-a98c-1fb6102d37b9,AC,AC2999,Mote Key Largo [In Situ],,Blue97,R115,3,
-577c3ba1-9485-4acc-bd4e-54f4fc95586f,AC,AC2514,Mote Key Largo [In Situ],,Blue56,R9,3,0.25
-adf40997-7b62-432e-b4e9-2e4517ec8995,AC,AC2515,Mote Key Largo [In Situ],,Blue56,R9,3,0.25
-0b0bd5f4-35d7-448a-8a1a-81b1777d5a9d,AP,AP38,Mote Key Largo [In Situ],,Blue49,R20,3,0.25
-667f5cf0-62a3-4653-a3ad-4d89b813e318,AC,AC2516,Mote Key Largo [In Situ],,Blue56,R9,3,0.25
-cafe2703-50af-4ea3-bbe4-7d464b73bd4a,AC,AC2539,Mote Key Largo [In Situ],,Blue47,R6,3,0.25
-5119df92-5736-49bf-bc79-773283c239f8,AC,AC2572,Mote Key Largo [In Situ],,Blue47,R6,3,0.25
-8df57855-6726-4c24-9e58-0af7832917bd,AC,AC2533,Mote Key Largo [In Situ],,Blue47,R6,3,0.25
-75e858cb-e322-4b50-86e3-c5997aa51b33,AP,AP46,Mote Key Largo [In Situ],,Unassigned,R1017,3,0.75
-8b0610cb-bbaf-4128-84d8-031615a7ee58,AP,AP47,Mote Key Largo [In Situ],,Unassigned,R1018,3,0.75
-832ff63f-ca79-4cba-9a98-2d15db99e379,AP,AP58,Mote Key Largo [In Situ],,Unassigned,R1019,3,0.75
-bc9c74f8-ba4f-480c-8a9b-f053d18b4168,AP,AP58,Mote Key Largo [In Situ],,Blue32,R56,3,0.25
-ba909b42-2734-429b-821f-f99187252128,AP,AP47,Mote Key Largo [In Situ],,Blue32,R56,3,0.25
-14a383c8-17f9-4502-8f4c-493fbd98f9fe,AP,AP46,Mote Key Largo [In Situ],,Blue32,R56,3,0.25
-4613a4f7-e768-4dca-b4f3-69f44ef725da,AC,AC2995,Mote Key Largo [In Situ],,Blue87,R116,3,
-359b8050-f6be-4fe8-9c78-bc956f66226e,AC,AC2523,Mote Looe Key [In Situ],,AC-2523,R59,3,0.25
-2b5e25b3-f608-450a-aaec-213e37f4ebe1,AC,AC2542,Mote Sand Key [In Situ],,CU-128,R13,3,0.5
 eff9ea44-6215-40e0-8c7e-bbfccb0bccd6,AP,AP147,Mote Looe Key [In Situ],,CU-TR5,R554,3,0
 566ee458-c2aa-42fb-bb8e-8e2e46d37567,AP,AP0,Mote Looe Key [In Situ],,AP UNK2,R557,3,0
 97aac400-dcfe-4125-b40b-2bf70ce8d692,AC,AC47,Mote Looe Key [In Situ],,Spawning,R650,3,0
@@ -705,47 +787,9 @@ eff9ea44-6215-40e0-8c7e-bbfccb0bccd6,AP,AP147,Mote Looe Key [In Situ],,CU-TR5,R5
 eef3bdfb-efa5-43d3-94a3-46999d587d2d,AC,AC2572,Mote Sand Key [In Situ],,Multi,R5,3,0
 cb89c69a-f2dd-4e76-a4e1-f0b20a2b9ac5,AC,AC5,Mote Sand Key [In Situ],,Multi,R12,3,0
 17a54f2e-8b5e-4d12-afda-b579f9667bb0,AC,AC55,Mote Sand Key [In Situ],,Multi,R6,3,0
-48667bcf-e480-4c88-a152-382aaba12977,MC,MC77,Mote Key Largo [In Situ],,Blue53,R57,3,0.75
-a67affe6-8c04-433f-a276-312c58fc15e2,AC,AC50,Mote Key Largo [In Situ],,Blue03,R1056,2,0.25
-eba8f682-b193-4ffe-9cb9-b847e68f65be,OF,OF950,Mote Islamorada [In Situ],,Red63,R90,2,0.75
-3d326190-0f7d-4455-88bd-fbd4f666f13a,AC,AC84,Mote Key Largo [In Situ],,Blue11,R40,2,0.25
-b27aa494-2ba3-4889-8a6b-9a6064c19bf8,OF,OF950,Mote Key Largo [In Situ],,Blue43,R4,2,0.25
-2c13fbef-de10-4570-93ec-044494497dca,OF,OF1005,Mote Key Largo [In Situ],,Blue43,R4,2,0.25
-48afda32-a671-4f8e-ba6e-0369f49f66ad,AP,AP124,Mote Key Largo [In Situ],,Blue44,R29,2,1
-117c2d72-0d05-444b-871a-a5175546425c,AC,AC36,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
-142ae2c1-b48d-4e4c-999e-e7ad76d9a448,AC,AC2603,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
-3b7faa4c-b7bf-4dbd-a84b-bd7a41921060,AC,AC2634,Mote Key Largo [In Situ],,Blue46,R5,2,0.5
-c00df225-ce96-4ca5-943e-2be3c707c8cc,AC,AC2983,Mote Key Largo [In Situ],,Blue57,R1069,2,0.25
-8b88920f-cd5a-4ba9-b06b-6b6822f78fd5,AC,AC2923,Mote Key Largo [In Situ],,Blue55,R92,2,0.25
-c79fa6ea-05b2-4245-b169-e307a33a1132,AC,AC2924,Mote Key Largo [In Situ],,Blue55,R92,2,0.25
-fd1956ca-3d14-455d-874c-e2c49ec36168,AC,AC2925,Mote Key Largo [In Situ],,Blue55,R92,2,0.25
-b6295c46-fb63-48b3-a517-0a1ebba86078,AC,AC2607,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
-2792070b-9724-43cc-aeb8-b6d7eb254192,AC,AC2627,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
-fea0c332-1c62-433f-b4e1-6bb4be255abc,AC,AC2618,Mote Key Largo [In Situ],,Blue45,R2,2,0.25
-b573dfd0-eee1-4606-b9be-567020b43254,AC,AC2508,Mote Key Largo [In Situ],,Blue56,R9,2,0.25
-06bbf522-7767-477b-91a1-fb0af1238b88,AC,AC2938,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
-c153b942-91cb-448b-956c-12727b644b11,AC,AC2939,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
-a941daad-b836-48b6-a9a1-2cadf165f825,AC,AC2940,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
-e9f8ebfa-5611-4837-8641-211487394d30,AC,AC2926,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
-85ee7d9d-4042-429c-bd7c-0e285d2d342e,AC,AC2635,Mote Key Largo [In Situ],,Blue46,R5,2,0.25
-905070ca-c734-4c8b-a3a3-5dd2a2a81c9c,AC,AC2544,Mote Key Largo [In Situ],,Blue47,R6,2,0.25
-ea876363-902c-453c-8638-2ff92b44b7b7,AC,AC2580,Mote Key Largo [In Situ],,Blue47,R6,2,0.25
-21210289-3ddf-49a4-9457-07cdef36cbb6,AC,AC2518,Mote Key Largo [In Situ],,Blue47,R6,2,0.25
-989f7545-b80b-40e4-bcd1-2dbe832ca840,AC,AC3001,Mote Key Largo [In Situ],,Blue97,R115,2,
-4814ff70-f7de-40d8-861c-658ab70ba6e0,AP,AP590,Mote Key Largo [In Situ],,Blue44,R83,2,0.25
-59b4c341-c51f-4cfd-9487-c68120bd6599,AC,AC2987,Mote Key Largo [In Situ],,Blue57,R1069,2,0.25
-0669e75f-0ce7-4fb3-8e9f-e3675358e5bc,AP,AP365,Mote Key Largo [In Situ],,Blue32,R56,2,0.25
-1849a9db-be24-4bd8-a6a3-d7a7cd91b37b,AP,AP144,Mote Key Largo [In Situ],,Blue32,R56,2,0.25
-ed0fde08-a4d3-4304-845d-f2a3770ba864,AP,AP110,Mote Key Largo [In Situ],,Blue32,R56,2,0.25
-543a6ba3-93ec-45a8-a90c-58c07e683a69,AC,AC6,Mote Key Largo [In Situ],,Green95,R27,2,0.25
 fc7a1c38-0cb0-4092-ac22-25bd69909045,AC,AC2601,Mote Looe Key [In Situ],,AC-2601,R193,2,0
-f542db73-5aee-4255-9cf9-9efd70a1605f,AC,AC2918,Mote Key Largo [In Situ],,Blue97,R115,2,
 76d6d215-a64a-43f7-be5a-37ee3f92d680,AC,AC2937,Mote Looe Key [In Situ],,AC-2937,R508,2,0
 09ccd4d1-2a70-4558-a124-8d9f9c9141da,AC,AC2572,Mote Looe Key [In Situ],,AC-2572,R141,2,0
-e39c20f2-a7ce-451c-ac4b-5666f1c68bbc,AP,AP365,Mote Key Largo [In Situ],,Unassigned,R1020,2,0.75
-df4c9734-33ea-4569-b05a-108e9b1dafa6,AP,AP110,Mote Key Largo [In Situ],,Unassigned,R1022,2,0.5
-605368d4-caf8-4141-b08d-883c79623b83,AP,AP144,Mote Key Largo [In Situ],,Unassigned,R1023,2,0.5
-16855dce-1161-4aa5-a630-34b5a5989cb5,AP,AP480,Mote Key Largo [In Situ],,Blue49,R17,2,0.25
 21a58c58-173b-4dda-b413-d230f95e35c3,AP,AP145,Mote Looe Key [In Situ],,CU-TR5,R554,2,0
 e6ddd7e2-6bcb-4edf-8b90-498a4279063f,AP,AP48,Mote Looe Key [In Situ],,LK-5,R556,2,0
 bb862dec-45f6-44c8-9f93-c71710970e61,AC,AC3,Mote Looe Key [In Situ],,Spawning,R653,2,0
@@ -762,103 +806,9 @@ a94420bc-8f75-4687-af06-6b40f59ec2b6,AC,AC2927,Mote Key Largo [In Situ],,Blue55,
 8fd6066d-a55a-4469-89e7-5d7c9d0585f0,AC,AC13,Mote Looe Key [In Situ],,SNP-1,R451,2,0
 faa978e9-f940-427e-8098-2244f19ffdb8,AC,AC4,Mote Key Largo [In Situ],,Blue98,R125,2,0
 e11bac51-ca5e-42c9-a9d6-84031cd723bb,AC,AC3,Mote Key Largo [In Situ],,Purple02,R78,2,0
-444edbfb-18e1-49f5-ac74-68a22387818a,AC,AC2626,Mote Key Largo [In Situ],,Purple23,R42,1,
-9903a7a3-510e-47ee-af9e-96ba36bf3b45,AC,AC2634,Mote Key Largo [In Situ],,Purple25,R70,1,0.25
-d777f8f1-7132-4d6d-a532-1dd9fa391769,AC,AC2924,Mote Key Largo [In Situ],,Purple27,R72,1,0.25
-658eefcc-b01d-4bcb-ba2a-5eb0f57cde82,AC,AC2929,Mote Key Largo [In Situ],,Purple28,R74,1,0.25
-fa57f4ee-e1d6-48b4-b2b2-60eda6348ba7,AC,AC2939,Mote Key Largo [In Situ],,Purple29,R75,1,0.25
-ec528734-fbc7-49c8-9741-01cf6136aaf9,AC,AC2613,Mote Key Largo [In Situ],,Purple22,R67,1,0.25
-b957812b-c50b-4d02-bd06-003c7f80ef05,AC,AC2651,Mote Key Largo [In Situ],,Purple26,R71,1,0.25
-80244401-23be-4a60-9fec-c87131bc144e,AC,AC2601,Mote Key Largo [In Situ],,Purple20,R77,1,0.25
-24c8b9a2-28a1-4b4c-bd60-f37a8df9461c,MC,MC124,Mote Key Largo [In Situ],,Blue72,R19,1,0.5
-87ea2fd0-2755-4970-b512-924bdb2aef55,AC,AC2638,Mote Key Largo [In Situ],,Blue46,R5,1,0.25
-f2e97cb7-1512-4b42-a403-5106f876da26,AC,AC2639,Mote Key Largo [In Situ],,Blue46,R5,1,0.25
-efc789c6-08fc-4f03-8bd1-b52ec26598a9,OF,OF0,Mote Key Largo [In Situ],,Blue82,R104,1,0.5
-7f7bca1b-4608-42ee-a57c-90fa6485e429,AP,AP567,Mote Key Largo [In Situ],,Blue44,R29,1,0.75
-e4c7264b-b008-499e-aba4-6c1f9798cc0e,AP,AP589,Mote Key Largo [In Situ],,Blue44,R29,1,0.5
-47ed2f27-6f1b-4df3-a7bc-07c785401af5,AC,AC2988,Mote Key Largo [In Situ],,Blue57,R1069,1,0.25
-8e39b351-00e4-48d7-9136-48703c42e896,AC,AC2505,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
-40791cfe-e59e-498e-b4d7-d380868eb46f,AC,AC1836,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
-f736307f-b641-4ef5-8ee7-df1824c0487e,AP,AP588,Mote Key Largo [In Situ],,Blue44,R29,1,
-406a2a0d-6122-483d-b61a-9502bb683fdb,AC,AC2627,Mote Key Largo [In Situ],,Purple24,R1002,1,0.25
-44c4602f-d01c-4793-b19c-afa2f178a0ee,AC,AC2506,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
-003b8033-bdf8-4c45-96a1-c718c354c9c7,AC,AC2511,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
-85d0d60e-5b40-46cc-bccf-2d19cd9da48d,AC,AC2513,Mote Key Largo [In Situ],,Blue56,R9,1,0.25
-67f89926-39f8-4425-a85e-29ddc18bea92,AC,AC2633,Mote Key Largo [In Situ],,Blue46,R5,1,0.25
-d655f763-8010-4c52-8cf9-32aae70e62c5,AC,AC2534,Mote Key Largo [In Situ],,Blue47,R6,1,0.25
-55383bd1-47aa-449a-a0fc-ac9d719bd224,AC,AC96,Mote Key Largo [In Situ],,Unassigned,R1042,1,0.5
-c02278d9-f8cb-4cc4-aff7-4df55d3c22e2,AC,AC91,Mote Key Largo [In Situ],,Blue58,R1041,1,1
-831fc058-d1bd-48ec-99b3-9183cf6b95b8,AC,AC80,Mote Key Largo [In Situ],,Blue58,R1041,1,1
-b19609f7-fbb6-4f6a-8c34-9b139972f5c3,AC,AC79,Mote Key Largo [In Situ],,Blue58,R1041,1,0.5
-64af2b57-8113-4396-9843-9b42bdcf412a,AC,AC78,Mote Key Largo [In Situ],,Blue58,R1041,1,1
-af9d1b3b-6cab-4032-9c86-371220d79cb7,AC,AC54,Mote Key Largo [In Situ],,Blue58,R1040,1,1
-8a78b05f-96f1-4b9a-9c1f-0a123df44169,AC,AC48,Mote Key Largo [In Situ],,Blue58,R1040,1,1
-c8baaf88-8459-4238-a2a5-a28dcb55daa3,AC,AC46,Mote Key Largo [In Situ],,Blue58,R1040,1,1
-f4f5a4a7-47c3-4d95-ba2e-cbc1a39c5652,AC,AC38,Mote Key Largo [In Situ],,Blue58,R1040,1,1
-d43f5b20-f626-40d9-a66f-39c468a82cbe,AC,AC2537,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-8e507435-6304-4b52-b1f1-3e682403d84b,AC,AC2545,Mote Key Largo [In Situ],,Blue68,R1045,1,0.25
-3387b765-9892-483d-8ffe-eaefedebd25f,AP,AP146,Mote Key Largo [In Situ],,Unassigned,R1024,1,0.5
-f3544b7c-d410-47a0-ba17-5e98d216de5d,AC,AC2525,Mote Key Largo [In Situ],,Blue60,R1044,1,0.5
-999bf608-4c34-464c-8162-2e0293ef20e7,AC,AC2523,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-c2238845-c5ed-4c5f-9a57-a86765738559,AC,AC2530,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-4afc32db-e85e-4503-9997-44792b93f272,AC,AC2531,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-3f79aeff-7016-48e8-8516-160aee79761d,AC,AC2532,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-2758be15-85f4-408f-948d-e45544bc6271,AC,AC2575,Mote Key Largo [In Situ],,Blue68,R1045,1,0.5
-7885b5b1-6385-48c4-965c-4628b4ec7b46,AC,AC2507,Mote Key Largo [In Situ],,Blue59,R84,1,
-e4b218a7-8741-4238-9ea7-ae21d6f159dd,AC,AC2503,Mote Key Largo [In Situ],,Blue59,R84,1,
-f483d254-aeec-49e9-a8d0-a6a61d07abba,AC,AC2502,Mote Key Largo [In Situ],,Blue59,R84,1,
-40cec945-c93a-4eb0-abc5-a1b023069363,AC,AC2501,Mote Key Largo [In Situ],,Blue59,R84,1,
-cf8802ef-2328-4aee-89d6-550aebba55a0,AC,AC925,Mote Key Largo [In Situ],,Blue59,R84,1,
-9f8b7779-9f36-42c0-86e7-4cca5641594b,AC,AC1962,Mote Key Largo [In Situ],,Blue59,R84,1,
-d0f3054d-e3f7-478b-8fc6-82645db8e067,AC,AC725,Mote Key Largo [In Situ],,Blue59,R84,1,
-44ebfd69-571a-4fc7-aa9c-53553f775793,AC,AC95,Mote Key Largo [In Situ],,Blue59,R84,1,
-e012fab6-b6af-482a-9c55-c185d0615fcb,AC,AC92,Mote Key Largo [In Situ],,Blue59,R84,1,
-4b26face-7202-4ca3-8ac6-101896e2af59,AC,AC10,Mote Key Largo [In Situ],,Blue58,R1040,1,1
-fce0fba7-69e4-4204-839e-ed3809c9ced9,AC,AC77,Mote Key Largo [In Situ],,Blue58,R1040,1,1
-6df0f7d3-d65a-4667-a534-89f1e497bc34,AC,AC2580,Mote Key Largo [In Situ],,Blue68,R85,1,0.5
-187cd090-a9c2-49e7-a7f7-4e398a782ed9,AC,AC2539,Mote Key Largo [In Situ],,Blue68,R1045,1,0.75
-451b8f87-8192-44da-9a67-d9945828fff0,AC,AC2540,Mote Key Largo [In Situ],,Blue68,R1045,1,0.75
 5887badc-de57-4f7b-8dec-45edf0b852ec,AC,AC13,Mote Sand Key [In Situ],,Multi,R12,1,0
-9d1ab892-a41b-42fc-ba48-c1c616304b23,AC,AC2572,Mote Key Largo [In Situ],,Purple19,R43,1,0.25
-7dc01793-b0ee-4dfe-9450-74fd9b0fb7e1,AC,AC2528,Mote Key Largo [In Situ],,Purple16,R46,1,0.25
-09e67404-c426-407b-bd80-70e30412729c,AC,AC2513,Mote Key Largo [In Situ],,Purple15,R48,1,0.25
-6613b3e7-223f-4711-9cc8-606202b97346,AC,AC2506,Mote Key Largo [In Situ],,Purple12,R58,1,0.25
-6893497b-eb7a-417e-8085-f2b4db11c3cc,AC,AC1287,Mote Key Largo [In Situ],,Purple11,R62,1,0.25
-d4591bf6-4982-4601-b456-22dcb6fe8a7a,AC,AC2544,Mote Key Largo [In Situ],,Purple18,R44,1,0.25
-409a5894-7eee-4fac-805e-8a062ed8571b,AC,AC2534,Mote Key Largo [In Situ],,Purple17,R45,1,0.25
-0b3e01bb-87e8-4c67-b801-60e89816a495,AC,AC2511,Mote Key Largo [In Situ],,Purple14,R51,1,0.25
-9a84600f-0df0-40b1-a181-3deb3d09ff49,AC,AC2508,Mote Key Largo [In Situ],,Purple13,R55,1,0.25
-4513375d-5a5a-472e-84d3-f95ccac4629d,AC,AC2519,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-a7485273-9f11-48b1-8f41-432f46727ae5,AC,AC2520,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-8fcbbd32-f911-4cf0-9155-4f92bf192c37,AC,AC2522,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-96a127b8-6764-43f7-a085-8d28fdbca658,AC,AC2512,Mote Key Largo [In Situ],,Blue60,R1044,1,0.25
-a605da7b-299e-49ec-b240-a4d18222a8df,AC,AC2942,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-2b035fab-9e65-4f43-8d7c-d62eb2f2192c,AC,AC2632,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-f1cfa39e-c6bd-45d8-8015-7b84bd52d27c,AC,AC2637,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-530bfe49-6127-45e0-bd34-1f282d4e503a,AC,AC2640,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-04d79786-bf06-4fd3-b7e0-337bffa958df,AC,AC2930,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-9ab1c464-a70e-4c1f-81d1-667a69b6ce2e,AC,AC2928,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-ba5fc523-6159-420d-8a5c-085a6345a3ea,AC,AC2941,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-e8d45131-aece-44d1-bfbb-b17c3e7fe303,AC,AC2934,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-ba2553ce-96b2-4575-a60b-499bfd053749,AC,AC2932,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-ab298616-578f-4652-823d-6887ca95d574,AC,AC2628,Mote Key Largo [In Situ],,Blue50,R97,1,0.25
-f68d1daf-d3c3-4c68-983e-485494551321,AC,AC2607,Mote Key Largo [In Situ],,Purple21,R98,1,0.5
-9571f89d-bdcf-4bac-96dd-d842802af377,AC,AC2529,Mote Key Largo [In Situ],,Blue47,R6,1,0.25
-e1662b0b-4443-45cd-b311-1a3a8ad81152,AC,AC96,Mote Key Largo [In Situ],,Blue57,R1069,1,0.25
-94dcc3f2-adbf-4f62-933e-ce4b34954a9d,AP,AP366,Mote Key Largo [In Situ],,Blue32,R56,1,0.25
-5f8460f7-6cf8-4b9e-be35-43cf9ab6eb9c,AP,AP146,Mote Key Largo [In Situ],,Blue32,R56,1,0.25
-1a263013-f419-48c3-b9f1-3c3a3e3e9777,AP,AP426,Mote Key Largo [In Situ],,Blue42,R372,1,0.25
-262a205e-6d01-4f8b-b7fa-7f2bebbf5f7d,AC,AC2582,Mote Key Largo [In Situ],,Blue68,R85,1,0.5
-513d3cc3-63af-428e-a57b-003fd7456faa,AC,AC2611,Mote Key Largo [In Situ],,Blue68,R85,1,0.5
-1e0cb8e8-f7eb-4fc6-9b47-131775fd5ec8,AC,AC2615,Mote Key Largo [In Situ],,Blue68,R85,1,0.5
-c36a661d-669b-4313-9f3d-5977d7a5b657,AC,AC2578,Mote Key Largo [In Situ],,Blue68,R1045,1,0.75
-d174bb41-4316-4c22-a202-b3dfe8e30dd1,AC,AC2579,Mote Key Largo [In Situ],,Blue68,R1045,1,0.75
-f193254f-ab85-4574-96d3-370dd7fd8279,PC,PC0,Mote Islamorada [In Situ],,Red73,R99,1,1.5
-a72ce939-64ca-468c-86b7-5de14ad78ff8,AP,AP397,Mote Islamorada [In Situ],,Red11,R3,1,0.5
 f639efcf-c1cb-4687-a249-5fe69255444f,AC,AC29,Mote Looe Key [In Situ],,AC-29,R299,1,0
 b4ba0a33-981e-424b-86e6-ffd264461a1f,AC,AC88,Mote Looe Key [In Situ],,AC-88,R374,1,0
-f61a09b6-5c0a-4d13-af5c-00d209a709f1,AP,AP366,Mote Key Largo [In Situ],,Unassigned,R1021,1,0.75
-337f598f-854d-42a7-b334-30b3dc086a10,AP,AP426,Mote Key Largo [In Situ],,Unassigned,R1027,1,0.5
 b1554785-f317-4195-a43e-6c2d87a86b85,AP,AP146,Mote Looe Key [In Situ],,CU-TR5,R554,1,0
 3cd65e97-0807-4777-9491-c7f1d4ffb614,AP,AP46,Mote Looe Key [In Situ],,LK-5,R556,1,0
 d34ba119-1b85-4aba-b0d0-f04d66c77200,AP,AP20,Mote Looe Key [In Situ],,Spawning,R626,1,0
@@ -872,7 +822,6 @@ ce8c7814-b6e4-4a4d-8bc1-c89a0fd9f128,AP,AP48,Mote Looe Key [In Situ],,Spawning,R
 e13db167-0d7d-4f72-933b-4e4e37f9d0b4,AP,AP364,Mote Looe Key [In Situ],,X,R630,1,0
 ae84ee73-595a-4591-9c7a-6d887546b585,AC,AC1962,Mote Sand Key [In Situ],,Multi-Recruit,R4,1,0
 97c50a9c-6722-4654-a469-e200f534d9f4,AC,AC2931,Mote Key Largo [In Situ],,Blue55,R92,1,0
-118c66eb-9697-4f71-a306-0ea6e626259b,AC,AC34,Mote Key Largo [In Situ],,Blue27,R122,1,0.5
 0e15cd83-4aea-4282-9212-6ebea1715187,AC,AC2935,Mote Key Largo [In Situ],,Blue55,R92,1,0
 f03132f9-1d9d-421a-964c-282cf6591799,AC,AC2936,Mote Key Largo [In Situ],,Blue55,R92,1,0
 1ef447e9-5cdb-497a-bf95-4fd36de821ae,AC,AC5,Mote Sand Key [In Situ],,Multi,R12,1,0
@@ -883,7 +832,6 @@ ec999a8f-83a6-4a9e-9412-1ae001b628b5,OF,OF932,Mote Key Largo [In Situ],,Blue91,R
 7021faac-faf6-410b-b60e-f1dedd70d17e,AC,AC1962,Mote Looe Key [In Situ],,AC-1962,R483,-20,0
 abba80bd-ddad-4a78-a2a1-86af79a7e82d,AC,AC2627,Mote Looe Key [In Situ],,AC-2627,R207,-20,0
 400de719-869c-42c7-91bb-0b1498cbec84,AC,AC2627,Mote Looe Key [In Situ],,AC-2627,R207,-20,0
-a18a8283-c482-4d7c-add5-a971b2598f2a,AC,AC3,Mote Looe Key [In Situ],,AC-3,R308,-20,0.5
 3508eb1a-3a1b-4c0a-8c21-76e210a000b5,AC,AC34,Mote Looe Key [In Situ],,AC-34,R333,-20,0
 c3f3ea0e-ed50-4ccd-80bd-b42af059f6b1,AC,AC58,Mote Looe Key [In Situ],,AC-58,R385,-20,0
 e9cbd820-53a6-4bf2-b817-8149a4ea880e,AC,AC31,Mote Looe Key [In Situ],,AC-31,R271,-20,0
@@ -898,3 +846,55 @@ cc8df614-2ec6-48ef-b7e0-ff028164a89a,AC,AC75,Mote Looe Key [In Situ],,AC-75,R381
 6bb526d7-c68c-4624-9f3f-f20b53e17aaf,AC,AC58,Mote Looe Key [In Situ],,AC-58,R385,-20,0
 8662af56-a701-40f0-ad02-271ed27de3b5,AC,AC62,Mote Looe Key [In Situ],,AC-62,R383,-20,0
 7cedb6f9-4354-4df4-ada6-83e5eb160d85,AC,AC1962,Mote Looe Key [In Situ],,AC-1962,R483,-20,0
+2507c70e-8498-42ca-a878-f84c51b7b973,AC,AC0,Mote Key Largo [In Situ],,Blue34,R30,70,
+e0af5938-9c5a-42a4-bc76-52883414eb6c,DL,DL15,Mote Looe Key [In Situ],,DL-15,R6,39,
+4f85ca56-4a12-4057-bef7-069fb5475e24,DL,DL270,Mote Looe Key [In Situ],,DL-256/270,R312,39,
+ab8e2cea-bc7f-413a-a455-860e2b239475,SIDEREA,SS100,Mote Looe Key [In Situ],,SS-87/100,R687,36,
+6445cc6f-3b91-4d4f-a838-8f3a32977b99,RADIANS,SR21,Mote Looe Key [In Situ],,SR-21,R688,33,
+128b5ad0-9f78-4c7c-96c1-3882c9947f1d,INTERSEPTA,SI81,Mote Looe Key [In Situ],,SI-81,R518,32,
+8b102bb3-7c03-46fd-a4af-3d9bc50ed67b,PS,PS13,Mote Looe Key [In Situ],,PS-13,R145,23,
+542ceccd-e5a8-46f7-b046-915e8d4d555a,RADIANS,SR4,Mote Looe Key [In Situ],,SR-4/190,R689,22,
+2d125441-48d5-4780-b3a3-22841db3cd29,AC,AC1287,Mote Looe Key [In Situ],,AC-1287,R484,20,
+b3dcfe60-df0f-43f6-a4fd-f8cc1b944fd6,AC,AC1287,Mote Looe Key [In Situ],,AC-1287,R484,20,
+b72cd20c-2fb9-4904-9f5c-cae22821a4c2,CN,CN8,Mote Looe Key [In Situ],,CN-8/30,R364,15,
+ad2be621-8df1-4d65-9e65-2e331dd06241,OF,OF1097,Mote Looe Key [In Situ],,OF Project,R214,10,
+c04312c3-8a08-4ff9-8f23-f12896db5c9a,OF,OF1099,Mote Looe Key [In Situ],,OF Project,R214,10,
+92b26d62-e570-4071-89da-627b5b417626,AC,AC0,Mote Key Largo [In Situ],,Blue36,R96,5,
+4ec3e762-c1ef-4410-9d7f-628c4e44bedd,AC,AC0,Mote Key Largo [In Situ],,Blue35,R93,5,
+0eeacfdf-be96-4f43-9b0c-15884d5ed86c,AC,AC2989,Mote Key Largo [In Situ],,Blue97,R115,5,
+68d1afe8-d4f3-428e-ac3c-bed7b26b2c3e,AC,AC2883,Mote Key Largo [In Situ],,Blue97,R115,5,
+302da316-1660-4d25-ad0b-004bdd1798fd,AC,AC2990,Mote Key Largo [In Situ],,Blue97,R115,5,
+81cc117e-169e-4792-bfe5-6621b045f85a,AC,AC2991,Mote Key Largo [In Situ],,Blue97,R115,5,
+961c38b4-fb5d-4f2d-a80e-2f276e3d4ad8,AC,AC2992,Mote Key Largo [In Situ],,Blue97,R115,5,
+c1749dcf-f71c-4543-92ea-44268c87b611,AC,AC2890,Mote Key Largo [In Situ],,Blue97,R115,5,
+c559508f-8384-44b5-a750-90007f7b3fba,AC,AC2993,Mote Key Largo [In Situ],,Blue97,R115,5,
+3afafd86-add0-4066-a353-ec0792d4179a,AC,AC2994,Mote Key Largo [In Situ],,Blue97,R115,5,
+0faecc84-6904-41e3-b739-39b50e65c894,AC,AC2995,Mote Key Largo [In Situ],,Blue97,R115,5,
+517b0b84-dc15-4629-98d2-168465470ce9,AC,AC2989,Mote Key Largo [In Situ],,Blue87,R116,5,
+3f0a7ae2-9e5a-4e6b-aed0-0d9e84f9df1a,AC,AC2883,Mote Key Largo [In Situ],,Blue87,R116,5,
+95a3c5d2-a36f-44d4-8dff-e62386ba5418,AC,AC2991,Mote Key Largo [In Situ],,Blue87,R116,5,
+45acd27f-1fb5-4fa1-9b10-1754aafef4ef,AC,AC2992,Mote Key Largo [In Situ],,Blue87,R116,5,
+35904604-8452-45d6-b2cc-9eebc17a2704,AC,AC2890,Mote Key Largo [In Situ],,Blue87,R116,5,
+0366b40e-eb4f-4304-9931-38f6ab8988cb,AC,AC2994,Mote Key Largo [In Situ],,Blue87,R116,5,
+9652d0d2-d995-4647-988c-6e84d91a7542,AC,AC2997,Mote Key Largo [In Situ],,Blue97,R115,4,
+7617b704-2cdb-4755-bad2-2c825e76d175,AC,AC3000,Mote Key Largo [In Situ],,Blue97,R115,4,
+208e68d6-f7e0-4b2a-b8df-ea87fbeeda4b,AC,AC2996,Mote Key Largo [In Situ],,Blue97,R115,4,
+6d0cae2c-6e73-450d-892e-84529a6b623b,AC,AC2996,Mote Key Largo [In Situ],,Blue87,R116,4,
+11e15d0e-1996-4a0f-95d3-be41ea8a5d95,AC,AC2990,Mote Key Largo [In Situ],,Blue87,R116,4,
+c33aa538-ff6d-402e-a220-71f10e458419,AC,AC2993,Mote Key Largo [In Situ],,Blue87,R116,4,
+5ea3912e-a273-49dd-91d9-de75d33eeae9,AC,AC2998,Mote Key Largo [In Situ],,Blue97,R115,3,
+0cd37cea-c51f-4a94-a98c-1fb6102d37b9,AC,AC2999,Mote Key Largo [In Situ],,Blue97,R115,3,
+4613a4f7-e768-4dca-b4f3-69f44ef725da,AC,AC2995,Mote Key Largo [In Situ],,Blue87,R116,3,
+989f7545-b80b-40e4-bcd1-2dbe832ca840,AC,AC3001,Mote Key Largo [In Situ],,Blue97,R115,2,
+f542db73-5aee-4255-9cf9-9efd70a1605f,AC,AC2918,Mote Key Largo [In Situ],,Blue97,R115,2,
+444edbfb-18e1-49f5-ac74-68a22387818a,AC,AC2626,Mote Key Largo [In Situ],,Purple23,R42,1,
+f736307f-b641-4ef5-8ee7-df1824c0487e,AP,AP588,Mote Key Largo [In Situ],,Blue44,R29,1,
+7885b5b1-6385-48c4-965c-4628b4ec7b46,AC,AC2507,Mote Key Largo [In Situ],,Blue59,R84,1,
+e4b218a7-8741-4238-9ea7-ae21d6f159dd,AC,AC2503,Mote Key Largo [In Situ],,Blue59,R84,1,
+f483d254-aeec-49e9-a8d0-a6a61d07abba,AC,AC2502,Mote Key Largo [In Situ],,Blue59,R84,1,
+40cec945-c93a-4eb0-abc5-a1b023069363,AC,AC2501,Mote Key Largo [In Situ],,Blue59,R84,1,
+cf8802ef-2328-4aee-89d6-550aebba55a0,AC,AC925,Mote Key Largo [In Situ],,Blue59,R84,1,
+9f8b7779-9f36-42c0-86e7-4cca5641594b,AC,AC1962,Mote Key Largo [In Situ],,Blue59,R84,1,
+d0f3054d-e3f7-478b-8fc6-82645db8e067,AC,AC725,Mote Key Largo [In Situ],,Blue59,R84,1,
+44ebfd69-571a-4fc7-aa9c-53553f775793,AC,AC95,Mote Key Largo [In Situ],,Blue59,R84,1,
+e012fab6-b6af-482a-9c55-c185d0615fcb,AC,AC92,Mote Key Largo [In Situ],,Blue59,R84,1,

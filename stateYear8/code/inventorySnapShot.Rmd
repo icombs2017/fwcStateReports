@@ -275,10 +275,10 @@ inSituACER6 <- inSituACER5 %>%
   flextable::compose(part = "header", j = "total_genotypes", value = as_paragraph("# Putative Genotypes")) %>%
   flextable::compose(part = "header", j = "site", value = as_paragraph("Site")) %>%
   flextable::compose(part = "header", j = "total_TBD", value = as_paragraph("To Be Recorded")) %>% 
-  flextable::compose(part = "header", j = "total_0_25", value = as_paragraph("1/4")) %>%
-  flextable::compose(part = "header", j = "total_0_5", value = as_paragraph("1/2")) %>%
-  flextable::compose(part = "header", j = "total_0_75", value = as_paragraph("3/4")) %>%
-  flextable::compose(part = "header", j = "total_1", value = as_paragraph("1")) %>%
+  flextable::compose(part = "header", j = "total_0_25", value = as_paragraph("5-10cm TLE")) %>%
+  flextable::compose(part = "header", j = "total_0_5", value = as_paragraph("10-25cm TLE")) %>%
+  flextable::compose(part = "header", j = "total_0_75", value = as_paragraph("25-50cm TLE")) %>%
+  flextable::compose(part = "header", j = "total_1", value = as_paragraph("25-50 TLE")) %>%
   flextable::compose(part = "header", j = "totalQty", value = as_paragraph("Total")) %>% 
   autofit() %>%
   flextable::font(fontname = "Times New Roman", part = "all") %>%
@@ -306,9 +306,9 @@ inSituACERtab
 
 
 inSituACERDoc = read_docx()
-inSituACERDoc = body_add_flextable(inSituACERDoc, value = inSituACERtab)
-# print(inSituACERDoc, target = "../tables/inSituACERinventory.docx")
-inSituACERtab
+inSituACERDoc = body_add_flextable(inSituACERDoc, value = inSituACER6)
+# print(inSituACERDoc, target = "../tables/inSituACERinventoryNEW.docx")
+inSituACER6
 
 ```
 
@@ -316,38 +316,111 @@ inSituACERtab
 
 ```{r, in situ inventory massives, include = TRUE}
 
-inSituMSVS <- inSitu1 %>% 
-  filter(Species != "ACER", Total > 0) %>%
-  select(-c(TLE)) %>% 
-  arrange(Site)
+inSituMSVS1 <- inSitu1 %>% 
+  select(species, genotype, site, qty, rack, size) %>%
+  separate(genotype, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>% 
+  mutate(geno = as.character(geno)) %>% 
+  # Removing all non-numeric genotypes (e.g. anything weird like 0?000? etc)
+  filter(grepl("^\\d+$", geno)) %>% 
+  mutate(across(c(site, geno, genotype, species, speciesCode, rack, size), as.factor)) %>% 
+  mutate(
+    species = if_else(
+      speciesCode %in% c("AC", "AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+      speciesCode,  # Keep the original value if it's in the list
+      "other"   # Replace with 'other' if it's not
+    )
+  ) %>% 
+  group_by(species, genotype, site, rack, size) %>% 
+  dplyr::summarize(total_qty = sum(qty)) %>% 
+  filter(total_qty > 0)
+
+inSituMSVS2 <- inSituMSVS1 %>%
+  group_by(species, site, genotype, size) %>%
+  mutate(size = as.factor(size)) %>% 
+  dplyr::summarize(total_qty = sum(total_qty, na.rm = TRUE), .groups = "drop") %>% 
+  mutate(
+    # Replace NA factor levels with "TBD"
+    size = fct_explicit_na(size, na_level = "TBD"),
+    # Recode other specific size values to "TBD" or "1"
+    size = recode(size, "0" = "TBD", "0.4375" = "TBD", "0.45" = "TBD", "1.5" = "1")
+  )
+
+inSituMSVS3 <- inSituMSVS2 %>%
+  group_by(species, site) %>%
+  mutate(total_genotypes = n_distinct(genotype)) %>%
+  ungroup() %>%
+  mutate(total_qty = as.numeric(total_qty)) %>%
+  tidyr::pivot_wider(
+    names_from = size,
+    values_from = total_qty,
+    values_fill = list(total_qty = 0),
+    values_fn = sum  # This sums duplicates for each species-site-size combo
+  ) %>%
+  mutate(totalQty = `TBD` + `0.25` + `0.5` + `0.75` + `1`)
+
+inSituMSVS4 <- inSituMSVS3 %>%
+  group_by(species, site) %>%
+  dplyr::summarize(
+    total_genotypes = first(total_genotypes),  # Keep the total_genotypes column
+    total_TBD = sum(`TBD`, na.rm = TRUE),
+    total_0_25 = sum(`0.25`, na.rm = TRUE),
+    total_0_5 = sum(`0.5`, na.rm = TRUE),
+    total_0_75 = sum(`0.75`, na.rm = TRUE),
+    total_1 = sum(`1`, na.rm = TRUE),
+    totalQty = sum(totalQty, na.rm = TRUE),
+  )
+
+inSituMSVS5 <- inSituMSVS4 %>% 
+  filter(!species %in% "AC") %>% 
+  select(site, species, total_genotypes, total_TBD, total_0_25, total_0_5, total_0_75, total_1, totalQty) %>% 
+  arrange(site)
 
 
-inSituMSVStab <- inSituMSVS %>% 
-   flextable() %>%
+
+
+
+
+inSituMSVS6 <- inSituMSVS5 %>% 
+  flextable() %>%
   set_header_labels(Data.set = "Data set") %>% 
-  flextable::compose(part = "header", j = "Species", value = as_paragraph("Species")) %>%
-  flextable::compose(part = "header", j = "# of Putative Genotypes", value = as_paragraph("# of Putative Genotypes")) %>%
-  flextable::compose(part = "header", j = "Site", value = as_paragraph("Site")) %>%
-  flextable::compose(part = "header", j = "Total", value = as_paragraph("Total")) %>%
+  flextable::compose(part = "header", j = "species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "total_genotypes", value = as_paragraph("# Putative Genotypes")) %>%
+  flextable::compose(part = "header", j = "site", value = as_paragraph("Site")) %>%
+  flextable::compose(part = "header", j = "total_TBD", value = as_paragraph("To Be Recorded")) %>% 
+  flextable::compose(part = "header", j = "total_0_25", value = as_paragraph("1/4")) %>%
+  flextable::compose(part = "header", j = "total_0_5", value = as_paragraph("1/2")) %>%
+  flextable::compose(part = "header", j = "total_0_75", value = as_paragraph("3/4")) %>%
+  flextable::compose(part = "header", j = "total_1", value = as_paragraph("1")) %>%
+  flextable::compose(part = "header", j = "totalQty", value = as_paragraph("Total")) %>% 
   autofit() %>%
   flextable::font(fontname = "Times New Roman", part = "all") %>%
   fontsize(size = 12, part = "all") %>%
   bold(part = "header") %>%
-  align(align = "center", j = "Total") %>% 
+  align(align = "center", j = "totalQty") %>% 
   set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
   add_footer_row(values = c("Total", "", 
-          sum(inSituMSVS$`# of Putative Genotypes`, na.rm = TRUE), 
-          sum(inSituMSVS$Total, na.rm = TRUE)),
-          colwidths = c(1, 1, 1, 1))
+          sum(inSituMSVS5$total_genotypes, na.rm = TRUE), 
+          sum(inSituMSVS5$total_TBD, na.rm = TRUE), 
+          sum(inSituMSVS5$total_0_25, na.rm = TRUE), 
+          sum(inSituMSVS5$total_0_5, na.rm = TRUE), 
+          sum(inSituMSVS5$total_0_75, na.rm = TRUE), 
+          sum(inSituMSVS5$total_1, na.rm = TRUE), 
+          sum(inSituMSVS5$totalQty, na.rm = TRUE)),
+          colwidths = c(1, 1, 1, 1, 1, 1, 1, 1, 1))
+
+
+
+
+
 
 # Print or view the final flextable
-inSituMSVStab
+inSituMSVS6
 
 
 inSituMSVSDoc = read_docx()
-inSituMSVSDoc = body_add_flextable(inSituMSVSDoc, value = inSituMSVStab)
-# print(inSituMSVSDoc, target = "../tables/inSituMSVSinventory.docx")
-inSituMSVStab
+inSituMSVSDoc = body_add_flextable(inSituMSVSDoc, value = inSituMSVS6)
+print(inSituMSVSDoc, target = "../tables/inSituMSVSinventory.docx")
+inSituMSVS6
 
 ```
 
