@@ -63,287 +63,27 @@ Example: docs.google.com/spreadsheets/d/FILE_ID_GOES_HERE/other_information/. Be
 ```{r, outplantLoadingData, include = TRUE}
 
 data <- drive_download(
- as_id("1b4IWK7tfSt3n8o8NlgJKSDoqj_QkHvKcaJBNz85RBv4"),
+ as_id("18w_T068tjY1kse9qKBL1U_gDjZ9iByMcpmUIS5R4tk8"),
    path = "../data/outplantData.xlsx",
    overwrite = TRUE)
 
 # The start and end dates for this reporting period
-reportingStart <- as.Date("2023-07-01")
-reportingEnd <- as.Date("2023-12-31")
+reportingStart <- as.Date("2024-07-01")
+reportingEnd <- as.Date("2025-06-30")
 
-# APAL Data
-apalData <- read_excel("../data/outplantData.xlsx", sheet = "ex-situ Apal outplants")
+#Only Site with 90day data
 
-# ACER Data
-acerData <- read_excel("../data/outplantdata.xlsx", sheet = "in-situ Acer outplants", na = c("", "N/A", "NA"))
+y8Data <- read_excel("../data/outplantData.xlsx", sheet = 1, skip = 1, col_names = FALSE)
 
-Y24Data <- read_excel("../data/outplantdata.xlsx", sheet = "2024-Present Lower Keys Outplan", na = c("", "N/A", "NA"))
-
-
+# Step 2: Set the first row as column names
+colnames(y8Data) <- as.character(y8Data[1, ])  # use row 1 as header
+y8Data <- y8Data[-1, ]  # remove the first row now that it's the header
 
 
-```
-
-# Sexual Recruit Outplants
-## Doing some data wrangling to add the sexual recruits that were outplanted along with ACER and APAL, however we just want to capture the massives. 
-
-
-```{r, SRwrangling, include =TRUE}
-srdata <- drive_download(
- as_id("1f_9toNf8jaN3MbFsu7irqHi0dkIV0jHurAeRFtXi2yA"),
-   path = "../data/SRoutplantData.xlsx",
-   overwrite = TRUE)
-
-srDataZ1 <- read_excel("../data/SRoutplantData.xlsx", sheet = "Site Z", na = c("", "N/A", "NA"))
-
-srDataZ <- srDataZ1 %>% 
-  select(`Outplant Date`,           
- `Site ID`,
-  Species,
-`Monitoring Date`,
- `# of frags in cluster`,
- `# Dead`,                  
- `# Missing`) %>% 
-  mutate(
-   ` Outplant Date` = as.Date(`Outplant Date`),
-    `Site ID` = as.factor(`Site ID`),
-    Species = as.factor(Species)) %>% 
-  filter(!Species %in% c("APAL", "ACER")) %>% 
-  droplevels() %>%
-  dplyr:: rename(Date = `Outplant Date`,
-                 `1-month Monitoring` = `Monitoring Date`) %>%
-  group_by(Date, `1-month Monitoring`, `Site ID`) %>%
-  dplyr::summarize(`# frags` = sum(`# of frags in cluster`),
-                   totalDead = sum(`# Dead`),
-                   totalMissing = sum(`# Missing`)) %>% 
-  mutate(`1-month Survival` = (1-((totalDead+totalMissing)/`# frags`)), 
-         `1-month % Dead` = (totalDead/`# frags`),
-         `1-month % Missing` = (totalMissing/`# frags`),
-         Deliverable = "State Yr7",
-         `General Location` = "Site Z" ) %>% 
-  select(Date, `General Location`, `Site ID`, Deliverable,`# frags`, `1-month Monitoring`, `1-month Survival`, `1-month % Dead`, `1-month % Missing`)
-  
-
-
-srDataP1 <- read_excel("../data/SRoutplantData.xlsx", sheet = "Site P", na = c("", "N/A", "NA"))
-
-srDataP <- srDataP1 %>% 
-   select(`Outplant Date`,           
- `Site ID`,
-  Species,
-`Monitoring Date`,
- `# of frags in cluster`,
- `# Dead`,                  
- `# Missing`) %>% 
-  mutate(
-   ` Outplant Date` = as.Date(`Outplant Date`),
-    `Site ID` = as.factor(`Site ID`),
-    Species = as.factor(Species)) %>% 
-  filter(!Species %in% c("APAL", "ACER")) %>% 
-  droplevels() %>%
-  dplyr:: rename(Date = `Outplant Date`,
-                 `1-month Monitoring` = `Monitoring Date`) %>%
-  group_by(Date, `1-month Monitoring`, `Site ID`) %>%
-  dplyr::summarize(`# frags` = sum(`# of frags in cluster`),
-                   totalDead = sum(`# Dead`),
-                   totalMissing = sum(`# Missing`)) %>% 
-  mutate(`1-month Survival` = (1-((totalDead+totalMissing)/`# frags`)), 
-         `1-month % Dead` = (totalDead/`# frags`),
-         `1-month % Missing` = (totalMissing/`# frags`),
-         Deliverable = "State Yr7",
-         `General Location` = "Site P" ) %>% 
-  select(Date, `General Location`, `Site ID`, Deliverable,`# frags`, `1-month Monitoring`, `1-month Survival`, `1-month % Dead`, `1-month % Missing`)
-
-
-srData <- rbind(srDataP, srDataZ)
-
-
-
-
+outplantRaw <- read.csv("../data/outplanting.csv")
 
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```{r, fragLoadingData, include = TRUE}
-stateFrag <- read.csv("../data/stateFrag.csv")
-
-
-
-
-
-
- # data <- drive_download(
- # as_id("1u13FQRQ6u2vc4bRK6ZlrIGdhLjLvT_L2nAx7zcglWA0"),
- #   path = "../data/fraggingData.xlsx",
- #   overwrite = TRUE)
-
-# Frag Data 2023
-# frag23 <- read_excel("../data/fraggingData.xlsx", sheet = "Fragging 2023", na = "")
-# 
-# # Frag Data 2024
-# frag24 <- read_excel("../data/fraggingData.xlsx", sheet = "Fragging 2024", na = "")
-
-```
-
-
-# Fragging Summary
-### We are going to report on our fragging outputs during the reporting period, but first we need to do some data wrangling.
-
-```{r, fragDataWrangling, include = TRUE}
-
-
-# 
-# stateFrag <- stateFrag1 %>% 
-#   select(`Reporting Period`,
-#          `Date Cut`, 
-#          Species, 
-#          `New Genotype`, 
-#          `New Frag Count`) %>% 
-#   filter(`Date Cut` >= "2023-07-01" & `Date Cut` <= "2024-06-30") %>%
-#   filter(`Reporting Period` %in% c("State Yr7")) %>%
-#   mutate_at(c("Reporting Period", 
-#          "Date Cut", 
-#           "Species",
-#           "New Genotype"), as.factor) %>%
-#   mutate_at(c("Date Cut"), as.Date) %>% 
-#   na.omit() 
-#   # mutate(MonthYear = format(`Date Cut`, "%b %Y")) %>% 
-#   # group_by(MonthYear) %>% 
-#   # mutate(MonthCount = sum(`New Frag Count`))
-
-fragMonth <- stateFrag %>% 
-  select(Date.Cut, Species, New.Genotype, New.Frag.Count) %>% 
-  mutate(Date = as.Date(Date.Cut ,format = "%m/%d/%Y")) %>% 
-  mutate(Species = as.factor(Species)) %>% 
-  mutate(Genotype = as.factor(New.Genotype)) %>% 
-  select(Date, Species, Genotype, New.Frag.Count) %>% 
-  mutate(Month = format(Date, "%Y-%m")) %>% 
-  mutate(Month = as.factor(Month)) %>% 
-  group_by(Month, Species) %>% 
-  dplyr::summarize(totalFrag = sum(New.Frag.Count))
-
-summary<-fragMonth %>% 
-  group_by(Species) %>% 
-  dplyr::summarize(totalFrag = sum(totalFrag))
-
-# write.csv(stateFrag, "../data/stateFrag.csv", row.names = FALSE)
-
-
-
-```
-
-```{r, fraggingNumbersPlot, include = TRUE}
-reportingPeriod <- as.factor(c("2023-07", "2023-08", "2023-09", "2023-10", "2023-11", "2023-12", "2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06"))
-
-# Create a summary dataframe with all combinations of "Month" and "Species"
-
-fragOutputPlot1 <- ggplot(fragMonth, aes(x = Month, y = totalFrag, fill = Species)) +
-  geom_bar(stat = "identity")+
-  ggtitle("Fragments Produced")+
-  xlab("")+
-  ylab("Number of Fragments Produced")+
-  scale_y_continuous(limits = c(0, 6000), breaks = seq(0, 6000, by = 1000))
-  
-
-fragOutputPlot <- fragOutputPlot1 + theme(
-    # Title
-    plot.title = element_text(size = 40, face = "bold"),
-    # X Axis
-    axis.text.x = element_text(size = 40, angle = 45, hjust = 1),  
-    axis.title.x = element_text(size = 20, face = "bold"),
-    # Y Axis
-    axis.title.y = element_text(size = 40, face = "bold"),
-    axis.text.y = element_text(colour = "black", size = 30, face = "bold"),
-    # Facets <- this will be removed if you don't have facets!
-    strip.text = element_text(size = 50, face = 'bold'),
-    strip.background = element_rect(fill = "#D1D0D0"),
-    # Legend
-    legend.title = element_text(size = 40, face = "bold"),
-    legend.text = element_text(size = 30, face = "bold", colour = "black"),
-    legend.position = "bottom",
-    # Grid and Background
-    panel.grid.major = element_line(size = 0.3, linetype = 'solid', colour = "black"),
-    panel.background = element_rect(fill = '#f3f3f3'),
-    # Axis Lines and Ticks
-    axis.line = element_line(colour = "black"),
-    axis.ticks = element_line(color="black"),
-    # Text
-    text = element_text(size=20, color="black"))
-
-
-ggsave("../figures/fragOutputPlot.png", plot = fragOutputPlot, width = 20, height = 15, units = 'in', dpi = 600)
-
-
-```
-
-
-#Fragging Table
-
-```{r, fraggingTable, include = TRUE}
-# Wrangling for the table
-
-
-fragTab1 <- stateFrag %>% 
-  select(Date.Cut, Species, New.Genotype, New.Frag.Count) %>% 
-  mutate(Date = as.Date(Date.Cut ,format = "%m/%d/%Y")) %>% 
-  mutate(Species = as.factor(Species)) %>% 
-  mutate(Genotype = as.factor(New.Genotype)) %>% 
-  select(Date, Species, Genotype, New.Frag.Count) %>% 
-  mutate(Month = format(Date, "%Y-%m"))  %>%  
-  # group_by(Month, Species, Genotype) %>% 
-  # dplyr::summarize(totalFrag = sum(New.Frag.Count)) %>% 
-  # select(Month, Species, Genotype, totalFrag) %>% 
-  # distinct() %>% 
-  group_by(Month, Species) %>%
-  mutate(Genos = n_distinct(Genotype)) %>% 
-  ungroup() %>% 
-  select(Month, Species, New.Frag.Count, Genos) %>%
-  group_by(Month, Species)%>%
-  group_by(Month, Species, Genos) %>%
-  dplyr::summarize(totalFrag = sum(New.Frag.Count)) 
-
-# Making the table
-fragTab <- fragTab1 %>% 
-  flextable() %>%
-  set_header_labels(Data.set = "Data set") %>% 
-  flextable::compose(part = "header", j = "totalFrag", value = as_paragraph("Number of Microfragments\nPropagated")) %>%
-  flextable::compose(part = "header", j = "Genos", value = as_paragraph("Number of Genotypes\nPropagated")) %>%
-  autofit() %>%
-  flextable::font(fontname = "Times New Roman", part = "all") %>%
-  fontsize(size = 12, part = "all") %>%
-  bold(part = "header") %>%
-  align(align = "center", j = "totalFrag") %>% 
-  align(align = 'center', j = "Genos") %>% 
-  set_table_properties(width = 0.8, align = "center", layout = "autofit") %>%  
-  add_footer_row(values = list(Month = "Totals:", "", totalFrag = sum(fragTab1$totalFrag), Genos = sum(fragTab1$Genos)), colwidths = c(1, 1, 1, 1)) %>%
-  align(align = 'center', part = "footer")
-
-totals <- c("Totals:", "", sum(fragTab1$totalFrag), sum(fragTab1$Genos))
-
-fragDoc = read_docx()
-fragDoc = body_add_flextable(fragDoc, value = fragTab)
-print(fragDoc, target = "../tables/fragOutputTable.docx")
-fragTab
-
-
-```
-
-
-
-
 
 
 # 2024 Monitoring
@@ -353,48 +93,54 @@ fragTab
 
 
 ```{r, apalDataWrangling, include = TRUE}
-srData # data from our sexual recruits
 
-outplantY24 <- Y24Data %>% 
-  select( Date,
-         `General Location`,
+outplantY8 <- y8Data %>%
+  select(`Outplant Date`,
          `Site ID`, 
-         Deliverable, 
-         `# frags`, 
-         `1-month Monitoring`,
-         `1-month Survival`, 
-         `1-month % Dead`, 
-         `1-month % Missing`,
-         # `1-month % Plot Survival` 
-         # `12-month Monitoring`,                           
-         # `12-month Survival`,                             
-         # `12-month % Dead`,                               
-         # `12-month % Missing`,                            
-         # `12-month % Plot Survival`) %>%)
+         `# of frags`, 
+         `90 day # Dead`, 
+         `90 day # Missing`
   ) %>% 
-  filter(Deliverable %in% c("State Yr7")) %>% 
-  filter(`Site ID` %in% c("HH_3", "JP_1")) %>% 
-  mutate_at(c(#"Year", 
-         "Site ID", 
-        "Deliverable"), as.factor) %>% 
+  filter(`Site ID` %in% "IC_Z2") %>%
+  mutate(site = as.factor(`Site ID`),
+         frags = as.numeric(`# of frags`),
+         numberDead = as.numeric(`90 day # Dead`),
+         numberMissing = as.numeric(`90 day # Missing`)) %>% 
+  mutate(percentSurvival = ((frags - (numberDead+numberMissing))/ frags) * 100,
+         percentDead = ((numberDead/frags)*100),
+        percentMissing = (numberMissing/frags)*100) %>% 
+  select(site, frags, numberDead, numberMissing, percentSurvival, percentDead, percentMissing)
+
+
+outplanting <- outplantRaw %>% filter(Deliverable %in% "State Year 8")
+
+coral1 <- outplanting %>% 
+  select(Location, Date, Latitude, Longitude, Genotype, Outplanted) %>% 
+  separate(Location, into = c("trash", "site"), sep = "/") %>% 
+  filter(!site %in% " Junk Data") %>% 
   droplevels() %>% 
-  # mutate(cum_sum = cumsum(`# frags`)) %>%
-  mutate(Date = as.Date(Date, "%m %d %Y"))
+  select(Date, site, Genotype, Latitude, Longitude,Outplanted) %>% 
+  separate(Genotype, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>%
+  mutate(geno = as.character(geno)) %>% 
+  mutate(site = as.factor(site),
+         Genotype = as.factor(Genotype),
+         speciesCode = as.factor(speciesCode),
+         geno = as.factor(geno)) %>% 
+  mutate( Date = as.Date(Date, "%m/%d/%y")) %>% 
+  arrange(Date) %>% 
+  group_by(Date, site, Latitude, Longitude, speciesCode, Genotype) %>% 
+  dplyr::summarize(totalGenoOutplanted = sum(Outplanted)) %>%
+  group_by(Date, site, Latitude, Longitude, speciesCode) %>% 
+  dplyr::mutate(totalSpeciesOutplanted = sum(totalGenoOutplanted)) %>% 
+group_by(Date, site, Latitude, Longitude) %>% 
+  mutate(totalOutplanted = sum(totalGenoOutplanted))
+   
 
-outplantData1 <- rbind(srData,outplantY24) %>% 
-  as.tibble()
- 
-  
-outplantData <- outplantData1 %>%
-    mutate(cum_sum = base::cumsum(`# frags`)) %>%
-    mutate(Date = as.Date(Date))
-  
-# write.csv(outplantData, "../tables/outplantY24.csv", row.names = FALSE)
 
 
-deliverables <- c(2000)
+deliverables <- c(10000)
 
-cumulativeDeliverables <- c(2000)
+cumulativeDeliverables <- c(10000)
 
 
 
@@ -408,10 +154,10 @@ cumulativeDeliverables <- c(2000)
 
 ```{r, 2024OutplantCumulativePlot, include = TRUE}
 
-outplantY24plot1<- ggplot(outplantData, aes(x = Date, y = cum_sum))+
+outplantY24plot1<- ggplot(coral1, aes(x = Date, y = cum_sum))+
   geom_line(aes(color = "Fragments Outplanted", linetype = 'solid'), linewidth = 3)+
   geom_hline(aes(yintercept = cumulativeDeliverables, linetype = 'State Year 7 Outplant Goal', color = 'State Year 7 Outplant Goal'), linewidth = 3)+
-  scale_y_continuous(limits = c(0, 3000), breaks = seq(0, 3000, by = 500))+
+  scale_y_continuous(limits = c(0, 15000), breaks = seq(0, 15000, by = 500))+
   ggtitle(expression("Coral Fragments Outplanted for State Year 7"))+
   xlab(" ")+
   ylab("Number of fragments outplanted")+
@@ -454,71 +200,25 @@ Creating a table for number of outplant events
 ```{r, y24OutplantTable, include = TRUE}
 
 
-
-
-
-
-# Wrangling for the table
-
-outplantY24tab1 <- Y24Data %>%
-  select( Date,
-         `General Location`,
-         `Site ID`, 
-         Deliverable,
-         Lat,
-         Long,
-         `# frags`, 
-         `1-month Monitoring`,
-         `1-month Survival`, 
-         `1-month % Dead`, 
-         `1-month % Missing`,
-         # `1-month % Plot Survival` 
-         # `12-month Monitoring`,                           
-         # `12-month Survival`,                             
-         # `12-month % Dead`,                               
-         # `12-month % Missing`,                            
-         # `12-month % Plot Survival`) %>%)
-  ) %>% 
-  mutate(Date = as.Date(Date)) %>% 
-  filter(Deliverable %in% c("State Yr7")) %>% 
-  select(Date,
-         `General Location`,
-         `Site ID`, 
-         Lat,
-         Long,
-         `# frags`, 
-         `1-month Monitoring`,
-         `1-month Survival`, 
-         `1-month % Dead`, 
-         `1-month % Missing`)
-  
-
 # Making the table
-outplantY24tab <- outplantData %>% 
+outplantY24tab <- coral1 %>% 
   flextable() %>%
   set_header_labels(Data.set = "Data set") %>% 
   flextable::compose(part = "header", j = "Date", value = as_paragraph("Outplant Date")) %>%
-  flextable::compose(part = "header", j = "# frags", value = as_paragraph("Number of Corals")) %>%
-  flextable::compose(part = "header", j = "Lat", value = as_paragraph("Latitude")) %>% 
-  flextable::compose(part = "header", j = "Long", value = as_paragraph("Longitude"))%>%
+  flextable::compose(part = "header", j = "totalOutplanted", value = as_paragraph("Number of Corals Outplanted")) %>%
+  flextable::compose(part = "header", j = "Latitude", value = as_paragraph("Latitude")) %>% 
+  flextable::compose(part = "header", j = "Longitude", value = as_paragraph("Longitude"))%>%
   autofit() %>%
   flextable::font(fontname = "Times New Roman", part = "all") %>%
   fontsize(size = 12, part = "all") %>%
   bold(part = "header") %>%
-  align(align = "center", j = "# frags") %>% 
-  set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
-  add_footer_row(values = list(`Outplant Date` = "Totals:"," ","","","","","","","",
-                               `Number of Corals` = sum(outplantY24tab1$`# frags`)), colwidths = c(1,1,1,1,1,1,1,1,1,1))
-  
-  
-  
-  
- 
-totals <- c("Totals:", "", sum(outplantY24tab1$`# plugs`))
+  align(align = "center", j = "totalOutplanted") %>% 
+  set_table_properties(width = 1, align = "center", layout = "autofit")
+
 
 outplantY24Doc = read_docx()
 outplantY24Doc = body_add_flextable(outplantY24Doc, value = outplantY24tab)
-print(outplantY24Doc, target = "../tables/outplantY24table.docx")
+print(outplantY24Doc, target = "../tables/outplantStateY8table.docx")
 outplantY24tab
 
 
@@ -578,4 +278,38 @@ ggsave("../figures/oneMonthSurvivalY24.png", plot =y241MoSurvivalPlot, width = 2
 
 
 ```
+
+
+everything above might be garbage!
+
+```{r, outplant, include = TRUE}
+
+
+
+outplant1 <- read.csv("../data/outplanting.csv")
+
+outplant2 <- outplant1 %>% filter(Deliverable == "State Year 8")
+
+
+
+
+
+```
+
+
+
+
+
+```{r}
+coral1
+
+genotype <- coral1 %>% 
+  
+
+
+
+
+
+```
+
 

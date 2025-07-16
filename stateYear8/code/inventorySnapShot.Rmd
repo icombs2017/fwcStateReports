@@ -432,19 +432,22 @@ We are going to explore our production numbers during this reporting period.
 We are importing data taken from Seafoundry that has all of the deltas from our reporting period. We then will remove everything that isn't listed as 'fragging' (e.g. transfers) and just focus on our fragging production. 
 ```{r, ex situ production, include = TRUE}
 
-frag1 <- read.csv("../data/inventoryDeltas.csv")
-
-frag2 <- frag1 %>% 
-    mutate(
+ukDelta <- read.csv("../data/ukDeltas.csv")
+ukDelta1 <- ukDelta %>% 
+  separate(genotype_name, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>%   mutate(geno = as.character(geno)) %>% 
+  # Removing all non-numeric genotypes (e.g. anything weird like 0?000? etc)
+  filter(grepl("^\\d+$", geno)) %>% 
+  mutate(
     date = as.POSIXct(date, format = "%m/%d/%Y %I:%M:%S %p"),
-    # Format as YYYY-MM-DD
-    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"), 
-    monthYear = as.POSIXct(monthYear, format = "%Y-%m-%d"),
-    # Convert to POSIXct
-    monthYear = format(monthYear, "%m/%Y")) %>% 
-  filter(monthYear %in% c("10/2024")) %>% 
-  select(site, species, genotype_name, reason, qty, comment) %>% 
-  mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
+    monthYear = format(date, "%m/%Y")
+  ) %>%
+  filter(
+    monthYear %in% c("02/2025", "03/2025"),
+    species %in% c("SB", "SIDEREA", "AP"),
+    reason %in% c("fragging")
+  ) %>% 
+  select(site, speciesCode, genotype_name, reason, qty, comment) %>% 
+  mutate(across(c(site, speciesCode, genotype_name, reason), as.factor)) %>% 
   filter(reason %in% ("fragging")) %>%
   # mutate(
   #   species = if_else(
@@ -453,19 +456,48 @@ frag2 <- frag1 %>%
   #     "other"   # Replace with 'other' if it's not
   #   )
   # ) %>% 
-  group_by(site, species) %>%
+  group_by(site, speciesCode) %>%
   dplyr::summarize(production  = sum(qty),
                    numberOfGenets = n_distinct(genotype_name)) %>% 
-  select(site, species, numberOfGenets, production)
+  select(site, speciesCode, numberOfGenets, production)
 
-numberOfFragGenos <- frag1 %>% 
-    mutate(
-    date = as.POSIXct(date, format = "%m/%d/%Y %I:%M:%S %p"),
-    # Format as YYYY-MM-DD
-    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"), 
+frag1 <- read.csv("../data/inventoryDeltas.csv")
+# fragTest <- frag1 %>% filter(reason %in% "fragging")
+frag2 <- frag1 %>% 
+  separate(genotype_name, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>%   mutate(geno = as.character(geno)) %>% 
+  # Removing all non-numeric genotypes (e.g. anything weird like 0?000? etc)
+  filter(grepl("^\\d+$", geno)) %>% 
+   mutate(
+    date = as.POSIXct(date, format = "%m/%d/%y %H:%M"),   # <- assign result to 'date'
+    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"),
     monthYear = as.POSIXct(monthYear, format = "%Y-%m-%d"),
-    # Convert to POSIXct
-    monthYear = format(monthYear, "%m/%Y")) %>% 
+    monthYear = format(monthYear, "%m/%Y")
+  ) %>% 
+  filter(monthYear %in% c("10/2024", "02/2025", "03/2025")) %>% 
+  select(site, speciesCode, genotype_name, reason, qty, comment) %>% 
+  mutate(across(c(site, speciesCode, genotype_name, reason), as.factor)) %>% 
+  filter(reason %in% ("fragging")) %>%
+  # mutate(
+  #   species = if_else(
+  #     species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+  #     species,  # Keep the original value if it's in the list
+  #     "other"   # Replace with 'other' if it's not
+  #   )
+  # ) %>% 
+  group_by(site, speciesCode) %>%
+  dplyr::summarize(production  = sum(qty),
+                   numberOfGenets = n_distinct(genotype_name)) %>% 
+  select(site, speciesCode, numberOfGenets, production)
+
+totalFrag <- bind_rows(frag2,ukDelta1)
+
+numberOfFragGenosLK <- frag1 %>% 
+    mutate(
+    date = as.POSIXct(date, format = "%m/%d/%y %H:%M"),   # <- assign result to 'date'
+    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"),
+    monthYear = as.POSIXct(monthYear, format = "%Y-%m-%d"),
+    monthYear = format(monthYear, "%m/%Y")
+  ) %>%
   filter(monthYear %in% c("10/2024")) %>% 
   select(site, species, genotype_name, reason, qty, comment) %>% 
   mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
@@ -483,17 +515,47 @@ numberOfFragGenos <- frag1 %>%
   select(species, numberOfGenets, production) %>% 
   dplyr::summarize(totalNumberOfGenets = sum(numberOfGenets))
 
+numberOfFragGenosUK <- ukDelta %>% 
+    separate(genotype_name, into = c("speciesCode", "geno"), sep = 2, remove = FALSE) %>%   
+  mutate(geno = as.character(geno)) %>% 
+  # Removing all non-numeric genotypes (e.g. anything weird like 0?000? etc)
+  filter(grepl("^\\d+$", geno)) %>% 
+  mutate(
+    date = as.POSIXct(date, format = "%m/%d/%Y %I:%M:%S %p"),
+    monthYear = format(date, "%m/%Y")
+  )  %>%
+filter(
+    monthYear %in% c("02/2025", "03/2025"),
+    species %in% c("SB", "SIDEREA", "AP"),
+    reason %in% c("fragging")
+  ) %>%   select(site, species, genotype_name, reason, qty, comment) %>% 
+  mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
+  # mutate(
+  #   species = if_else(
+  #     species %in% c("AP", "CN", "DL", "MC", "OF", "PC", "PS"),
+  #     species,  # Keep the original value if it's in the list
+  #     "other"   # Replace with 'other' if it's not
+  #   )
+  # ) %>% 
+  group_by(species) %>%
+  dplyr::summarize(production  = sum(qty),
+                   numberOfGenets = n_distinct(genotype_name)) %>% 
+  select(species, numberOfGenets, production) %>% 
+  dplyr::summarize(totalNumberOfGenets = sum(numberOfGenets))
+
+totalProductionGenets <- as.tibble(numberOfFragGenosUK+numberOfFragGenosLK)
+
 ```
 ##Fragging Table
 Making a table to summarize our production Outputs
 
 ```{r}
 
-fragTab <- frag2 %>% 
+fragTab <- totalFrag %>% 
 flextable() %>%
   set_header_labels(Data.set = "Data set") %>% 
   flextable::compose(part = "header", j = "site", value = as_paragraph("Site")) %>%
-  flextable::compose(part = "header", j = "species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "speciesCode", value = as_paragraph("Species")) %>%
   flextable::compose(part = "header", j = "production", value = as_paragraph("Total Fragments Produced")) %>%
   autofit() %>%
   flextable::font(fontname = "Times New Roman", part = "all") %>%
@@ -503,8 +565,8 @@ flextable() %>%
   set_table_properties(width = 1, align = "center", layout = "autofit") %>%  
   add_footer_row(values = c("Total", "", 
           
-          sum(numberOfFragGenos$totalNumberOfGenets, na.rm = TRUE),
-          sum(frag2$`production`, na.rm = TRUE)),
+          sum(totalProductionGenets$totalNumberOfGenets, na.rm = TRUE),
+          sum(totalFrag$`production`, na.rm = TRUE)),
           colwidths = c(1, 1, 1, 1))
 fragTab
 
@@ -527,12 +589,11 @@ fragTab
 
 frag3 <- frag1 %>% 
  mutate(
-    date = as.POSIXct(date, format = "%m/%d/%Y %I:%M:%S %p"),
-    # Format as YYYY-MM-DD
-    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"), 
+    date = as.POSIXct(date, format = "%m/%d/%y %H:%M"),   # <- assign result to 'date'
+    monthYear = paste(format(date, "%Y"), format(date, "%m"), "01", sep = "-"),
     monthYear = as.POSIXct(monthYear, format = "%Y-%m-%d"),
-    # Convert to POSIXct
-    monthYear = format(monthYear, "%m/%Y")) %>% 
+    monthYear = format(monthYear, "%m/%Y")
+  ) %>% 
   select(monthYear, site, species, genotype_name, qty, reason) %>% 
   mutate(across(c(site, species, genotype_name, reason), as.factor)) %>% 
   filter(reason %in% ('fragging')) %>% 
@@ -573,9 +634,9 @@ agg_prod <- aggregate(production ~ species, data = frag3, sum)
 frag3$species <- factor(frag3$species, levels = agg_prod$species[order(agg_prod$production)])
 
 
-fragPlot1 <- ggplot(frag3, aes(x = site, y = production, fill = species)) +
+fragPlot1 <- ggplot(totalFrag, aes(x = site, y = production, fill = speciesCode)) +
   geom_bar(stat = "identity") + # Creates the bar chart
-  ylim(0, 4000)+
+  ylim(0, 5000)+
   scale_fill_discrete(labels = c("AP" = "APAL",
                "CN" = "CNAT",
                "MC" = "MCAV",
@@ -587,7 +648,8 @@ fragPlot1 <- ggplot(frag3, aes(x = site, y = production, fill = species)) +
                "PS" = "PSTR",
                "DS" = "DSTO",
                "PC" = "PCLI", 
-               "PA" = "PAST"        # Custom legend labels
+               "PA" = "PAST",
+               "SB" = "SBOU"# Custom legend labels
   ))+
   labs(
     x = "Site", 
@@ -628,6 +690,58 @@ ggsave("../figures/productionPlot.png", plot = fragPlot, width = 20, height = 15
 
 ```
 
+
+Acer production numbers
+```{r, acerProduction, include = TRUE}
+
+
+acer <- read.csv("../data/acerProduction.csv")
+
+
+acer1 <- acer %>% 
+  select(Date, Nursery, Species, Genet, `X..Frags.Produced`) %>% 
+  dplyr::rename(production = `X..Frags.Produced`) %>% 
+  mutate(Species = case_when(
+    Species == "Acer" ~ "ACER",
+    TRUE ~ Species
+  ))
+
+totalProduced = acer1 %>% dplyr::summarize(totalProduction = sum(production))
+totalGenotypes = acer1 %>% dplyr::summarize(totalGenets = n_distinct(Genet))
+
+
+fragACERTab <- acer1 %>%
+  select(-c(Date)) %>% 
+  arrange(Nursery) %>% 
+  flextable() %>%
+  set_header_labels(Data.set = "Data set") %>% 
+  flextable::compose(part = "header", j = "Nursery", value = as_paragraph("Site")) %>%
+  flextable::compose(part = "header", j = "Species", value = as_paragraph("Species")) %>%
+  flextable::compose(part = "header", j = "production", value = as_paragraph("Total Fragments Produced")) %>%
+  add_footer_row(values = c("Total", 
+                            "",
+                            totalGenotypes,
+                            totalProduced),
+          colwidths = c(1, 1, 1, 1)) %>% 
+  autofit() %>%
+  flextable::font(fontname = "Times New Roman", part = "all") %>%
+  fontsize(size = 12, part = "all") %>%
+  bold(part = "header") %>%
+  align(align = "center", part = "all") %>% 
+  set_table_properties(width = 1, align = "center", layout = "autofit")
+
+fragACERTab
+
+
+acerFragDoc = read_docx()
+acerFragDoc = body_add_flextable(acerFragDoc, value = fragACERTab)
+print(acerFragDoc, target = "../tables/ACERproductionTable.docx")
+fragACERTab
+
+
+
+
+```
 
 
 
